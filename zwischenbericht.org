@@ -1,0 +1,812 @@
+#+TITLE: Engine: Orion - Kommentar
+#+AUTHOR: Dominik Keller, Jakob Klemm
+#+LATEX_CLASS: article
+#+IMAGE: ksba
+#+LANGUAGE: de
+#+OPTIONS: toc:t title:t date:nil
+#+LATEX_HEADER: \usepackage[utf8]{inputenc}
+#+LATEX_HEADER: \usepackage[dvipsnames]{xcolor}
+#+LATEX_HEADER: \usepackage{tikz}
+#+LATEX_HEADER: \usepackage{pdfpages}
+#+LATEX_HEADER: \usepackage[]{babel}
+#+LATEX_HEADER: \usepackage{listings}
+#+LATEX_HEADER: \usepackage[]{babel}
+#+LATEX_HEADER: \usepackage[dvipsnames]{xcolor}
+#+LATEX_HEADER: \usepackage{courier}
+#+LATEX_HEADER: \usepackage{listings}
+#+LATEX_HEADER: \usepackage{textcomp}
+#+LATEX_HEADER: \usepackage{gensymb}
+#+BEGIN_ABSTRACT
+TODO: abstract
+#+END_ABSTRACT
+\newpage
+* TODO Kürzen / Vision
+#+BEGIN_CENTER
+29. Oktober 1964 - UCLA an Stanford: LO
+#+END_CENTER
+/1964/ rechnete niemand mit der fundamentalen Änderung unserer Existenz
+und Lebensweise, die mit dieser einfachen Nachricht in Bewegung
+gebracht wurde. Eigentlich hätte die erste Nachricht über das =ARPANET=
+im Jahre 1964 =LOGIN= heissen sollen, doch das Netzwerk stürzte nach nur
+zwei Buchstaben ab. Ob dies als schlechtes Omen für die Zukunft hätte
+gewertet werden sollen bleibt eine ungeklärte Frage. Aber das Internet
+ist hier und es ist so dominant wie noch nie zuvor. Jetzt ist es in
+der Verantwortung jeder neuen Generation auf diesem Planeten, mit den
+unglaublichen Möglichkeiten richtig umzugehen und die Vielzahl an
+bevorstehenden Katastrophen und Gefahren zu navigieren.\\
+
+\noindent Ohne das Internet wäre die Welt wie wir sie kennen nicht
+möglich. Unsere Arbeit, Kommunikation und unser Entertainment sind
+nicht einfach nur abhängig von der enormen Interkonnektivität des
+Internets, ohne sie würden ganze Industrien und Bereiche unser
+Gesellschaft gar nicht erst existieren. Das Internet hatte einen
+selbstverstärkenden Effekt auf sein eigenes Wachstum. Der um ein
+Vielfaches schnellere Datenaustausch und die enorme Interkonnektivität
+führten dazu, dass jede neue Innovation und jede neue Plattform im
+Internet noch schneller noch mehr User erreichte und auf immer
+unvorstellbarere Grössen anwuchs.\\
+
+\noindent Das ist ja grundsätzlich nichts Schlechtes. Das Internet hat
+eine unvorstellbare Menge an Vermögen, Geschwindigkeit und
+Bequemlichkeit für uns alle geschaffen und wir haben unsere
+Gesellschaftsordnung daran ausgerichtet. Aber man muss sich fragen, ob
+wir manche der Schritte nicht doch überstürzt haben. Im Namen des
+Wachstums und aus =FOMO= (/Fear Of Missing Out/) wurden Technologien für
+die Massen zugänglich, die eigentlich nie für solche Grössenordnungen
+entwickelt wurden. Denn sobald die immer höheren Erwartungen an teils
+unglaublich fragile Systeme nicht mehr erfüllt werden, kommt es
+schnell zur Katastrophe. Und durch unsere Abhängigkeit von diesen
+Systemen steht bei einem solchen Szenario nicht nur der Untergang
+einiger Produkte oder einzelner Firmen bevor, nein, es könnte zum
+Kollaps ganzer Länder oder Gesellschaften kommen.\\
+
+\noindent Egal wie sicher und zuverlässig unsere /öffentliche/
+Infrastruktur auch scheinen mag, es lassen sich doch schnell Risse im
+System erkennen. Nicht nur an der Oberfläche, sondern auch im Herzen
+unseres digitalen Leben gibt es Probleme. Oftmals handelt es sich
+dabei nicht um /Kleinigkeiten/, /Meinungsverschiedenheiten/ oder
+/Kontroversen/, sondern um physikalische Grenzen, grundlegende
+Designfehler und das vielseitige Versagen der involvierten Parteien.\\
+
+\noindent In den nächsten Kapiteln sollen einige dieser zentralen
+Probleme besprochen werden. Dabei soll versucht werden nicht nur die
+fehlerhaften Implementierungen zu erklären, sondern auch die dadurch
+entstandenen Probleme in Verbindung mit unseren täglichen
+Interaktionen und Verwendungen des Internets zu bringen. In einem
+nächsten Schritt soll dann eine Lösung besprochen werden: ein System,
+mit welchem sich möglichst viele der grössten Probleme lösen lassen,
+und welches tatsächlich praktischen Nutzen bietet.\\
+** IP-V4
+\noindent In der Geschichte der Menschheit haben wir aus vielen
+verschiedenen Gründen Krieg geführt. Für Wasser, Nahrung, Öl, Frieden
+oder Freiheit in den Krieg zu ziehen, scheint zu einer fernen Welt zu
+gehören. Aber auch wenn diese grundlegenden Verlangen gedeckt sind,
+werden schon bald neue Nöte aufkommen. Während /Daten/ oft als Gold
+des 21. Jahrhunderts bezeichnet werden, gibt es noch eine andere
+Ressource, deren Vorräte wir immer schneller erschöpfen. \\
+
+\noindent \(4'294'967'296\). So viele =IP-V4=-Adressen wird es jemals
+geben. =IP-V4=-Adressen werden für jedes Gerät benötigt, das im Internet
+kommunizieren will und dienen zur eindeutigen Identifizierung. Aktuell
+wird die vierte Version (=V4=) verwendet. In einer Wirtschaft, in der
+unendliches Wachstum als letzte absolute Wahrheit geblieben ist, kann
+ein solch hartes Limit verheerende Folgen haben. Besonders wenn die
+limitierte Ressource so unendlich zentral für unser aller Leben ist,
+wie nichts anderes. Mit =IP-V6= wird zurzeit eine Alternative angeboten,
+die solche Limitierungen nicht hat. Aber der Wechsel ist eine
+freiwillige Entscheidung, für die nicht nur alle Betroffenen bereit
+sein müssen, sondern für die auch jede einzelne involvierte Komponente
+diese neue Technologie unterstützen müssen.\\
+** Routing
+\noindent Freiheit und Unabhängigkeit sind menschlich. Es darf niemals
+bestraft werden, nach diesen fundamentalen Rechten zu streben. Und
+doch führt das egoistische Streben nach Freiheit zu Problemen, oftmals
+allerdings nicht für die nach Freiheit Strebenden.\\
+
+\noindent Genau diese Situation findet man im aktuellen Konflikt um
+die Grösse von /Address-Abschnitten/ vor. Um dieses Problem richtig zu
+verstehen, muss als erstes die Funktion der /Zentralrouter/ und der
+globalen Netzwerkinfrastruktur erklärt werden:\\
+
+\noindent Jedes Gerät im Internet ist über Kabel oder Funk mit jedem
+anderen Gerät verbunden. Da das Internet aus einer Vielzahl von
+Geräten besteht, wäre es unmöglich, diese direkt miteinander zu
+verbinden. Daher lässt sich das Internet besser als /umgekehrte
+Baum-Struktur/ vorstellen:
+- Ganz unten finden sich die Blätter, die Abschlusspunkte der
+  Struktur. Sie stellen die /Endnutzergeräte/ dar. Jeder Server, PC und
+  jedes =iPhone=. Hier ist es auch wichtig festzustellen, dass es in
+  dieser Ansicht des Internets keine magische /Cloud/ oder ferne Server
+  und Rechenzentren gibt. Aus der Sicht des Netzwerks sind alle
+  Endpunkte gleich, auch wenn manche für Konsumenten als /Server/
+  gelten.
+- Die Verzweigungen und Knotenpunkte über den Blättern, dort wo sich
+  Äste aufteilen, stellen /Router/ und Switches dar. Hier geht es
+  allerdings nicht um Geräte, die sich in einem persönlichen Setup
+  oder einem normalen Haushalt finden. Mit Switches sind die
+  Knotenpunkte (=POP-Switches=) der Internet-Anbieter gemeint. Diese
+  teilen eingehende Datenströme auf und leiten die richtigen Daten
+  über die richtigen Leitungen.
+- Ganz oben findet sich der Stamm. Während ein normaler Baum natürlich
+  nur einen Stamm hat, finden sich in der Infrastruktur des Internets
+  aus Zuverlässigkeitsgründen mehrere. Von diesen =Zentralroutern= gibt
+  es weltweit nur eine Handvoll und sie sind der Grund für das
+  Problem.
+
+\noindent Die =Zentralrouter= kümmern sich nicht um einzelne Adressen,
+sondern um Abschnitte von Adressen, auch =Address Spaces= genannt. An
+den zentralen Knotenpunkten geht es also nicht um einzelne Server oder
+Geräte, zu dem etwas gesendet werden muss, stattdessen wird eher
+entschieden, ob gewisse Daten beispielsweise von Frankfurt aus nach
+Ost- oder Westeuropa geschickt werden müssen.\\
+
+\noindent Im Laufe der Jahre wurden die grossen Abschnitte von
+Adressen aber immer weiter aufgeteilt. Internet-Anbieter und grosse
+Firmen können diese Abschnitte untereinander verkaufen und aufteilen.
+Und jede Firma will natürlich ihren eigenen Abschnitt, ihren eigenen
+=Address Space=. Für die Firmen hat dies viele Vorteile, beispielsweise
+müssen weniger Parteien beim Finden des korrekten Abschnitts
+involviert sein. Aber für die =Zentralrouter= bedeutet es eine immer
+grössere Datenbank an Zuweisungen. Dieses Problem geht so weit, dass
+die grossen /Routingtables/ inzwischen das physikalische Limit
+erreichen, was ein einzelner Router verarbeiten kann.
+** Zentralisierung
+\noindent Die Macht in den Händen einiger weniger Kapitalisten und
+internationaler Unternehmen ist unvorstellbar gross. Einige wenige
+CEO's, welche nie gewählt, überprüft oder zur Rede gestellt wurden,
+sind in voller Kontrolle unserer Leben. Egal welcher politischen,
+wirtschaftlichen oder gesellschaftlichen Ideologie jemand auch folgt,
+eine solche Abhängigkeit wirft gewisse Fragen und Probleme auf.\\
+
+\noindent Aber neben den ideologischen Fragen und Sicherheitsbedenken
+gibt es auch noch sehr praktische Probleme in der Art, wie moderne
+Internet-Dienste implementiert sind.
+*** Datenschutz
+#+begin_center
+/Wenn man nicht für etwas zahlt, ist man das Produkt./
+#+end_center
+Nach dieser Idee ist man für ziemlich viele Firmen ein Produkt. Doch
+leider muss man realisieren, dass man selbst bei kostenpflichtigen
+Diensten als Produkt gesehen wird. Denn das Internet hat einen neuen
+Rohstoff zur Welt gebracht. Wer viele Daten über Menschen besitzt,
+bekommt binnen kürzester Zeit Macht.\\
+
+\noindent In ihrer einfachsten Funktion werden Daten für
+personalisierte Werbung eingesetzt. Damit lassen sich Werbungen
+zielgerichtet an Konsumenten schicken und der Umsatz, sowohl für
+Firmen als auch für Anbieter, optimieren.\\
+
+\noindent Werbung ist mächtig und hat einen grossen Einfluss auf den
+Markt. Aber damit lassen sich lediglich Konsumenten zu Käufen
+überzeugen oder davon abbringen. Wenn man dies mit dem tatsächlichen
+Potential in diesen Daten vergleicht, merkt man schnell, wie viel noch
+möglich ist. Denn die Daten die sich täglich über uns im Internet
+anhäufen, zeigen mehr als unser Kaufverhalten. Von
+Echtzeit-Positionsupdates, Anrufe und Suchanfragen bis hin zu privaten
+Chats und unseren tiefsten Geheimnissen, sind wir meist überraschend
+unvorsichtig im Umgang mit digitalen Werkzeugen.\\
+
+\noindent Während man davon ausgehen muss, dass Firmen, deren
+Haupteinnahmequelle Werbungen ist, unsere Daten sammeln und verkaufen,
+gibt es eine Vielzahl an anderen Firmen, die ebenfalls unsere Daten
+sammeln, obwohl man von den meisten dieser Firmen noch nie gehört hat.
+Die Liste der potentiellen Mithörer bei unseren digitalen
+Unterhaltungen ist nahezu unendlich: Internet-Anbieter,
+DNS-Dienstleister, CDN-Anbieter, Ad-Insertion-Systeme,
+Analytics-Tools, Knotenpunkte & Datencenter, Browser, Betriebssysteme,
+....\\
+
+\noindent Aus dieser Tatsache heraus lassen sich zwei zentrale
+Probleme formulieren:
+- Selbst für die einfachsten Anfragen im Internet sind wir von einer
+  Vielzahl von Firmen und Systemen abhängig. Dieses Problem wird noch
+  etwas genauer im Abschnitt [[Abhängigkeit][Abhängigkeit]] besprochen.
+- Wir haben weder ein Verständnis von den involvierten Parteien noch
+  die Bereitschaft, Bequemlichkeit dafür aufzugeben.
+*** Abhängigkeit
+In einem fiktionalen Szenario[fn:ts] erklärt /Tom Scott/ auf seinem
+YouTube-Kanal was passieren könnte, wenn eine einzelne
+Sicherheitsfunktion beim Internetgiganten =Google= fehlschlagen würde.
+In einem solchen Fall ist es natürlich logisch, dass es zu Problemen
+bei den verschiedensten =Google=-Diensten kommen würde. Aber schnell
+realisiert man, auf wie vielen Seiten Nutzer die /Sign-In with Google/
+Funktion benutzen. Und dann braucht es nur eine böswillige Person um
+den Administrator-Account anderer Dienste und Seiten zu öffnen,
+wodurch die Menge an Sicherheitsproblemen exponentiell steigt.\\
+
+\noindent Aber es muss nicht immer etwas schief gehen, um die Probleme
+zu erkennen. Sei es politische Zensur, /Right to Repair/ oder /Net
+Neutralität/, die grossen Fragen unserer digitalen Zeit sind so
+relevant wie noch nie.\\
+
+\noindent Während die enorme Abhängigkeit als solche bereits eine
+Katastrophe am Horizont erkennen lässt, gibt es noch ein konkreteres
+Problem: Den Nutzern (/den Abhängigen/) ist ihre Abhängigkeit nicht
+bewusst. Wenn sie sich ihren Alltag ohne =Google= oder =Facebook=
+vorstellen, denken sich viele nicht viel darunter. Weniger /lustige
+Quizfragen/ oder Bilder von Haustieren, aber was könnte den schon
+wirklich Schlimmes passieren?\\
+
+\noindent Während es verständlich ist, dass das Benutzen von =Google=
+natürlich von =Google= abhängig ist, so versteht kaum jemand, wie viel
+unserer täglichen Aktivitäten von Diensten und Firmen abhängen, die
+selbst wieder von =Google= abhängig sind. All dies führt dazu, dass wir
+auf eine globale Katastrophe zusteuern, die nur darauf wartet, zu
+passieren.
+** Entwicklung
+Wer schon mal versucht hat, selbst eine einfache Webseite im Internet
+zu veröffentlichen, hat schnell gemerkt, wie unglaublich kompliziert
+der Prozess geworden ist. Natürlich existieren automatisierte Dienste
+und Anbieter, die den Prozess vereinfachen. Wer aber Wert auf seine
+Privatsphäre und auf die Verwendung von /open-source/ Software legt,
+muss sich um vieles selbst kümmern. Nicht nur die Auswahl an
+verschiedenen Programmen kann erschlagend wirken, sondern der Fakt,
+dass diese untereinander kompatibel sein müssen. Zwar reden wir oft
+von /einem/ Webserver, allerdings sind es tatsächlich viele verschiedene
+Programme, die alle fehlerfrei miteinander interagieren müssen, um
+Resultate zu liefern.\\
+
+\noindent Anders als die bereits angesprochenen Probleme, mag dies
+nicht direkt zu einer Katastrophe und einem Zusammenbruch führen,
+allerdings existiert die Chance, dass die Komplexität neuer Programme
+und der Aufwand zur Entwicklung so unglaublich gross werden, dass es
+sich für einfache Entwickler nicht mehr lohnt, oder das Wissen nicht
+verfügbar ist, um selbst Dienste im Internet anzubieten.
+** TODO Content Addressing
+** TODO Modularität (+ Zentralisierung)
+** TODO Beispiele / Katastrophen
+Nachdem nun eine Vielzahl an Problemen angesprochen wurde, muss auch
+noch die anstehende Katastrophe beschrieben werden. Es gibt
+verschiedene Gründe, durch welche es zu einer solchen digitalen
+Katastrophe kommen könnte. Manche sind nur eine Frage der Zeit, andere
+könnten durch den kleinsten Fehler, sei es technisch oder menschlich,
+ausgelöst werden.\\
+
+\noindent Es wurden mehrere Engpässe angesprochen. Ob es um Platz im
+Zentralrouter oder um =IP-Adressen= geht, ist damit zu rechnen, dass es
+Konflikte, geheime Absprachen und ungerechte Verteilung dieser
+wichtigen Ressourcen geben wird. All dies natürlich nur, wenn wir
+keinen tatsächlichen Krieg starten oder das System vorher
+zusammenbricht. Und dieser Zusammenbruch muss nicht durch bösswillige
+Saboteure oder Terroristen kommen. Kleine Tippfehler, Überlastungen
+oder falsche Abschätzungen können kleinste Fehler auslösen, die sich
+dann exponentiell über den ganzen Planeten von System zum System
+verbreiten\\
+
+\noindent Für Viele wird die angesprochene Zentralisierung kaum als
+Katastrophe wirken, für andere ist die unvorstellbare Macht in den
+Händen so Weniger bereits Katastrophe an und für sich. Trotzdem ist es
+wichtig zu realisieren, dass absolute Abhängigkeiten von wenigen,
+fragilen Systemen selten zu Gutem geführt hat.
+** Engine: Orion
+\noindent Das Internet mit all seinen Facetten und Anwendungen hat
+viele Probleme. Einige wurden hier bereits angesprochen, andere würden
+den Rahmen dieser Arbeit sprengen und wieder andere wurden noch gar
+nicht entdeckt oder als Probleme identifiziert. Aktuell versuchen wir
+bei jedem neuen Problem eine neue, meist temporäre Lösung zu finden,
+nur um nichts am System als Ganzem ändern zu müssen.\\
+
+\noindent Langfristig muss aber ein neues System entwickelt werden.
+Eine grundlegende Neuentwicklung der Art wie wir mit digitalen
+Systemen interagieren und wie digitale Systeme untereinander agieren.
+Nur mit einem solchen Wandel können wir die digitale Katastrophe nicht
+einfach nur verschieben, sondern grundlegend verhindern.\\
+
+\noindent =Engine: Orion= soll eine Rolle in diesem Systemwandel spielen
+und eine erste Vorlage für ein solches /System der nächsten Generation/
+bieten. Dabei geht es nicht um ein einzelnes Produkt oder eine
+Dienstleistung, welche vollständig entwickelt und ohne Mangel ist.
+Stattdessen sollen verschiedene Komponenten und Systeme entwickelt
+werden, welche genau gegen die angesprochenen Probleme vorgehen. Mit
+dem Zusammenschluss dieser Komponenten soll es dann möglich sein, ein
+neuartiges System zu entwickeln und damit einen Schritt in die
+Richtung des nötigen Wandels zu gehen.
+* TODO Kürzen / Projekte
+Nachdem die zentralen Problemen definiert wurden, ist es an der Zeit,
+andere Projekte zu analysieren um herauszufinden, ob die Probleme
+bereits vollständig oder zumindest teilweise gelöst wurden.\\
+
+\noindent Zwar wurden viele Probleme und Gefahren angesprochen,
+=Engine: Orin= soll sich allerdings nur auf die folgenden beiden Aspekte
+fokussieren:
+- ein Nachrichtensystem zum Senden und Lenken der einzelnen
+  Nachrichten.
+- ein System zur Verarbeitung der einzelnen Nachrichten.
+Dementsprechend sollen auch andere Projekte, die sich mit diesen
+beiden Aspekten analysiert werden. Um aber die Wahl der Projekte
+richtig zu verstehen, muss man die Vision hinter =Engine: Orion= im
+Blick behalten. Denn es wird schnell klar, dass es für alle
+beschriebenen Probleme entweder temporäre Lösungen oder einzelne
+Projekte zur Umgehung der Probleme gibt. Daneben existieren auch
+grundlegendere Neuentwicklungen bekannter Systeme, welche einzelne
+Probleme lösen, meist aber andere Ziele haben. Was allerdings kein
+bekanntes Projekt umzusetzen versucht, ist nicht nur die grundlegende
+Neuentwicklung zentraler Systeme zur Behebung bekannter Probleme,
+sondern dazu noch die nahtlose Integration der einzelnen Komponenten
+für ein durchgehend integriertes, zusammenspielendes System.\\
+
+\noindent Da ein solches Projekt nicht öffentlich existiert, müssen
+stattdessen die einzelnen Probleme und deren Lösungsversuche
+angeschaut werden. Dafür wird grundlegend in zwei zentrale Komponenten
+unterschieden. Die Integration der beiden Teile soll hier nicht
+besprochen werden, da diese sich hauptsächlich in der Umsetzung zeigt.
+** Verteilte Systeme
+Viele der Probleme stammen von Designfehlern in unserer globalen
+Routinginfrastruktur. Mit einer Alternative zu diesem veralteten
+System würden sich eine Vielzahl von Problemen auf einmal lösen. Der
+grundlegende Unterschied zwischen /dezentralisierten Systemen/ und der
+aktuellen Umsetzung besteht in der Funktion der Router. Die
+Problematik der /Zentralrouter/ wurde bereits angesprochen. Aber auch
+kleinere Router führen oft zu Problemen, hauptsächlich durch die
+absolute Abhängigkeit, die wir zu ihnen entwickelt haben. Ohne unsere
+Internetanbieter und die Dienste, die sie uns zur Verfügung stellen,
+wären wir am Ende, denn nur die Internetanbieter sind in der Lage,
+ihre Nutzer und Netzwerke mit Routern untereinander zu verbinden.\\
+
+\noindent Auch wenn es viele verschiedene Ideen und Umsetzungen der
+dezentralisierten Ideen gibt, basieren doch die meisten von ihnen
+zumindest teilweise auf =Kademlia=, welches also zuerst verstanden
+werden muss.
+*** Kademlia
+Wie geht man also gegen die totale Abhängikeit von Internetanbietern
+und zentralen Routern vor?\\
+Man kann ja nicht einfach seine eigenen Router aufsetzen und einen
+alternativen Dienst anbieten. Neben den technischen Schwierigkeiten
+würde ein solcher Schritt auch überhaupt nichts das eigentliche
+Problem bekämpfen.\\
+
+\noindent Der Trick, der bei Systemen wie =Kademlia= verwendet wird, ist
+es, Router vollständig zu eliminieren. Dies ist möglich, indem jedes
+Mitglied des Netzwerks neben seinen normalen Funktionen gleichzeitig
+auch noch als Router agiert. Strenggenommen werden in =Kademlia= Router
+also nicht wirklich eliminiert, lediglich zentrale Router fallen
+weg.\\
+
+\noindent In einem früheren Abschnitt wurden die Probleme der
+/Zentralrouter/ bereits angesprochen. Wenn jetzt aber jedes Mitglied in
+einem Netzwerk plötzlich als Router agiert und es keine zentrale
+Instanz gibt, träfe die Problematik der /Zentralrouter/ plötzlich auf
+alle Server zu. Genau da kommt =Kademlia= ins Spiel. Aber was genau ist
+=Kademlia= eigentlich?\\
+
+\noindent Laut den Erfindern, /Petar Maymounkov/ und /David Mazières/,
+ist es
+#+begin_center
+ein Peer-to-peer Nachrichten System basierend auf XOR-Metrik.[fn:9]
+#+end_center
+Was genau bedeutet das und wie lässt sich eine =XOR=-Metrik für
+verteilte Datensysteme einsetzen?\\
+
+\noindent Da die einzelnen Server nicht in der Lage sind,
+Informationen über das komplette Netzwerk zu speichern oder zu
+verarbeiten, funktionieren =Kademlia=-Systeme grundlegend anders.
+Anstelle der hierarchischen Anordnung der Router ist jedes Mitglied
+eines Systems gleichgestellt. dabei kümmert sich jedes Mitglied auch
+nicht um das komplette System, sondern nur um sein direktes Umfeld.
+Während dies für kleinere Systeme gut funktioniert und vergleichbare
+Geschwindigkeiten liefert, skaliert es nicht so einfach für grosse
+Systeme. Genau dafür gibt es die =XOR=-Metrik.
+**** Distanz:
+     Die =XOR=-Funktion, die in der Informatik an den verschiedensten
+     Orten auftaucht, wird verwendet, um die Distanz zwischen zwei
+     Zahlen zu berechnen. Die Zahlen repräsentieren dabei Mitglieder
+     im Netzwerk und sind je nach Variante im Bereich
+     \(0..2^{160}\)(/20 Bytes/) oder \(0..2^{256}\)(/32 Bytes/). Mit einem
+     so grossen Bereich lässt sich auch das Problem der limitierten
+     =IP-Adressen= lösen. Auch wenn es kein tatsächlich unlimitiertes
+     System ist, so gibt es doch mehr als genug Adressen.\\
+
+     \noindent Wenn mit =XOR=-Funktionen einfach die Distanz zwischen
+     zwei Zahlen berechnet wird, stellt sich die Frage, wieso nicht
+     einfach die Differenz verwendet wird. Um dies zu beantworten,
+     muss man sich die Eigenschaften der =XOR=-Funktion etwas genauer
+     anschauen:
+
+     1. \(xor(x, x) = 0\): Das Mitglied mit seiner eigenen Adresse ist
+        zu sich selbst am nächsten. Mitglieder werden hier als Namen
+        für Server in einem =Kademlia=-System verwendet. 
+     2. \(xor(x, y) > 0\) wenn \(x \neq y\): Die Funktion produziert nie
+        negative Zahlen und nur mit zwei identischen Parametern kann
+        man \(0\) erhalten.
+     3. \(xor(x, y) = xor(y, x)\): Die Reihenfolge der Parameter spielt
+        keine Rolle.
+     4. \(xor(x, z) \leq xor(x, y) + xor(y, z)\): Die direkte Distanz
+        zwischen zwei Punkten ist am kürzesten oder gleich kurz wie
+        die Distanz mit einem zusätzlichen Schritt dazwischen, also
+        einem weiteren Sprung im Netzwerk.
+     5. Für ein gegebenes \(x\) und eine Distanz \(l\) gibt es nur
+        genau ein \(y\) für das \(xor(x, y) = l\) gilt.
+
+\noindent Aber wieso genau funktioniert dies? Wieso kann man =XOR=, eine
+Funktion zur Berechnung der Bit-Unterschiede in zwei Binärzahlen,
+verwenden, um die Distanz zwischen zwei Punkten in einem verteilten
+Datensystem zu berechnen?\\
+
+\noindent Um dies zu verstehen, hilft es, sich das System als
+umgekehrten Baum vorzustellen. Untergeordnet zum zentralen Punkt zu
+oberst stehen alle Mitglieder im System. Mit jeder weiteren Abzweigung
+zweier Teilbäume halbiert sich die Anzahl. Man wählt am einfachsten
+zwei Abzweigungen pro Knoten, da sich damit die Werte direkt als
+Binärzahlen darstellen lassen, wobei jeder Knotenpunkt einfach eine
+Stelle in der langen Kette aus \(0\) oder \(1\) darstellt. Der ganze
+Baum sieht dann wie folgt aus[fn:3]:
+
+#+CAPTION: Beispielhafte Darstellung eines einfachen Kademlia-Systems
+#+ATTR_LATEX: :float nil
+     [[file:tree.png]]
+
+\noindent Mit dieser Sicht auf das System beschreibt die =XOR=-Funktion
+die Anzahl der unterschiedlichen Abbiegungen im Baum und somit die
+Distanz. Zwar mag es auf den ersten Blick nicht intuitiv wirken, wieso
+man =XOR= anstatt einfach der Differenz verwendet, allerdings
+funktioniert die Funktion mit Binärzahlen in einem solchen Baum
+einiges besser.
+**** Routing-Table:
+In einem =Kademlia=-System hat jedes Mitglied eine gewisse Anzahl
+anderer Mitglieder, mit denen es sich verbunden hat. Da =Kademlia= ein
+sehr umfangreiches, kompliziertes Protokoll und System beschreibt,
+sollen hier nur einige zentrale Funktionen besprochen werden, die für
+diesen ersten Prototypen von =Engine: Orion= relevant sind. Besonders
+beim =Routing Table= lassen sich einige Abschnitte weglassen, welche
+zwar für die Optimierung und Skalierung eines Systems wichtig,
+allerdings für das Analysieren eines einfachen, kleinen Systems wie
+=Engine: Orion= irrelevant sind.\\
+
+\noindent Einfach formuliert speichert der =Routing Table= die
+verbundenen Mitglieder. Eine eingehende Nachricht wird dann mithilfe
+dieser Liste, sowie der =XOR=-Metrik ans richtige Ziel geschickt. Um das
+System zu optimieren und die Anzahl der benötigten Sprünge klein zu
+halten, wird ein spezielles System verwendet, um zu entscheiden,
+welche Mitglieder im =Routing-Table= gespeichert werden sollen:
+
+     1. Sehr nahe an sich selbst (in der obigen Darstellung also:
+        wenige Sprünge im Baum) werden alle Mitglieder gespeichert.
+     2. Je weiter weg sich die Mitglieder befinden, desto weniger
+        werden gespeichert.
+
+\noindent Die optimale Anzahl der gespeicherten Mitglieder hängt von
+den Zielen und Ansprüchen an das System ab. Grundlegend muss man die
+Frage beantworten, mit wie vielen Unterbäumen Verbindungen gehalten
+werden sollen. Zwar mag dies etwas abstrakt wirken, es lässt sich aber
+mit dem eben eingeführten Modell eines umgekehrten Baumes gut
+erklären:
+     - In der obersten Ebene trennt sich der Baum in zwei vollständig
+       getrennte Teile, was sich mit jeder weiteren Ebene wiederholt.
+     - Die einzige Möglichkeit vom einen /Ende/ des Baums zum anderen
+       zu kommen, ist über den obersten Knoten. Um also in die andere
+       Hälfte zu kommen, braucht man mindestens eine Verbindungsstelle
+       in der anderen Hälfte.
+     - Deshalb braucht ein =Routing-Table= nicht nur kurze
+       Verbindungen zu nahen Punkten, sondern auch einige wenige
+       Verbindungen zu Mitgliedern in der anderen Hälfte.
+     - Mit nur einer weit entfernten Adresse hat man eine Verbindung
+       in /eigene/ und die /andere/ Hälfte. Hat man zwei solche
+       Verbindungen auf die andere Seite hat man schon Verbindungen in
+       jeden Viertel des Baumes.
+     - Man muss also entscheiden, wie fein man die andere Hälfte
+       aufteilen will. (Eine genaue Unterteilung bedeutet wenige
+       Sprünge aber grosse =Routing-Tables=, eine grobe Unterteilung
+       genau das Umgekehrte).
+
+     \noindent Zwar hat ein vollständiges =Kademlia=-System noch
+     komplexere Elemente, wie =k-Buckets=, welche den =Routing-Table=
+     optimieren, allerdings sind diese für die grundlegende
+     Funktionsweise des Systems irrelevant.\\
+
+     \noindent Die dynamische Regulation des =Routing-Tables= muss
+     allerdings noch erwähnt werden:
+     - Sobald die definierte Maximalgrösse erreicht ist, werden keine
+       neuen Verbindungen akzeptiert.
+     - Zwar können existierende Einträge durch Neue ersetzt werden,
+       allerdings werden dabei nicht alte, sondern inaktive Einträge
+       entfernt. Für ein =Kademlia=-System werden also auch Mechanismen
+       benötigt, um die Zustände aller Verbindungen periodisch zu
+       überprüfen.
+*** BitTorrent
+    Dezentralisierung hat viele Vorteile und muss langfristig
+    flächendeckend eingesetzt werden. Aktuell sind die meisten
+    Industrien und Produkte noch nicht so weit. Trotzdem gibt es
+    einige Anwendungen und Gruppen bei denen solche Systeme bereits
+    seit Jahren Verwendung finden.\\
+
+    \noindent Beispielsweise im Zusammenhang mit /(mehr oder weniger
+    legalen)/ Verbreiten von Materialien wie Filmen oder Musik wird
+    eines der grössten global verteilten Systeme eingesetzt. Natürlich
+    gibt es hunderte von verschiedenen Programmen, Ideen und
+    Umsetzungen, wobei die meisten Nachfolger von =Napster= sind.\\
+
+    \noindent Im preisgekrönten Film /The social network/ erhält man
+    Einblick in den Lebensstil von =Sean Parker=, einem der Gründer von
+    =Napster=. Es mag überraschen, wie jemand wie Parker, der nur wenige
+    Jahre zuvor mit =Napster= die komplette Musikindustrie in Unruhe
+    gebracht hatte, eine so zentrale Rolle in =Facebook=, einem der
+    zentralisiertesten Megaunternehmen der Welt, einnehmen konnte.\\
+
+    \noindent Auch wenn es noch nicht /vollständig/ dezentralisiert ist,
+    erlaubte es =Napster= Nutzern, Musik über ein automatisiertes System
+    mit anderen Nutzern zu teilen und neue Titel direkt von den
+    Geräten anderer Nutzer herunterzuladen. Dabei gab es allerdings
+    immer noch einen zentralen Server, der die Titel sortierte und
+    indizierte. \\
+    =Napster= musste am Ende abgeschaltet werden, nachdem die Klagen der
+    Musikindustrie zu belastend wurden. Auch wenn das Produkt
+    abgeschaltet wurde, liess sich nichts mehr gegen die Idee
+    unternehmen.\\
+
+    \noindent Über viele Iterationen und Generationen hinweg wurden
+    die verteilten Systeme immer weiter verbessert, jegliche zentrale
+    Server entfernt und in die Hände immer mehr Nutzer gebracht. Heute
+    läuft ein Grossteil des Austauschs über =BitTorrent=.
+
+    \noindent =BitTorrent= baut auf der gleichen grundlegenden Idee wie
+    =Napster= auf: Nutzer stellen ihren eigenen Katalog an Medien zur
+    Verfügung und können Inhalte von allen anderen Mitgliedern im
+    System herunterladen. Anders als =Napster= gibt es bei =BitTorrent=
+    keine zentrale Komponente, stattdessen findet selbst das
+    Indizieren und Finden von Inhalten dezentralisiert statt[fn:11].
+    Dafür wird über das =Kademlia=-System aktiv bekannt gegeben, wer
+    welche Inhalte zur Verfügung stellt, wobei einzelne Mitglieder
+    speichern können, wer die gleichen Inhalte anbietet. Neben
+    Dezentralisierung und Sicherheit lassen sich über =BitTorrent=
+    tatsächlich gute Geschwindigkeiten erreichen, da sich Inhalte von
+    mehreren Anbietern gleichzeitig herunterladen lassen. Da es sich
+    bei =BitTorrent= eigentlich um ein grosses Dateisystem handelt,
+    lassen sich direkt die =SHA1=-Hashwerte der Inhalte als
+    =Kademlia=-Adressen verwenden.
+*** CJDNS
+    Im =CJDNS=-Whitepaper[fn:10] werden viele der gleichen Probleme
+    erwähnt, wie auch für =Engine: Orion= angesprochen wurden. Die
+    grundlegenden Ideen und Lösungsansätze, die besprochen werden,
+    ähneln in vielerlei Hinsicht den Ideen und Prinzipien hinter
+    =Engine: Orion=. =CJDNS=, das sich selbst als
+    #+begin_center
+    an encrypted IPv6 network using public-key cryptography for
+    address allocation and a distributed hash table for routing
+    #+end_center
+    beschreibt, ist ein beliebtes /open-source/ Projekt, mit mehr als
+    \(180\) Mitentwicklern und Tausenden von Nutzern. Es basiert
+    ebenfalls auf =Kademlia= und ähnlich wie bei =BitTorrent= wird grosser
+    Wert auf Sicherheit und Verschlüsselung gelegt.\\
+
+    \noindent Wer den Code von =CJDNS= etwas genauer anschaut
+    realisiert schnell, welche grundlegenderen Ziele =CJDNS= verfolgt.
+    Tatsächlich soll mit =CJDNS= langfristig ein physikalisch
+    unabhängiges Netzwerk entstehen. Das Whitepaper redet von der
+    Freiheit der Nutzer, eigene Kabel und eigene Infrastruktur zu
+    verlegen.\\
+
+    \noindent Es mag auf manche nach digitaler Isolation und
+    Abschottung klingen, aber wer tatsächlich konsequent alle Probleme
+    von Grund auf angehen will, muss sich auch Gedanken über die
+    darunterliegende physikalische Infrastruktur machen. Dies ist
+    allerdings ein Schritt der mit =Engine: Orion= (/noch/) gemacht werden
+    soll.
+*** TODO IPFS
+** Nachrichtenverarbeitung
+In einem nächsten Schritt muss man sich fragen, wie die Nachrichten
+tatsächlich verarbeitet werden sollen. Welche Programme,
+Programmiersprachen und Recheneinheiten sollen Zugang haben, und wie
+sollen Entwickler tatsächlich mit dem System interagieren?\\
+
+\noindent Im Laufe der Zeit gab es verschiedene Trends, wobei die
+meisten auf immer kleinere Einheiten der Berechnung zusteuerten. Als
+neuartiges System soll =Engine: Orion= aber nicht einfach dem aktuellen
+Trend folgen. Es sollen stattdessen die verschiedenen Schritte und
+Optionen sollen analysiert werden, sodass daraus dann ein
+zukunftssicheres System entstehen kann.
+*** Betriebssysteme
+Computer werden immer leistungsfähiger und sind immer mehr verbunden.
+Mit der neu gewonnen Leistungsfähigkeit entstanden immer komplexere
+Programme und somit auch immer mehr Funktionen und Fähigkeiten, die
+dem Computer übergeben werden können. Die meisten Personen vertrauen
+ihren Computern hoch sensitive Informationen an, die keine
+unbeteiligte dritte Person erhalten sollte. Diese Informationen sind
+aber sowohl für Kriminelle und als auch für viele Werbebetreiber und
+moderne Internetfirmen von grossem Interesse und oftmals ist es
+äusserst einfach, an die Daten zu kommen. Um dagegen vorzugehen wurden
+in den letzten Jahrzehnten verschiedene Programme entwickelt, die sich
+darauf spezialisiert haben, verschiedene Daten und Programme zu
+isolieren, um die Sicherheit und Integrität der Daten zu sichern.\\
+
+\noindent Angefangen hat diese Technologie mit der Entwicklung des
+Betriebssystems. Microsoft wollte Ende der 80er Jahre sicher gehen,
+dass das Betriebssystem mehr Rechte hat als die Programme, die auf dem
+Computer laufen. Damit diese Zuweisung von Rechten funktioniert,
+braucht das Betriebssystem auch Hardware, die dies unterstützt. Die
+zwei wichtigsten Komponenten ist die /Memory Management Unit/ (=MMU=) und
+die Fähigkeit den Modus der CPU zu wechseln. Die =MMU= wurde von Intel
+schon seit längerer Zeit in ihren Chips eingebaut und regelt die
+Konvertierung von Adressen, die das Programm vorgibt, zu tatsächlich
+existierenden Adressen. Diese Konvertierung muss passieren, da jedes
+Programm davon ausgeht, dass es bei der Adresse 0 startet. Die zweite
+wichtige Aufgabe ist die Validierung der Adressen. Wenn ein Programm
+auf eine Adresse zugreift, die nicht dem Programm gehört, muss das
+Betriebssystem aufgerufen werden, damit sichergestellt werden kann,
+dass das Programm niemals Daten von anderen Programmen bekommen
+kann.\\
+
+\noindent Die andere, bereits angesprochene wichtige Funktion ist das
+Wechseln des Modus. Wenn ein Betriebssystem geladen ist, das es
+erlaubt mehrere Programme laufen zu lassen, muss die CPU mehrere
+Programme kurz nacheinander abarbeiten. Da die Programme aber meistens
+verschiedene Rechte haben, muss die CPU die Rechte immer wieder
+abändern. Diese Funktion wollten die Hardware-Hersteller am Anfang
+nicht unterstützen und deshalb wurden die Ingenieure bei Microsoft
+kreativ. Da sie die Wichtigkeit der Abkapselung erkannten, haben sie
+keine Mühe gescheut und ein höchst Ausgeklügeltes System entwickelt.
+Wenn ein anderes Programm ausgeführt werden soll, welches mit anderen
+Rechten läuft, übernahm das Betriebssystem die Kontrolle und führte
+ein Befehl aus, der kontrolliert den Prozessor zum Neustart gezwungen
+hat. Mit diesem unkonventionellen Trick wurde die Abkapselung in der
+Informatik salonfähig gemacht.
+*** Cloud-Functions
+Im Laufe der Zeit waren vollständige Betriebssysteme nicht mehr genug.
+Man wollte kleinere Einheiten, die sich einfacher verwalten liessen.
+Aus diesem Verlangen heraus entstanden =Docker= und ähnliche
+Container-Systeme, die auch heute noch überall zu finden sind. In der
+Fortführung des dauerhaften Trends der Verkapselung und Isolierung
+ging man aber noch einen Schritt weiter:\\
+Anstelle der isolierten Betriebssysteme oder Container ist es auch
+möglich, einzelne Funktionen anzubieten. Natürlich haben diese nicht
+den Funktionsumfang und die Möglichkeiten eines vollständigen
+Webservers oder Containers, aber =Google= und andere Cloud-Anbieter
+erkannten, dass ein Grossteil der einfachen Webserver und API's
+ähnliche Funktionen übernahm. Im Falle von =Google= wurde daraufhin ein
+neues System entwickelt, welches die eigene Programmiersprache =Golang=
+mit den eigenen Datenbanksystemen wie =Firestore= verband und es Nutzern
+erlaubten, einzelne Funktionen anzubieten. Ein System welches unter
+dem Namen =Google Cloud Functions=[fn:12] bekannt ist.\\
+
+\noindent Diese kleinstmöglichen Einheiten haben verschiedene
+Vorteile:
+- Nutzer können für jeden Aufruf einzeln bezahlen, müssen also nicht
+  in kompletten Servern über ihre Kosten nachdenken.
+- Die Verwaltung von =Docker-Images= und virtuellen Maschinen fällt
+  komplett weg.
+
+\noindent Wer spezielle Ansprüche oder komplexe Systeme will, wird mit
+=Cloud Functions= nicht gut versorgt sein, aber sie ermöglichen es,
+kleine Funktionen mit dem geringstmöglichen Aufwand umzusetzen.
+** TODO Präsentation
+* Konzept
+Nachdem nun die zentralen Probleme festgehalten und einige der
+aktuellen Bemühungen genauer angeschaut und verglichen wurden, müssen
+die Ziele und Prinzipien für =Engine: Orion= in ein nutzbares System
+umgesetzt werden.\\
+* Demonstration
+Im nächsten Kapitel sollen die einzelnen Komponenten und Programme
+dank welchen =Engine: Orion= funktioniert, genau erklärt werden. Da das
+ganze System aber ein komplexes Zusammenspiel verschiedener Programme,
+Programmiersprachen und Geräten benötigt, muss als erstes ein grobes
+Verständnis über das System als Ganzes Vorhanden sein.\\
+** Daten
+** Entwickler
+** TODO Admins?
+** Nutzer
+* Komponenten
+In diesem Abschnitt sollen die Fähigkeiten und Leistung jedes
+einzelnen Programms in =Engine: Orion= behandelt werden. Dabei geht es
+aber weniger um ihr Zusammenspiel und ihre Rolle im grossen Ganzen.
+Stattdessen soll der Aufbau und die Funktionalität der Komponenten als
+unabhängige Programme besprochen werden.\\
+
+\noindent Es kann hilfreich sein, die obige Anschauung des Systems aus
+der Perspektive einer Chat-Nachricht zu verwenden. Die Abschnitte hier
+sind allerdings nicht in dieser Reihenfolge, da die besprochene
+Chat-Applikation lediglich eine potentielle Anwendung darstellt und
+=Engine: Orion= mit Modularität und Erweiterbarkeit als Priorität
+entwickelt wurden. In den folgenden Abschnitten soll es aber um Code
+und Mechanismen der Programme gehen. Zwar wird alles möglichst von
+Grund auf erklärt, allerdings wird gewisse technische Vorkenntnisse
+als Grundlage angenommen.
+* Auswertung
+Nachdem nun =Engine: Orion= sowohl technisch, als auch praktisch erklärt
+wurde, müssen der tatsächliche Nutzen und die Einsatzmöglichkeiten
+besprochen werden.
+* Ausblick
+Was auch immer mit diesem Projekt noch geschehen mag, Potential hat es
+auf jeden Fall genug. Die möglichen Verbesserungen, Erweiterungen und
+Optimierungen sind nahezu unbegrenzt. In den nächsten Abschnitten
+sollen einige der nächsten Schritte besprochen werden, wobei die
+Realisierbarkeit immer im Blick behalten werden muss.\\
+
+\noindent Dazu ist es wichtig, die Ziele und Prinzipien hinter =Engine:
+Orion= im Kopf zu behalten: Während andere versuchen, kommerzielle
+Lösungen zu entwickeln und diese für möglichst viele Nutzer möglichst
+einfach anzubieten, soll mit =Engine: Orion= etwas anderes erreicht
+werden. Verschiedene Probleme und nötige Veränderungen wurden bereits
+angesprochen. Anstatt diesen Wandel aber alleine zu bringen, versucht
+=Engine: Orion= ein Schritt in einer langen, technischen Revolution hin
+zu grundlegend neuer Infrastruktur zu sein. Mit dem Bewusstsein für
+dieses Ziel sollen nun die nächsten Schritte behandelt und später auch
+umgesetzt werden.
+** TODO DNS (IPNS insp.)
+** TODO Freeloaders (bittorrent) / Balance
+In einem System ohne klare Rollen oder genauer: in einem System, in
+dem jedes Mitglied gleichwertig ist und alle möglichen Rollen
+gleichzeitig einnimmt, braucht es einen Mechanismus, der Nutzer
+belohnt, die mehr Arbeit übernehmen und mehr für das Netzwerk als
+Ganzes beitragen.\\
+
+\noindent Grundsätzlich gibt es zwei Möglichkeiten, um solche
+unbelohnte Arbeit zu vermeiden:
+- Man kann dafür sorgen, dass jedes Mitglied ungefähr gleichmässig
+  ausgelastet ist. Dafür muss beim Weiterleiten jeder Nachricht in
+  Betracht gezogen werden, wie viel ein bestimmtes Mitglied in letzter
+  Zeit ausgelastet war, um dementsprechend den Weg der Nachricht
+  anzupassen. Dies führt zwar dazu, dass jedes Mitglied mehr oder
+  weniger gleich viel oder zumindest proportional gleich viel Daten
+  verarbeitet, aber es führt zu einem weniger effizienten System, da
+  Nachrichten in bestimmten Situationen nicht den direkten Weg nehmen.
+- Mit einem Währungs- oder Punktesystem wäre es möglich, Mitglieder
+  direkt dafür zu belohnen, wenn sie mehr Arbeit übernehmen. Innerhalb
+  dieser Idee gibt es noch zwei Unterkategorien, die unterschieden
+  werden müssen:
+  - Ein lokales Punktesystem, welches jedem Mitglied im Routingtable
+    eines einzelnen Mitglieds einen Punktestand zuweist. Der
+    Punktestand wird mit eingehenden Nachrichten angepasst, zieht aber
+    auch Laufzeit und Netzwerk-Status in Betracht.
+  - Ein globales Währungssystem, vergleichbar mit einer
+    Cryptocurrency. Das erfolgreiche Verarbeiten und Weiterleiten von
+    Nachrichten würde in einem solchen System also mit Guthaben
+    belohnt. Hierbei müsste man entscheiden, ob der Vorrat an dieser
+    Währung limitiert ist, die Belohnung also durch die Mitglieder
+    ausgezahlt wird, an die die Nachricht ausgeliefert werden soll,
+    oder ob der Vorrat ähnlich wie bei =Bitcoins= unendlich (oder nahezu
+    unendlich) ist, und für jede Nachricht, für jeden Eintrag neues
+    /Geld/ gedruckt wird. Da nicht alle Mitglieder in einem verteilten
+    Nachrichten und Datensystem gleich viel Last auf das System
+    bringen, würde eine solche Währung einen Grund schaffen, dem
+    System zu helfen und Nachrichten zu verarbeiten.
+\includepdf[pages=-]{unterschrieben.pdf}
+* Footnotes
+
+[fn:14] Die Verwendung der männlichen Form soll im gesamten Dokument
+für den generischen Maskulin stehen. 
+
+[fn:13] Wikipedia: Lisp & Lisp Ähnliche Programmiersprachen:
+https://de.wikipedia.org/wiki/Lisp, heruntergeladen am: 6.06.2020.
+
+[fn:12] Google: Cloud Functions: https://cloud.google.com/functions,
+heruntergeladen am: 6.06.2020.
+
+[fn:11] BitTorrent: Mainline DHT:
+https://www.cs.helsinki.fi/u/lxwang/publications/P2P2013_13.pdf,
+heruntergeladen am: 4.06.2020.
+
+[fn:10] CJDNS - Whitepaper:
+https://github.com/cjdelisle/cjdns/blob/master/doc/Whitepaper.md,
+heruntergeladen am: 3.06.2020.
+
+[fn:9] Kademlia: Whitepaper:
+https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf,
+heruntergeladen am: 30.05.2020.
+
+[fn:8] Einführung in /Distributed Systems/ mit Elixir, Jakob Klemm:
+https://orion.jeykey.net/distributed_systems.pdf, heruntergeladen am: 2.06.2020. 
+
+[fn:7] Engine: Orion - Shadow: https://github.com/EngineOrion/shadow,
+heruntergeladen am: 9.06.2020.
+
+[fn:6] Engine: Orion - Websocket-OR:
+https://github.com/EngineOrion/websocket-or, heruntergeladen am:
+9.06.2020.
+
+[fn:5] Engine: Orion - Hunter: https://github.com/EngineOrion/hunter,
+heruntergeladen am: 9.06.2020.
+
+[fn:4] Engine: Orion - Container: https://github.com/EngineOrion/container
+heruntergeladen am: 9.06.2020.
+
+[fn:2] Churn in Kademlia Systemen:
+https://people.inf.ethz.ch/troscoe/pubs/usenix-cr.pdf, heruntergeladen
+am: 30.05.2020.
+
+[fn:1] Engine: Orion - GitHub: https://github.com/EngineOrion,
+heruntergeladen am: 9.06.2020.
+
+[fn:ts] Tom Scott: Single Point of Failure
+https://youtu.be/y4GB_NDU43Q, heruntergeladen am 24.05.2020.
+
+[fn:3] Wikipedia: Kademlia [[https://en.wikipedia.org/wiki/Kademlia]],
+heruntergeladen am: 30.05.2020.

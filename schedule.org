@@ -1,0 +1,40 @@
+#+TITLE: Zeitplan
+* Umfang
+** Actaeon
+(Vorher Shadow, neuer Name um Unterscheidung einfacher zu machen.)
+Funktionen (Zwingend):
+- Direkte Kommunikation über TCP oder UDP zwischen zwei Geräten.
+- Einfaches /Signaling/ und automatische Verbindungen.
+- Dezentrales Nachrichten Routen (Kademlia).
+- =PubSub= Funktionen für gezieltes Nachrichten Senden und Empfanden.
+Funktionen (Erweitert):
+- =NAT= (Firewalls und geschützte Netzwerke) Umgehung.
+- Datenspeicher / Datenbank Funktionen.
+** Anwendungen
+Um das Potential von dezentralen Daten- und Nachrichten Systemen
+besser präsentieren zu können, sollen verschiedene Anwendungen
+entwickelt werden. Diese sollen neben den technischen Besonderheiten
+auch besonders gut zu erklären und vorführen sein. Insgesamt stehen
+fünf Anwendungen zur Auswahl, es ist aber unwahrscheinlich, dass alle
+umgesetzt werden können.
+*** Arrow
+(Vorher NET-Script, neuer Name um Unterscheidung einfacher zu machen.)
+Funktionen:
+- Ausführen von Befehlen und einfachen Programmen.
+- Anschluss ans Datensystem zum Verarbeiten von Nachrichten.
+- Integration mit externen Programmen über ein bekanntes Interface,
+  z.B. =Linux Command Line=.
+*** Orion
+Mit einen 3D Multiplayer Game soll nicht nur gezeigt werden, dass
+dezentralisierte Technologien breit einsetzbar sind, sondern dass kein
+besonderes Wissen oder eine /technische/ Begabung benötigt wird um von
+ihnen zu profitieren. Ohne die Verwendung einer aufwendigen
+Game-Engine soll gleichzeitig gezeigt (hoffentlich) gezeigt werden,
+mit wie wenig Code Multiplayer Funktionen hinzugefügt werden können.
+*** Chat
+Ähnlich wie bereits in der ersten Version eignet sich ein Chat sehr
+gut um die Fähigkeiten eines dezentralisierten Systems optimal zeigen
+zu können.
+*** Contact Tracer
+*** collab.el
+
