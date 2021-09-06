@@ -1,6 +1,52 @@
 #+TITLE: Projekt Orion
 #+AUTHOR: Jakob Klemm, Dominik Keller
+#+LATEX_CLASS: report
+#+IMAGE: ksba
+#+LANGUAGE: de
+#+OPTIONS: toc:t title:t date:nil
+#+LATEX_HEADER: \usepackage[utf8]{inputenc}
+#+LATEX_HEADER: \usepackage[dvipsnames]{xcolor}
+#+LATEX_HEADER: \usepackage{tikz}
+#+LATEX_HEADER: \usepackage{pdfpages}
+#+LATEX_HEADER: \usepackage[]{babel}
+#+LATEX_HEADER: \usepackage{listings}
+#+LATEX_HEADER: \usepackage[]{babel}
+#+LATEX_HEADER: \usepackage[dvipsnames]{xcolor}
+#+LATEX_HEADER: \usepackage{courier}
+#+LATEX_HEADER: \usepackage{listings}
+#+LATEX_HEADER: \usepackage{textcomp}
+#+LATEX_HEADER: \usepackage{gensymb}
+\newpage
+
 #+BEGIN_ABSTRACT
 TODO: Abstract
 #+END_ABSTRACT
-* 
+* Vision
+** Grenzen
+** Inhalte
+** Routing
+** Zentralisierung
+** Orion
+* Projekte
+** Kademlia
+** CJDNS
+** IPFS
+** Tox
+* Konzept
+* Prozess
+** Modularität
+** Präsentation
+* Actaeon
+** Prozesse
+** Daten
+** Entwickler
+** Nutzer
+* Orion
+** Chat
+** Game
+** Covid
+** Arrow
+** collab.el
+* Ausblick
+** Verifizierung
+** Balance
