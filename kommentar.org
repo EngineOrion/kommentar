@@ -18,9 +18,53 @@
 #+LATEX_HEADER: \usepackage{gensymb}
 \newpage
 
+*Vorwort*\\
+Die schriftliche Komponente der Maturaarbeit =Projekt Orion= besteht aus
+drei verschiedenen Teilen. Da die behandelten Themen äusserst komplex
+und umfangreich sind, verlangen verschiedene Abschnitte der Arbeit
+verschiedenes Vorwissen und einen verschiedenen Zeitaufwand. Deswegen
+wurde die schriftliche Komponente in drei Subkomponenten aufgeteilt,
+wobei sie nach technischem Detailgrad sortiert sind. Wer nur ein
+oberflächliches Verständnis über die Arbeiten und eine Analyse des
+Umfelds will, ohne dabei zu technisch zu werden, muss nicht über den
+Umfang dieses Dokuments hinaus. Aber für vollständigen Einblick in die
+Errungenschaften und Konzepte muss mit einem grösseren Aufwand
+gerechnet werden.
+- Schriftlicher Kommentar: In diesem Dokument hier findet sich eine
+  klassische Besprechung der Arbeit. Begonnen mit einer Zielsetzung
+  und Besprechung verschiedener Projekte, bis zur Analyse des Produkts
+  und einem Ausblick in die Zukunft gibt dieses Dokument einen guten,
+  aber oberflächlichen Einblick in das =Projekt Orion=. Natürlich wird
+  besonders bei der Analyse der existierenden Projekten und Darlegung
+  des Konzepts gewisses technisches Know-How benötigt, aber es wurde
+  versucht, alle Fachbegriffe zu umschreiben oder zu erklären. Wer nur
+  über die Vision und den aktuellen Stand wissen will muss nicht über
+  dieses Dokument hinaus, aber verschiedene Konzepte und nahezu die
+  gesamte technische Umsetzung befinden sind nicht in diesem Dokument.
+- Dokumentation: In dieser alleinstehenden Dokumentation, welche im
+  Detailgrad zwischen dem schriftlichen Kommentar und der
+  Code-Dokumentation steht, werden die Konzepte und Ideen besprochen.
+  Wer die Entstehung und aktuelle Form der Komponenten genauer
+  verstehen will, oder wer von den umgesetzten Funktionen profitieren
+  will, sollte die Dokumentation durcharbeiten. Das Dokument ist eher
+  umfangreich, es kann aber auch gut als eine Art Nachschlagewerk
+  verwendet werden.
+- Code: Neben der Dokumentation des Projekts und der Konzepte,
+  existiert eine weitere Form der Dokumentation. Nahezu jede Funktion,
+  jedes Modul und jedes Objekt über die verschiedenen /Crates/ sind
+  dokumentiert. Diese Dokumentationen lassen sich nicht in einem
+  klassisch strukturierten Dokument finden. Stattdessen ist die
+  Code-Dokumentation online über automatisch generierte
+  Rust-Dokumentation zu finden. Die Seiten mögen anfangs etwas
+  unübersichtlich wirken, wer aber den Code von =Projekt Orion=
+  verwenden will wird sich dort gut zurecht finden.
+
+\newpage  
 #+BEGIN_ABSTRACT
 TODO: Abstract
 #+END_ABSTRACT
+\newpage
+
 * Vision
 ** Grenzen
 ** Inhalte
@@ -36,17 +80,7 @@ TODO: Abstract
 * Prozess
 ** Modularität
 ** Präsentation
-* Actaeon
-** Prozesse
-** Daten
-** Entwickler
-** Nutzer
-* Orion
-** Chat
-** Game
-** Covid
-** Arrow
-** collab.el
+* Produkt
 * Ausblick
 ** Verifizierung
 ** Balance
