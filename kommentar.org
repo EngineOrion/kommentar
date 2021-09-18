@@ -76,7 +76,20 @@ TODO: Abstract
 ** CJDNS
 ** IPFS
 ** Tox
+** Games
+** Lisp
+** Modularität
 * Konzept
+Tatsächlich wird hier hauptsächlich der zweite Teil einer grösseren
+Arbeit beschrieben. Bereits im Abschnitt *Modularität* wurde der erste
+Teil dieser Arbeit analysiert. Aus den Erfahrungen und Ideen während
+der ersten Entwicklungsphase wurden in dieses, verbesserte Konzept
+eingearbeitet. Eine der zentralsten Feststellungen ist die Frage der
+Komplexität:
+- In der Welt der angewandten Wissenschaften geniesst die Informatik
+  einen besonderen Platz. Während die Ingeneurswissenschaften oftmals
+  mit der Informatik verglichen werden, so gibt es doch eine zentrale
+  Unterscheidung: 
 * Prozess
 ** Modularität
 ** Präsentation
