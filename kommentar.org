@@ -76,6 +76,74 @@ TODO: Abstract
 ** CJDNS
 ** IPFS
 ** Tox
+
+Im Sommer 2013 veröffentlichte Edward Snowden schockierende
+Geheimnisse über massive Spionage Prgogramme der NSA, mit welchen
+nahezu aller digitaler Verkehr, ohne Rücksicht auf Datenschutz oder
+Privatsphären mitgelesen, ausgewertet und gespeichert wurde. Nahezu
+jede Person mit war betroffen und das genaue Ausmass ist bis heute
+noch schwer greiffbar. Vielen wurde aber klar, dass sichere,
+verschlüsselte Kommunikation nicht mehr nur etwas für Kriminelle und
+/Nerds/ war, sondern dass jeder Zugang zu verschlüsselter, sicherer und
+dezentraler Kommunikation haben sollte. In einem Thread auf 4chan
+kamen wurden viele dieser Bedenken gesammelt und es kam die Idee auf,
+selbst eine Alternative zu herrkömmlichen Chat Programmen wie Skype zu
+entwickeln. Aus dieser Initiative heraus entstand =Tox=, wobei die Namen
+vieler der ursprünglichen Entwickler bis heute unbekannt sind. Damals
+war das Ziel die Entwicklung einer sicheren Alternative zu Skype zu
+entwicklen, allerdings hat sich der Umfang des Projekts inzwischen
+ausgeweitet. Im Zentrum der Arbeiten steht das =Tox Protocol=, welches
+dann von verschiedenen, unabhängigen Programmen umgesetzt wird. Zwar
+ist Chat weiterhin eine zentrale Funktion, es wird aber auch Video-
+und Audiokommunikation sowie Filesharing gearbeitet.
+
+Basierend auf der bekannten =NaCl=-Bibliothek wird die gesamte
+Kommunikation über das =Tox Protocol= zwingend End- zu Endverschlüsselt.
+Intern wird ein dezentrales Routing System basierend auf Kademila
+verwendet, mit welchem Kontakt zwischen Nutzern (Freunden) aufgebaut
+wird. Während im Kademila Whitepaper Addressen mit einer Länge von 20
+Bytes definiert werden, nutzt =Tox= 32 Bytes. Dies vereinfacht die
+Verschlüsselung stark, da =NaCl= Schlüssel verwendet, welche ebenfalls
+32 Bytes lang sind. Nebst der eingesparten Verhandlung von Schlüsseln
+und der zusätzlichen Kommunikation bindet diese Idee die
+Verschlüsselung direkt stärker in das Routing System ein, denn es
+werden keine zusätzlichen Informationen zum Verschlüsseln einer
+Nachricht gebraucht und sie kann direkt mit der Addresse des Ziels
+verschlüsselt werden.
+
+Es ist allerdings wichtig festzustellen, dass =Tox= Kademila lediglich
+als Router verwendet. Kontakt zwischen zwei Nutzern wird komplett
+dezentral hergestellt, sobald diese sich allerdings gefunden haben
+wechseln zu einer direkten Kommunikation über UDP. Zwar erlaubt diese
+zweiteilung der Kommunikation schnellen Datenverkehr sobald sich zwei
+Nutzer gefunden haben (so ist beispielsweise Video- und
+Audiokommunikation möglich), es kommen aber auch einige neue Probleme
+auf:
+- Anders als beispielsweise im Darknet über das Onion-Routing von
+  Aussen klar erkennbar, mit wem jemand kommuniziert. Natürlich ist
+  der Inhalt weiterhin verschlüsselt, aber ein solches System setzt in
+  erster Linie auf Sicherheit und Geschwindigkeit und nicht auf
+  Anonymität.
+- Auch muss man bedenken, dass nicht jedes Gerät im Internet in der
+  Lage ist direkte Verbindungen mit jedem anderen Gerät aufzubauen.
+  Besonders Firewalls können schnell zu Problemen führen. Um den
+  Aufwand für die Nutzer zu minimieren wird =UDP hole punching=
+  verwendet, allerdings existieren auch dafür gewisse Kriterien und
+  Probeleme.
+
+Das =Tox Protocol= bietet eine einheitliche Spezifikation mit der eine
+grosse Auswahl an Problemen gelöst werden können. Wer eine sichere,
+dezentrale Alternative zu Whatsapp sucht könnte an =Tox= gefallen
+finden. Seit einigen Jahren gibt es aber Bedenken über die Sicherheit
+und aktuelle Richtung des Projekts, sowie Berichte von internen
+Konflikten, besonders im Zusammenhang mit Spendengeldern.
+
+/Quellen:/
+- https://nacl.cr.yp.to/
+- https://tox.chat/
+- https://toktok.ltd/spec.html
+- https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf
+- https://en.wikipedia.org/wiki/Hole_punching_(networking)
 ** Games
 ** Lisp
 ** Modularität
