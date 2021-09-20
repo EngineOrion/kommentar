@@ -73,7 +73,209 @@ TODO: Abstract
 ** Orion
 * Projekte
 ** Kademlia
-** CJDNS
+Wie geht man also gegen die totale Abhängikeit von Internetanbietern
+und zentralen Routern vor?\\
+Man kann ja nicht einfach seine eigenen Router aufsetzen und einen
+alternativen Dienst anbieten. Neben den technischen Schwierigkeiten
+würde ein solcher Schritt auch überhaupt nichts das eigentliche
+Problem bekämpfen.\\
+
+\noindent Der Trick, der bei Systemen wie =Kademlia= verwendet wird, ist
+es, Router vollständig zu eliminieren. Dies ist möglich, indem jedes
+Mitglied des Netzwerks neben seinen normalen Funktionen gleichzeitig
+auch noch als Router agiert. Strenggenommen werden in =Kademlia= Router
+also nicht wirklich eliminiert, lediglich zentrale Router fallen
+weg.\\
+
+\noindent In einem früheren Abschnitt wurden die Probleme der
+/Zentralrouter/ bereits angesprochen. Wenn jetzt aber jedes Mitglied in
+einem Netzwerk plötzlich als Router agiert und es keine zentrale
+Instanz gibt, träfe die Problematik der /Zentralrouter/ plötzlich auf
+alle Server zu. Genau da kommt =Kademlia= ins Spiel. Aber was genau ist
+=Kademlia= eigentlich?\\
+
+\noindent Laut den Erfindern, /Petar Maymounkov/ und /David Mazières/,
+ist es
+#+begin_center
+ein Peer-to-peer Nachrichten System basierend auf XOR-Metrik.[fn:9]
+#+end_center
+Was genau bedeutet das und wie lässt sich eine =XOR=-Metrik für
+verteilte Datensysteme einsetzen?\\
+
+\noindent Da die einzelnen Server nicht in der Lage sind,
+Informationen über das komplette Netzwerk zu speichern oder zu
+verarbeiten, funktionieren =Kademlia=-Systeme grundlegend anders.
+Anstelle der hierarchischen Anordnung der Router ist jedes Mitglied
+eines Systems gleichgestellt. dabei kümmert sich jedes Mitglied auch
+nicht um das komplette System, sondern nur um sein direktes Umfeld.
+Während dies für kleinere Systeme gut funktioniert und vergleichbare
+Geschwindigkeiten liefert, skaliert es nicht so einfach für grosse
+Systeme. Genau dafür gibt es die =XOR=-Metrik.
+*** Distanz:
+Die =XOR=-Funktion, die in der Informatik an den verschiedensten Orten
+auftaucht, wird verwendet, um die Distanz zwischen zwei Zahlen zu
+berechnen. Die Zahlen repräsentieren dabei Mitglieder im Netzwerk und
+sind je nach Variante im Bereich \(0..2^{160}\)(/20 Bytes/) oder
+\(0..2^{256}\)(/32 Bytes/). Mit einem so grossen Bereich lässt sich auch
+das Problem der limitierten =IP-Adressen= lösen. Auch wenn es kein
+tatsächlich unlimitiertes System ist, so gibt es doch mehr als genug
+Adressen.\\
+
+\noindent Wenn mit =XOR=-Funktionen einfach die Distanz zwischen zwei
+Zahlen berechnet wird, stellt sich die Frage, wieso nicht einfach die
+Differenz verwendet wird. Um dies zu beantworten, muss man sich die
+Eigenschaften der =XOR=-Funktion etwas genauer anschauen:
+
+1. \(xor(x, x) = 0\): Das Mitglied mit seiner eigenen Adresse ist zu
+   sich selbst am nächsten. Mitglieder werden hier als Namen für
+   Server in einem =Kademlia=-System verwendet.
+2. \(xor(x, y) > 0\) wenn \(x \neq y\): Die Funktion produziert nie
+   negative Zahlen und nur mit zwei identischen Parametern kann man
+   \(0\) erhalten.
+3. \(xor(x, y) = xor(y, x)\): Die Reihenfolge der Parameter spielt
+   keine Rolle.
+4. \(xor(x, z) \leq xor(x, y) + xor(y, z)\): Die direkte Distanz
+   zwischen zwei Punkten ist am kürzesten oder gleich kurz wie die
+   Distanz mit einem zusätzlichen Schritt dazwischen, also einem
+   weiteren Sprung im Netzwerk.
+5. Für ein gegebenes \(x\) und eine Distanz \(l\) gibt es nur genau
+   ein \(y\) für das \(xor(x, y) = l\) gilt.
+
+\noindent Aber wieso genau funktioniert dies? Wieso kann man =XOR=, eine
+Funktion zur Berechnung der Bit-Unterschiede in zwei Binärzahlen,
+verwenden, um die Distanz zwischen zwei Punkten in einem verteilten
+Datensystem zu berechnen?\\
+
+\noindent Um dies zu verstehen, hilft es, sich das System als
+umgekehrten Baum vorzustellen. Untergeordnet zum zentralen Punkt zu
+oberst stehen alle Mitglieder im System. Mit jeder weiteren Abzweigung
+zweier Teilbäume halbiert sich die Anzahl. Man wählt am einfachsten
+zwei Abzweigungen pro Knoten, da sich damit die Werte direkt als
+Binärzahlen darstellen lassen, wobei jeder Knotenpunkt einfach eine
+Stelle in der langen Kette aus \(0\) oder \(1\) darstellt. Der ganze
+Baum sieht dann wie folgt aus[fn:3]:
+
+#+CAPTION: Beispielhafte Darstellung eines einfachen Kademlia-Systems
+#+ATTR_LATEX: :float nil
+[[file:tree.png]]
+
+\noindent Mit dieser Sicht auf das System beschreibt die =XOR=-Funktion
+die Anzahl der unterschiedlichen Abbiegungen im Baum und somit die
+Distanz. Zwar mag es auf den ersten Blick nicht intuitiv wirken, wieso
+man =XOR= anstatt einfach der Differenz verwendet, allerdings
+funktioniert die Funktion mit Binärzahlen in einem solchen Baum
+einiges besser.
+*** Routing-Table
+In einem =Kademlia=-System hat jedes Mitglied eine gewisse Anzahl
+anderer Mitglieder, mit denen es sich verbunden hat. Da =Kademlia= ein
+sehr umfangreiches, kompliziertes Protokoll und System beschreibt,
+sollen hier nur einige zentrale Funktionen besprochen werden, die für
+diesen ersten Prototypen von =Engine: Orion= relevant sind. Besonders
+beim =Routing Table= lassen sich einige Abschnitte weglassen, welche
+zwar für die Optimierung und Skalierung eines Systems wichtig,
+allerdings für das Analysieren eines einfachen, kleinen Systems wie
+=Engine: Orion= irrelevant sind.\\
+
+\noindent Einfach formuliert speichert der =Routing Table= die
+verbundenen Mitglieder. Eine eingehende Nachricht wird dann mithilfe
+dieser Liste, sowie der =XOR=-Metrik ans richtige Ziel geschickt. Um das
+System zu optimieren und die Anzahl der benötigten Sprünge klein zu
+halten, wird ein spezielles System verwendet, um zu entscheiden,
+welche Mitglieder im =Routing-Table= gespeichert werden sollen:
+
+1. Sehr nahe an sich selbst (in der obigen Darstellung also: wenige
+   Sprünge im Baum) werden alle Mitglieder gespeichert.
+2. Je weiter weg sich die Mitglieder befinden, desto weniger werden
+   gespeichert.
+
+\noindent Die optimale Anzahl der gespeicherten Mitglieder hängt von
+den Zielen und Ansprüchen an das System ab. Grundlegend muss man die
+Frage beantworten, mit wie vielen Unterbäumen Verbindungen gehalten
+werden sollen. Zwar mag dies etwas abstrakt wirken, es lässt sich aber
+mit dem eben eingeführten Modell eines umgekehrten Baumes gut
+erklären:
+- In der obersten Ebene trennt sich der Baum in zwei vollständig
+  getrennte Teile, was sich mit jeder weiteren Ebene wiederholt.
+- Die einzige Möglichkeit vom einen /Ende/ des Baums zum anderen zu
+  kommen, ist über den obersten Knoten. Um also in die andere Hälfte
+  zu kommen, braucht man mindestens eine Verbindungsstelle in der
+  anderen Hälfte.
+- Deshalb braucht ein =Routing-Table= nicht nur kurze Verbindungen zu
+  nahen Punkten, sondern auch einige wenige Verbindungen zu
+  Mitgliedern in der anderen Hälfte.
+- Mit nur einer weit entfernten Adresse hat man eine Verbindung in
+  /eigene/ und die /andere/ Hälfte. Hat man zwei solche Verbindungen auf
+  die andere Seite hat man schon Verbindungen in jeden Viertel des
+  Baumes.
+- Man muss also entscheiden, wie fein man die andere Hälfte aufteilen
+  will. (Eine genaue Unterteilung bedeutet wenige Sprünge aber grosse
+  =Routing-Tables=, eine grobe Unterteilung genau das Umgekehrte).
+
+\noindent Zwar hat ein vollständiges =Kademlia=-System noch komplexere
+Elemente, wie =k-Buckets=, welche den =Routing-Table= optimieren,
+allerdings sind diese für die grundlegende Funktionsweise des Systems
+irrelevant.\\
+
+\noindent Die dynamische Regulation des =Routing-Tables= muss allerdings
+noch erwähnt werden:
+- Sobald die definierte Maximalgrösse erreicht ist, werden keine neuen
+  Verbindungen akzeptiert.
+- Zwar können existierende Einträge durch Neue ersetzt werden,
+  allerdings werden dabei nicht alte, sondern inaktive Einträge
+  entfernt. Für ein =Kademlia=-System werden also auch Mechanismen
+  benötigt, um die Zustände aller Verbindungen periodisch zu
+  überprüfen.
+** BitTorrent
+    Dezentralisierung hat viele Vorteile und muss langfristig
+    flächendeckend eingesetzt werden. Aktuell sind die meisten
+    Industrien und Produkte noch nicht so weit. Trotzdem gibt es
+    einige Anwendungen und Gruppen bei denen solche Systeme bereits
+    seit Jahren Verwendung finden.\\
+
+    \noindent Beispielsweise im Zusammenhang mit /(mehr oder weniger
+    legalen)/ Verbreiten von Materialien wie Filmen oder Musik wird
+    eines der grössten global verteilten Systeme eingesetzt. Natürlich
+    gibt es hunderte von verschiedenen Programmen, Ideen und
+    Umsetzungen, wobei die meisten Nachfolger von =Napster= sind.\\
+
+    \noindent Im preisgekrönten Film /The social network/ erhält man
+    Einblick in den Lebensstil von =Sean Parker=, einem der Gründer von
+    =Napster=. Es mag überraschen, wie jemand wie Parker, der nur wenige
+    Jahre zuvor mit =Napster= die komplette Musikindustrie in Unruhe
+    gebracht hatte, eine so zentrale Rolle in =Facebook=, einem der
+    zentralisiertesten Megaunternehmen der Welt, einnehmen konnte.\\
+
+    \noindent Auch wenn es noch nicht /vollständig/ dezentralisiert ist,
+    erlaubte es =Napster= Nutzern, Musik über ein automatisiertes System
+    mit anderen Nutzern zu teilen und neue Titel direkt von den
+    Geräten anderer Nutzer herunterzuladen. Dabei gab es allerdings
+    immer noch einen zentralen Server, der die Titel sortierte und
+    indizierte. \\
+    =Napster= musste am Ende abgeschaltet werden, nachdem die Klagen der
+    Musikindustrie zu belastend wurden. Auch wenn das Produkt
+    abgeschaltet wurde, liess sich nichts mehr gegen die Idee
+    unternehmen.\\
+
+    \noindent Über viele Iterationen und Generationen hinweg wurden
+    die verteilten Systeme immer weiter verbessert, jegliche zentrale
+    Server entfernt und in die Hände immer mehr Nutzer gebracht. Heute
+    läuft ein Grossteil des Austauschs über =BitTorrent=.
+
+    \noindent =BitTorrent= baut auf der gleichen grundlegenden Idee wie
+    =Napster= auf: Nutzer stellen ihren eigenen Katalog an Medien zur
+    Verfügung und können Inhalte von allen anderen Mitgliedern im
+    System herunterladen. Anders als =Napster= gibt es bei =BitTorrent=
+    keine zentrale Komponente, stattdessen findet selbst das
+    Indizieren und Finden von Inhalten dezentralisiert statt[fn:11].
+    Dafür wird über das =Kademlia=-System aktiv bekannt gegeben, wer
+    welche Inhalte zur Verfügung stellt, wobei einzelne Mitglieder
+    speichern können, wer die gleichen Inhalte anbietet. Neben
+    Dezentralisierung und Sicherheit lassen sich über =BitTorrent=
+    tatsächlich gute Geschwindigkeiten erreichen, da sich Inhalte von
+    mehreren Anbietern gleichzeitig herunterladen lassen. Da es sich
+    bei =BitTorrent= eigentlich um ein grosses Dateisystem handelt,
+    lassen sich direkt die =SHA1=-Hashwerte der Inhalte als
+    =Kademlia=-Adressen verwenden.
 ** IPFS
 ** Tox
 

@@ -554,33 +554,31 @@ erklären:
     lassen sich direkt die =SHA1=-Hashwerte der Inhalte als
     =Kademlia=-Adressen verwenden.
 *** CJDNS
-    Im =CJDNS=-Whitepaper[fn:10] werden viele der gleichen Probleme
-    erwähnt, wie auch für =Engine: Orion= angesprochen wurden. Die
-    grundlegenden Ideen und Lösungsansätze, die besprochen werden,
-    ähneln in vielerlei Hinsicht den Ideen und Prinzipien hinter
-    =Engine: Orion=. =CJDNS=, das sich selbst als
+Im =CJDNS=-Whitepaper[fn:10] werden viele der gleichen Probleme erwähnt,
+wie auch für =Engine: Orion= angesprochen wurden. Die grundlegenden
+Ideen und Lösungsansätze, die besprochen werden, ähneln in vielerlei
+Hinsicht den Ideen und Prinzipien hinter =Engine: Orion=. =CJDNS=, das
+sich selbst als
     #+begin_center
     an encrypted IPv6 network using public-key cryptography for
     address allocation and a distributed hash table for routing
     #+end_center
-    beschreibt, ist ein beliebtes /open-source/ Projekt, mit mehr als
-    \(180\) Mitentwicklern und Tausenden von Nutzern. Es basiert
-    ebenfalls auf =Kademlia= und ähnlich wie bei =BitTorrent= wird grosser
-    Wert auf Sicherheit und Verschlüsselung gelegt.\\
+beschreibt, ist ein beliebtes /open-source/ Projekt, mit mehr als
+\(180\) Mitentwicklern und Tausenden von Nutzern. Es basiert ebenfalls
+auf =Kademlia= und ähnlich wie bei =BitTorrent= wird grosser Wert auf
+Sicherheit und Verschlüsselung gelegt.\\
 
-    \noindent Wer den Code von =CJDNS= etwas genauer anschaut
-    realisiert schnell, welche grundlegenderen Ziele =CJDNS= verfolgt.
-    Tatsächlich soll mit =CJDNS= langfristig ein physikalisch
-    unabhängiges Netzwerk entstehen. Das Whitepaper redet von der
-    Freiheit der Nutzer, eigene Kabel und eigene Infrastruktur zu
-    verlegen.\\
+\noindent Wer den Code von =CJDNS= etwas genauer anschaut realisiert
+schnell, welche grundlegenderen Ziele =CJDNS= verfolgt. Tatsächlich soll
+mit =CJDNS= langfristig ein physikalisch unabhängiges Netzwerk
+entstehen. Das Whitepaper redet von der Freiheit der Nutzer, eigene
+Kabel und eigene Infrastruktur zu verlegen.\\
 
-    \noindent Es mag auf manche nach digitaler Isolation und
-    Abschottung klingen, aber wer tatsächlich konsequent alle Probleme
-    von Grund auf angehen will, muss sich auch Gedanken über die
-    darunterliegende physikalische Infrastruktur machen. Dies ist
-    allerdings ein Schritt der mit =Engine: Orion= (/noch/) gemacht werden
-    soll.
+\noindent Es mag auf manche nach digitaler Isolation und Abschottung
+klingen, aber wer tatsächlich konsequent alle Probleme von Grund auf
+angehen will, muss sich auch Gedanken über die darunterliegende
+physikalische Infrastruktur machen. Dies ist allerdings ein Schritt
+der mit =Engine: Orion= (/noch/) gemacht werden soll.
 *** TODO IPFS
 ** Nachrichtenverarbeitung
 In einem nächsten Schritt muss man sich fragen, wie die Nachrichten
