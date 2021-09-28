@@ -1,6 +1,6 @@
 #+TITLE: Projekt Orion
 #+AUTHOR: Jakob Klemm, Dominik Keller
-#+LATEX_CLASS: report
+#+LATEX_CLASS: article
 #+IMAGE: ksba
 #+LANGUAGE: de
 #+OPTIONS: toc:t title:t date:nil
@@ -16,6 +16,10 @@
 #+LATEX_HEADER: \usepackage{listings}
 #+LATEX_HEADER: \usepackage{textcomp}
 #+LATEX_HEADER: \usepackage{gensymb}
+\newpage  
+#+BEGIN_ABSTRACT
+TODO: Abstract
+#+END_ABSTRACT
 \newpage
 
 *Vorwort*\\
@@ -58,11 +62,6 @@ gerechnet werden.
   Rust-Dokumentation zu finden. Die Seiten mögen anfangs etwas
   unübersichtlich wirken, wer aber den Code von =Projekt Orion=
   verwenden will wird sich dort gut zurecht finden.
-
-\newpage  
-#+BEGIN_ABSTRACT
-TODO: Abstract
-#+END_ABSTRACT
 \newpage
 
 * Vision
@@ -111,35 +110,36 @@ nicht um das komplette System, sondern nur um sein direktes Umfeld.
 Während dies für kleinere Systeme gut funktioniert und vergleichbare
 Geschwindigkeiten liefert, skaliert es nicht so einfach für grosse
 Systeme. Genau dafür gibt es die =XOR=-Metrik.
-*** Distanz:
-Die =XOR=-Funktion, die in der Informatik an den verschiedensten Orten
-auftaucht, wird verwendet, um die Distanz zwischen zwei Zahlen zu
-berechnen. Die Zahlen repräsentieren dabei Mitglieder im Netzwerk und
-sind je nach Variante im Bereich \(0..2^{160}\)(/20 Bytes/) oder
-\(0..2^{256}\)(/32 Bytes/). Mit einem so grossen Bereich lässt sich auch
-das Problem der limitierten =IP-Adressen= lösen. Auch wenn es kein
-tatsächlich unlimitiertes System ist, so gibt es doch mehr als genug
-Adressen.\\
+*** Distanz
+     Die =XOR=-Funktion, die in der Informatik an den verschiedensten
+     Orten auftaucht, wird verwendet, um die Distanz zwischen zwei
+     Zahlen zu berechnen. Die Zahlen repräsentieren dabei Mitglieder
+     im Netzwerk und sind je nach Variante im Bereich
+     \(0..2^{160}\)(/20 Bytes/) oder \(0..2^{256}\)(/32 Bytes/). Mit einem
+     so grossen Bereich lässt sich auch das Problem der limitierten
+     =IP-Adressen= lösen. Auch wenn es kein tatsächlich unlimitiertes
+     System ist, so gibt es doch mehr als genug Adressen.\\
 
-\noindent Wenn mit =XOR=-Funktionen einfach die Distanz zwischen zwei
-Zahlen berechnet wird, stellt sich die Frage, wieso nicht einfach die
-Differenz verwendet wird. Um dies zu beantworten, muss man sich die
-Eigenschaften der =XOR=-Funktion etwas genauer anschauen:
+     \noindent Wenn mit =XOR=-Funktionen einfach die Distanz zwischen
+     zwei Zahlen berechnet wird, stellt sich die Frage, wieso nicht
+     einfach die Differenz verwendet wird. Um dies zu beantworten,
+     muss man sich die Eigenschaften der =XOR=-Funktion etwas genauer
+     anschauen:
 
-1. \(xor(x, x) = 0\): Das Mitglied mit seiner eigenen Adresse ist zu
-   sich selbst am nächsten. Mitglieder werden hier als Namen für
-   Server in einem =Kademlia=-System verwendet.
-2. \(xor(x, y) > 0\) wenn \(x \neq y\): Die Funktion produziert nie
-   negative Zahlen und nur mit zwei identischen Parametern kann man
-   \(0\) erhalten.
-3. \(xor(x, y) = xor(y, x)\): Die Reihenfolge der Parameter spielt
-   keine Rolle.
-4. \(xor(x, z) \leq xor(x, y) + xor(y, z)\): Die direkte Distanz
-   zwischen zwei Punkten ist am kürzesten oder gleich kurz wie die
-   Distanz mit einem zusätzlichen Schritt dazwischen, also einem
-   weiteren Sprung im Netzwerk.
-5. Für ein gegebenes \(x\) und eine Distanz \(l\) gibt es nur genau
-   ein \(y\) für das \(xor(x, y) = l\) gilt.
+     1. \(xor(x, x) = 0\): Das Mitglied mit seiner eigenen Adresse ist
+        zu sich selbst am nächsten. Mitglieder werden hier als Namen
+        für Server in einem =Kademlia=-System verwendet. 
+     2. \(xor(x, y) > 0\) wenn \(x \neq y\): Die Funktion produziert nie
+        negative Zahlen und nur mit zwei identischen Parametern kann
+        man \(0\) erhalten.
+     3. \(xor(x, y) = xor(y, x)\): Die Reihenfolge der Parameter spielt
+        keine Rolle.
+     4. \(xor(x, z) \leq xor(x, y) + xor(y, z)\): Die direkte Distanz
+        zwischen zwei Punkten ist am kürzesten oder gleich kurz wie
+        die Distanz mit einem zusätzlichen Schritt dazwischen, also
+        einem weiteren Sprung im Netzwerk.
+     5. Für ein gegebenes \(x\) und eine Distanz \(l\) gibt es nur
+        genau ein \(y\) für das \(xor(x, y) = l\) gilt.
 
 \noindent Aber wieso genau funktioniert dies? Wieso kann man =XOR=, eine
 Funktion zur Berechnung der Bit-Unterschiede in zwei Binärzahlen,
@@ -157,7 +157,7 @@ Baum sieht dann wie folgt aus[fn:3]:
 
 #+CAPTION: Beispielhafte Darstellung eines einfachen Kademlia-Systems
 #+ATTR_LATEX: :float nil
-[[file:tree.png]]
+     [[file:tree.png]]
 
 \noindent Mit dieser Sicht auf das System beschreibt die =XOR=-Funktion
 die Anzahl der unterschiedlichen Abbiegungen im Baum und somit die
@@ -183,10 +183,10 @@ System zu optimieren und die Anzahl der benötigten Sprünge klein zu
 halten, wird ein spezielles System verwendet, um zu entscheiden,
 welche Mitglieder im =Routing-Table= gespeichert werden sollen:
 
-1. Sehr nahe an sich selbst (in der obigen Darstellung also: wenige
-   Sprünge im Baum) werden alle Mitglieder gespeichert.
-2. Je weiter weg sich die Mitglieder befinden, desto weniger werden
-   gespeichert.
+     1. Sehr nahe an sich selbst (in der obigen Darstellung also:
+        wenige Sprünge im Baum) werden alle Mitglieder gespeichert.
+     2. Je weiter weg sich die Mitglieder befinden, desto weniger
+        werden gespeichert.
 
 \noindent Die optimale Anzahl der gespeicherten Mitglieder hängt von
 den Zielen und Ansprüchen an das System ab. Grundlegend muss man die
@@ -194,37 +194,38 @@ Frage beantworten, mit wie vielen Unterbäumen Verbindungen gehalten
 werden sollen. Zwar mag dies etwas abstrakt wirken, es lässt sich aber
 mit dem eben eingeführten Modell eines umgekehrten Baumes gut
 erklären:
-- In der obersten Ebene trennt sich der Baum in zwei vollständig
-  getrennte Teile, was sich mit jeder weiteren Ebene wiederholt.
-- Die einzige Möglichkeit vom einen /Ende/ des Baums zum anderen zu
-  kommen, ist über den obersten Knoten. Um also in die andere Hälfte
-  zu kommen, braucht man mindestens eine Verbindungsstelle in der
-  anderen Hälfte.
-- Deshalb braucht ein =Routing-Table= nicht nur kurze Verbindungen zu
-  nahen Punkten, sondern auch einige wenige Verbindungen zu
-  Mitgliedern in der anderen Hälfte.
-- Mit nur einer weit entfernten Adresse hat man eine Verbindung in
-  /eigene/ und die /andere/ Hälfte. Hat man zwei solche Verbindungen auf
-  die andere Seite hat man schon Verbindungen in jeden Viertel des
-  Baumes.
-- Man muss also entscheiden, wie fein man die andere Hälfte aufteilen
-  will. (Eine genaue Unterteilung bedeutet wenige Sprünge aber grosse
-  =Routing-Tables=, eine grobe Unterteilung genau das Umgekehrte).
+     - In der obersten Ebene trennt sich der Baum in zwei vollständig
+       getrennte Teile, was sich mit jeder weiteren Ebene wiederholt.
+     - Die einzige Möglichkeit vom einen /Ende/ des Baums zum anderen
+       zu kommen, ist über den obersten Knoten. Um also in die andere
+       Hälfte zu kommen, braucht man mindestens eine Verbindungsstelle
+       in der anderen Hälfte.
+     - Deshalb braucht ein =Routing-Table= nicht nur kurze
+       Verbindungen zu nahen Punkten, sondern auch einige wenige
+       Verbindungen zu Mitgliedern in der anderen Hälfte.
+     - Mit nur einer weit entfernten Adresse hat man eine Verbindung
+       in /eigene/ und die /andere/ Hälfte. Hat man zwei solche
+       Verbindungen auf die andere Seite hat man schon Verbindungen in
+       jeden Viertel des Baumes.
+     - Man muss also entscheiden, wie fein man die andere Hälfte
+       aufteilen will. (Eine genaue Unterteilung bedeutet wenige
+       Sprünge aber grosse =Routing-Tables=, eine grobe Unterteilung
+       genau das Umgekehrte).
 
-\noindent Zwar hat ein vollständiges =Kademlia=-System noch komplexere
-Elemente, wie =k-Buckets=, welche den =Routing-Table= optimieren,
-allerdings sind diese für die grundlegende Funktionsweise des Systems
-irrelevant.\\
+     \noindent Zwar hat ein vollständiges =Kademlia=-System noch
+     komplexere Elemente, wie =k-Buckets=, welche den =Routing-Table=
+     optimieren, allerdings sind diese für die grundlegende
+     Funktionsweise des Systems irrelevant.\\
 
-\noindent Die dynamische Regulation des =Routing-Tables= muss allerdings
-noch erwähnt werden:
-- Sobald die definierte Maximalgrösse erreicht ist, werden keine neuen
-  Verbindungen akzeptiert.
-- Zwar können existierende Einträge durch Neue ersetzt werden,
-  allerdings werden dabei nicht alte, sondern inaktive Einträge
-  entfernt. Für ein =Kademlia=-System werden also auch Mechanismen
-  benötigt, um die Zustände aller Verbindungen periodisch zu
-  überprüfen.
+     \noindent Die dynamische Regulation des =Routing-Tables= muss
+     allerdings noch erwähnt werden:
+     - Sobald die definierte Maximalgrösse erreicht ist, werden keine
+       neuen Verbindungen akzeptiert.
+     - Zwar können existierende Einträge durch Neue ersetzt werden,
+       allerdings werden dabei nicht alte, sondern inaktive Einträge
+       entfernt. Für ein =Kademlia=-System werden also auch Mechanismen
+       benötigt, um die Zustände aller Verbindungen periodisch zu
+       überprüfen.
 ** BitTorrent
     Dezentralisierung hat viele Vorteile und muss langfristig
     flächendeckend eingesetzt werden. Aktuell sind die meisten
@@ -276,9 +277,7 @@ noch erwähnt werden:
     bei =BitTorrent= eigentlich um ein grosses Dateisystem handelt,
     lassen sich direkt die =SHA1=-Hashwerte der Inhalte als
     =Kademlia=-Adressen verwenden.
-** IPFS
 ** Tox
-
 Im Sommer 2013 veröffentlichte Edward Snowden schockierende
 Geheimnisse über massive Spionage Prgogramme der NSA, mit welchen
 nahezu aller digitaler Verkehr, ohne Rücksicht auf Datenschutz oder
@@ -297,28 +296,28 @@ entwicklen, allerdings hat sich der Umfang des Projekts inzwischen
 ausgeweitet. Im Zentrum der Arbeiten steht das =Tox Protocol=, welches
 dann von verschiedenen, unabhängigen Programmen umgesetzt wird. Zwar
 ist Chat weiterhin eine zentrale Funktion, es wird aber auch Video-
-und Audiokommunikation sowie Filesharing gearbeitet.
+und Audiokommunikation sowie Filesharing gearbeitet.\\
 
-Basierend auf der bekannten =NaCl=-Bibliothek wird die gesamte
-Kommunikation über das =Tox Protocol= zwingend End- zu Endverschlüsselt.
-Intern wird ein dezentrales Routing System basierend auf Kademila
-verwendet, mit welchem Kontakt zwischen Nutzern (Freunden) aufgebaut
-wird. Während im Kademila Whitepaper Addressen mit einer Länge von 20
-Bytes definiert werden, nutzt =Tox= 32 Bytes. Dies vereinfacht die
-Verschlüsselung stark, da =NaCl= Schlüssel verwendet, welche ebenfalls
-32 Bytes lang sind. Nebst der eingesparten Verhandlung von Schlüsseln
-und der zusätzlichen Kommunikation bindet diese Idee die
-Verschlüsselung direkt stärker in das Routing System ein, denn es
-werden keine zusätzlichen Informationen zum Verschlüsseln einer
-Nachricht gebraucht und sie kann direkt mit der Addresse des Ziels
-verschlüsselt werden.
+\noindent Basierend auf der bekannten =NaCl=-Bibliothek[fn:4] wird die
+gesamte Kommunikation über das =Tox Protocol= [fn:2] zwingend End- zu
+Endverschlüsselt. Intern wird ein dezentrales Routing System basierend
+auf Kademila verwendet, mit welchem Kontakt zwischen Nutzern
+(Freunden) aufgebaut wird. Während im Kademila Whitepaper Addressen
+mit einer Länge von 20 Bytes definiert werden, nutzt =Tox= 32 Bytes.
+Dies vereinfacht die Verschlüsselung stark, da =NaCl= Schlüssel
+verwendet, welche ebenfalls 32 Bytes lang sind. Nebst der eingesparten
+Verhandlung von Schlüsseln und der zusätzlichen Kommunikation bindet
+diese Idee die Verschlüsselung direkt stärker in das Routing System
+ein, denn es werden keine zusätzlichen Informationen zum Verschlüsseln
+einer Nachricht gebraucht und sie kann direkt mit der Addresse des
+Ziels verschlüsselt werden.\\
 
-Es ist allerdings wichtig festzustellen, dass =Tox= Kademila lediglich
-als Router verwendet. Kontakt zwischen zwei Nutzern wird komplett
-dezentral hergestellt, sobald diese sich allerdings gefunden haben
-wechseln zu einer direkten Kommunikation über UDP. Zwar erlaubt diese
-zweiteilung der Kommunikation schnellen Datenverkehr sobald sich zwei
-Nutzer gefunden haben (so ist beispielsweise Video- und
+\noindent Es ist allerdings wichtig festzustellen, dass =Tox= Kademila
+lediglich als Router verwendet. Kontakt zwischen zwei Nutzern wird
+komplett dezentral hergestellt, sobald diese sich allerdings gefunden
+haben wechseln zu einer direkten Kommunikation über UDP. Zwar erlaubt
+diese zweiteilung der Kommunikation schnellen Datenverkehr sobald sich
+zwei Nutzer gefunden haben (so ist beispielsweise Video- und
 Audiokommunikation möglich), es kommen aber auch einige neue Probleme
 auf:
 - Anders als beispielsweise im Darknet über das Onion-Routing von
@@ -329,26 +328,16 @@ auf:
 - Auch muss man bedenken, dass nicht jedes Gerät im Internet in der
   Lage ist direkte Verbindungen mit jedem anderen Gerät aufzubauen.
   Besonders Firewalls können schnell zu Problemen führen. Um den
-  Aufwand für die Nutzer zu minimieren wird =UDP hole punching=
+  Aufwand für die Nutzer zu minimieren wird =UDP hole punching= [fn:1]
   verwendet, allerdings existieren auch dafür gewisse Kriterien und
   Probeleme.
 
-Das =Tox Protocol= bietet eine einheitliche Spezifikation mit der eine
-grosse Auswahl an Problemen gelöst werden können. Wer eine sichere,
-dezentrale Alternative zu Whatsapp sucht könnte an =Tox= gefallen
-finden. Seit einigen Jahren gibt es aber Bedenken über die Sicherheit
-und aktuelle Richtung des Projekts, sowie Berichte von internen
-Konflikten, besonders im Zusammenhang mit Spendengeldern.
-
-/Quellen:/
-- https://nacl.cr.yp.to/
-- https://tox.chat/
-- https://toktok.ltd/spec.html
-- https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf
-- https://en.wikipedia.org/wiki/Hole_punching_(networking)
-** Games
-** Lisp
-** Modularität
+\noindent Das =Tox Protocol= bietet eine einheitliche Spezifikation mit
+der eine grosse Auswahl an Problemen gelöst werden können. Wer eine
+sichere, dezentrale Alternative zu Whatsapp sucht könnte an =Tox=
+gefallen finden. Seit einigen Jahren gibt es aber Bedenken über die
+Sicherheit und aktuelle Richtung des Projekts, sowie Berichte von
+internen Konflikten, besonders im Zusammenhang mit Spendengeldern.
 * Konzept
 Tatsächlich wird hier hauptsächlich der zweite Teil einer grösseren
 Arbeit beschrieben. Bereits im Abschnitt *Modularität* wurde der erste
@@ -362,8 +351,133 @@ Komplexität:
   Unterscheidung: 
 * Prozess
 ** Modularität
+Tatsächlich beschreibt dieses Dokument bereits den zweiten Versuch,
+die zweite Iteration eines dezentralen Datensystems. Da während dieser
+ersten Entwicklungsphase viele Lektionen gelernt wurden, ist es
+wichtig die Ideen und die Umsetzung genau zu analysieren. Zwar
+unterscheiden sich die Ziele und Methoden der beiden Ansätze stark,
+gewisse Konzepte und einige Programme lassen sich für die aktuelle
+Zielsetzung genau übernehmen.\\
+
+\noindent Als erstes ist es wichtig, die Zielsetzung des Systems,
+welches hier einfach als “Modularer Ansatz” bezeichnet wird, zu
+verstehen und die damit entstandenen Probleme genau festzuhalten.
+- Modularität \\
+  Wie der Name bereits verrät, ging es in erster Linie um die
+  Modularität. Ziel war also eine Methode zur standardisierten
+  Kommunikation, durch welche dann beliebige Komponenten an ein
+  grösseres System angeschlossen werden können. Mit einigen
+  vorgegebenen Komponenten, die Funktionen wie das dezentrale Routing
+  und lokales Routing abdecken, können Nutzer für ihre
+  Anwendungszwecke passende Programme integrieren.
+- Offenheit \\
+  Sobald man den Nutzern die Möglichkeit geben will, das System selbst
+  zu erweitern und zu bearbeiten, muss man quasi zwingend open-source
+  Quellcode zur verfügung stellen.
+
+\noindent Die grundlegende Idee war die selbe: /Die Entwicklung eines
+dezentralen vielseitig einsetzbaren Kommunikationsprotokoll./ Da
+allerdings keine einzelne Anwendung angestrebt wurde, ging es
+stattdessen um die Entwicklung eines vollständigen Ökosystems und
+allgemein einsetzbare Komponenten.\\
+
+\noindent Im nächsten Abschnitt sollen einige dieser Komponenten und
+die Entscheidungen die zu ihnen geführt haben beschrieben werden. In
+einem weiteren Abschnitt sollen dann die Lektionen und Probleme dieses
+erster ersten Entwicklungsphase besprochen werden. 
+*** Shadow
+Zwar übernahm die erste Implementierung des verteilten
+Nachrichtensystems, Codename =Shadow= weniger Funktionen als die
+aktuelle Umsetzung, für das System als ganzes war das Programm aber
+nicht weniger wichtig. Der Name lässt sich einfach erklären: für
+normale Nutzer sollte das interne Netzwerk niemals sichtbar sein und
+sie sollte nie direkt mit ihm interagieren müssen, es war also quasi
+/im Schatten/. Geschrieben in =Elixir= und mit einem =TCP=-Interface konnte
+=Shadow= sich mit anderen Instanzen verbinden und über eine rudimentäre
+Implementierung des =Kademlia=-Systems Nachrichten senden und
+weiterleiten. Um neue Verbindungen herzustellen wurde ein speziell
+Entwickeltes System mit so genannten /Member-Files/ verwendet. Jedes
+Mitglied eines Netzwerks konnte eine solche Datei generieren, mit
+welchen dann beliebige andere Instanzen beitreten konnten.\\
+
+\noindent Sobald eine Nachricht im System am Ziel angekommen war,
+wurde sie über einen =Unix-Socket= an den nächsten Komponenten im
+System, meistens also =Hunter= weitergegeben. Dies geschah nur, wenn das
+einheitlich verwaltete Registrierungssystem für Personen und Dienste,
+eine Teilfunktion von =Hunter=, ein treffendes Resultat lieferte.
+Ansonsten wurde der interne Routing-Table verwendet. Dieser bestand
+aus einer Reihe von Prozessen, welche selbst auch direkt die
+=TCP=-Verbindungen verwalteten. 
+*** Hunter
+Während =Shadow= die Rolle des verteilten Routers übernimmt, ist =Hunter=
+der lokale Router. Es geht bei =Hunter= also nicht darum, Nachrichten an
+andere Mitglieder des Netzwerks zu senden, sondern sie an verschiedene
+Applikationen auf der gleichen Maschine zu senden. Jedes beliebige
+Programm, unabhängig von Programmiersprache & internen Strukturen
+müsste dann also nur das verhältnismässig Protokoll implementieren und
+wäre damit in der Lage, mit allen anderen Komponenten zu interagieren.
+Anders als =Shadow= wurde =Hunter= komplett in Rust entwickelt und liess
+sich in zwei zentrale Funktionen aufteilen:
+- Zum einen diente das Programm als Schnittstelle zu einer einfachen
+  /Datenbank/, in diesem Fall eine =JSON-Datei=. Dort wurden alle lokal
+  aktiven Adressen und die dazugehörigen Applikationen gespeichert.
+  Ein Nutzer der sich beispielsweise über einen Chat mit dem System
+  verbindet wird dort mit seiner Adresse oder seinem Nutzernamen und
+  dem Namen des Chats eingetragen. Wenn dann von einem beliebigen
+  anderen Punkt im System eine Nachricht an diesen Nutzer kommt, wird
+  der passende Dienst aus der Datenbank gelesen. All dies lief durch
+  ein /Command Line Interface/, welches dann ins Dateisystem schreibt.
+- Das eigentliche Senden und Weiterleiten der Nachrichten war nicht
+  über ein kurzlebiges Programm möglich, da dafür längere Verbindungen
+  existieren müssten. Dafür muss =Hunter= als erstes gestartet werden,
+  wobei das Programm intern für jede Verbindung einen dedizierten
+  Thread startet.
+
+Diese klare Trennung der Aufgaben und starke Unabhängigkeit der
+einzelnen Komponenten erlaubt ein einheitliches Nachrichtenformat, da
+für die einzelnen Komponenten kein Verständnis über andere Komponenten
+oder die Verbindungen haben müssen. 
+*** NET-Script
+Ein weitere zentrale Komponente des Systems ist eine eigene
+Programmiersprache, welche mit starker Integration in das restliche
+System das Entwickeln neuer Mechanismen und Komponenten das System
+offener machen sollte. Ein einfacher lisp-ähnlicher Syntax sollte das
+Entwickeln neuer Programme einfach und vielseitig einsetzbar machen.
+*** Interface
+*** Probleme
 ** Präsentation
 * Produkt
 * Ausblick
 ** Verifizierung
 ** Balance
+* Footnotes
+[fn:4] =NaCl= Verschlüsselungs Bibliothek:
+https://nacl.cr.yp.to/, heruntergeladen am: 22.09.2021.
+
+[fn:2] Tox Protokoll Spezifikationen:  
+https://toktok.ltd/spec.html, heruntergeladen am: 22.09.2021.
+
+[fn:1] Wikipedia: UDP Hole punching:  
+https://en.wikipedia.org/wiki/Hole_punching_(networking),
+heruntergeladen am: 24.09.2021.
+
+[fn:11] BitTorrent: Mainline DHT:
+https://www.cs.helsinki.fi/u/lxwang/publications/P2P2013_13.pdf,
+heruntergeladen am: 4.06.2020.
+
+[fn:10] CJDNS - Whitepaper:
+https://github.com/cjdelisle/cjdns/blob/master/doc/Whitepaper.md,
+heruntergeladen am: 3.06.2020.
+
+[fn:9] Kademlia: Whitepaper:
+https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf,
+heruntergeladen am: 30.05.2020.
+
+[fn:8] Einführung in /Distributed Systems/ mit Elixir, Jakob Klemm:
+https://orion.jeykey.net/distributed_systems.pdf, heruntergeladen am: 2.06.2020. 
+
+[fn:ts] Tom Scott: Single Point of Failure
+https://youtu.be/y4GB_NDU43Q, heruntergeladen am 24.05.2020.
+
+[fn:3] Wikipedia: Kademlia [[https://en.wikipedia.org/wiki/Kademlia]],
+heruntergeladen am: 30.05.2020.
