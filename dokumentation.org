@@ -303,10 +303,33 @@ internen Konflikten, besonders im Zusammenhang mit Spendengeldern.
 Zwar ist es bei weitem nicht, dass moderne dezentrale Systeme das
 Internet oder ein ähnliches Austauschsystem als Grundlage verwenden,
 allerdings ist dies in nahezu allen Fällen, besonders bei den
-beliebten und weit verbreiteten Fällen. Das Internet ist für
-fehlende Sicherheit und Gefahren bekannt, daher ist es von Nöten, dass
-sich jede Applikation selbst um Verschlüsselungen und Sicherheit
-kümmert. 
+beliebten und weit verbreiteten Fällen. Das Internet ist für fehlende
+Sicherheit und Gefahren bekannt, daher ist es von Nöten, dass sich
+jede Applikation selbst um Verschlüsselungen und Sicherheit kümmert.
+Allerdings ist es wichtig, /die passende Verschlüsselung/ zu wählen.
+Hier wird nun ein Ansatz beschrieben, welcher sich besonders gut für
+gewisse =Kademlia=-inspirierte Systeme eignet. Dieser Ansatz beruht auf
+der Verschlüsselungs-Bibliothek =NaCl=, beziehungsweise deren modernen
+Abzweig =libsodium=. Während klassische Verschlüsselungsmethoden sehr
+lange Schlüssel benötigen, gibt es gewisse Kombinationen von
+Algorithmen, welche mit sehr kurzen Schlüsseln Sicherheit
+gewährleisten können. Besonders geht es dabei um
+=curve25519xsalsa20poly1305=, einer Kombination aus den Algorithmen
+=Curve25519=, =Salsa20= und =Poly1305=. Während das innere Zusammenspiel
+dieser Algorithmen sehr komplex wirken mag, ist das Resultat ein
+Algorithmus, wessen Schlüssel jeweils nur eine Länge von /32 bytes/
+haben.\\
+
+\noindent Eigentlich beschreibt =Kademlia= Adressen mit einer Länge von
+/160 bits/ oder /20 bytes/, allerdings ist es ohne grosse Probleme
+möglich, die Adressen Länge auf /32 bytes/ zu verlängern. Dies erlaubt
+es uns, die Verschlüsselung und das Adresssystem direkt miteinander zu
+verbinden. Das mag auf den ersten Blick etwas umständlich und
+unlogisch wirken, es erlaubt allerdings, ohne weitere Operationen
+verschlüsselte Nachrichten an einen Nutzer zu schicken, wobei
+lediglich dessen Adresse bekannt sein muss. Insgesamt fällt damit viel
+Komplexität weg und macht das erstellen, verifizieren und finden von
+Adressen viel einfacher.
 ** PubSub
 Ein einfaches, aber vielseitig einsetzbares
 Nachrichtenübermittlungsmuster ist die Idee eines =Publish/Subscribe
