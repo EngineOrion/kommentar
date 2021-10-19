@@ -282,16 +282,6 @@ passieren.
 ** Komplexität
 ** Orion
 * Konzept
-Tatsächlich wird hier hauptsächlich der zweite Teil einer grösseren
-Arbeit beschrieben. Bereits im Abschnitt *Modularität* wurde der erste
-Teil dieser Arbeit analysiert. Aus den Erfahrungen und Ideen während
-der ersten Entwicklungsphase wurden in dieses, verbesserte Konzept
-eingearbeitet. Eine der zentralsten Feststellungen ist die Frage der
-Komplexität:
-- In der Welt der angewandten Wissenschaften geniesst die Informatik
-  einen besonderen Platz. Während die Ingeneurswissenschaften oftmals
-  mit der Informatik verglichen werden, so gibt es doch eine zentrale
-  Unterscheidung: 
 * Prozess
 ** Modularität
 Tatsächlich beschreibt dieses Dokument bereits den zweiten Versuch,
@@ -388,7 +378,74 @@ offener machen sollte. Ein einfacher lisp-ähnlicher Syntax sollte das
 Entwickeln neuer Programme einfach und vielseitig einsetzbar machen.
 *** Interface
 *** Probleme
+Die oben beschriebene Architektur hat viele verschiedene Vorteile,
+allerdings ist sie nicht ohne Probleme. Grundsätzlich geht es bei
+jedem Programm darum, Probleme zu lösen. Einer der zentraler Ideen war
+die Modularität, welche es Nutzern erlauben soll, die verschiedenen
+Komponenten des Systems einfach zu kombinieren. Und auch wenn dieses
+Ziel auf einer technischen Ebene erfüllt wurde, so ist die Umsetzung
+alles andere als /einfach/. Die Anzahl möglicher Fehlerquellen steigt
+mit jedem eingebundenen Komponenten exponentiell an, und wenn
+mindestens vier der Komponenten für selbst die einfachsten Demos
+benötigt werden, kann nahezu alles schiefgehen. Dazu kommt, dass viele
+Fehler nicht richtig isoliert und verarbeitet würden, weswegen sich
+die Probleme durch das System weiter verbreiten würden. Während die
+Umsetzung also ihre eigentlichen Ziele erfüllt hatte, war sie noch
+lange davon entfernt, für tatsächliche Nutzer einsetzbar zu sein.\\
+
+\noindent Trotzdem wurden die beschriebenen Komponenten vollständig
+entwickelt, getestet und vorgeführt. Zwar war es umständlich und nur
+bedingt praktisch einsetzbar, trotzdem war es aber eine technisch
+neuartige, funktionsfähige Lösung für komplexe und relevante Probleme.
+Nachdem die erste Entwicklungsphase erfolgreich abgeschlossen wurde,
+kam allerdings noch ein weiteres Problem auf, welches die folgenden
+Entscheidungen stark beeinflusst hat, und es ist ein Problem welches
+sich auf die grundlegende Natur der Informatik zurückführen lässt:\\
+Anders als nahezu alle Studienrichtungen, Wissenschaften und
+Industrien, werden in der Informatik die gleichen Werkzeuge verwendet
+und entwickelt. Wer die Werkzeuge der Informatik verwenden kann, ist
+gleichzeitig in der Lage (zumindest bis zu einem gewissen Grad) neue
+Werkzeuge zu entwickeln. Diese Eigenschaft erlaubt schnelle
+Iterationen und viele, fortschrittliche Werkzeuge, so kommen
+gleichzeitig neue Probleme auf:
+- Neue Methoden und Werkzeuge werden mit unglaublicher Geschwindigkeit
+  entwickelt und verbreitet. Wer also nicht mit den neusten Trends
+  mithält kann schnell abgehängt werden. Dies macht auch das
+  Unterrichten besonders schwer.
+- Natürlich werden die Werkzeuge meistens immer besser und schneller,
+  allerdings kommt es oftmals auch zu einer Spezialisierung. Dies
+  führt schnell zu immer spezifischeren, exotischeren Lösungen und
+  unzähligen Unterbereichen und immer kleineren Gebieten. So
+  beispielsweise der Begriff /dezentrale Datensysteme/, der zwar ein
+  einzelnes Gebiet genau beschreibt, für Aussenstehende ist er aber
+  mehrheitlich bedeutungslos und sorgt für mehr Verwirrung als
+  Aufklärung.
+- Die immer neuen Gebiete und Gruppen können auch schnell zu Elitismus
+  führen, wodurch es für Anfänger schwer sein kann, Zugang zu finden.
+
+\noindent Diese Eigenschaften, besonders bei unseren sehr neuartigen
+Ideen und Mechanismen, machten es unglaublich schwer, Aussenstehenden
+die Funktionen und Konzepte zu erklären. Ohne Vorkenntnisse über
+Netzwerke und Kommunikationssysteme war es nahezu unmöglich, auch nur
+die einfachsten Ideen zu erklären oder den Inhalt dieser Arbeit
+darzulegen. Und selbst mit grossem Vorwissen liessen sich nur die
+absoluten Grundlagen innerhalb absehbarer Zeit erklären, das Erklären
+der theoretischen und technischen Grundlagen würde Stunden in Anspruch
+nehmen.\\
+
+\noindent Da am Ende dieser Arbeit zwingend eine zeitlich begrenzte
+Präsentation vor einem technisch nicht versierten Publikum stehen
+würde, mussten nach dieser ersten Entwicklungsphase gewisse Aspekte
+grundlegend überarbeitet werden, diesmal mit einem besonderen Fokus
+auf die /präsentierbarkeit/.  
 ** Präsentation
+Auch wenn von der ersten Entwicklungsphase viele Konzepte und sogar
+einige Umsetzungen übernommen werden konnten, so gab es grundlegende
+Probleme, welche nicht ignoriert werden konnten. Es wurde schnell
+klar, dass unabhängig aller technischer Fortschritte eine bessere Art
+der Präsentation gefunden werden musste. Dabei ist es wichtig, die
+technischen Neuerungen und Besonderheiten nicht zu vergessen. Die
+Umsetzung der ersten Entwicklungsphase 
 * Produkt
 * Ausblick
 ** Verifizierung

@@ -1,6 +1,6 @@
-% Created 2021-10-01 Fri 11:38
+% Created 2021-10-19 Tue 22:05
 % Intended LaTeX compiler: pdflatex
-\documentclass[11pt]{report}
+\documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
@@ -14,7 +14,6 @@
 \usepackage{amssymb}
 \usepackage{capt-of}
 \usepackage{hyperref}
-\usepackage{minted}
 \usepackage[utf8]{inputenc}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{tikz}
@@ -35,7 +34,7 @@
  pdftitle={Projekt Orion},
  pdfkeywords={},
  pdfsubject={},
- pdfcreator={Emacs 28.0.50 (Org mode 9.4.4)}, 
+ pdfcreator={Emacs 28.0.50 (Org mode 9.5)}, 
  pdflang={Germanb}}
 \begin{document}
 
@@ -92,8 +91,8 @@ verwenden will wird sich dort gut zurecht finden.
 \end{itemize}
 \newpage
 
-\part{Vision}
-\label{sec:orgbb81b31}
+\section{Vision}
+\label{sec:org9430980}
 \begin{center}
 \begin{enumerate}
 \item Oktober 1964 - UCLA an Stanford: LO
@@ -151,10 +150,10 @@ Interaktionen und Verwendungen des Internets zu bringen. In einem
 nächsten Schritt soll dann eine Lösung besprochen werden: ein System,
 mit welchem sich möglichst viele der grössten Probleme lösen lassen,
 und welches tatsächlich praktischen Nutzen bietet.\\
-\chapter{{\bfseries\sffamily TODO} Beispiele / Praktisch Limitierungen}
-\label{sec:org14ebf97}
-\section{IP-V4}
-\label{sec:org9714555}
+\subsection{{\bfseries\sffamily TODO} Beispiele / Praktisch Limitierungen}
+\label{sec:org9c1c5cd}
+\subsubsection{IP-V4}
+\label{sec:org96db940}
 \noindent In der Geschichte der Menschheit haben wir aus vielen
 verschiedenen Gründen Krieg geführt. Für Wasser, Nahrung, Öl, Frieden
 oder Freiheit in den Krieg zu ziehen, scheint zu einer fernen Welt zu
@@ -175,8 +174,8 @@ die solche Limitierungen nicht hat. Aber der Wechsel ist eine
 freiwillige Entscheidung, für die nicht nur alle Betroffenen bereit
 sein müssen, sondern für die auch jede einzelne involvierte Komponente
 diese neue Technologie unterstützen müssen.\\
-\section{Routing}
-\label{sec:org23e5617}
+\subsubsection{Routing}
+\label{sec:org0968afc}
 \noindent Freiheit und Unabhängigkeit sind menschlich. Es darf niemals
 bestraft werden, nach diesen fundamentalen Rechten zu streben. Und
 doch führt das egoistische Streben nach Freiheit zu Problemen, oftmals
@@ -231,8 +230,8 @@ involviert sein. Aber für die \texttt{Zentralrouter} bedeutet es eine immer
 grössere Datenbank an Zuweisungen. Dieses Problem geht so weit, dass
 die grossen \emph{Routingtables} inzwischen das physikalische Limit
 erreichen, was ein einzelner Router verarbeiten kann.
-\chapter{Zentralisierung}
-\label{sec:orgcfc206a}
+\subsection{Zentralisierung}
+\label{sec:orge7d2f03}
 \noindent Die Macht in den Händen einiger weniger Kapitalisten und
 internationaler Unternehmen ist unvorstellbar gross. Einige wenige
 CEO's, welche nie gewählt, überprüft oder zur Rede gestellt wurden,
@@ -243,8 +242,8 @@ eine solche Abhängigkeit wirft gewisse Fragen und Probleme auf.\\
 \noindent Aber neben den ideologischen Fragen und Sicherheitsbedenken
 gibt es auch noch sehr praktische Probleme in der Art, wie moderne
 Internet-Dienste implementiert sind.
-\section{Datenschutz}
-\label{sec:org3d167e0}
+\subsubsection{Datenschutz}
+\label{sec:orga0655ee}
 \begin{center}
 \emph{Wenn man nicht für etwas zahlt, ist man das Produkt.}
 \end{center}
@@ -284,12 +283,12 @@ Probleme formulieren:
 \begin{itemize}
 \item Selbst für die einfachsten Anfragen im Internet sind wir von einer
 Vielzahl von Firmen und Systemen abhängig. Dieses Problem wird noch
-etwas genauer im Abschnitt \hyperref[sec:org9412584]{Abhängigkeit} besprochen.
+etwas genauer im Abschnitt \hyperref[sec:orgb86f7f7]{Abhängigkeit} besprochen.
 \item Wir haben weder ein Verständnis von den involvierten Parteien noch
 die Bereitschaft, Bequemlichkeit dafür aufzugeben.
 \end{itemize}
-\section{Abhängigkeit}
-\label{sec:org9412584}
+\subsubsection{Abhängigkeit}
+\label{sec:orgb86f7f7}
 In einem fiktionalen Szenario\footnote{Tom Scott: Single Point of Failure
 \url{https://youtu.be/y4GB\_NDU43Q}, heruntergeladen am 24.05.2020.} erklärt \emph{Tom Scott} auf seinem
 YouTube-Kanal was passieren könnte, wenn eine einzelne
@@ -320,30 +319,18 @@ unserer täglichen Aktivitäten von Diensten und Firmen abhängen, die
 selbst wieder von \texttt{Google} abhängig sind. All dies führt dazu, dass wir
 auf eine globale Katastrophe zusteuern, die nur darauf wartet, zu
 passieren.
-\chapter{Inhalte}
-\label{sec:org6394ccc}
-\chapter{Komplexität}
-\label{sec:org585ace9}
-\chapter{Orion}
-\label{sec:org9151ed0}
-\part{Konzept}
-\label{sec:org344ada1}
-Tatsächlich wird hier hauptsächlich der zweite Teil einer grösseren
-Arbeit beschrieben. Bereits im Abschnitt \textbf{Modularität} wurde der erste
-Teil dieser Arbeit analysiert. Aus den Erfahrungen und Ideen während
-der ersten Entwicklungsphase wurden in dieses, verbesserte Konzept
-eingearbeitet. Eine der zentralsten Feststellungen ist die Frage der
-Komplexität:
-\begin{itemize}
-\item In der Welt der angewandten Wissenschaften geniesst die Informatik
-einen besonderen Platz. Während die Ingeneurswissenschaften oftmals
-mit der Informatik verglichen werden, so gibt es doch eine zentrale
-Unterscheidung:
-\end{itemize}
-\part{Prozess}
-\label{sec:orgfb75432}
-\chapter{Modularität}
-\label{sec:org42a7b50}
+\subsection{Inhalte}
+\label{sec:org761e788}
+\subsection{Komplexität}
+\label{sec:orgfb6cfe6}
+\subsection{Orion}
+\label{sec:orgb6df3c0}
+\section{Konzept}
+\label{sec:org06b388e}
+\section{Prozess}
+\label{sec:org52f7315}
+\subsection{Modularität}
+\label{sec:org9121afa}
 Tatsächlich beschreibt dieses Dokument bereits den zweiten Versuch,
 die zweite Iteration eines dezentralen Datensystems. Da während dieser
 ersten Entwicklungsphase viele Lektionen gelernt wurden, ist es
@@ -380,8 +367,8 @@ allgemein einsetzbare Komponenten.\\
 die Entscheidungen die zu ihnen geführt haben beschrieben werden. In
 einem weiteren Abschnitt sollen dann die Lektionen und Probleme dieses
 erster ersten Entwicklungsphase besprochen werden. 
-\section{Shadow}
-\label{sec:org8e22014}
+\subsubsection{Shadow}
+\label{sec:orge6ccf30}
 Zwar übernahm die erste Implementierung des verteilten
 Nachrichtensystems, Codename \texttt{Shadow} weniger Funktionen als die
 aktuelle Umsetzung, für das System als ganzes war das Programm aber
@@ -404,8 +391,8 @@ eine Teilfunktion von \texttt{Hunter}, ein treffendes Resultat lieferte.
 Ansonsten wurde der interne Routing-Table verwendet. Dieser bestand
 aus einer Reihe von Prozessen, welche selbst auch direkt die
 \texttt{TCP}-Verbindungen verwalteten. 
-\section{Hunter}
-\label{sec:orgd1d87bd}
+\subsubsection{Hunter}
+\label{sec:orgc458617}
 Während \texttt{Shadow} die Rolle des verteilten Routers übernimmt, ist \texttt{Hunter}
 der lokale Router. Es geht bei \texttt{Hunter} also nicht darum, Nachrichten an
 andere Mitglieder des Netzwerks zu senden, sondern sie an verschiedene
@@ -436,25 +423,90 @@ Diese klare Trennung der Aufgaben und starke Unabhängigkeit der
 einzelnen Komponenten erlaubt ein einheitliches Nachrichtenformat, da
 für die einzelnen Komponenten kein Verständnis über andere Komponenten
 oder die Verbindungen haben müssen. 
-\section{NET-Script}
-\label{sec:org6cee0df}
+\subsubsection{NET-Script}
+\label{sec:org08e246d}
 Ein weitere zentrale Komponente des Systems ist eine eigene
 Programmiersprache, welche mit starker Integration in das restliche
 System das Entwickeln neuer Mechanismen und Komponenten das System
 offener machen sollte. Ein einfacher lisp-ähnlicher Syntax sollte das
 Entwickeln neuer Programme einfach und vielseitig einsetzbar machen.
-\section{Interface}
-\label{sec:orgba74b21}
-\section{Probleme}
-\label{sec:org2e8c408}
-\chapter{Präsentation}
-\label{sec:org8190992}
-\part{Produkt}
-\label{sec:orgc467e1d}
-\part{Ausblick}
-\label{sec:orgcd8189e}
-\chapter{Verifizierung}
-\label{sec:org9e4c3ab}
-\chapter{Balance}
-\label{sec:org01d33d0}
+\subsubsection{Interface}
+\label{sec:orgfc52f04}
+\subsubsection{Probleme}
+\label{sec:orge0a8736}
+Die oben beschriebene Architektur hat viele verschiedene Vorteile,
+allerdings ist sie nicht ohne Probleme. Grundsätzlich geht es bei
+jedem Programm darum, Probleme zu lösen. Einer der zentraler Ideen war
+die Modularität, welche es Nutzern erlauben soll, die verschiedenen
+Komponenten des Systems einfach zu kombinieren. Und auch wenn dieses
+Ziel auf einer technischen Ebene erfüllt wurde, so ist die Umsetzung
+alles andere als \emph{einfach}. Die Anzahl möglicher Fehlerquellen steigt
+mit jedem eingebundenen Komponenten exponentiell an, und wenn
+mindestens vier der Komponenten für selbst die einfachsten Demos
+benötigt werden, kann nahezu alles schiefgehen. Dazu kommt, dass viele
+Fehler nicht richtig isoliert und verarbeitet würden, weswegen sich
+die Probleme durch das System weiter verbreiten würden. Während die
+Umsetzung also ihre eigentlichen Ziele erfüllt hatte, war sie noch
+lange davon entfernt, für tatsächliche Nutzer einsetzbar zu sein.\\
+
+\noindent Trotzdem wurden die beschriebenen Komponenten vollständig
+entwickelt, getestet und vorgeführt. Zwar war es umständlich und nur
+bedingt praktisch einsetzbar, trotzdem war es aber eine technisch
+neuartige, funktionsfähige Lösung für komplexe und relevante Probleme.
+Nachdem die erste Entwicklungsphase erfolgreich abgeschlossen wurde,
+kam allerdings noch ein weiteres Problem auf, welches die folgenden
+Entscheidungen stark beeinflusst hat, und es ist ein Problem welches
+sich auf die grundlegende Natur der Informatik zurückführen lässt:\\
+Anders als nahezu alle Studienrichtungen, Wissenschaften und
+Industrien, werden in der Informatik die gleichen Werkzeuge verwendet
+und entwickelt. Wer die Werkzeuge der Informatik verwenden kann, ist
+gleichzeitig in der Lage (zumindest bis zu einem gewissen Grad) neue
+Werkzeuge zu entwickeln. Diese Eigenschaft erlaubt schnelle
+Iterationen und viele, fortschrittliche Werkzeuge, so kommen
+gleichzeitig neue Probleme auf:
+\begin{itemize}
+\item Neue Methoden und Werkzeuge werden mit unglaublicher Geschwindigkeit
+entwickelt und verbreitet. Wer also nicht mit den neusten Trends
+mithält kann schnell abgehängt werden. Dies macht auch das
+Unterrichten besonders schwer.
+\item Natürlich werden die Werkzeuge meistens immer besser und schneller,
+allerdings kommt es oftmals auch zu einer Spezialisierung. Dies
+führt schnell zu immer spezifischeren, exotischeren Lösungen und
+unzähligen Unterbereichen und immer kleineren Gebieten. So
+beispielsweise der Begriff \emph{dezentrale Datensysteme}, der zwar ein
+einzelnes Gebiet genau beschreibt, für Aussenstehende ist er aber
+mehrheitlich bedeutungslos und sorgt für mehr Verwirrung als
+Aufklärung.
+\item Die immer neuen Gebiete und Gruppen können auch schnell zu Elitismus
+führen, wodurch es für Anfänger schwer sein kann, Zugang zu finden.
+\end{itemize}
+
+Diese Eigenschaften, besonders bei unseren sehr neuartigen Ideen und
+Mechanismen, machten es unglaublich schwer, Aussenstehenden die
+Funktionen und Konzepte zu erklären. Ohne Vorkenntnisse über Netzwerke
+und Kommunikationssysteme war es nahezu unmöglich, auch nur die
+einfachsten Ideen zu erklären oder den Inhalt dieser Arbeit
+darzulegen. Und selbst mit grossem Vorwissen liessen sich nur die
+absoluten Grundlagen innerhalb absehbarer Zeit erklären, das Erklären
+der theoretischen und technischen Grundlagen würde Stunden in Anspruch
+nehmen.\\
+
+\noindent Da am Ende dieser Arbeit zwingend eine zeitlich begrenzte
+Präsentation vor einem technisch nicht versierten Publikum stehen
+würde, mussten nach dieser ersten Entwicklungsphase gewisse Aspekte
+grundlegend überarbeitet werden, diesmal mit einem besonderen Fokus
+auf die \emph{präsentierbarkeit}.  
+\subsection{Präsentation}
+\label{sec:org9b6f353}
+Inzwischen sollte es klar sein, dass als Abschlussprodukt andere Ziele
+und Methoden verwendet wurden, als die, welche im obigen Abschnitt zur
+\emph{Modularität} beschrieben wurden.
+\section{Produkt}
+\label{sec:org89065e5}
+\section{Ausblick}
+\label{sec:org9b854d9}
+\subsection{Verifizierung}
+\label{sec:org4c82e5c}
+\subsection{Balance}
+\label{sec:orgd9f4bac}
 \end{document}
