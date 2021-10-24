@@ -1,4 +1,4 @@
-% Created 2021-10-19 Tue 22:05
+% Created 2021-10-24 So 21:09
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -14,6 +14,7 @@
 \usepackage{amssymb}
 \usepackage{capt-of}
 \usepackage{hyperref}
+\usepackage{minted}
 \usepackage[utf8]{inputenc}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{tikz}
@@ -34,7 +35,7 @@
  pdftitle={Projekt Orion},
  pdfkeywords={},
  pdfsubject={},
- pdfcreator={Emacs 28.0.50 (Org mode 9.5)}, 
+ pdfcreator={Emacs 28.0.50 (Org mode 9.4.4)}, 
  pdflang={Germanb}}
 \begin{document}
 
@@ -92,7 +93,7 @@ verwenden will wird sich dort gut zurecht finden.
 \newpage
 
 \section{Vision}
-\label{sec:org9430980}
+\label{sec:org5957ef6}
 \begin{center}
 \begin{enumerate}
 \item Oktober 1964 - UCLA an Stanford: LO
@@ -150,10 +151,19 @@ Interaktionen und Verwendungen des Internets zu bringen. In einem
 nächsten Schritt soll dann eine Lösung besprochen werden: ein System,
 mit welchem sich möglichst viele der grössten Probleme lösen lassen,
 und welches tatsächlich praktischen Nutzen bietet.\\
-\subsection{{\bfseries\sffamily TODO} Beispiele / Praktisch Limitierungen}
-\label{sec:org9c1c5cd}
+\subsection{Adressen}
+\label{sec:org3965a2d}
+Das Internet erlaubt einfache, standardisierte Kommunikation zwischen
+Geräten aller Art. Egal welche Funktion oder Form sie auch haben
+mögen, es braucht nicht viel um ein Gerät mit dem Internet zu
+verbinden. Nebst den benötigten Protokollen, hauptsächlich \texttt{TCP} und
+\texttt{UDP} wird eine \texttt{IP-Addresse} als eindeutige Identifikation benötigt.
+Während vor dreisig Jahren wunderbare Systeme und Standards geschaffen
+wurden, welche seither die Welt grundlegend verändert haben, so gibt
+es doch einige fundamentale Probleme und Limitierungen, welche zu
+immer grösseren Problemen für unsere verbundene Welt werden.
 \subsubsection{IP-V4}
-\label{sec:org96db940}
+\label{sec:org0ccbb44}
 \noindent In der Geschichte der Menschheit haben wir aus vielen
 verschiedenen Gründen Krieg geführt. Für Wasser, Nahrung, Öl, Frieden
 oder Freiheit in den Krieg zu ziehen, scheint zu einer fernen Welt zu
@@ -174,12 +184,23 @@ die solche Limitierungen nicht hat. Aber der Wechsel ist eine
 freiwillige Entscheidung, für die nicht nur alle Betroffenen bereit
 sein müssen, sondern für die auch jede einzelne involvierte Komponente
 diese neue Technologie unterstützen müssen.\\
+
+Für jeden einzelnen kann dies verschiedene Konsequenzen haben:
+\begin{itemize}
+\item Die Preise der Internetanbieter und Mobilfunkabonnemente wird
+wahrscheinlich langfristig steigen, sobald die ehöhten Kosten für
+neue Addressen bis zum Endnutzer durchsickern.
+\item Ein aufwengdiger technologischer Wandel wird langfristig von Nöten
+sein, welchen jeden einzelnen dazu zwingt auf neue Standards
+umzusteigen. Eine solche Umstellung wird den häufigen Problemen
+grossflächiger technischer Umstellungen nicht ausweichen können.
+\end{itemize}
 \subsubsection{Routing}
-\label{sec:org0968afc}
-\noindent Freiheit und Unabhängigkeit sind menschlich. Es darf niemals
-bestraft werden, nach diesen fundamentalen Rechten zu streben. Und
-doch führt das egoistische Streben nach Freiheit zu Problemen, oftmals
-allerdings nicht für die nach Freiheit Strebenden.\\
+\label{sec:orgbc7cb1f}
+Freiheit und Unabhängigkeit sind menschlich. Es darf niemals bestraft
+werden, nach diesen fundamentalen Rechten zu streben. Und doch führt
+das egoistische Streben nach Freiheit zu Problemen, oftmals allerdings
+nicht für die nach Freiheit Strebenden.\\
 
 \noindent Genau diese Situation findet man im aktuellen Konflikt um
 die Grösse von \emph{Address-Abschnitten} vor. Um dieses Problem richtig zu
@@ -229,9 +250,9 @@ müssen weniger Parteien beim Finden des korrekten Abschnitts
 involviert sein. Aber für die \texttt{Zentralrouter} bedeutet es eine immer
 grössere Datenbank an Zuweisungen. Dieses Problem geht so weit, dass
 die grossen \emph{Routingtables} inzwischen das physikalische Limit
-erreichen, was ein einzelner Router verarbeiten kann.
+erreichen, was ein einzelner Router verarbeiten kann.\\
 \subsection{Zentralisierung}
-\label{sec:orge7d2f03}
+\label{sec:org3e5356e}
 \noindent Die Macht in den Händen einiger weniger Kapitalisten und
 internationaler Unternehmen ist unvorstellbar gross. Einige wenige
 CEO's, welche nie gewählt, überprüft oder zur Rede gestellt wurden,
@@ -243,7 +264,7 @@ eine solche Abhängigkeit wirft gewisse Fragen und Probleme auf.\\
 gibt es auch noch sehr praktische Probleme in der Art, wie moderne
 Internet-Dienste implementiert sind.
 \subsubsection{Datenschutz}
-\label{sec:orga0655ee}
+\label{sec:org2a6efbc}
 \begin{center}
 \emph{Wenn man nicht für etwas zahlt, ist man das Produkt.}
 \end{center}
@@ -283,12 +304,12 @@ Probleme formulieren:
 \begin{itemize}
 \item Selbst für die einfachsten Anfragen im Internet sind wir von einer
 Vielzahl von Firmen und Systemen abhängig. Dieses Problem wird noch
-etwas genauer im Abschnitt \hyperref[sec:orgb86f7f7]{Abhängigkeit} besprochen.
+etwas genauer im Abschnitt \hyperref[sec:org2bc91a7]{Abhängigkeit} besprochen.
 \item Wir haben weder ein Verständnis von den involvierten Parteien noch
 die Bereitschaft, Bequemlichkeit dafür aufzugeben.
 \end{itemize}
 \subsubsection{Abhängigkeit}
-\label{sec:orgb86f7f7}
+\label{sec:org2bc91a7}
 In einem fiktionalen Szenario\footnote{Tom Scott: Single Point of Failure
 \url{https://youtu.be/y4GB\_NDU43Q}, heruntergeladen am 24.05.2020.} erklärt \emph{Tom Scott} auf seinem
 YouTube-Kanal was passieren könnte, wenn eine einzelne
@@ -316,21 +337,48 @@ wirklich Schlimmes passieren?\\
 \noindent Während es verständlich ist, dass das Benutzen von \texttt{Google}
 natürlich von \texttt{Google} abhängig ist, so versteht kaum jemand, wie viel
 unserer täglichen Aktivitäten von Diensten und Firmen abhängen, die
-selbst wieder von \texttt{Google} abhängig sind. All dies führt dazu, dass wir
-auf eine globale Katastrophe zusteuern, die nur darauf wartet, zu
-passieren.
-\subsection{Inhalte}
-\label{sec:org761e788}
+selbst wieder von \texttt{Google} abhängig sind. Seien es die \texttt{Facebook}-Server,
+durch welche keine Whatsapp-Nachrichten geschickt werden konnten, oder
+die fehlerhafte Konfiguration bei \texttt{Google}, durch welche manche Kunden
+die Temperatur ihrer Wohnungen auf ihren Nest Geräten nicht mehr
+anpassen konnten\footnote{Fastcompany: Google outage, heruntergeladen am 24.10.2021.
+\url{https://www.fastcompany.com/90358396/that-major-google-outage-meant-some-nest-users-couldnt-unlock-doors-or-use-the-ac}}, das Netz aus internen Verbindungen zwischen
+Firmen ist komplex und undurchschaubar, und nicht nur für die
+Entnutzer, da oftmals die Firmen selbst von kleinsten Problemen
+anderer Dieste überrascht werden können. Der wirtschaftliche Schaden
+solcher Ausfälle sind unvorstellbar, aber noch wichtiger muss die
+zerstörende Wirkung dieser auf unvorhergesehenen, entfernten Problemen
+auf millionen von Meschen bedacht werden.
 \subsection{Komplexität}
-\label{sec:orgfb6cfe6}
+\label{sec:org5d9a666}
+In diesem Abschnitt soll noch kurz die unglaubliche Komplexität
+angesprochen werden, welche die häutige Web-Entwicklung mit sich
+bringt. Natürlich existieren automatisierte Dienste und Anbieter, die
+den Prozess vereinfachen. Wer aber Wert auf seine Privatsphäre und auf
+die Verwendung von open-source Software legt, muss sich um vieles
+selbst kümmern. Nicht nur die Auswahl an verschiedenen Programmen kann
+erschlagend wirken, sondern der Fakt, dass diese untereinander
+kompatibel sein müssen. Zwar reden wir oft von einem Webserver,
+allerdings sind es tatsächlich viele verschiedene Programme, die alle
+fehlerfrei miteinander interagieren müssen, um Resultate zu liefern.
+Dies kann den Einstieg schwerer machen, oder, in gefährlicheren Fällen
+kann es dazu führen, dass Sicherheit und Datenschutz aus Zeit- oder
+Komplexitätsgründen weggelassen oder vernachlässig werden.\\
+
+\noindent Dabei geht es oben nur um \emph{klassische} Webseiten oder
+Webserver. Die Welt der dezentralen Technologien ist im vergleich dazu
+wie der wilde Westen, ohne Standards, ohne Kompatiblität oder
+Regelungen. Dies führt dazu, dass es zwar für gewisse Anwendungen
+speziell entwickelte Netzwerke gibt, diese allerdings kaum allgeimen
+einsetzbar sind.
 \subsection{Orion}
-\label{sec:orgb6df3c0}
+\label{sec:org5af8fa3}
 \section{Konzept}
-\label{sec:org06b388e}
+\label{sec:org402a573}
 \section{Prozess}
-\label{sec:org52f7315}
+\label{sec:orgb303ac5}
 \subsection{Modularität}
-\label{sec:org9121afa}
+\label{sec:orged95685}
 Tatsächlich beschreibt dieses Dokument bereits den zweiten Versuch,
 die zweite Iteration eines dezentralen Datensystems. Da während dieser
 ersten Entwicklungsphase viele Lektionen gelernt wurden, ist es
@@ -368,7 +416,7 @@ die Entscheidungen die zu ihnen geführt haben beschrieben werden. In
 einem weiteren Abschnitt sollen dann die Lektionen und Probleme dieses
 erster ersten Entwicklungsphase besprochen werden. 
 \subsubsection{Shadow}
-\label{sec:orge6ccf30}
+\label{sec:org0b82e71}
 Zwar übernahm die erste Implementierung des verteilten
 Nachrichtensystems, Codename \texttt{Shadow} weniger Funktionen als die
 aktuelle Umsetzung, für das System als ganzes war das Programm aber
@@ -392,7 +440,7 @@ Ansonsten wurde der interne Routing-Table verwendet. Dieser bestand
 aus einer Reihe von Prozessen, welche selbst auch direkt die
 \texttt{TCP}-Verbindungen verwalteten. 
 \subsubsection{Hunter}
-\label{sec:orgc458617}
+\label{sec:orgb733c57}
 Während \texttt{Shadow} die Rolle des verteilten Routers übernimmt, ist \texttt{Hunter}
 der lokale Router. Es geht bei \texttt{Hunter} also nicht darum, Nachrichten an
 andere Mitglieder des Netzwerks zu senden, sondern sie an verschiedene
@@ -424,16 +472,16 @@ einzelnen Komponenten erlaubt ein einheitliches Nachrichtenformat, da
 für die einzelnen Komponenten kein Verständnis über andere Komponenten
 oder die Verbindungen haben müssen. 
 \subsubsection{NET-Script}
-\label{sec:org08e246d}
+\label{sec:org8226917}
 Ein weitere zentrale Komponente des Systems ist eine eigene
 Programmiersprache, welche mit starker Integration in das restliche
 System das Entwickeln neuer Mechanismen und Komponenten das System
 offener machen sollte. Ein einfacher lisp-ähnlicher Syntax sollte das
 Entwickeln neuer Programme einfach und vielseitig einsetzbar machen.
 \subsubsection{Interface}
-\label{sec:orgfc52f04}
+\label{sec:org717f3ba}
 \subsubsection{Probleme}
-\label{sec:orge0a8736}
+\label{sec:orge8a2a6b}
 Die oben beschriebene Architektur hat viele verschiedene Vorteile,
 allerdings ist sie nicht ohne Probleme. Grundsätzlich geht es bei
 jedem Programm darum, Probleme zu lösen. Einer der zentraler Ideen war
@@ -481,11 +529,11 @@ Aufklärung.
 führen, wodurch es für Anfänger schwer sein kann, Zugang zu finden.
 \end{itemize}
 
-Diese Eigenschaften, besonders bei unseren sehr neuartigen Ideen und
-Mechanismen, machten es unglaublich schwer, Aussenstehenden die
-Funktionen und Konzepte zu erklären. Ohne Vorkenntnisse über Netzwerke
-und Kommunikationssysteme war es nahezu unmöglich, auch nur die
-einfachsten Ideen zu erklären oder den Inhalt dieser Arbeit
+\noindent Diese Eigenschaften, besonders bei unseren sehr neuartigen
+Ideen und Mechanismen, machten es unglaublich schwer, Aussenstehenden
+die Funktionen und Konzepte zu erklären. Ohne Vorkenntnisse über
+Netzwerke und Kommunikationssysteme war es nahezu unmöglich, auch nur
+die einfachsten Ideen zu erklären oder den Inhalt dieser Arbeit
 darzulegen. Und selbst mit grossem Vorwissen liessen sich nur die
 absoluten Grundlagen innerhalb absehbarer Zeit erklären, das Erklären
 der theoretischen und technischen Grundlagen würde Stunden in Anspruch
@@ -497,16 +545,20 @@ würde, mussten nach dieser ersten Entwicklungsphase gewisse Aspekte
 grundlegend überarbeitet werden, diesmal mit einem besonderen Fokus
 auf die \emph{präsentierbarkeit}.  
 \subsection{Präsentation}
-\label{sec:org9b6f353}
-Inzwischen sollte es klar sein, dass als Abschlussprodukt andere Ziele
-und Methoden verwendet wurden, als die, welche im obigen Abschnitt zur
-\emph{Modularität} beschrieben wurden.
+\label{sec:org707f7fe}
+Auch wenn von der ersten Entwicklungsphase viele Konzepte und sogar
+einige Umsetzungen übernommen werden konnten, so gab es grundlegende
+Probleme, welche nicht ignoriert werden konnten. Es wurde schnell
+klar, dass unabhängig aller technischer Fortschritte eine bessere Art
+der Präsentation gefunden werden musste. Dabei ist es wichtig, die
+technischen Neuerungen und Besonderheiten nicht zu vergessen. Die
+Umsetzung der ersten Entwicklungsphase 
 \section{Produkt}
-\label{sec:org89065e5}
+\label{sec:org8acb44c}
 \section{Ausblick}
-\label{sec:org9b854d9}
+\label{sec:orge70a4e7}
 \subsection{Verifizierung}
-\label{sec:org4c82e5c}
+\label{sec:org2a7e766}
 \subsection{Balance}
-\label{sec:orgd9f4bac}
+\label{sec:orgb1f7338}
 \end{document}

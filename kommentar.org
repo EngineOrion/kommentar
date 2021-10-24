@@ -120,7 +120,16 @@ Interaktionen und Verwendungen des Internets zu bringen. In einem
 nächsten Schritt soll dann eine Lösung besprochen werden: ein System,
 mit welchem sich möglichst viele der grössten Probleme lösen lassen,
 und welches tatsächlich praktischen Nutzen bietet.\\
-** TODO Beispiele / Praktisch Limitierungen
+** Adressen
+Das Internet erlaubt einfache, standardisierte Kommunikation zwischen
+Geräten aller Art. Egal welche Funktion oder Form sie auch haben
+mögen, es braucht nicht viel um ein Gerät mit dem Internet zu
+verbinden. Nebst den benötigten Protokollen, hauptsächlich =TCP= und
+=UDP= wird eine =IP-Addresse= als eindeutige Identifikation benötigt.
+Während vor dreisig Jahren wunderbare Systeme und Standards geschaffen
+wurden, welche seither die Welt grundlegend verändert haben, so gibt
+es doch einige fundamentale Probleme und Limitierungen, welche zu
+immer grösseren Problemen für unsere verbundene Welt werden.
 *** IP-V4
 \noindent In der Geschichte der Menschheit haben wir aus vielen
 verschiedenen Gründen Krieg geführt. Für Wasser, Nahrung, Öl, Frieden
@@ -142,11 +151,20 @@ die solche Limitierungen nicht hat. Aber der Wechsel ist eine
 freiwillige Entscheidung, für die nicht nur alle Betroffenen bereit
 sein müssen, sondern für die auch jede einzelne involvierte Komponente
 diese neue Technologie unterstützen müssen.\\
+
+Für jeden einzelnen kann dies verschiedene Konsequenzen haben:
+- Die Preise der Internetanbieter und Mobilfunkabonnemente wird
+  wahrscheinlich langfristig steigen, sobald die ehöhten Kosten für
+  neue Addressen bis zum Endnutzer durchsickern.
+- Ein aufwengdiger technologischer Wandel wird langfristig von Nöten
+  sein, welchen jeden einzelnen dazu zwingt auf neue Standards
+  umzusteigen. Eine solche Umstellung wird den häufigen Problemen
+  grossflächiger technischer Umstellungen nicht ausweichen können.
 *** Routing
-\noindent Freiheit und Unabhängigkeit sind menschlich. Es darf niemals
-bestraft werden, nach diesen fundamentalen Rechten zu streben. Und
-doch führt das egoistische Streben nach Freiheit zu Problemen, oftmals
-allerdings nicht für die nach Freiheit Strebenden.\\
+Freiheit und Unabhängigkeit sind menschlich. Es darf niemals bestraft
+werden, nach diesen fundamentalen Rechten zu streben. Und doch führt
+das egoistische Streben nach Freiheit zu Problemen, oftmals allerdings
+nicht für die nach Freiheit Strebenden.\\
 
 \noindent Genau diese Situation findet man im aktuellen Konflikt um
 die Grösse von /Address-Abschnitten/ vor. Um dieses Problem richtig zu
@@ -194,7 +212,7 @@ müssen weniger Parteien beim Finden des korrekten Abschnitts
 involviert sein. Aber für die =Zentralrouter= bedeutet es eine immer
 grössere Datenbank an Zuweisungen. Dieses Problem geht so weit, dass
 die grossen /Routingtables/ inzwischen das physikalische Limit
-erreichen, was ein einzelner Router verarbeiten kann.
+erreichen, was ein einzelner Router verarbeiten kann.\\
 ** Zentralisierung
 \noindent Die Macht in den Händen einiger weniger Kapitalisten und
 internationaler Unternehmen ist unvorstellbar gross. Einige wenige
@@ -275,13 +293,74 @@ wirklich Schlimmes passieren?\\
 \noindent Während es verständlich ist, dass das Benutzen von =Google=
 natürlich von =Google= abhängig ist, so versteht kaum jemand, wie viel
 unserer täglichen Aktivitäten von Diensten und Firmen abhängen, die
-selbst wieder von =Google= abhängig sind. All dies führt dazu, dass wir
-auf eine globale Katastrophe zusteuern, die nur darauf wartet, zu
-passieren.
-** Inhalte
+selbst wieder von =Google= abhängig sind. Seien es die =Facebook=-Server,
+durch welche keine Whatsapp-Nachrichten geschickt werden konnten, oder
+die fehlerhafte Konfiguration bei =Google=, durch welche manche Kunden
+die Temperatur ihrer Wohnungen auf ihren Nest Geräten nicht mehr
+anpassen konnten[fn:5], das Netz aus internen Verbindungen zwischen
+Firmen ist komplex und undurchschaubar, und nicht nur für die
+Entnutzer, da oftmals die Firmen selbst von kleinsten Problemen
+anderer Dieste überrascht werden können. Der wirtschaftliche Schaden
+solcher Ausfälle sind unvorstellbar, aber noch wichtiger muss die
+zerstörende Wirkung dieser auf unvorhergesehenen, entfernten Problemen
+auf millionen von Meschen bedacht werden.
 ** Komplexität
-** Orion
+In diesem Abschnitt soll noch kurz die unglaubliche Komplexität
+angesprochen werden, welche die häutige Web-Entwicklung mit sich
+bringt. Natürlich existieren automatisierte Dienste und Anbieter, die
+den Prozess vereinfachen. Wer aber Wert auf seine Privatsphäre und auf
+die Verwendung von open-source Software legt, muss sich um vieles
+selbst kümmern. Nicht nur die Auswahl an verschiedenen Programmen kann
+erschlagend wirken, sondern der Fakt, dass diese untereinander
+kompatibel sein müssen. Zwar reden wir oft von einem Webserver,
+allerdings sind es tatsächlich viele verschiedene Programme, die alle
+fehlerfrei miteinander interagieren müssen, um Resultate zu liefern.
+Dies kann den Einstieg schwerer machen, oder, in gefährlicheren Fällen
+kann es dazu führen, dass Sicherheit und Datenschutz aus Zeit- oder
+Komplexitätsgründen weggelassen oder vernachlässig werden.\\
+
+\noindent Dabei geht es oben nur um /klassische/ Webseiten oder
+Webserver. Die Welt der dezentralen Technologien ist im vergleich dazu
+wie der wilde Westen, ohne Standards, ohne Kompatiblität oder
+Regelungen. Dies führt dazu, dass es zwar für gewisse Anwendungen
+speziell entwickelte Netzwerke gibt, diese allerdings kaum allgeimen
+einsetzbar sind.
+** Präsentation
+Ein weiteres Problem, dass es zu berücksichtigen gibt, ist die Frage,
+wie man die hier behandelten Probleme technisch nicht versierten
+Personen erklären kann. Tatsächlich sind sowohl die besprochenen
+Probleme, als auch deren Lösungsansätze nicht nur abstrakt, sondern
+dazu noch Teil einer kleinen Nische in der Welt der Informatik.
+Manche der obigen Probele wurden bereits von anderen Applikationen
+zumindest teilweise behandelt, diese haben aber oftmals das Problem,
+dass sie viel Fachwissen und Aufwand benötigen, um sie effizient und
+sicher einzusetzen.
 * Konzept
+Nachdem nun eingie der zentralen Probleme angeschaut wurden, müssen
+die Ziele und Konzepte für =Engine: Orion= klar definiert werden. Es ist
+offesichtlich, dass das Internet mit all seinen Facetten und
+Anwendungen hat viele Probleme. Einige wurden hier bereits
+angesprochen, andere würden den Rahmen dieser Arbeit sprengen und
+wieder andere wurden noch gar nicht entdeckt oder als Probleme
+identifiziert. Aktuell versuchen wir bei jedem neuen Problem eine
+neue, meist temporäre Lösung zu finden, nur um nichts am System als
+Ganzem ändern zu müssen.\\
+
+\noindent Langfristig muss aber ein neues System entwickelt werden.
+Eine grundlegende Neuentwicklung der Art wie wir mit digitalen
+Systemen interagieren und wie digitale Systeme untereinander agieren.
+Nur mit einem solchen Wandel können wir die digitale Katastrophe nicht
+einfach nur verschieben, sondern grundlegend verhindern.
+
+\noindent Engine: Orion soll eine Rolle in diesem Systemwandel spielen
+und eine erste Vorlage für ein solches System der nächsten Generation
+bieten. Dabei geht es nicht um ein einzelnes Produkt oder eine
+Dienstleistung, welche vollständig entwickelt und ohne Mangel ist.
+Stattdessen sollen verschiedene Komponenten und Systeme entwickelt
+werden, welche genau gegen die angesprochenen Probleme vorgehen. Mit
+dem Zusammenschluss dieser Komponenten soll es dann möglich sein, ein
+neuartiges System zu entwickeln und damit einen Schritt in die
+Richtung des nötigen Wandels zu gehen.
 * Prozess
 ** Modularität
 Tatsächlich beschreibt dieses Dokument bereits den zweiten Versuch,
@@ -451,6 +530,9 @@ Umsetzung der ersten Entwicklungsphase
 ** Verifizierung
 ** Balance
 * Footnotes
+
+[fn:5] Fastcompany: Google outage, heruntergeladen am 24.10.2021.
+https://www.fastcompany.com/90358396/that-major-google-outage-meant-some-nest-users-couldnt-unlock-doors-or-use-the-ac
 [fn:4] =NaCl= Verschlüsselungs Bibliothek:
 https://nacl.cr.yp.to/, heruntergeladen am: 22.09.2021.
 
