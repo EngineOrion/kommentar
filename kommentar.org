@@ -528,7 +528,6 @@ Umsetzung der ersten Entwicklungsphase
 * Produkt
 * Ausblick
 ** Verifizierung
-** Balance
 * Footnotes
 
 [fn:5] Fastcompany: Google outage, heruntergeladen am 24.10.2021.
