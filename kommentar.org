@@ -1,4 +1,4 @@
-#+TITLE: Projekt Orion
+#+TITLE: Project Orion
 #+AUTHOR: Jakob Klemm, Dominik Keller
 #+LATEX_CLASS: article
 #+IMAGE: ksba
@@ -335,32 +335,6 @@ Manche der obigen Probele wurden bereits von anderen Applikationen
 zumindest teilweise behandelt, diese haben aber oftmals das Problem,
 dass sie viel Fachwissen und Aufwand benötigen, um sie effizient und
 sicher einzusetzen.
-* Konzept
-Nachdem nun eingie der zentralen Probleme angeschaut wurden, müssen
-die Ziele und Konzepte für =Engine: Orion= klar definiert werden. Es ist
-offesichtlich, dass das Internet mit all seinen Facetten und
-Anwendungen hat viele Probleme. Einige wurden hier bereits
-angesprochen, andere würden den Rahmen dieser Arbeit sprengen und
-wieder andere wurden noch gar nicht entdeckt oder als Probleme
-identifiziert. Aktuell versuchen wir bei jedem neuen Problem eine
-neue, meist temporäre Lösung zu finden, nur um nichts am System als
-Ganzem ändern zu müssen.\\
-
-\noindent Langfristig muss aber ein neues System entwickelt werden.
-Eine grundlegende Neuentwicklung der Art wie wir mit digitalen
-Systemen interagieren und wie digitale Systeme untereinander agieren.
-Nur mit einem solchen Wandel können wir die digitale Katastrophe nicht
-einfach nur verschieben, sondern grundlegend verhindern.
-
-\noindent Engine: Orion soll eine Rolle in diesem Systemwandel spielen
-und eine erste Vorlage für ein solches System der nächsten Generation
-bieten. Dabei geht es nicht um ein einzelnes Produkt oder eine
-Dienstleistung, welche vollständig entwickelt und ohne Mangel ist.
-Stattdessen sollen verschiedene Komponenten und Systeme entwickelt
-werden, welche genau gegen die angesprochenen Probleme vorgehen. Mit
-dem Zusammenschluss dieser Komponenten soll es dann möglich sein, ein
-neuartiges System zu entwickeln und damit einen Schritt in die
-Richtung des nötigen Wandels zu gehen.
 * Prozess
 ** Modularität
 Tatsächlich beschreibt dieses Dokument bereits den zweiten Versuch,
@@ -456,6 +430,7 @@ System das Entwickeln neuer Mechanismen und Komponenten das System
 offener machen sollte. Ein einfacher lisp-ähnlicher Syntax sollte das
 Entwickeln neuer Programme einfach und vielseitig einsetzbar machen.
 *** Interface
+TODO: Interface
 *** Probleme
 Die oben beschriebene Architektur hat viele verschiedene Vorteile,
 allerdings ist sie nicht ohne Probleme. Grundsätzlich geht es bei
@@ -524,10 +499,27 @@ Probleme, welche nicht ignoriert werden konnten. Es wurde schnell
 klar, dass unabhängig aller technischer Fortschritte eine bessere Art
 der Präsentation gefunden werden musste. Dabei ist es wichtig, die
 technischen Neuerungen und Besonderheiten nicht zu vergessen. Die
-Umsetzung der ersten Entwicklungsphase 
+Umsetzung der ersten Entwicklungsphase, wie innovativ und attraktiv
+sie auch wirken mag, ist noch weit davon entfernt, von Endnutzern
+verwendet oder gar angepasst zu werden. Auch wenn manche der Ideen
+hier wieder aufgegriffen werden, musste doch ein grösserer Fokus auf
+die /Präsentierbarkeit/ der Fortschritte gelegt werden. Daher wurde die
+Entscheidung getroffen, die Entwicklung in zwei Bereiche zu
+unterteilen:
+- Ein möglichst vielseitig einsetzbares Nachrichtensystem basierend
+  auf den bereits bekannten Prinzipien wird als Bibliothek für die
+  Anwendungen sowie öffentlich angeboten. Entwickelt in Rust soll
+  Geschwindigkeit und Sicherheit garantiert werden und möglichst viele
+  Möglichkeiten bieten, in andere Applikationen eingebunden zu werden.
+- Anwendungen:
 * Produkt
+** Actaeon
+** Orion
+** Anwendungen
 * Ausblick
 ** Verifizierung
+** Balance 
+** Anwendungen
 * Footnotes
 
 [fn:5] Fastcompany: Google outage, heruntergeladen am 24.10.2021.

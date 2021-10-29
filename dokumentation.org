@@ -1,7 +1,32 @@
-#+TITLE: Dezentrale Systeme
+#+TITLE: Actaeon
 #+AUTHOR: Jakob Klemm
+#+LANGUAGE: de
+#+OPTIONS: toc:t title:t date:nil
+#+LATEX_HEADER: \usepackage[utf8]{inputenc}
+#+LATEX_HEADER: \usepackage[dvipsnames]{xcolor}
+#+LATEX_HEADER: \usepackage{tikz}
+#+LATEX_HEADER: \usepackage{pdfpages}
+#+LATEX_HEADER: \usepackage[]{babel}
+#+LATEX_HEADER: \usepackage{listings}
+#+LATEX_HEADER: \usepackage[]{babel}
+#+LATEX_HEADER: \usepackage[dvipsnames]{xcolor}
+#+LATEX_HEADER: \usepackage{courier}
+#+LATEX_HEADER: \usepackage{listings}
+#+LATEX_HEADER: \usepackage{textcomp}
+#+LATEX_HEADER: \usepackage{gensymb}
+\newpage
 
-* Grundlagen
+* Einführung
+Dieses Dokument soll ohne grosse Umschreibungen und ohne
+Dramatisierungen einen Einblick in die Konzepte und Entscheidungen und
+Systeme bieten, welche schlussendlich zur =actaeon= Bibliothek geführt
+haben. Es ist ebenfalls wichtig zu verstehen, dass dieses Dokument
+sich lediglich auf die, im Rahmen der Maturarbeit entstandenen
+Projekte beschränkt, es handelt sich hier nicht um eine komplette
+Einführung in dezentrale Datensysteme, allerdings existieren genügend
+Quellen für grundlegendere Informationen[fn:6]. Für das
+schlussendliche Produkt wurde die =Rust=-Programmiersprache verwendet,
+welche ebenfalls nicht hier erklärt werden soll.
 * Projekte
 Nachdem die zentralen Problemen definiert wurden, ist es an der Zeit,
 andere Projekte zu analysieren um herauszufinden, ob die Probleme
@@ -299,6 +324,9 @@ gefallen finden. Seit einigen Jahren gibt es aber Bedenken über die
 Sicherheit und aktuelle Richtung des Projekts, sowie Berichte von
 internen Konflikten, besonders im Zusammenhang mit Spendengeldern.
 * Architektur
+In diesem Kapitel sollen einige der zentralen Konzepte und
+Entscheidungen erläutert werden, welche schlussendlich zur
+=Actaeon=-Applikation geführt haben.
 ** Verschlüsselung
 Zwar ist es bei weitem nicht, dass moderne dezentrale Systeme das
 Internet oder ein ähnliches Austauschsystem als Grundlage verwenden,
@@ -406,11 +434,23 @@ allerdings müssen auch einige Probleme angesprochen werden:
   Gleichzeitig darf der private Schlüssel nicht bekannt sein, sonst
   wäre die gesamte Verschlüsselung sinnlos. Es wird schnell
   offensichtlich, dass solche Bedingungen nie erfüllt werden können.
-- Geschwindigkeit
-- State / Sync
-
+- Da es sich bei der Liste der Abonnenten um Daten handelt, welche
+  während der Laufzeit gespeichert und verwaltet werden müssen, bringt
+  man plötzlich eine Vielzahl neuer Probleme ins Spiel. So müssen die
+  Daten repliziert und gesichert werden, da ein einzelnes Mitglied
+  jeder Zeit unerreichbar sein könnte, sie müssen verifiziert werden,
+  da man kein Vertrauen in die Mitglieder des Systems haben darf und
+  sie müssen trotz häufiger Änderungen konstant gehalten werden. Das
+  Gebiet der dezentralen oder verteilten Datenbanken alleine ist sehr
+  gross und komplex, wenn man also plötzlich nebst einem
+  Nachrichtensystem ohne verteilte Zustände auch noch eine verteilte
+  Datenbank verwalten muss, übersteigt dies meist die erhoffte
+  Komplexität vieler Projekte.
 * Actaeon
+TODO: Actaeon
 * Footnotes
+
+[fn:6] Orion Wiki - Distributed Systems, Jakob Klemm. https://orion.jeykey.net/distributed_systems.pdf
 
 [fn:5] Fastcompany: Google outage, heruntergeladen am 24.10.2021.
 https://www.fastcompany.com/90358396/that-major-google-outage-meant-some-nest-users-couldnt-unlock-doors-or-use-the-ac
