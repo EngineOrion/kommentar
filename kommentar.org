@@ -341,17 +341,14 @@ Programmierarbeit zu hören, denn für Aussenstehende scheint sich von
 Tag zu Tag nichts zu ändern. Sinnvolles kann erst berichtet werden,
 wenn der Zeitrahmen erhöht wird, sodass grössere Entscheidungen und
 ihre Konsequenzen sichtbar gemacht werden können. Die Entwicklung und
-Arbeiten dieser Arbeit sollen in zwei Abschnitte getrennt werden,
-wobei die meisten Produkte aus der zweiten Phase hervorgingen. Trotzdem
-darf die erste Entwicklungsphase 
+Produke dieser Arbeit sollen in zwei Abschnitte getrennt werden, wobei
+die meisten Produkte aus der zweiten Phase hervorgegangen sind.
 ** Modularität
-Tatsächlich beschreibt dieses Dokument bereits den zweiten Versuch,
-die zweite Iteration eines dezentralen Datensystems. Da während dieser
-ersten Entwicklungsphase viele Lektionen gelernt wurden, ist es
-wichtig die Ideen und die Umsetzung genau zu analysieren. Zwar
-unterscheiden sich die Ziele und Methoden der beiden Ansätze stark,
-gewisse Konzepte und einige Programme lassen sich für die aktuelle
-Zielsetzung genau übernehmen.\\
+Da während dieser ersten Entwicklungsphase viele Lektionen gelernt
+wurden, ist es wichtig die Ideen und die Umsetzung genau zu
+analysieren. Zwar unterscheiden sich die Ziele und Methoden der beiden
+Ansätze stark, gewisse Konzepte und einige Programme lassen sich für
+die aktuelle Zielsetzung genau übernehmen.\\
 
 \noindent Als erstes ist es wichtig, die Zielsetzung des Systems,
 welches hier einfach als “Modularer Ansatz” bezeichnet wird, zu
@@ -516,10 +513,18 @@ Entscheidung getroffen, die Entwicklung in zwei Bereiche zu
 unterteilen:
 - Ein möglichst vielseitig einsetzbares Nachrichtensystem basierend
   auf den bereits bekannten Prinzipien wird als Bibliothek für die
-  Anwendungen sowie öffentlich angeboten. Entwickelt in Rust sollen
-  Geschwindigkeit und Sicherheit garantiert werden und möglichst viele
-  Möglichkeiten bieten, in andere Applikationen eingebunden zu werden.
-- Anwendungen:
+  Anwendungen sowie öffentlich angeboten. Entwickelt in Rust wird
+  Geschwindigkeit und Sicherheit garantiert und es lassen sich
+  möglichst viele Möglichkeiten bieten, Integrationen in andere
+  Projekte und Applikationen zu finden.
+- Aufbauend auf diesem Datensystem sollen mit verschiedenen
+  Anwendungen die Vorteile und vielseitige Einsatzmöglichkeiten
+  gezeigt werden. Auch wenn es damit die weltverändernde Revolution
+  noch nicht direkt gestartet wird, so wird hiermit ein Aspekt
+  angesprochen, welcher in technischen Kreisen oftmals vergessen geht,
+  nähmlich die Frage, wie man komplexe Themen und Programme einfachen
+  Nutzern näher bringt.
+  
 * Produkt
 ** Actaeon
 ** Orion
