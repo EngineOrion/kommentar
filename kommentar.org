@@ -23,7 +23,7 @@ TODO: Abstract
 \newpage
 
 *Vorwort*\\
-Die schriftliche Komponente der Maturaarbeit =Projekt Orion= besteht aus
+Die schriftliche Komponente der Maturaarbeit =Project Orion= besteht aus
 drei verschiedenen Teilen. Da die behandelten Themen äusserst komplex
 und umfangreich sind, verlangen verschiedene Abschnitte der Arbeit
 verschiedenes Vorwissen und einen verschiedenen Zeitaufwand. Deswegen
@@ -38,7 +38,7 @@ gerechnet werden.
   klassische Besprechung der Arbeit. Begonnen mit einer Zielsetzung
   und Besprechung verschiedener Projekte, bis zur Analyse des Produkts
   und einem Ausblick in die Zukunft gibt dieses Dokument einen guten,
-  aber oberflächlichen Einblick in das =Projekt Orion=. Natürlich wird
+  aber oberflächlichen Einblick in das Project Orion. Natürlich wird
   besonders bei der Analyse der existierenden Projekten und Darlegung
   des Konzepts gewisses technisches Know-How benötigt, aber es wurde
   versucht, alle Fachbegriffe zu umschreiben oder zu erklären. Wer nur
@@ -60,7 +60,7 @@ gerechnet werden.
   klassisch strukturierten Dokument finden. Stattdessen ist die
   Code-Dokumentation online über automatisch generierte
   Rust-Dokumentation zu finden. Die Seiten mögen anfangs etwas
-  unübersichtlich wirken, wer aber den Code von =Projekt Orion=
+  unübersichtlich wirken, wer aber den Code von Project Orion
   verwenden will wird sich dort gut zurecht finden.
 \newpage
 
@@ -336,6 +336,14 @@ zumindest teilweise behandelt, diese haben aber oftmals das Problem,
 dass sie viel Fachwissen und Aufwand benötigen, um sie effizient und
 sicher einzusetzen.
 * Prozess
+Oftmals ist es nicht besonders spannend, über den Prozess einer
+Programmierarbeit zu hören, denn für Aussenstehende scheint sich von
+Tag zu Tag nichts zu ändern. Sinnvolles kann erst berichtet werden,
+wenn der Zeitrahmen erhöht wird, sodass grössere Entscheidungen und
+ihre Konsequenzen sichtbar gemacht werden können. Die Entwicklung und
+Arbeiten dieser Arbeit sollen in zwei Abschnitte getrennt werden,
+wobei die meisten Produkte aus der zweiten Phase hervorgingen. Trotzdem
+darf die erste Entwicklungsphase 
 ** Modularität
 Tatsächlich beschreibt dieses Dokument bereits den zweiten Versuch,
 die zweite Iteration eines dezentralen Datensystems. Da während dieser
@@ -508,7 +516,7 @@ Entscheidung getroffen, die Entwicklung in zwei Bereiche zu
 unterteilen:
 - Ein möglichst vielseitig einsetzbares Nachrichtensystem basierend
   auf den bereits bekannten Prinzipien wird als Bibliothek für die
-  Anwendungen sowie öffentlich angeboten. Entwickelt in Rust soll
+  Anwendungen sowie öffentlich angeboten. Entwickelt in Rust sollen
   Geschwindigkeit und Sicherheit garantiert werden und möglichst viele
   Möglichkeiten bieten, in andere Applikationen eingebunden zu werden.
 - Anwendungen:

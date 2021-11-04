@@ -1,0 +1,19 @@
+#+TITLE: Präsentation
+
+1. Alte Chat Demo
+2. Probleme, Konzepte, Umsetzung / Prozess
+3. Chat Demo V2
+4. Konzepte & Umsetzung dahiner => Verallgemeinerung, Rust, Kademila
+5. Weitere Einsatzmöglichkeiten => Arrow,
+6. Aufwendigeres => Orion,
+7. Leeres plane, langsame bewegung,
+8. Terrain
+9. Farbe
+10. Natur
+11. Flugzeug
+12. UI
+13. Ringe
+14. Multiplayer
+15. "Unpause", gameplay => Countdown, play
+16. erklärung, download, etc.
+17. Vision und ausblick
