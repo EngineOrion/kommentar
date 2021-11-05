@@ -18,7 +18,40 @@
 #+LATEX_HEADER: \usepackage{gensymb}
 \newpage  
 #+BEGIN_ABSTRACT
-TODO: Abstract
+\noindent Wir leben in einer bequemen Welt. Das wollen wir wenigstens
+glauben. In Wahrheit leben wir aber in einer idyllischen Illusion. Die
+unglaublichen Veränderungen unserer Gesellschaft und unseres Alltags
+hätte sich vor 30 Jahren niemand vorstellen können. Die
+Geschwindigkeit der Fortschritte hat noch nie gesehene Mengen an
+Wohlstand und Reichtum geschaffen. Doch im Rausch des Wandels wurden
+gewisse Entscheidungen, manche bewusst und böswillig, andere aus Not,
+getroffen, welche uns in unserer modernen, vom Internet vollständig
+abhängigen, Gesellschaft in eine prekäre Situation bringen. Die
+tiefsten Fundamente der Welt, wie wir sie kennen, sind dem totalen
+Zusammenbruch gefährlich nahe, und was das System am Laufen hält sind
+oftmals monopolistische Megaunternehmen und ihre ungewählten CEO's,
+die nur von der Weltherrschaft träumen.\\
+
+\noindent Es ist offensichtlich, dass eine Alternative her muss. Aber
+während verschiedenste Projekte bereits grosse Fortschritte in den
+Bereichen der dezentralen Kommunikation und Datenspeicherung machen,
+bleiben oftmals die Nutzer aus. Denn trotz aller Innovation und aller
+Vorteile geht es hier um äusserst abstrakte, komplexe Themen, welche
+Unmengen an Vorwissen und Interesse benötigen, um sie genügend zu
+verstehen. =Project Orion= versucht genau da anzusetzen: Nebst einem
+dezentralen Kommunikationssystem sollen auch verschiedene, praktisch
+einsetzbare Anwendungen die Prinzipien dezentraler Systeme in die
+Hände der Endnutzer bringen und dort einen sichtbaren, verständlichen
+Unterschied machen. Besonders dafür wurde ein 3D multiplayer
+Videospiel entwickelt, welches basierend auf einem eigenen dezentralen
+Kommunikationsprotokoll die gewohnte Erfahrung bekannter Videospiele
+liefern soll, ohne dabei in die Fänge der Megaunternehmen zu geraten.
+
+\noindent Zusätzlich werden die Entwickelten Werkzeuge mit ihren
+Dokumentation und unseren Erfahrungen und Lektionen öffentlich zur
+Verfügung gestellt, sodass zukünftige Projekte davon profitieren
+können und die Einsteigshürde für das Gebiet der dezentralen
+Datensysteme hoffentlich gesenkt wird.
 #+END_ABSTRACT
 \newpage
 
@@ -54,15 +87,13 @@ und genügend Zeit mitbringen.
   den umgesetzten Funktionen profitieren will, sollte die
   Dokumentation durcharbeiten. Das Dokument ist eher umfangreich, es
   kann aber auch gut als eine Art Nachschlagewerk verwendet werden.
-- Code: Neben der Dokumentation des Projekts und der Konzepte,
-  existiert eine weitere Form der Dokumentation. Nahezu jede Funktion,
-  jedes Modul und jedes Objekt über die verschiedenen /Crates/ sind
-  dokumentiert. Diese Dokumentationen lassen sich nicht in einem
-  klassisch strukturierten Dokument finden. Stattdessen ist die
-  Code-Dokumentation online über automatisch generierte
-  Rust-Dokumentation zu finden. Die Seiten mögen anfangs etwas
-  unübersichtlich wirken, wer aber den Code von Project Orion
-  verwenden will wird sich dort gut zurecht finden.
+- Code: Neben der Dokumentation des Projekts existiert eine weitere
+  Form der Dokumentation. Nahezu jede Funktion und jedes Modul über
+  die verschiedenen /Crates/ sind dokumentiert. Diese Dokumentationen
+  lassen sich nicht in einem klassisch strukturierten Dokument finden,
+  stattdessen ist die Code-Dokumentation online über automatisch
+  generierte Rust-Dokumentation zu finden. Wer den Code von Project
+  Orion verwenden will wird sich dort gut zurecht finden.
 \newpage
 
 * Vision
@@ -527,10 +558,6 @@ unterteilen:
 * Produkt
 ** Actaeon
 ** Orion
-** Anwendungen
-* Ausblick
-** Verifizierung
-** Balance 
 ** Anwendungen
 * Footnotes
 

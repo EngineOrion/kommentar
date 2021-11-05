@@ -1,4 +1,4 @@
-% Created 2021-11-05 Fri 12:29
+% Created 2021-11-05 Fri 13:18
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -44,7 +44,40 @@
 
 \newpage  
 \begin{ABSTRACT}
-TODO: Abstract
+\noindent Wir leben in einer bequemen Welt. Das wollen wir wenigstens
+glauben. In Wahrheit leben wir aber in einer idyllischen Illusion. Die
+unglaublichen Veränderungen unserer Gesellschaft und unseres Alltags
+hätte sich vor 30 Jahren niemand vorstellen können. Die
+Geschwindigkeit der Fortschritte hat noch nie gesehene Mengen an
+Wohlstand und Reichtum geschaffen. Doch im Rausch des Wandels wurden
+gewisse Entscheidungen, manche bewusst und böswillig, andere aus Not,
+getroffen, welche uns in unserer modernen, vom Internet vollständig
+abhängigen, Gesellschaft in eine prekäre Situation bringen. Die
+tiefsten Fundamente der Welt, wie wir sie kennen, sind dem totalen
+Zusammenbruch gefährlich nahe, und was das System am Laufen hält sind
+oftmals monopolistische Megaunternehmen und ihre ungewählten CEO's,
+die nur von der Weltherrschaft träumen.\\
+
+\noindent Es ist offensichtlich, dass eine Alternative her muss. Aber
+während verschiedenste Projekte bereits grosse Fortschritte in den
+Bereichen der dezentralen Kommunikation und Datenspeicherung machen,
+bleiben oftmals die Nutzer aus. Denn trotz aller Innovation und aller
+Vorteile geht es hier um äusserst abstrakte, komplexe Themen, welche
+Unmengen an Vorwissen und Interesse benötigen, um sie genügend zu
+verstehen. \texttt{Project Orion} versucht genau da anzusetzen: Nebst einem
+dezentralen Kommunikationssystem sollen auch verschiedene, praktisch
+einsetzbare Anwendungen die Prinzipien dezentraler Systeme in die
+Hände der Endnutzer bringen und dort einen sichtbaren, verständlichen
+Unterschied machen. Besonders dafür wurde ein 3D multiplayer
+Videospiel entwickelt, welches basierend auf einem eigenen dezentralen
+Kommunikationsprotokoll die gewohnte Erfahrung bekannter Videospiele
+liefern soll, ohne dabei in die Fänge der Megaunternehmen zu geraten.
+
+\noindent Zusätzlich werden die Entwickelten Werkzeuge mit ihren
+Dokumentation und unseren Erfahrungen und Lektionen öffentlich zur
+Verfügung gestellt, sodass zukünftige Projekte davon profitieren
+können und die Einsteigshürde für das Gebiet der dezentralen
+Datensysteme hoffentlich gesenkt wird.
 \end{ABSTRACT}
 \newpage
 
@@ -81,20 +114,18 @@ aktuelle Form der Komponenten genauer verstehen will, oder wer von
 den umgesetzten Funktionen profitieren will, sollte die
 Dokumentation durcharbeiten. Das Dokument ist eher umfangreich, es
 kann aber auch gut als eine Art Nachschlagewerk verwendet werden.
-\item Code: Neben der Dokumentation des Projekts und der Konzepte,
-existiert eine weitere Form der Dokumentation. Nahezu jede Funktion,
-jedes Modul und jedes Objekt über die verschiedenen \emph{Crates} sind
-dokumentiert. Diese Dokumentationen lassen sich nicht in einem
-klassisch strukturierten Dokument finden. Stattdessen ist die
-Code-Dokumentation online über automatisch generierte
-Rust-Dokumentation zu finden. Die Seiten mögen anfangs etwas
-unübersichtlich wirken, wer aber den Code von Project Orion
-verwenden will wird sich dort gut zurecht finden.
+\item Code: Neben der Dokumentation des Projekts existiert eine weitere
+Form der Dokumentation. Nahezu jede Funktion und jedes Modul über
+die verschiedenen \emph{Crates} sind dokumentiert. Diese Dokumentationen
+lassen sich nicht in einem klassisch strukturierten Dokument finden,
+stattdessen ist die Code-Dokumentation online über automatisch
+generierte Rust-Dokumentation zu finden. Wer den Code von Project
+Orion verwenden will wird sich dort gut zurecht finden.
 \end{itemize}
 \newpage
 
 \section{Vision}
-\label{sec:orga28efd5}
+\label{sec:org72dd412}
 \begin{center}
 \begin{enumerate}
 \item Oktober 1964 - UCLA an Stanford: LO
@@ -153,7 +184,7 @@ nächsten Schritt soll dann eine Lösung besprochen werden: ein System,
 mit welchem sich möglichst viele der grössten Probleme lösen lassen,
 und welches tatsächlich praktischen Nutzen bietet.\\
 \subsection{Adressen}
-\label{sec:org170da64}
+\label{sec:org5f0c671}
 Das Internet erlaubt einfache, standardisierte Kommunikation zwischen
 Geräten aller Art. Egal welche Funktion oder Form sie auch haben
 mögen, es braucht nicht viel, um ein Gerät mit dem Internet zu
@@ -163,7 +194,7 @@ vor dreissig Jahren wunderbare Systeme und Standards geschaffen wurden,
 welche seither die Welt grundlegend verändert haben, gibt es doch
 einige fundamentale Probleme und Limitierungen.
 \subsubsection{IP-V4}
-\label{sec:org14d9653}
+\label{sec:orgf437648}
 \noindent In der Geschichte der Menschheit haben wir aus vielen
 verschiedenen Gründen Krieg geführt. Für Wasser, Nahrung, Öl, Frieden
 oder Freiheit in den Krieg zu ziehen, scheint zu einer fernen Welt zu
@@ -197,7 +228,7 @@ solche Umstellung wird den häufigen Problemen grossflächiger
 technischer Umstellungen nicht ausweichen können.
 \end{itemize}
 \subsubsection{Routing}
-\label{sec:org23a239a}
+\label{sec:orgbe86578}
 Freiheit und Unabhängigkeit sind menschlich. Es darf niemals bestraft
 werden, nach diesen fundamentalen Rechten zu streben. Und doch führt
 das egoistische Streben nach Freiheit zu Problemen, oftmals allerdings
@@ -253,7 +284,7 @@ grössere Datenbank an Zuweisungen. Dieses Problem geht so weit, dass
 die grossen \emph{Routingtables} inzwischen das physikalische Limit
 erreichen, was ein einzelner Router verarbeiten kann.\\
 \subsection{Zentralisierung}
-\label{sec:org30245c5}
+\label{sec:orgbadd22a}
 \noindent Die Macht in den Händen einiger weniger Kapitalisten und
 internationaler Unternehmen ist unvorstellbar gross. Einige wenige
 CEO's, welche nie gewählt, überprüft oder zur Rede gestellt wurden,
@@ -265,7 +296,7 @@ eine solche Abhängigkeit wirft gewisse Fragen und Probleme auf.\\
 gibt es auch noch sehr praktische Probleme in der Art, wie moderne
 Internet-Dienste implementiert sind.
 \subsubsection{Datenschutz}
-\label{sec:org364a531}
+\label{sec:orgc604de6}
 \begin{center}
 \emph{Wenn man nicht für etwas zahlt, ist man das Produkt.}
 \end{center}
@@ -305,12 +336,12 @@ Probleme formulieren:
 \begin{itemize}
 \item Selbst für die einfachsten Anfragen im Internet sind wir von einer
 Vielzahl von Firmen und Systemen abhängig. Dieses Problem wird noch
-etwas genauer im Abschnitt \hyperref[sec:orgd1e05b4]{Abhängigkeit} besprochen.
+etwas genauer im Abschnitt \hyperref[sec:orgc445ca4]{Abhängigkeit} besprochen.
 \item Wir haben weder ein Verständnis von den involvierten Parteien noch
 die Bereitschaft, Bequemlichkeit dafür aufzugeben.
 \end{itemize}
 \subsubsection{Abhängigkeit}
-\label{sec:orgd1e05b4}
+\label{sec:orgc445ca4}
 In einem fiktionalen Szenario\footnote{Tom Scott: Single Point of Failure
 \url{https://youtu.be/y4GB\_NDU43Q}, heruntergeladen am 24.05.2020.} erklärt \emph{Tom Scott} auf seinem
 YouTube-Kanal, was passieren könnte, wenn eine einzelne
@@ -352,7 +383,7 @@ solcher Ausfälle ist unvorstellbar, aber noch wichtiger muss die
 zerstörende Wirkung dieser unvorhergesehenen, scheinbar entfernten
 Problemen auf Millionen von Menschen bedacht werden.
 \subsection{Komplexität}
-\label{sec:orgd9425a8}
+\label{sec:org123ac0d}
 In diesem Abschnitt soll noch kurz die unglaubliche Komplexität
 angesprochen werden, welche die heutige Web-Entwicklung mit sich
 bringt. Natürlich existieren automatisierte Dienste und Anbieter, die
@@ -374,7 +405,7 @@ Regelungen. Dies führt dazu, dass es zwar für gewisse Anwendungen
 speziell entwickelte Netzwerke gibt, diese allerdings kaum allgeimen
 einsetzbar sind.
 \subsection{Präsentation}
-\label{sec:org7f211eb}
+\label{sec:orgb0802ee}
 Ein weiteres Problem, das es zu berücksichtigen gibt, ist die Frage,
 wie man die hier behandelten Probleme technisch nicht versierten
 Personen erklären kann. Tatsächlich sind sowohl die besprochenen
@@ -385,7 +416,7 @@ zumindest teilweise behandelt, diese haben aber oftmals das Problem,
 dass sie viel Fachwissen und Aufwand benötigen, um sie effizient und
 sicher einzusetzen.
 \section{Prozess}
-\label{sec:org838b906}
+\label{sec:orgf01f3d3}
 Oftmals ist es nicht besonders spannend, über den Prozess einer
 Programmierarbeit zu hören, denn für Aussenstehende scheint sich von
 Tag zu Tag nichts zu ändern. Sinnvolles kann erst berichtet werden,
@@ -394,7 +425,7 @@ ihre Konsequenzen sichtbar gemacht werden können. Die Entwicklung und
 Produke dieser Arbeit sollen in zwei Abschnitte getrennt werden, wobei
 die meisten Produkte aus der zweiten Phase hervorgegangen sind.
 \subsection{Modularität}
-\label{sec:orgb7ae9cd}
+\label{sec:orgb75e87e}
 Da während dieser ersten Entwicklungsphase viele Lektionen gelernt
 wurden, ist es wichtig, die Ideen und die Umsetzung genau zu
 analysieren. Zwar unterscheiden sich die Ziele und Methoden der beiden
@@ -430,7 +461,7 @@ die Entscheidungen, die zu ihnen geführt haben, beschrieben werden. In
 einem weiteren Abschnitt sollen dann die Lektionen und Probleme dieser
 erster ersten Entwicklungsphase besprochen werden. 
 \subsubsection{Shadow}
-\label{sec:org99158ef}
+\label{sec:org812efbe}
 Zwar übernahm die erste Implementierung des verteilten
 Nachrichtensystems, Codename \texttt{Shadow}, weniger Funktionen als die
 aktuelle Umsetzung, für das System als Ganzes war das Programm aber
@@ -454,7 +485,7 @@ Ansonsten wurde der interne Routing-Table verwendet. Dieser bestand
 aus einer Reihe von Prozessen, welche selbst auch direkt die
 TCP-Verbindungen verwalteten.
 \subsubsection{Hunter}
-\label{sec:org54cecac}
+\label{sec:org75b1737}
 Während Shadow die Rolle des verteilten Routers übernimmt, ist Hunter
 der lokale Router. Es geht bei Hunter also nicht darum, Nachrichten an
 andere Mitglieder des Netzwerks zu senden, sondern sie an verschiedene
@@ -486,7 +517,7 @@ der einzelnen Komponenten erlaubt ein einheitliches Nachrichtenformat,
 da für die einzelnen Komponenten kein Verständnis über andere
 Komponenten oder die Verbindungen haben müssen.
 \subsubsection{NET-Script}
-\label{sec:org06256fd}
+\label{sec:org78f1873}
 Eine weitere zentrale Komponente des Systems ist eine eigens dafür
 entwickelte Programmiersprache, welche mit starker Integration in das
 restliche System das Entwickeln neuer Mechanismen und Komponenten für
@@ -494,7 +525,7 @@ das System offener machen sollte. Ein einfacher lisp-ähnlicher Syntax
 sollte das Entwickeln neuer Programme einfach und vielseitig
 einsetzbar machen.
 \subsubsection{Probleme}
-\label{sec:orgbb61beb}
+\label{sec:orge0649d3}
 Die oben beschriebene Architektur hat viele verschiedene Vorteile,
 allerdings ist sie nicht ohne Probleme. Grundsätzlich geht es bei
 jedem Programm darum, Probleme zu lösen. Eine der zentraler Ideen war
@@ -557,7 +588,7 @@ mussten nach dieser ersten Entwicklungsphase gewisse Aspekte
 grundlegend überarbeitet werden, diesmal mit einem besonderen Fokus
 auf die \emph{präsentierbarkeit}.
 \subsection{Präsentation}
-\label{sec:org08cfd52}
+\label{sec:org835b6b0}
 Auch wenn von der ersten Entwicklungsphase viele Konzepte und sogar
 einige Umsetzungen übernommen werden konnten, gab es grundlegende
 Probleme, welche nicht ignoriert werden konnten. Es wurde schnell
@@ -588,19 +619,11 @@ Nutzern näher bringt.
 \end{itemize}
 
 \section{Produkt}
-\label{sec:org172cd7d}
+\label{sec:orgca65dd9}
 \subsection{Actaeon}
-\label{sec:org5599127}
+\label{sec:org91e5efe}
 \subsection{Orion}
-\label{sec:orgf2ce77b}
+\label{sec:orgdfb0aab}
 \subsection{Anwendungen}
-\label{sec:org2e73250}
-\section{Ausblick}
-\label{sec:org756ee4c}
-\subsection{Verifizierung}
-\label{sec:org41f1364}
-\subsection{Balance}
-\label{sec:orgfae338c}
-\subsection{Anwendungen}
-\label{sec:org58282e8}
+\label{sec:orgf3d84ae}
 \end{document}
