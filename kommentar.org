@@ -25,34 +25,35 @@ TODO: Abstract
 *Vorwort*\\
 Die schriftliche Komponente der Maturaarbeit =Project Orion= besteht aus
 drei verschiedenen Teilen. Da die behandelten Themen äusserst komplex
-und umfangreich sind, verlangen verschiedene Abschnitte der Arbeit
+und umfangreich sind, verlangen die Abschnitte der Arbeit
 verschiedenes Vorwissen und einen verschiedenen Zeitaufwand. Deswegen
 wurde die schriftliche Komponente in drei Subkomponenten aufgeteilt,
 wobei sie nach technischem Detailgrad sortiert sind. Wer nur ein
 oberflächliches Verständnis über die Arbeiten und eine Analyse des
 Umfelds will, ohne dabei zu technisch zu werden, muss nicht über den
 Umfang dieses Dokuments hinaus. Aber für vollständigen Einblick in die
-Errungenschaften und Konzepte muss mit einem grösseren Aufwand
-gerechnet werden.
+Errungenschaften und Konzepte erhalten will, muss gewisses Vorwissen
+und genügend Zeit mitbringen.
 - Schriftlicher Kommentar: In diesem Dokument hier findet sich eine
   klassische Besprechung der Arbeit. Begonnen mit einer Zielsetzung
-  und Besprechung verschiedener Projekte, bis zur Analyse des Produkts
-  und einem Ausblick in die Zukunft gibt dieses Dokument einen guten,
-  aber oberflächlichen Einblick in das Project Orion. Natürlich wird
-  besonders bei der Analyse der existierenden Projekten und Darlegung
-  des Konzepts gewisses technisches Know-How benötigt, aber es wurde
-  versucht, alle Fachbegriffe zu umschreiben oder zu erklären. Wer nur
-  über die Vision und den aktuellen Stand wissen will muss nicht über
-  dieses Dokument hinaus, aber verschiedene Konzepte und nahezu die
-  gesamte technische Umsetzung befinden sind nicht in diesem Dokument.
+  und der Besprechung verschiedener Projekte, bis zur Analyse des
+  Produkts und einem Ausblick in die Zukunft, gibt dieses Dokument
+  einen guten, eher aber oberflächlichen Einblick in das Projekt.
+  Natürlich wird besonders bei der Analyse der existierenden Projekten
+  und der Darlegung des Konzepts gewisses technisches Know-How
+  benötigt, aber es wurde versucht, alle Fachbegriffe zu umschreiben
+  oder zu erklären. Wer nur über die Vision und den aktuellen Stand
+  wissen will muss nicht über dieses Dokument hinaus, aber
+  verschiedene Konzepte und nahezu die gesamte technische Umsetzung
+  befinden sind nicht in diesem Dokument.
 - Dokumentation: In dieser alleinstehenden Dokumentation, welche im
   Detailgrad zwischen dem schriftlichen Kommentar und der
-  Code-Dokumentation steht, werden die Konzepte und Ideen besprochen.
-  Wer die Entstehung und aktuelle Form der Komponenten genauer
-  verstehen will, oder wer von den umgesetzten Funktionen profitieren
-  will, sollte die Dokumentation durcharbeiten. Das Dokument ist eher
-  umfangreich, es kann aber auch gut als eine Art Nachschlagewerk
-  verwendet werden.
+  Code-Dokumentation steht, werden die Konzepte und Ideen weiter
+  besprochen und ihre Umsetzung angeschaut. Wer die Entstehung und
+  aktuelle Form der Komponenten genauer verstehen will, oder wer von
+  den umgesetzten Funktionen profitieren will, sollte die
+  Dokumentation durcharbeiten. Das Dokument ist eher umfangreich, es
+  kann aber auch gut als eine Art Nachschlagewerk verwendet werden.
 - Code: Neben der Dokumentation des Projekts und der Konzepte,
   existiert eine weitere Form der Dokumentation. Nahezu jede Funktion,
   jedes Modul und jedes Objekt über die verschiedenen /Crates/ sind
@@ -73,22 +74,22 @@ und Lebensweise, die mit dieser einfachen Nachricht in Bewegung
 gebracht wurde. Eigentlich hätte die erste Nachricht über das =ARPANET=
 im Jahre 1964 =LOGIN= heissen sollen, doch das Netzwerk stürzte nach nur
 zwei Buchstaben ab. Ob dies als schlechtes Omen für die Zukunft hätte
-gewertet werden sollen bleibt eine ungeklärte Frage. Aber das Internet
-ist hier und es ist so dominant wie noch nie zuvor. Jetzt ist es in
-der Verantwortung jeder neuen Generation auf diesem Planeten, mit den
-unglaublichen Möglichkeiten richtig umzugehen und die Vielzahl an
-bevorstehenden Katastrophen und Gefahren zu navigieren.\\
+gewertet werden sollen, bleibt eine ungeklärte Frage. Aber das
+Internet ist hier und es ist so dominant wie noch nie zuvor. Jetzt ist
+es in der Verantwortung jeder neuen Generation auf diesem Planeten,
+mit den unglaublichen Möglichkeiten richtig umzugehen und die Vielzahl
+an bevorstehenden Katastrophen und Gefahren zu navigieren.\\
 
-\noindent Ohne das Internet wäre die Welt wie wir sie kennen nicht
+\noindent Ohne das Internet wäre die Welt wie wir sie kennen, nicht
 möglich. Unsere Arbeit, Kommunikation und unser Entertainment sind
 nicht einfach nur abhängig von der enormen Interkonnektivität des
 Internets, ohne sie würden ganze Industrien und Bereiche unser
 Gesellschaft gar nicht erst existieren. Das Internet hatte einen
 selbstverstärkenden Effekt auf sein eigenes Wachstum. Der um ein
 Vielfaches schnellere Datenaustausch und die enorme Interkonnektivität
-führten dazu, dass jede neue Innovation und jede neue Plattform im
-Internet noch schneller noch mehr User erreichte und auf immer
-unvorstellbarere Grössen anwuchs.\\
+führten dazu, dass jede neue Innovation und jede neue Plattform noch
+schneller noch mehr User erreichte und auf immer unvorstellbarere
+Grössen anwuchs.\\
 
 \noindent Das ist ja grundsätzlich nichts Schlechtes. Das Internet hat
 eine unvorstellbare Menge an Vermögen, Geschwindigkeit und
@@ -107,13 +108,13 @@ Kollaps ganzer Länder oder Gesellschaften kommen.\\
 \noindent Egal wie sicher und zuverlässig unsere /öffentliche/
 Infrastruktur auch scheinen mag, es lassen sich doch schnell Risse im
 System erkennen. Nicht nur an der Oberfläche, sondern auch im Herzen
-unseres digitalen Leben gibt es Probleme. Oftmals handelt es sich
+unseres digitalen Leben, gibt es Probleme. Oftmals handelt es sich
 dabei nicht um /Kleinigkeiten/, /Meinungsverschiedenheiten/ oder
 /Kontroversen/, sondern um physikalische Grenzen, grundlegende
 Designfehler und das vielseitige Versagen der involvierten Parteien.\\
 
 \noindent In den nächsten Kapiteln sollen einige dieser zentralen
-Probleme besprochen werden. Dabei soll versucht werden nicht nur die
+Probleme besprochen werden. Dabei soll versucht werden, nicht nur die
 fehlerhaften Implementierungen zu erklären, sondern auch die dadurch
 entstandenen Probleme in Verbindung mit unseren täglichen
 Interaktionen und Verwendungen des Internets zu bringen. In einem
@@ -123,13 +124,12 @@ und welches tatsächlich praktischen Nutzen bietet.\\
 ** Adressen
 Das Internet erlaubt einfache, standardisierte Kommunikation zwischen
 Geräten aller Art. Egal welche Funktion oder Form sie auch haben
-mögen, es braucht nicht viel um ein Gerät mit dem Internet zu
-verbinden. Nebst den benötigten Protokollen, hauptsächlich =TCP= und
-=UDP= wird eine =IP-Addresse= als eindeutige Identifikation benötigt.
-Während vor dreisig Jahren wunderbare Systeme und Standards geschaffen
-wurden, welche seither die Welt grundlegend verändert haben, so gibt
-es doch einige fundamentale Probleme und Limitierungen, welche zu
-immer grösseren Problemen für unsere verbundene Welt werden.
+mögen, es braucht nicht viel, um ein Gerät mit dem Internet zu
+verbinden. Nebst den benötigten Protokollen, hauptsächlich =TCP= und =UDP=
+wird eine =IP-Addresse= als eindeutige Identifikation benötigt. Während
+vor dreissig Jahren wunderbare Systeme und Standards geschaffen wurden,
+welche seither die Welt grundlegend verändert haben, gibt es doch
+einige fundamentale Probleme und Limitierungen.
 *** IP-V4
 \noindent In der Geschichte der Menschheit haben wir aus vielen
 verschiedenen Gründen Krieg geführt. Für Wasser, Nahrung, Öl, Frieden
@@ -146,20 +146,21 @@ wird die vierte Version (=V4=) verwendet. In einer Wirtschaft, in der
 unendliches Wachstum als letzte absolute Wahrheit geblieben ist, kann
 ein solch hartes Limit verheerende Folgen haben. Besonders wenn die
 limitierte Ressource so unendlich zentral für unser aller Leben ist,
-wie nichts anderes. Mit =IP-V6= wird zurzeit eine Alternative angeboten,
+wie nichts Anderes. Mit =IP-V6= wird zurzeit eine Alternative angeboten,
 die solche Limitierungen nicht hat. Aber der Wechsel ist eine
 freiwillige Entscheidung, für die nicht nur alle Betroffenen bereit
 sein müssen, sondern für die auch jede einzelne involvierte Komponente
-diese neue Technologie unterstützen müssen.\\
+diese neue Technologie unterstützen muss.\\
 
-Für jeden einzelnen kann dies verschiedene Konsequenzen haben:
-- Die Preise der Internetanbieter und Mobilfunkabonnemente wird
+\noindent Für jeden Einzelnen kann dies verschiedene Konsequenzen
+haben:
+- Die Preise der Internetanbieter und Mobilfunkabonnemente werden
   wahrscheinlich langfristig steigen, sobald die ehöhten Kosten für
   neue Addressen bis zum Endnutzer durchsickern.
-- Ein aufwengdiger technologischer Wandel wird langfristig von Nöten
-  sein, welchen jeden einzelnen dazu zwingt auf neue Standards
-  umzusteigen. Eine solche Umstellung wird den häufigen Problemen
-  grossflächiger technischer Umstellungen nicht ausweichen können.
+- Ein technologischer Wandel wrrd langfristig von Nöten sein, welcher
+  jeden Einzelnen dazu zwingt, auf neue Standards umzusteigen. Eine
+  solche Umstellung wird den häufigen Problemen grossflächiger
+  technischer Umstellungen nicht ausweichen können.
 *** Routing
 Freiheit und Unabhängigkeit sind menschlich. Es darf niemals bestraft
 werden, nach diesen fundamentalen Rechten zu streben. Und doch führt
@@ -207,7 +208,7 @@ Ost- oder Westeuropa geschickt werden müssen.\\
 Adressen aber immer weiter aufgeteilt. Internet-Anbieter und grosse
 Firmen können diese Abschnitte untereinander verkaufen und aufteilen.
 Und jede Firma will natürlich ihren eigenen Abschnitt, ihren eigenen
-=Address Space=. Für die Firmen hat dies viele Vorteile, beispielsweise
+=Address Space=. Für die Firmen hat dies viele Vorteile beispielsweise
 müssen weniger Parteien beim Finden des korrekten Abschnitts
 involviert sein. Aber für die =Zentralrouter= bedeutet es eine immer
 grössere Datenbank an Zuweisungen. Dieses Problem geht so weit, dass
@@ -245,7 +246,7 @@ Markt. Aber damit lassen sich lediglich Konsumenten zu Käufen
 Potential in diesen Daten vergleicht, merkt man schnell, wie viel noch
 möglich ist. Denn die Daten die sich täglich über uns im Internet
 anhäufen, zeigen mehr als unser Kaufverhalten. Von
-Echtzeit-Positionsupdates, Anrufe und Suchanfragen bis hin zu privaten
+Echtzeit-Positionsupdates, Anrufen und Suchanfragen bis hin zu privaten
 Chats und unseren tiefsten Geheimnissen, sind wir meist überraschend
 unvorsichtig im Umgang mit digitalen Werkzeugen.\\
 
@@ -268,7 +269,7 @@ Probleme formulieren:
   die Bereitschaft, Bequemlichkeit dafür aufzugeben.
 *** Abhängigkeit
 In einem fiktionalen Szenario[fn:ts] erklärt /Tom Scott/ auf seinem
-YouTube-Kanal was passieren könnte, wenn eine einzelne
+YouTube-Kanal, was passieren könnte, wenn eine einzelne
 Sicherheitsfunktion beim Internetgiganten =Google= fehlschlagen würde.
 In einem solchen Fall ist es natürlich logisch, dass es zu Problemen
 bei den verschiedensten =Google=-Diensten kommen würde. Aber schnell
@@ -286,27 +287,27 @@ relevant wie noch nie.\\
 Katastrophe am Horizont erkennen lässt, gibt es noch ein konkreteres
 Problem: Den Nutzern (/den Abhängigen/) ist ihre Abhängigkeit nicht
 bewusst. Wenn sie sich ihren Alltag ohne =Google= oder =Facebook=
-vorstellen, denken sich viele nicht viel darunter. Weniger /lustige
+vorstellen, denken sich viele nicht viel dabei. Weniger /lustige
 Quizfragen/ oder Bilder von Haustieren, aber was könnte den schon
 wirklich Schlimmes passieren?\\
 
-\noindent Während es verständlich ist, dass das Benutzen von =Google=
-natürlich von =Google= abhängig ist, so versteht kaum jemand, wie viel
+\noindent Während es verständlich ist, dass das Benutzen von Google
+natürlich von Google abhängig ist, so versteht kaum jemand, wie viel
 unserer täglichen Aktivitäten von Diensten und Firmen abhängen, die
-selbst wieder von =Google= abhängig sind. Seien es die =Facebook=-Server,
-durch welche keine Whatsapp-Nachrichten geschickt werden konnten, oder
-die fehlerhafte Konfiguration bei =Google=, durch welche manche Kunden
-die Temperatur ihrer Wohnungen auf ihren Nest Geräten nicht mehr
-anpassen konnten[fn:5], das Netz aus internen Verbindungen zwischen
-Firmen ist komplex und undurchschaubar, und nicht nur für die
+selbst wieder von Google abhängig sind. Seien es die Facebook-Server,
+durch welche keine Whatsapp-Nachrichten mehr geschickt werden,
+könnten, oder die fehlerhafte Konfiguration bei Google, durch welche
+manche Kunden die Temperatur ihrer Wohnungen auf ihren Nest Geräten
+nicht mehr anpassen könnten[fn:5], das Netz aus internen Verbindungen
+zwischen Firmen ist komplex und undurchschaubar und nicht nur für die
 Entnutzer, da oftmals die Firmen selbst von kleinsten Problemen
 anderer Dieste überrascht werden können. Der wirtschaftliche Schaden
-solcher Ausfälle sind unvorstellbar, aber noch wichtiger muss die
-zerstörende Wirkung dieser auf unvorhergesehenen, entfernten Problemen
-auf millionen von Meschen bedacht werden.
+solcher Ausfälle ist unvorstellbar, aber noch wichtiger muss die
+zerstörende Wirkung dieser unvorhergesehenen, scheinbar entfernten
+Problemen auf Millionen von Menschen bedacht werden.
 ** Komplexität
 In diesem Abschnitt soll noch kurz die unglaubliche Komplexität
-angesprochen werden, welche die häutige Web-Entwicklung mit sich
+angesprochen werden, welche die heutige Web-Entwicklung mit sich
 bringt. Natürlich existieren automatisierte Dienste und Anbieter, die
 den Prozess vereinfachen. Wer aber Wert auf seine Privatsphäre und auf
 die Verwendung von open-source Software legt, muss sich um vieles
@@ -315,23 +316,23 @@ erschlagend wirken, sondern der Fakt, dass diese untereinander
 kompatibel sein müssen. Zwar reden wir oft von einem Webserver,
 allerdings sind es tatsächlich viele verschiedene Programme, die alle
 fehlerfrei miteinander interagieren müssen, um Resultate zu liefern.
-Dies kann den Einstieg schwerer machen, oder, in gefährlicheren Fällen
-kann es dazu führen, dass Sicherheit und Datenschutz aus Zeit- oder
+Dies kann den Einstieg schwer machen, in gefährlicheren Fällen kann es
+dazu führen, dass Sicherheit und Datenschutz aus Zeit- oder
 Komplexitätsgründen weggelassen oder vernachlässig werden.\\
 
 \noindent Dabei geht es oben nur um /klassische/ Webseiten oder
-Webserver. Die Welt der dezentralen Technologien ist im vergleich dazu
+Webserver. Die Welt der dezentralen Technologien ist im Vergleich dazu
 wie der wilde Westen, ohne Standards, ohne Kompatiblität oder
 Regelungen. Dies führt dazu, dass es zwar für gewisse Anwendungen
 speziell entwickelte Netzwerke gibt, diese allerdings kaum allgeimen
 einsetzbar sind.
 ** Präsentation
-Ein weiteres Problem, dass es zu berücksichtigen gibt, ist die Frage,
+Ein weiteres Problem, das es zu berücksichtigen gibt, ist die Frage,
 wie man die hier behandelten Probleme technisch nicht versierten
 Personen erklären kann. Tatsächlich sind sowohl die besprochenen
 Probleme, als auch deren Lösungsansätze nicht nur abstrakt, sondern
-dazu noch Teil einer kleinen Nische in der Welt der Informatik.
-Manche der obigen Probele wurden bereits von anderen Applikationen
+dazu noch Teil einer kleinen Nische in der Welt der Informatik. Manche
+der angesprochenen Probleme wurden bereits von anderen Applikationen
 zumindest teilweise behandelt, diese haben aber oftmals das Problem,
 dass sie viel Fachwissen und Aufwand benötigen, um sie effizient und
 sicher einzusetzen.
@@ -345,12 +346,12 @@ Produke dieser Arbeit sollen in zwei Abschnitte getrennt werden, wobei
 die meisten Produkte aus der zweiten Phase hervorgegangen sind.
 ** Modularität
 Da während dieser ersten Entwicklungsphase viele Lektionen gelernt
-wurden, ist es wichtig die Ideen und die Umsetzung genau zu
+wurden, ist es wichtig, die Ideen und die Umsetzung genau zu
 analysieren. Zwar unterscheiden sich die Ziele und Methoden der beiden
-Ansätze stark, gewisse Konzepte und einige Programme lassen sich für
-die aktuelle Zielsetzung genau übernehmen.\\
+Ansätze stark, gewisse Konzepte und einige Programme aber lassen sich
+für die aktuelle Zielsetzung vollständig übernehmen.\\
 
-\noindent Als erstes ist es wichtig, die Zielsetzung des Systems,
+\noindent Als Erstes ist es wichtig, die Zielsetzung des Systems,
 welches hier einfach als “Modularer Ansatz” bezeichnet wird, zu
 verstehen und die damit entstandenen Probleme genau festzuhalten.
 - Modularität \\
@@ -364,93 +365,92 @@ verstehen und die damit entstandenen Probleme genau festzuhalten.
 - Offenheit \\
   Sobald man den Nutzern die Möglichkeit geben will, das System selbst
   zu erweitern und zu bearbeiten, muss man quasi zwingend open-source
-  Quellcode zur verfügung stellen.
+  Quellcode zur Verfügung stellen.
 
-\noindent Die grundlegende Idee war die selbe: /Die Entwicklung eines
+\noindent Die grundlegende Idee war dieselbe: /Die Entwicklung eines
 dezentralen vielseitig einsetzbaren Kommunikationsprotokoll./ Da
 allerdings keine einzelne Anwendung angestrebt wurde, ging es
 stattdessen um die Entwicklung eines vollständigen Ökosystems und
 allgemein einsetzbare Komponenten.\\
 
 \noindent Im nächsten Abschnitt sollen einige dieser Komponenten und
-die Entscheidungen die zu ihnen geführt haben beschrieben werden. In
-einem weiteren Abschnitt sollen dann die Lektionen und Probleme dieses
+die Entscheidungen, die zu ihnen geführt haben, beschrieben werden. In
+einem weiteren Abschnitt sollen dann die Lektionen und Probleme dieser
 erster ersten Entwicklungsphase besprochen werden. 
 *** Shadow
 Zwar übernahm die erste Implementierung des verteilten
-Nachrichtensystems, Codename =Shadow= weniger Funktionen als die
-aktuelle Umsetzung, für das System als ganzes war das Programm aber
-nicht weniger wichtig. Der Name lässt sich einfach erklären: für
+Nachrichtensystems, Codename =Shadow=, weniger Funktionen als die
+aktuelle Umsetzung, für das System als Ganzes war das Programm aber
+nicht weniger wichtig. Der Name lässt sich einfach erklären: Für
 normale Nutzer sollte das interne Netzwerk niemals sichtbar sein und
-sie sollte nie direkt mit ihm interagieren müssen, es war also quasi
-/im Schatten/. Geschrieben in =Elixir= und mit einem =TCP=-Interface konnte
-=Shadow= sich mit anderen Instanzen verbinden und über eine rudimentäre
+sie sollten nie direkt mit ihm interagieren müssen, es war also quasi
+/im Schatten/. Geschrieben in =Elixir= und mit einem TCP-Interface, konnte
+Shadow sich mit anderen Instanzen verbinden und über eine rudimentäre
 Implementierung des =Kademlia=-Systems Nachrichten senden und
-weiterleiten. Um neue Verbindungen herzustellen wurde ein speziell
-Entwickeltes System mit so genannten /Member-Files/ verwendet. Jedes
+weiterleiten. Um neue Verbindungen herzustellen, wurde ein speziell
+entwickeltes System mit so genannten /Member-Files/ verwendet. Jedes
 Mitglied eines Netzwerks konnte eine solche Datei generieren, mit
-welchen dann beliebige andere Instanzen beitreten konnten.\\
+welcher es beliebigen andere Instanzen beitreten konnte.\\
 
 \noindent Sobald eine Nachricht im System am Ziel angekommen war,
 wurde sie über einen =Unix-Socket= an den nächsten Komponenten im
-System, meistens also =Hunter= weitergegeben. Dies geschah nur, wenn das
-einheitlich verwaltete Registrierungssystem für Personen und Dienste,
-eine Teilfunktion von =Hunter=, ein treffendes Resultat lieferte.
+System, meistens also =Hunter=, weitergegeben. Dies geschah nur, wenn
+das einheitlich verwaltete Registrierungssystem für Personen und
+Dienste, eine Teilfunktion von Hunter, ein Resultat lieferte.
 Ansonsten wurde der interne Routing-Table verwendet. Dieser bestand
 aus einer Reihe von Prozessen, welche selbst auch direkt die
-=TCP=-Verbindungen verwalteten. 
+TCP-Verbindungen verwalteten.
 *** Hunter
-Während =Shadow= die Rolle des verteilten Routers übernimmt, ist =Hunter=
-der lokale Router. Es geht bei =Hunter= also nicht darum, Nachrichten an
+Während Shadow die Rolle des verteilten Routers übernimmt, ist Hunter
+der lokale Router. Es geht bei Hunter also nicht darum, Nachrichten an
 andere Mitglieder des Netzwerks zu senden, sondern sie an verschiedene
 Applikationen auf der gleichen Maschine zu senden. Jedes beliebige
-Programm, unabhängig von Programmiersprache & internen Strukturen
+Programm, unabhängig von Programmiersprache & internen Strukturen,
 müsste dann also nur das verhältnismässig Protokoll implementieren und
 wäre damit in der Lage, mit allen anderen Komponenten zu interagieren.
-Anders als =Shadow= wurde =Hunter= komplett in Rust entwickelt und liess
+Anders als Shadow wurde Hunter komplett in Rust entwickelt und liess
 sich in zwei zentrale Funktionen aufteilen:
 - Zum einen diente das Programm als Schnittstelle zu einer einfachen
   /Datenbank/, in diesem Fall eine =JSON-Datei=. Dort wurden alle lokal
   aktiven Adressen und die dazugehörigen Applikationen gespeichert.
-  Ein Nutzer der sich beispielsweise über einen Chat mit dem System
-  verbindet wird dort mit seiner Adresse oder seinem Nutzernamen und
+  Ein Nutzer, der sich beispielsweise über einen Chat mit dem System
+  verbindet, wird dort mit seiner Adresse oder seinem Nutzernamen und
   dem Namen des Chats eingetragen. Wenn dann von einem beliebigen
   anderen Punkt im System eine Nachricht an diesen Nutzer kommt, wird
   der passende Dienst aus der Datenbank gelesen. All dies lief durch
   ein /Command Line Interface/, welches dann ins Dateisystem schreibt.
 - Das eigentliche Senden und Weiterleiten der Nachrichten war nicht
   über ein kurzlebiges Programm möglich, da dafür längere Verbindungen
-  existieren müssten. Dafür muss =Hunter= als erstes gestartet werden,
+  existieren müssen. Deshalb muss Hunter als erstes gestartet werden,
   wobei das Programm intern für jede Verbindung einen dedizierten
   Thread startet.
 
-Diese klare Trennung der Aufgaben und starke Unabhängigkeit der
-einzelnen Komponenten erlaubt ein einheitliches Nachrichtenformat, da
-für die einzelnen Komponenten kein Verständnis über andere Komponenten
-oder die Verbindungen haben müssen. 
+\noindent Diese klare Trennung der Aufgaben und starke Unabhängigkeit
+der einzelnen Komponenten erlaubt ein einheitliches Nachrichtenformat,
+da für die einzelnen Komponenten kein Verständnis über andere
+Komponenten oder die Verbindungen haben müssen.
 *** NET-Script
-Ein weitere zentrale Komponente des Systems ist eine eigene
-Programmiersprache, welche mit starker Integration in das restliche
-System das Entwickeln neuer Mechanismen und Komponenten das System
-offener machen sollte. Ein einfacher lisp-ähnlicher Syntax sollte das
-Entwickeln neuer Programme einfach und vielseitig einsetzbar machen.
-*** Interface
-TODO: Interface
+Eine weitere zentrale Komponente des Systems ist eine eigens dafür
+entwickelte Programmiersprache, welche mit starker Integration in das
+restliche System das Entwickeln neuer Mechanismen und Komponenten für
+das System offener machen sollte. Ein einfacher lisp-ähnlicher Syntax
+sollte das Entwickeln neuer Programme einfach und vielseitig
+einsetzbar machen.
 *** Probleme
 Die oben beschriebene Architektur hat viele verschiedene Vorteile,
 allerdings ist sie nicht ohne Probleme. Grundsätzlich geht es bei
-jedem Programm darum, Probleme zu lösen. Einer der zentraler Ideen war
+jedem Programm darum, Probleme zu lösen. Eine der zentraler Ideen war
 die Modularität, welche es Nutzern erlauben soll, die verschiedenen
 Komponenten des Systems einfach zu kombinieren. Und auch wenn dieses
 Ziel auf einer technischen Ebene erfüllt wurde, so ist die Umsetzung
 alles andere als /einfach/. Die Anzahl möglicher Fehlerquellen steigt
-mit jedem eingebundenen Komponenten exponentiell an, und wenn
-mindestens vier der Komponenten für selbst die einfachsten Demos
+mit jeder eingebundenen Komponente exponentiell an, und wenn
+mindestens vier der Komponenten selbst für die einfachsten Demos
 benötigt werden, kann nahezu alles schiefgehen. Dazu kommt, dass viele
 Fehler nicht richtig isoliert und verarbeitet würden, weswegen sich
 die Probleme durch das System weiter verbreiten würden. Während die
 Umsetzung also ihre eigentlichen Ziele erfüllt hatte, war sie noch
-lange davon entfernt, für tatsächliche Nutzer einsetzbar zu sein.\\
+weit davon entfernt, für tatsächliche Nutzer einsetzbar zu sein.\\
 
 \noindent Trotzdem wurden die beschriebenen Komponenten vollständig
 entwickelt, getestet und vorgeführt. Zwar war es umständlich und nur
@@ -458,27 +458,26 @@ bedingt praktisch einsetzbar, trotzdem war es aber eine technisch
 neuartige, funktionsfähige Lösung für komplexe und relevante Probleme.
 Nachdem die erste Entwicklungsphase erfolgreich abgeschlossen wurde,
 kam allerdings noch ein weiteres Problem auf, welches die folgenden
-Entscheidungen stark beeinflusst hat, und es ist ein Problem welches
-sich auf die grundlegende Natur der Informatik zurückführen lässt:\\
-Anders als nahezu alle Studienrichtungen, Wissenschaften und
+Entscheidungen stark beeinflusst hat. Es ist ein Problem, welches sich
+auf die grundlegende Natur der Informatik zurückführen lässt:\\
+Anders als in nahezu allen Studienrichtungen, Wissenschaften und
 Industrien, werden in der Informatik die gleichen Werkzeuge verwendet
 und entwickelt. Wer die Werkzeuge der Informatik verwenden kann, ist
 gleichzeitig in der Lage (zumindest bis zu einem gewissen Grad) neue
 Werkzeuge zu entwickeln. Diese Eigenschaft erlaubt schnelle
-Iterationen und viele, fortschrittliche Werkzeuge, so kommen
-gleichzeitig neue Probleme auf:
+Iterationen und viele fortschrittliche Werkzeuge, kommen gleichzeitig
+neue Probleme auf:
 - Neue Methoden und Werkzeuge werden mit unglaublicher Geschwindigkeit
   entwickelt und verbreitet. Wer also nicht mit den neusten Trends
-  mithält kann schnell abgehängt werden. Dies macht auch das
+  mithält, kann schnell abgehängt werden. Dies macht auch das
   Unterrichten besonders schwer.
 - Natürlich werden die Werkzeuge meistens immer besser und schneller,
   allerdings kommt es oftmals auch zu einer Spezialisierung. Dies
   führt schnell zu immer spezifischeren, exotischeren Lösungen und
-  unzähligen Unterbereichen und immer kleineren Gebieten. So
+  unzähligen Unterbereichen und immer kleineren Gebieten. So ist
   beispielsweise der Begriff /dezentrale Datensysteme/, der zwar ein
-  einzelnes Gebiet genau beschreibt, für Aussenstehende ist er aber
-  mehrheitlich bedeutungslos und sorgt für mehr Verwirrung als
-  Aufklärung.
+  einzelnes Gebiet genau beschreibt, für Aussenstehende mehrheitlich
+  bedeutungslos und sorgt für mehr Verwirrung als Aufklärung.
 - Die immer neuen Gebiete und Gruppen können auch schnell zu Elitismus
   führen, wodurch es für Anfänger schwer sein kann, Zugang zu finden.
 
@@ -488,21 +487,21 @@ die Funktionen und Konzepte zu erklären. Ohne Vorkenntnisse über
 Netzwerke und Kommunikationssysteme war es nahezu unmöglich, auch nur
 die einfachsten Ideen zu erklären oder den Inhalt dieser Arbeit
 darzulegen. Und selbst mit grossem Vorwissen liessen sich nur die
-absoluten Grundlagen innerhalb absehbarer Zeit erklären, das Erklären
+absoluten Grundlagen innerhalb absehbarer Zeit erklären. Das Erklären
 der theoretischen und technischen Grundlagen würde Stunden in Anspruch
 nehmen.\\
 
 \noindent Da am Ende dieser Arbeit zwingend eine zeitlich begrenzte
-Präsentation vor einem technisch nicht versierten Publikum stehen
-würde, mussten nach dieser ersten Entwicklungsphase gewisse Aspekte
+Präsentation vor einem technisch nicht versierten Publikum steht,
+mussten nach dieser ersten Entwicklungsphase gewisse Aspekte
 grundlegend überarbeitet werden, diesmal mit einem besonderen Fokus
-auf die /präsentierbarkeit/.  
+auf die /präsentierbarkeit/.
 ** Präsentation
 Auch wenn von der ersten Entwicklungsphase viele Konzepte und sogar
-einige Umsetzungen übernommen werden konnten, so gab es grundlegende
+einige Umsetzungen übernommen werden konnten, gab es grundlegende
 Probleme, welche nicht ignoriert werden konnten. Es wurde schnell
-klar, dass unabhängig aller technischer Fortschritte eine bessere Art
-der Präsentation gefunden werden musste. Dabei ist es wichtig, die
+klar, dass unabhängig von allen technischen Fortschritten eine bessere
+Art der Präsentation gefunden werden musste. Dabei war es wichtig, die
 technischen Neuerungen und Besonderheiten nicht zu vergessen. Die
 Umsetzung der ersten Entwicklungsphase, wie innovativ und attraktiv
 sie auch wirken mag, ist noch weit davon entfernt, von Endnutzern
@@ -513,8 +512,8 @@ Entscheidung getroffen, die Entwicklung in zwei Bereiche zu
 unterteilen:
 - Ein möglichst vielseitig einsetzbares Nachrichtensystem basierend
   auf den bereits bekannten Prinzipien wird als Bibliothek für die
-  Anwendungen sowie öffentlich angeboten. Entwickelt in Rust wird
-  Geschwindigkeit und Sicherheit garantiert und es lassen sich
+  Anwendungen öffentlich angeboten. Entwickelt in Rust wird
+  Geschwindigkeit und Sicherheit garantieren und es lassen sich
   möglichst viele Möglichkeiten bieten, Integrationen in andere
   Projekte und Applikationen zu finden.
 - Aufbauend auf diesem Datensystem sollen mit verschiedenen
@@ -535,8 +534,10 @@ unterteilen:
 ** Anwendungen
 * Footnotes
 
-[fn:5] Fastcompany: Google outage, heruntergeladen am 24.10.2021.
-https://www.fastcompany.com/90358396/that-major-google-outage-meant-some-nest-users-couldnt-unlock-doors-or-use-the-ac
+[fn:5] Fastcompany: Google outage
+https://www.fastcompany.com/90358396/that-major-google-outage-meant-some-nest-users-couldnt-unlock-doors-or-use-the-ac,
+heruntergeladen am 24.10.2021.
+
 [fn:4] =NaCl= Verschlüsselungs Bibliothek:
 https://nacl.cr.yp.to/, heruntergeladen am: 22.09.2021.
 
