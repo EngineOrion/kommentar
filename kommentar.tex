@@ -1,4 +1,4 @@
-% Created 2021-11-05 Fri 13:18
+% Created 2021-11-07 Sun 18:49
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -27,23 +27,53 @@
 \usepackage{listings}
 \usepackage{textcomp}
 \usepackage{gensymb}
-\author{Jakob Klemm, Dominik Keller}
+\author{Dominik Keller, Jakob Klemm}
 \date{}
-\title{Project Orion}
+\title{Project Orion - Kommentar}
 \hypersetup{
- pdfauthor={Jakob Klemm, Dominik Keller},
- pdftitle={Project Orion},
+ pdfauthor={Dominik Keller, Jakob Klemm},
+ pdftitle={Project Orion - Kommentar},
  pdfkeywords={},
  pdfsubject={},
  pdfcreator={Emacs 28.0.50 (Org mode 9.4.4)}, 
  pdflang={Germanb}}
 \begin{document}
 
-\maketitle
+\begin{titlepage}
+    \begin{center}
+        \begin{tikzpicture}[remember picture,overlay]
+            \node[anchor=north west,yshift=-1.5pt,xshift=1pt]%
+            at (current page.north west)
+            {\includegraphics[scale=1]{~/.tools/ksba.png}};
+        \end{tikzpicture}
+
+        \vspace{2.2cm}
+
+        \Huge
+        \textbf{Project Orion}
+   
+        \vspace{4.2cm}
+
+        \Large
+        Dominik Keller, Jakob Klemm, G4a \\
+        
+        \vspace{1.2cm}
+
+        Maturaarbeit, Kanti-Baden\\
+        Simon Hallström\\
+
+        \vfill
+
+        \Large
+        Baden, Schweiz\\
+        \today
+    \end{center}
+\end{titlepage}
 \tableofcontents
 
 \newpage  
 \begin{ABSTRACT}
+\textbf{Abstract}\\
 \noindent Wir leben in einer bequemen Welt. Das wollen wir wenigstens
 glauben. In Wahrheit leben wir aber in einer idyllischen Illusion. Die
 unglaublichen Veränderungen unserer Gesellschaft und unseres Alltags
@@ -125,7 +155,7 @@ Orion verwenden will wird sich dort gut zurecht finden.
 \newpage
 
 \section{Vision}
-\label{sec:org72dd412}
+\label{sec:orga88c01e}
 \begin{center}
 \begin{enumerate}
 \item Oktober 1964 - UCLA an Stanford: LO
@@ -184,7 +214,7 @@ nächsten Schritt soll dann eine Lösung besprochen werden: ein System,
 mit welchem sich möglichst viele der grössten Probleme lösen lassen,
 und welches tatsächlich praktischen Nutzen bietet.\\
 \subsection{Adressen}
-\label{sec:org5f0c671}
+\label{sec:org8bc7aa6}
 Das Internet erlaubt einfache, standardisierte Kommunikation zwischen
 Geräten aller Art. Egal welche Funktion oder Form sie auch haben
 mögen, es braucht nicht viel, um ein Gerät mit dem Internet zu
@@ -194,7 +224,7 @@ vor dreissig Jahren wunderbare Systeme und Standards geschaffen wurden,
 welche seither die Welt grundlegend verändert haben, gibt es doch
 einige fundamentale Probleme und Limitierungen.
 \subsubsection{IP-V4}
-\label{sec:orgf437648}
+\label{sec:orgfc1f305}
 \noindent In der Geschichte der Menschheit haben wir aus vielen
 verschiedenen Gründen Krieg geführt. Für Wasser, Nahrung, Öl, Frieden
 oder Freiheit in den Krieg zu ziehen, scheint zu einer fernen Welt zu
@@ -228,7 +258,7 @@ solche Umstellung wird den häufigen Problemen grossflächiger
 technischer Umstellungen nicht ausweichen können.
 \end{itemize}
 \subsubsection{Routing}
-\label{sec:orgbe86578}
+\label{sec:orgdcc581b}
 Freiheit und Unabhängigkeit sind menschlich. Es darf niemals bestraft
 werden, nach diesen fundamentalen Rechten zu streben. Und doch führt
 das egoistische Streben nach Freiheit zu Problemen, oftmals allerdings
@@ -284,7 +314,7 @@ grössere Datenbank an Zuweisungen. Dieses Problem geht so weit, dass
 die grossen \emph{Routingtables} inzwischen das physikalische Limit
 erreichen, was ein einzelner Router verarbeiten kann.\\
 \subsection{Zentralisierung}
-\label{sec:orgbadd22a}
+\label{sec:orgd3e1c84}
 \noindent Die Macht in den Händen einiger weniger Kapitalisten und
 internationaler Unternehmen ist unvorstellbar gross. Einige wenige
 CEO's, welche nie gewählt, überprüft oder zur Rede gestellt wurden,
@@ -296,7 +326,7 @@ eine solche Abhängigkeit wirft gewisse Fragen und Probleme auf.\\
 gibt es auch noch sehr praktische Probleme in der Art, wie moderne
 Internet-Dienste implementiert sind.
 \subsubsection{Datenschutz}
-\label{sec:orgc604de6}
+\label{sec:orga63cff7}
 \begin{center}
 \emph{Wenn man nicht für etwas zahlt, ist man das Produkt.}
 \end{center}
@@ -336,12 +366,12 @@ Probleme formulieren:
 \begin{itemize}
 \item Selbst für die einfachsten Anfragen im Internet sind wir von einer
 Vielzahl von Firmen und Systemen abhängig. Dieses Problem wird noch
-etwas genauer im Abschnitt \hyperref[sec:orgc445ca4]{Abhängigkeit} besprochen.
+etwas genauer im Abschnitt \hyperref[sec:orgf9d7806]{Abhängigkeit} besprochen.
 \item Wir haben weder ein Verständnis von den involvierten Parteien noch
 die Bereitschaft, Bequemlichkeit dafür aufzugeben.
 \end{itemize}
 \subsubsection{Abhängigkeit}
-\label{sec:orgc445ca4}
+\label{sec:orgf9d7806}
 In einem fiktionalen Szenario\footnote{Tom Scott: Single Point of Failure
 \url{https://youtu.be/y4GB\_NDU43Q}, heruntergeladen am 24.05.2020.} erklärt \emph{Tom Scott} auf seinem
 YouTube-Kanal, was passieren könnte, wenn eine einzelne
@@ -383,7 +413,7 @@ solcher Ausfälle ist unvorstellbar, aber noch wichtiger muss die
 zerstörende Wirkung dieser unvorhergesehenen, scheinbar entfernten
 Problemen auf Millionen von Menschen bedacht werden.
 \subsection{Komplexität}
-\label{sec:org123ac0d}
+\label{sec:org25a5c41}
 In diesem Abschnitt soll noch kurz die unglaubliche Komplexität
 angesprochen werden, welche die heutige Web-Entwicklung mit sich
 bringt. Natürlich existieren automatisierte Dienste und Anbieter, die
@@ -405,7 +435,7 @@ Regelungen. Dies führt dazu, dass es zwar für gewisse Anwendungen
 speziell entwickelte Netzwerke gibt, diese allerdings kaum allgeimen
 einsetzbar sind.
 \subsection{Präsentation}
-\label{sec:orgb0802ee}
+\label{sec:orge4529bb}
 Ein weiteres Problem, das es zu berücksichtigen gibt, ist die Frage,
 wie man die hier behandelten Probleme technisch nicht versierten
 Personen erklären kann. Tatsächlich sind sowohl die besprochenen
@@ -416,7 +446,7 @@ zumindest teilweise behandelt, diese haben aber oftmals das Problem,
 dass sie viel Fachwissen und Aufwand benötigen, um sie effizient und
 sicher einzusetzen.
 \section{Prozess}
-\label{sec:orgf01f3d3}
+\label{sec:org86fb323}
 Oftmals ist es nicht besonders spannend, über den Prozess einer
 Programmierarbeit zu hören, denn für Aussenstehende scheint sich von
 Tag zu Tag nichts zu ändern. Sinnvolles kann erst berichtet werden,
@@ -425,7 +455,7 @@ ihre Konsequenzen sichtbar gemacht werden können. Die Entwicklung und
 Produke dieser Arbeit sollen in zwei Abschnitte getrennt werden, wobei
 die meisten Produkte aus der zweiten Phase hervorgegangen sind.
 \subsection{Modularität}
-\label{sec:orgb75e87e}
+\label{sec:org4b65216}
 Da während dieser ersten Entwicklungsphase viele Lektionen gelernt
 wurden, ist es wichtig, die Ideen und die Umsetzung genau zu
 analysieren. Zwar unterscheiden sich die Ziele und Methoden der beiden
@@ -461,7 +491,7 @@ die Entscheidungen, die zu ihnen geführt haben, beschrieben werden. In
 einem weiteren Abschnitt sollen dann die Lektionen und Probleme dieser
 erster ersten Entwicklungsphase besprochen werden. 
 \subsubsection{Shadow}
-\label{sec:org812efbe}
+\label{sec:org1381b46}
 Zwar übernahm die erste Implementierung des verteilten
 Nachrichtensystems, Codename \texttt{Shadow}, weniger Funktionen als die
 aktuelle Umsetzung, für das System als Ganzes war das Programm aber
@@ -485,7 +515,7 @@ Ansonsten wurde der interne Routing-Table verwendet. Dieser bestand
 aus einer Reihe von Prozessen, welche selbst auch direkt die
 TCP-Verbindungen verwalteten.
 \subsubsection{Hunter}
-\label{sec:org75b1737}
+\label{sec:orgee03da8}
 Während Shadow die Rolle des verteilten Routers übernimmt, ist Hunter
 der lokale Router. Es geht bei Hunter also nicht darum, Nachrichten an
 andere Mitglieder des Netzwerks zu senden, sondern sie an verschiedene
@@ -517,7 +547,7 @@ der einzelnen Komponenten erlaubt ein einheitliches Nachrichtenformat,
 da für die einzelnen Komponenten kein Verständnis über andere
 Komponenten oder die Verbindungen haben müssen.
 \subsubsection{NET-Script}
-\label{sec:org78f1873}
+\label{sec:org57ceb15}
 Eine weitere zentrale Komponente des Systems ist eine eigens dafür
 entwickelte Programmiersprache, welche mit starker Integration in das
 restliche System das Entwickeln neuer Mechanismen und Komponenten für
@@ -525,7 +555,7 @@ das System offener machen sollte. Ein einfacher lisp-ähnlicher Syntax
 sollte das Entwickeln neuer Programme einfach und vielseitig
 einsetzbar machen.
 \subsubsection{Probleme}
-\label{sec:orge0649d3}
+\label{sec:org601fa6f}
 Die oben beschriebene Architektur hat viele verschiedene Vorteile,
 allerdings ist sie nicht ohne Probleme. Grundsätzlich geht es bei
 jedem Programm darum, Probleme zu lösen. Eine der zentraler Ideen war
@@ -588,7 +618,7 @@ mussten nach dieser ersten Entwicklungsphase gewisse Aspekte
 grundlegend überarbeitet werden, diesmal mit einem besonderen Fokus
 auf die \emph{präsentierbarkeit}.
 \subsection{Präsentation}
-\label{sec:org835b6b0}
+\label{sec:org7b8faaa}
 Auch wenn von der ersten Entwicklungsphase viele Konzepte und sogar
 einige Umsetzungen übernommen werden konnten, gab es grundlegende
 Probleme, welche nicht ignoriert werden konnten. Es wurde schnell
@@ -619,11 +649,232 @@ Nutzern näher bringt.
 \end{itemize}
 
 \section{Produkt}
-\label{sec:orgca65dd9}
+\label{sec:org73221dc}
+Nun ist es an der Zeit, die Errungenschaften und Produkte des
+Projektes anzuschauen. Eigentlich müssten auch hier die Programme der
+ersten Entwicklungsphase besprochen werden, allerdings wurden diese
+bereits beim Arbeitsprozess etwas angeschaut. Wer noch mehr über die
+Programme erfahren will sollte sich am besten den dazugehörigen
+Bericht durchlesen \footnote{Github: Engine: Orion Bericht,
+\url{https://github.com/EngineOrion/kommentar/blob/54489464214ed7833f182df09aab29eae4a591e4/EngineOrion.pdf}.} oder direkt die dabei entstandenen
+Programme anschauen, alle lassen sich auf Github finden und sind unter
+offenen Lizensen einfach weiterzuverwenden\footnote{Github: \url{https://github.com/EngineOrion}}. Auch muss angemerkt werden, dass viele der dabei
+entstandenen Ideen viel Potential haben und in gewissem Ausmass ihren
+Weg bereits in die Produkte der zweiten Phase gemacht haben.
+
+\noindent Dieses Kapitel ist in zwei Abschnitte geteilt:
+\begin{itemize}
+\item \texttt{Actaeon} beschreibt das dezentrale Datensystem, die Rust Bibliothek
+sowie einige der einfachen Anwendungen wie ein Chat-Client die ohne
+grossen Aufwand darauf aufgebaut werden können.
+\item Da das Videospiel als Vorzeigebeispiel für das gesamte Projekt
+entwickelt wurde, erhielt es den gleichen Namen wie die gesamte
+Arbeit.
+\end{itemize}
+
+\noindent Hier muss nochmals der Umfang dieser Arbeit angesprochen
+werden. Dieses Dokument soll mit möglichst wenig Vorwissen
+verständlich sein und nur oberflächlich die technischen Feinheiten
+ansprechen. Wer genauere Informationen zur Umsetzung sucht oder
+tatsächlich mit den Bibliotheken arbeiten will sollte sich die
+technische Dokumentation oder Code-Dokumentation durchlesen.
 \subsection{Actaeon}
-\label{sec:org91e5efe}
+\label{sec:org49acaba}
+\texttt{Actaeon} stellt das Herzstück des gesamten Projekts dar. Als Rust
+Bibliothek ist es in alle anderen Anwendungen eingebunden und
+ermöglicht dezentrale Kommunikation unabhängig der Anwendung.\\
+
+\noindent Als erstes muss aber wahrscheinlich kurz der Name
+angesprochen werden, da sich auch hier einiges an Bedeutung dahinter
+versteckt. So geht es in der Deutung der klassischen griechischen
+Geschichte Aktaion (actaeon / Aktaion) des italienischen Philosophs um
+den Baum des Lebens. Diese Idee eines Baumes als zentrale Struktur
+findet sich in der Informatik des öfteren, so ebenfalls in den meisten
+Kademlia-Systemen, welche im Herzen einen Binär-Baum als Routing
+Struktur verwenden.\\
+
+\noindent Da es sich hier um eine Bibliothek handelt, welche dann in
+andere Programme eingebunden werden soll, ist es nicht von Nöten, die
+interne Funktionsweise vollständig zu verstehen. In der technischen
+Dokumentation werden die Ideen und Entscheidungen, die zu Actaeon
+führten genauer angeschaut. Hier soll es allerdings hauptsächlich
+um einen groben überblick gehen, sowie die API, mit welcher mit der
+Bibliothek interagiert werden kann.\\
+
+\noindent Wahrscheinlich lohnt es sich aufzulisten, welche Funktionen
+die Bibliothek übernimmt, und welche weiterhin vom Nutzer verlangt
+werden. Actaeon übernimmt:
+\begin{itemize}
+\item Verbindungen (Stateful \& stateless): Das System entscheidet intern
+selbständig wie Nachrichten versendet werden sollen. Entweder es
+werden einzelne Nachrichten an andere Mitglieder geschickt, oder es
+kann eine langlebige Verbindung aufgebaut werden, welche für mehrere
+Nachrichten verwendet werden kann.
+\item Adressen: Anstelle von IP-Adressen oder UUIDs verwendet das System
+ein eigenes, vielseitiges Adresssytem. Dieses wird auf verschiedene
+Arten eingesetzt:
+\begin{itemize}
+\item Identifikation: Jede Adresse identifiziert ein Objekt (Nutzer oder
+Thema) eindeutig. Dabei gibt es zwar keinen Mechanismus um dies zu
+garantieren, die kleine Wahrscheinlichkeit einer Kollision über
+die 32 Bytes reicht allerdings aus.
+\item Routing: Mit den Adressen lässt sich ebenfalls rechnen, wobei es
+hauptsächlich um die Kademlia \texttt{XOR}-Operation geht. Damit werden
+Distanzen bestimmt und die Wege sowie Orte für Nachrichten
+bestimmt.
+\item Verschlüsselung: Dank der Familie der
+\texttt{NaCl}-Verschlüsselungsbibliotheken ist es möglich, öffentliche und
+private Schlüssel mit einer Länge von nur 32 bytes zu haben. Damit
+lassen sich im System Nachrichten automatisch End-zu-End
+verschlüsseln, ohne einen dedizierten Mechanismus zum Austausch
+von öffentlichen Schlüsseln zu benötigen.
+\end{itemize}
+\item Signaling: In Netzwerken ist es immer eine grosse Frage, wie neue
+Nutzer beitreten können. Actaeon verlangt dabei lediglich die
+Konaktdaten von einem bekannten Mitglied des Systems und kümmert
+sich dann um den Rest.
+\item Form: Durch regelmässige Abfragen und überprüfungen können sich
+Mitglieder automatisch neue Mitglieder finden und sie in ihren
+lokalen Routing-Table einbauen.
+\end{itemize}
+
+\noindent Natürlich übernimmt die Bibliothek noch viele weitere
+Funktionen, ein genauerer Funktionsumfang findet sich in der
+technischen Dokumentation. Nun muss man sich fragen, welche Funktionen
+potentielle Nutzer überhaupt übernehmen müssen. Dafür lohnt es sich
+die einfachste Beispielanwendung anzuschauen (Dieser Code ist
+ebenfalls im Readme und der Dokumentation):
+\begin{minted}[]{rust}
+use actaeon::{
+    config::Config,
+    node::{Center, ToAddress},
+    Interface,
+};
+use sodiumoxide::crypto::box_;
+
+fn main() {
+    let config = Config::new(20, 1, 100, "example.com".to_string(), 4242);
+    let (_, secret) = box_::gen_keypair();
+    let center = Center::new(secret, String::from("127.0.0.1"), 1234);
+
+    let interface = Interface::new(config, center).unwrap();
+
+    let mut topic = interface.subscribe(&"example".to_string().to_address().unwrap());
+
+    let _ = topic.broadcast("hello world".as_bytes().to_vec());
+}
+\end{minted}
+
+\noindent Nebst der Konfiguration, welche sowohl direkt erstellt, als
+auch von einer Datei geladen werden kann, muss nur ein \texttt{Interface}
+erstellt werden. Bei diesem Schritt werden dann intern verschiedene
+Threads gestartet und die Initialisierung des Routing-Tables
+(Bootstrapping) beginnt. Der Nutzer muss sich dabei um nichts kümmern,
+ausser potentiell aufkommende Fehler handhaben. Das zweite wichtige
+Element ist dabei das \texttt{Topic}, denn die meisten Interaktionen des
+Nutzers finden über ein solches Thema statt. Für genauere
+Informationen empfiehlt sich die technische Dokumentation, als
+einfache Zusammenfassung lässt sich sagen: Unter einem Thema werden
+Nachrichten gesammelt, welche laut dem Nutzer zusammengehören. Dabei
+ist wichtig festzustellen, dass die Wahl der Themen vollkommen in der
+Hand des Nutzers liegt, die Bibliothek hat keinen Einfluss darauf.
+Sobald aber ein solchen Thema erstellt wurde, gibt es eigentlich nur
+zwei wichtige Aktionen: 
+\begin{itemize}
+\item Senden: Schickt eine Nachricht an alle Nutzer, welche ebenfalls ein
+Thema mit gleicher Adresse erstellt haben.
+\item Empfangen: Hört auf einkommende Nachrichten von beliebigen anderen
+Mitgliedern zu diesem Thema.
+\end{itemize}
+
+Mit nur diesen beiden Operationen ist die Menge an potentiellen
+Applikationen nahezu unbegrenzt, denn nahezu alle Interaktionen,
+Prorgamme und Netzwerke lassen sich irgendwie mit nur diesen beiden
+Befehlen umsetzen. Natürlich gibt es noch mehr interne Funktionen und
+auch mehr Möglichkeiten für den Nutzer, diese sind aber nicht im
+Umfang dieses Dokuments.
 \subsection{Orion}
-\label{sec:orgdfb0aab}
-\subsection{Anwendungen}
-\label{sec:orgf3d84ae}
+\label{sec:orgdd542da}
+TODO: Dominik Orion
+\section{Ausblick}
+\label{sec:org2c7b306}
+Zwar sind die geschaffenen Produkte und Programme ihren Zweck erfüllen
+und eine nutzbare Demo möglich machen, so gibt es noch einige Punkte,
+die noch nicht umgesetzt wurden.
+
+\begin{itemize}
+\item Actaeon: \\
+Nebst den technischen Feinheiten, wie eine Möglichkeit einzelne
+Threads unabhängig voneinander neuzustarten oder eine zusätzliche
+Ebene der Verschlüsselung gibt es einige grössere, strukturelle
+Probleme, welche noch angesprochen werden müssen. Besondes die
+mehrfach angesprochenen Probleme im Zusammenhang mit IP-Adressen
+haben mit unseren Arbeiten keine abschliessene Lösung gefunden. Die
+Errungenschaft hier ist Unabhängigkeit, denn das Netzwerk ist nicht
+an gewisse Adress-Systeme gebunden oder auf nur eines limitiert.
+Auch wenn diese gewonnene Unabhängigkeit eine Errungenschaft für
+sich ist, so werden die aller meisten Nutzer weiterhin
+problematische Systeme, besonders IP-V4 verwenden. Zwar ist es
+fragwürdig, wie viel eine zeitlich stark limitierte Arbeit in einem
+so umfangreichen Feld tatsächlich erreichen kann, es würde sich
+allerdings lohnen, zumindest eine existierende Alternative, wie
+beispielsweise \texttt{CJDNS} anzubieten. Auch existiert aktuell noch keine
+Möglichkeit, schädliche Mitglieder zu blockieren oder zu erkennen.
+Das aktuelle Netzwerk ist also anfällig gegen potientielle Angriffe
+oder Sabotage. Trotz gewisser Mängel und Kritikpunkte ist das
+gesamte System im aktuellen Zustand funktionsfähig und nützlich.
+\item Orion: \\
+Natürlich sind bei einem Videospiel die Möglichkeiten nahezu
+unlimitierd, allerdings existieren auch hier einige interne,
+technische Probleme. Nebst der offensichtlichen Frage der
+Performance gibt es auch ein grundlegenderes Problem, welches die
+aktuelle Umsetzung davon abhalten würde, verbreiteter eingesetzt zu
+werden: Auch wenn einer \emph{offizieller} Client existiert, so hält einen
+Entwickler nichts davon ab, eine alternative Umsetzung zu erstellen.
+Daran ist an sich nichts falsch, allerdings kann eine solche
+Offenheit schnell ausgenutzt werden um beispielsweise unfaire
+Vorteile im Spiel zu erhalten. Wer also das Spiel als einfache
+Zeitvertreibung ausprobieren will oder etwas Spass sucht wird
+zufriedengestellt sein, als seriöses Spiel, vergleichbar mit
+kommerziellen Alternativen ist es allerdings noch nicht geeignet.
+\item Weiteres: \\
+Natürlich beschränkt sich der Umfang des Projekts nicht nur auf
+Videospiele oder Chat Programme. Eine vielzahl anderer Anwendungen
+lässt sich mit der actaeon Bibliothek bauen. Dank einer offenen
+Lizens gibt es ebenfalls die Hoffnung, dass andere Personen in der
+Zukunft Programme für das ökosystem bauen.
+\newpage
+\end{itemize}
+\section{Fazit}
+\label{sec:org9a6b690}
+Verteilte und dezentrale Datensysteme sind trotz ihrer Wichtigkeit ein
+kleines Nischengebiet in der Welt der Informatik. Und obwohl unsere
+Abhängigkeit von Netzwerken und Kommunikationsssytemen grosse Probleme
+für alltägliche Situationen und Menschen bringt, lassen sich die
+wenigsten auf ein tiefgreifendes Gespräch über die Probleme der
+Zentralrouter ein. Doch wenn diese Debatte nur in den Büros der
+Megaunternehmen geführt wird, könnten sich die Fortschritte des
+Internets schnell in eine finstere Dystopie verwandeln. Nebst den
+offensichtlichen Problemen und Gefahren übermässiger zentralisierung
+und der damit kommenden Abhängigkeit darf nicht vergessen werden, dass
+kollaborative, dezentrale Systeme unmengen von Vorteilen mit sich
+bringen. Seien es zensursichere Speicher- und Nachrichtensysteme oder
+die schiere grösse von beispielsweise Videospielen, die ohne einen
+zentralen Knotenpunk möglich werden, existiert noch viel ungeschöpftes
+Potential.\\
+
+\noindent Project Orion hat weder alle der genannten Probleme gelöst,
+noch das volle Potiential ausgenutzt und eine umfangreiche Alternative
+entwickelt. Stattdessen kam aus diesem Projekt verschiedene \emph{relativ}
+einfache, verständliche und nutzbare Demos herfor, welche nicht nur
+reale Probleme lösen, sondern dazu einen Einblick in die Welt der
+dezentralen Datensysteme bieten. Mithilfe von umfangreicher
+Dokumentation und einfachen Erklärungen soll zusätzlich der Einstieg
+in die Welt der dezentralen Kommunikationssysteme einfacher gemacht
+werden. Da alle entstandenen Programme öffentlich zugänglich sind und
+unter freien Lizensen weiterverbreiten werden können, existiert
+ebenfalls die Hoffnung, dass das ökosystem in Zukunft durch weitere
+Applikationen erweitert wird.
+
+\includepdf[pages=-]{unterschrieben.pdf}
 \end{document}

@@ -1,9 +1,9 @@
-#+TITLE: Project Orion
-#+AUTHOR: Jakob Klemm, Dominik Keller
+#+TITLE: Project Orion - Kommentar
+#+AUTHOR: Dominik Keller, Jakob Klemm
 #+LATEX_CLASS: article
 #+IMAGE: ksba
 #+LANGUAGE: de
-#+OPTIONS: toc:t title:t date:nil
+#+OPTIONS: toc:nil title:nil date:nil
 #+LATEX_HEADER: \usepackage[utf8]{inputenc}
 #+LATEX_HEADER: \usepackage[dvipsnames]{xcolor}
 #+LATEX_HEADER: \usepackage{tikz}
@@ -16,8 +16,42 @@
 #+LATEX_HEADER: \usepackage{listings}
 #+LATEX_HEADER: \usepackage{textcomp}
 #+LATEX_HEADER: \usepackage{gensymb}
+
+\begin{titlepage}
+    \begin{center}
+        \begin{tikzpicture}[remember picture,overlay]
+            \node[anchor=north west,yshift=-1.5pt,xshift=1pt]%
+            at (current page.north west)
+            {\includegraphics[scale=1]{~/.tools/ksba.png}};
+        \end{tikzpicture}
+
+        \vspace{2.2cm}
+
+        \Huge
+        \textbf{Project Orion}
+   
+        \vspace{4.2cm}
+
+        \Large
+        Dominik Keller, Jakob Klemm, G4a \\
+        
+        \vspace{1.2cm}
+
+        Maturaarbeit, Kanti-Baden\\
+        Simon Hallström\\
+
+        \vfill
+
+        \Large
+        Baden, Schweiz\\
+        \today
+    \end{center}
+\end{titlepage}
+\tableofcontents
+
 \newpage  
 #+BEGIN_ABSTRACT
+*Abstract*\\
 \noindent Wir leben in einer bequemen Welt. Das wollen wir wenigstens
 glauben. In Wahrheit leben wir aber in einer idyllischen Illusion. Die
 unglaublichen Veränderungen unserer Gesellschaft und unseres Alltags
@@ -561,32 +595,222 @@ Projektes anzuschauen. Eigentlich müssten auch hier die Programme der
 ersten Entwicklungsphase besprochen werden, allerdings wurden diese
 bereits beim Arbeitsprozess etwas angeschaut. Wer noch mehr über die
 Programme erfahren will sollte sich am besten den dazugehörigen
-Bericht durchlesen 
+Bericht durchlesen [fn:6] oder direkt die dabei entstandenen
+Programme anschauen, alle lassen sich auf Github finden und sind unter
+offenen Lizensen einfach weiterzuverwenden[fn:1]. Auch muss angemerkt werden, dass viele der dabei
+entstandenen Ideen viel Potential haben und in gewissem Ausmass ihren
+Weg bereits in die Produkte der zweiten Phase gemacht haben.
+
+\noindent Dieses Kapitel ist in zwei Abschnitte geteilt:
+- =Actaeon= beschreibt das dezentrale Datensystem, die Rust Bibliothek
+  sowie einige der einfachen Anwendungen wie ein Chat-Client die ohne
+  grossen Aufwand darauf aufgebaut werden können.
+- Da das Videospiel als Vorzeigebeispiel für das gesamte Projekt
+  entwickelt wurde, erhielt es den gleichen Namen wie die gesamte
+  Arbeit.
+
+\noindent Hier muss nochmals der Umfang dieser Arbeit angesprochen
+werden. Dieses Dokument soll mit möglichst wenig Vorwissen
+verständlich sein und nur oberflächlich die technischen Feinheiten
+ansprechen. Wer genauere Informationen zur Umsetzung sucht oder
+tatsächlich mit den Bibliotheken arbeiten will sollte sich die
+technische Dokumentation oder Code-Dokumentation durchlesen.
 ** Actaeon
+=Actaeon= stellt das Herzstück des gesamten Projekts dar. Als Rust
+Bibliothek ist es in alle anderen Anwendungen eingebunden und
+ermöglicht dezentrale Kommunikation unabhängig der Anwendung.\\
+
+\noindent Als erstes muss aber wahrscheinlich kurz der Name
+angesprochen werden, da sich auch hier einiges an Bedeutung dahinter
+versteckt. So geht es in der Deutung der klassischen griechischen
+Geschichte Aktaion (actaeon / Aktaion) des italienischen Philosophs um
+den Baum des Lebens. Diese Idee eines Baumes als zentrale Struktur
+findet sich in der Informatik des öfteren, so ebenfalls in den meisten
+Kademlia-Systemen, welche im Herzen einen Binär-Baum als Routing
+Struktur verwenden.\\
+
+\noindent Da es sich hier um eine Bibliothek handelt, welche dann in
+andere Programme eingebunden werden soll, ist es nicht von Nöten, die
+interne Funktionsweise vollständig zu verstehen. In der technischen
+Dokumentation werden die Ideen und Entscheidungen, die zu Actaeon
+führten genauer angeschaut. Hier soll es allerdings hauptsächlich
+um einen groben überblick gehen, sowie die API, mit welcher mit der
+Bibliothek interagiert werden kann.\\
+
+\noindent Wahrscheinlich lohnt es sich aufzulisten, welche Funktionen
+die Bibliothek übernimmt, und welche weiterhin vom Nutzer verlangt
+werden. Actaeon übernimmt:
+- Verbindungen (Stateful & stateless): Das System entscheidet intern
+  selbständig wie Nachrichten versendet werden sollen. Entweder es
+  werden einzelne Nachrichten an andere Mitglieder geschickt, oder es
+  kann eine langlebige Verbindung aufgebaut werden, welche für mehrere
+  Nachrichten verwendet werden kann.
+- Adressen: Anstelle von IP-Adressen oder UUIDs verwendet das System
+  ein eigenes, vielseitiges Adresssytem. Dieses wird auf verschiedene
+  Arten eingesetzt:
+  - Identifikation: Jede Adresse identifiziert ein Objekt (Nutzer oder
+    Thema) eindeutig. Dabei gibt es zwar keinen Mechanismus um dies zu
+    garantieren, die kleine Wahrscheinlichkeit einer Kollision über
+    die 32 Bytes reicht allerdings aus.
+  - Routing: Mit den Adressen lässt sich ebenfalls rechnen, wobei es
+    hauptsächlich um die Kademlia =XOR=-Operation geht. Damit werden
+    Distanzen bestimmt und die Wege sowie Orte für Nachrichten
+    bestimmt.
+  - Verschlüsselung: Dank der Familie der
+    =NaCl=-Verschlüsselungsbibliotheken ist es möglich, öffentliche und
+    private Schlüssel mit einer Länge von nur 32 bytes zu haben. Damit
+    lassen sich im System Nachrichten automatisch End-zu-End
+    verschlüsseln, ohne einen dedizierten Mechanismus zum Austausch
+    von öffentlichen Schlüsseln zu benötigen.
+- Signaling: In Netzwerken ist es immer eine grosse Frage, wie neue
+  Nutzer beitreten können. Actaeon verlangt dabei lediglich die
+  Konaktdaten von einem bekannten Mitglied des Systems und kümmert
+  sich dann um den Rest.
+- Form: Durch regelmässige Abfragen und überprüfungen können sich
+  Mitglieder automatisch neue Mitglieder finden und sie in ihren
+  lokalen Routing-Table einbauen.
+
+\noindent Natürlich übernimmt die Bibliothek noch viele weitere
+Funktionen, ein genauerer Funktionsumfang findet sich in der
+technischen Dokumentation. Nun muss man sich fragen, welche Funktionen
+potentielle Nutzer überhaupt übernehmen müssen. Dafür lohnt es sich
+die einfachste Beispielanwendung anzuschauen (Dieser Code ist
+ebenfalls im Readme und der Dokumentation):
+#+BEGIN_SRC rust :exports code
+  use actaeon::{
+      config::Config,
+      node::{Center, ToAddress},
+      Interface,
+  };
+  use sodiumoxide::crypto::box_;
+  
+  fn main() {
+      let config = Config::new(20, 1, 100, "example.com".to_string(), 4242);
+      let (_, secret) = box_::gen_keypair();
+      let center = Center::new(secret, String::from("127.0.0.1"), 1234);
+  
+      let interface = Interface::new(config, center).unwrap();
+  
+      let mut topic = interface.subscribe(&"example".to_string().to_address().unwrap());
+  
+      let _ = topic.broadcast("hello world".as_bytes().to_vec());
+  }
+#+END_SRC
+
+\noindent Nebst der Konfiguration, welche sowohl direkt erstellt, als
+auch von einer Datei geladen werden kann, muss nur ein =Interface=
+erstellt werden. Bei diesem Schritt werden dann intern verschiedene
+Threads gestartet und die Initialisierung des Routing-Tables
+(Bootstrapping) beginnt. Der Nutzer muss sich dabei um nichts kümmern,
+ausser potentiell aufkommende Fehler handhaben. Das zweite wichtige
+Element ist dabei das =Topic=, denn die meisten Interaktionen des
+Nutzers finden über ein solches Thema statt. Für genauere
+Informationen empfiehlt sich die technische Dokumentation, als
+einfache Zusammenfassung lässt sich sagen: Unter einem Thema werden
+Nachrichten gesammelt, welche laut dem Nutzer zusammengehören. Dabei
+ist wichtig festzustellen, dass die Wahl der Themen vollkommen in der
+Hand des Nutzers liegt, die Bibliothek hat keinen Einfluss darauf.
+Sobald aber ein solchen Thema erstellt wurde, gibt es eigentlich nur
+zwei wichtige Aktionen: 
+- Senden: Schickt eine Nachricht an alle Nutzer, welche ebenfalls ein
+  Thema mit gleicher Adresse erstellt haben.
+- Empfangen: Hört auf einkommende Nachrichten von beliebigen anderen
+  Mitgliedern zu diesem Thema.
+
+Mit nur diesen beiden Operationen ist die Menge an potentiellen
+Applikationen nahezu unbegrenzt, denn nahezu alle Interaktionen,
+Prorgamme und Netzwerke lassen sich irgendwie mit nur diesen beiden
+Befehlen umsetzen. Natürlich gibt es noch mehr interne Funktionen und
+auch mehr Möglichkeiten für den Nutzer, diese sind aber nicht im
+Umfang dieses Dokuments.
 ** Orion
+TODO: Dominik Orion
+* Ausblick
+Zwar sind die geschaffenen Produkte und Programme ihren Zweck erfüllen
+und eine nutzbare Demo möglich machen, so gibt es noch einige Punkte,
+die noch nicht umgesetzt wurden.
+
+- Actaeon: \\
+  Nebst den technischen Feinheiten, wie eine Möglichkeit einzelne
+  Threads unabhängig voneinander neuzustarten oder eine zusätzliche
+  Ebene der Verschlüsselung gibt es einige grössere, strukturelle
+  Probleme, welche noch angesprochen werden müssen. Besondes die
+  mehrfach angesprochenen Probleme im Zusammenhang mit IP-Adressen
+  haben mit unseren Arbeiten keine abschliessene Lösung gefunden. Die
+  Errungenschaft hier ist Unabhängigkeit, denn das Netzwerk ist nicht
+  an gewisse Adress-Systeme gebunden oder auf nur eines limitiert.
+  Auch wenn diese gewonnene Unabhängigkeit eine Errungenschaft für
+  sich ist, so werden die aller meisten Nutzer weiterhin
+  problematische Systeme, besonders IP-V4 verwenden. Zwar ist es
+  fragwürdig, wie viel eine zeitlich stark limitierte Arbeit in einem
+  so umfangreichen Feld tatsächlich erreichen kann, es würde sich
+  allerdings lohnen, zumindest eine existierende Alternative, wie
+  beispielsweise =CJDNS= anzubieten. Auch existiert aktuell noch keine
+  Möglichkeit, schädliche Mitglieder zu blockieren oder zu erkennen.
+  Das aktuelle Netzwerk ist also anfällig gegen potientielle Angriffe
+  oder Sabotage. Trotz gewisser Mängel und Kritikpunkte ist das
+  gesamte System im aktuellen Zustand funktionsfähig und nützlich.
+- Orion: \\
+  Natürlich sind bei einem Videospiel die Möglichkeiten nahezu
+  unlimitierd, allerdings existieren auch hier einige interne,
+  technische Probleme. Nebst der offensichtlichen Frage der
+  Performance gibt es auch ein grundlegenderes Problem, welches die
+  aktuelle Umsetzung davon abhalten würde, verbreiteter eingesetzt zu
+  werden: Auch wenn einer /offizieller/ Client existiert, so hält einen
+  Entwickler nichts davon ab, eine alternative Umsetzung zu erstellen.
+  Daran ist an sich nichts falsch, allerdings kann eine solche
+  Offenheit schnell ausgenutzt werden um beispielsweise unfaire
+  Vorteile im Spiel zu erhalten. Wer also das Spiel als einfache
+  Zeitvertreibung ausprobieren will oder etwas Spass sucht wird
+  zufriedengestellt sein, als seriöses Spiel, vergleichbar mit
+  kommerziellen Alternativen ist es allerdings noch nicht geeignet.
+- Weiteres: \\
+  Natürlich beschränkt sich der Umfang des Projekts nicht nur auf
+  Videospiele oder Chat Programme. Eine vielzahl anderer Anwendungen
+  lässt sich mit der actaeon Bibliothek bauen. Dank einer offenen
+  Lizens gibt es ebenfalls die Hoffnung, dass andere Personen in der
+  Zukunft Programme für das ökosystem bauen.
+  \newpage
+* Fazit
+Verteilte und dezentrale Datensysteme sind trotz ihrer Wichtigkeit ein
+kleines Nischengebiet in der Welt der Informatik. Und obwohl unsere
+Abhängigkeit von Netzwerken und Kommunikationsssytemen grosse Probleme
+für alltägliche Situationen und Menschen bringt, lassen sich die
+wenigsten auf ein tiefgreifendes Gespräch über die Probleme der
+Zentralrouter ein. Doch wenn diese Debatte nur in den Büros der
+Megaunternehmen geführt wird, könnten sich die Fortschritte des
+Internets schnell in eine finstere Dystopie verwandeln. Nebst den
+offensichtlichen Problemen und Gefahren übermässiger zentralisierung
+und der damit kommenden Abhängigkeit darf nicht vergessen werden, dass
+kollaborative, dezentrale Systeme unmengen von Vorteilen mit sich
+bringen. Seien es zensursichere Speicher- und Nachrichtensysteme oder
+die schiere grösse von beispielsweise Videospielen, die ohne einen
+zentralen Knotenpunk möglich werden, existiert noch viel ungeschöpftes
+Potential.\\
+
+\noindent Project Orion hat weder alle der genannten Probleme gelöst,
+noch das volle Potiential ausgenutzt und eine umfangreiche Alternative
+entwickelt. Stattdessen kam aus diesem Projekt verschiedene /relativ/
+einfache, verständliche und nutzbare Demos herfor, welche nicht nur
+reale Probleme lösen, sondern dazu einen Einblick in die Welt der
+dezentralen Datensysteme bieten. Mithilfe von umfangreicher
+Dokumentation und einfachen Erklärungen soll zusätzlich der Einstieg
+in die Welt der dezentralen Kommunikationssysteme einfacher gemacht
+werden. Da alle entstandenen Programme öffentlich zugänglich sind und
+unter freien Lizensen weiterverbreiten werden können, existiert
+ebenfalls die Hoffnung, dass das ökosystem in Zukunft durch weitere
+Applikationen erweitert wird.
+
+\includepdf[pages=-]{unterschrieben.pdf}
 * Footnotes
+[fn:1] Github: https://github.com/EngineOrion
+
+[fn:6] Github: Engine: Orion Bericht,
+https://github.com/EngineOrion/kommentar/blob/54489464214ed7833f182df09aab29eae4a591e4/EngineOrion.pdf.
 
 [fn:5] Fastcompany: Google outage
 https://www.fastcompany.com/90358396/that-major-google-outage-meant-some-nest-users-couldnt-unlock-doors-or-use-the-ac,
 heruntergeladen am 24.10.2021.
-
-[fn:4] =NaCl= Verschlüsselungs Bibliothek:
-https://nacl.cr.yp.to/, heruntergeladen am: 22.09.2021.
-
-[fn:2] Tox Protokoll Spezifikationen:  
-https://toktok.ltd/spec.html, heruntergeladen am: 22.09.2021.
-
-[fn:1] Wikipedia: UDP Hole punching:  
-https://en.wikipedia.org/wiki/Hole_punching_(networking),
-heruntergeladen am: 24.09.2021.
-
-[fn:11] BitTorrent: Mainline DHT:
-https://www.cs.helsinki.fi/u/lxwang/publications/P2P2013_13.pdf,
-heruntergeladen am: 4.06.2020.
-
-[fn:10] CJDNS - Whitepaper:
-https://github.com/cjdelisle/cjdns/blob/master/doc/Whitepaper.md,
-heruntergeladen am: 3.06.2020.
 
 [fn:9] Kademlia: Whitepaper:
 https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf,

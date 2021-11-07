@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{use}\PYG{+w}{ }\PYG{n}{actaeon}::\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{config}::\PYG{n}{Config}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{node}::\PYG{p}{\PYGZob{}}\PYG{n}{Center}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{ToAddress}\PYG{p}{\PYGZcb{},}
+\PYG{+w}{    }\PYG{n}{Interface}\PYG{p}{,}
+\PYG{p}{\PYGZcb{};}
+\PYG{k}{use}\PYG{+w}{ }\PYG{n}{sodiumoxide}::\PYG{n}{crypto}::\PYG{n}{box\PYGZus{}}\PYG{p}{;}
+
+\PYG{k}{fn} \PYG{n+nf}{main}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k+kd}{let}\PYG{+w}{ }\PYG{n}{config}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{Config}::\PYG{n}{new}\PYG{p}{(}\PYG{l+m+mi}{20}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{100}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}example.com\PYGZdq{}}\PYG{p}{.}\PYG{n}{to\PYGZus{}string}\PYG{p}{(),}\PYG{+w}{ }\PYG{l+m+mi}{4242}\PYG{p}{);}
+\PYG{+w}{    }\PYG{k+kd}{let}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{\PYGZus{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{secret}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{box\PYGZus{}}::\PYG{n}{gen\PYGZus{}keypair}\PYG{p}{();}
+\PYG{+w}{    }\PYG{k+kd}{let}\PYG{+w}{ }\PYG{n}{center}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{Center}::\PYG{n}{new}\PYG{p}{(}\PYG{n}{secret}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nb}{String}::\PYG{n}{from}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}127.0.0.1\PYGZdq{}}\PYG{p}{),}\PYG{+w}{ }\PYG{l+m+mi}{1234}\PYG{p}{);}
+
+\PYG{+w}{    }\PYG{k+kd}{let}\PYG{+w}{ }\PYG{n}{interface}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{Interface}::\PYG{n}{new}\PYG{p}{(}\PYG{n}{config}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{center}\PYG{p}{).}\PYG{n}{unwrap}\PYG{p}{();}
+
+\PYG{+w}{    }\PYG{k+kd}{let}\PYG{+w}{ }\PYG{k}{mut}\PYG{+w}{ }\PYG{n}{topic}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{interface}\PYG{p}{.}\PYG{n}{subscribe}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{l+s}{\PYGZdq{}example\PYGZdq{}}\PYG{p}{.}\PYG{n}{to\PYGZus{}string}\PYG{p}{().}\PYG{n}{to\PYGZus{}address}\PYG{p}{().}\PYG{n}{unwrap}\PYG{p}{());}
+
+\PYG{+w}{    }\PYG{k+kd}{let}\PYG{+w}{ }\PYG{n}{\PYGZus{}}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{topic}\PYG{p}{.}\PYG{n}{broadcast}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}hello world\PYGZdq{}}\PYG{p}{.}\PYG{n}{as\PYGZus{}bytes}\PYG{p}{().}\PYG{n}{to\PYGZus{}vec}\PYG{p}{());}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}
