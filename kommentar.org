@@ -556,9 +556,14 @@ unterteilen:
   Nutzern näher bringt.
   
 * Produkt
+Nun ist es an der Zeit, die Errungenschaften und Produkte des
+Projektes anzuschauen. Eigentlich müssten auch hier die Programme der
+ersten Entwicklungsphase besprochen werden, allerdings wurden diese
+bereits beim Arbeitsprozess etwas angeschaut. Wer noch mehr über die
+Programme erfahren will sollte sich am besten den dazugehörigen
+Bericht durchlesen 
 ** Actaeon
 ** Orion
-** Anwendungen
 * Footnotes
 
 [fn:5] Fastcompany: Google outage
