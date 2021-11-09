@@ -1,4 +1,4 @@
-% Created 2021-10-31 So 10:20
+% Created 2021-11-09 Tue 14:50
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -45,7 +45,7 @@
 \newpage
 
 \section{Einführung}
-\label{sec:org58148e2}
+\label{sec:org5129707}
 Dieses Dokument soll ohne grosse Umschreibungen und ohne
 Dramatisierungen einen Einblick in die Konzepte und Entscheidungen und
 Systeme bieten, welche schlussendlich zur \texttt{actaeon} Bibliothek geführt
@@ -57,7 +57,7 @@ Quellen für grundlegendere Informationen\footnote{Orion Wiki - Distributed Syst
 schlussendliche Produkt wurde die \texttt{Rust}-Programmiersprache verwendet,
 welche ebenfalls nicht hier erklärt werden soll.
 \section{Projekte}
-\label{sec:orgbbdba01}
+\label{sec:org7fc11a6}
 Nachdem die zentralen Problemen definiert wurden, ist es an der Zeit,
 andere Projekte zu analysieren um herauszufinden, ob die Probleme
 bereits vollständig oder zumindest teilweise gelöst wurden.\\
@@ -89,7 +89,7 @@ angeschaut werden. Dafür wird grundlegend in zwei zentrale Komponenten
 unterschieden. Die Integration der beiden Teile soll hier nicht
 besprochen werden, da diese sich hauptsächlich in der Umsetzung zeigt.
 \subsection{Kademlia}
-\label{sec:orgc23c565}
+\label{sec:org710a836}
 Wie geht man also gegen die totale Abhängikeit von Internetanbietern
 und zentralen Routern vor?\\
 Man kann ja nicht einfach seine eigenen Router aufsetzen und einen
@@ -131,7 +131,7 @@ Während dies für kleinere Systeme gut funktioniert und vergleichbare
 Geschwindigkeiten liefert, skaliert es nicht so einfach für grosse
 Systeme. Genau dafür gibt es die \texttt{XOR}-Metrik.
 \subsubsection{Distanz}
-\label{sec:org2ec2a7c}
+\label{sec:org78c7914}
 Die \texttt{XOR}-Funktion, die in der Informatik an den verschiedensten
 Orten auftaucht, wird verwendet, um die Distanz zwischen zwei
 Zahlen zu berechnen. Die Zahlen repräsentieren dabei Mitglieder
@@ -191,7 +191,7 @@ man \texttt{XOR} anstatt einfach der Differenz verwendet, allerdings
 funktioniert die Funktion mit Binärzahlen in einem solchen Baum
 einiges besser.
 \subsubsection{Routing-Table}
-\label{sec:orgd63773b}
+\label{sec:orgfb01e12}
 In einem \texttt{Kademlia}-System hat jedes Mitglied eine gewisse Anzahl
 anderer Mitglieder, mit denen es sich verbunden hat. Da \texttt{Kademlia} ein
 sehr umfangreiches, kompliziertes Protokoll und System beschreibt,
@@ -259,7 +259,7 @@ benötigt, um die Zustände aller Verbindungen periodisch zu
 überprüfen.
 \end{itemize}
 \subsection{BitTorrent}
-\label{sec:org2d583b9}
+\label{sec:org1786e21}
 Dezentralisierung hat viele Vorteile und muss langfristig
 flächendeckend eingesetzt werden. Aktuell sind die meisten
 Industrien und Produkte noch nicht so weit. Trotzdem gibt es
@@ -313,7 +313,7 @@ bei \texttt{BitTorrent} eigentlich um ein grosses Dateisystem handelt,
 lassen sich direkt die \texttt{SHA1}-Hashwerte der Inhalte als
 \texttt{Kademlia}-Adressen verwenden.
 \subsection{Tox}
-\label{sec:org9714e0a}
+\label{sec:orgbcd0e0d}
 Im Sommer 2013 veröffentlichte Edward Snowden schockierende
 Geheimnisse über massive Spionage Prgogramme der NSA, mit welchen
 nahezu aller digitaler Verkehr, ohne Rücksicht auf Datenschutz oder
@@ -381,12 +381,12 @@ gefallen finden. Seit einigen Jahren gibt es aber Bedenken über die
 Sicherheit und aktuelle Richtung des Projekts, sowie Berichte von
 internen Konflikten, besonders im Zusammenhang mit Spendengeldern.
 \section{Architektur}
-\label{sec:org4e38712}
+\label{sec:org35a8e07}
 In diesem Kapitel sollen einige der zentralen Konzepte und
 Entscheidungen erläutert werden, welche schlussendlich zur
 \texttt{Actaeon}-Applikation geführt haben.
 \subsection{Verschlüsselung}
-\label{sec:orgc4fd2b8}
+\label{sec:org3133587}
 Zwar ist es bei weitem nicht, dass moderne dezentrale Systeme das
 Internet oder ein ähnliches Austauschsystem als Grundlage verwenden,
 allerdings ist dies in nahezu allen Fällen, besonders bei den
@@ -418,7 +418,7 @@ lediglich dessen Adresse bekannt sein muss. Insgesamt fällt damit viel
 Komplexität weg und macht das erstellen, verifizieren und finden von
 Adressen viel einfacher.
 \subsection{PubSub}
-\label{sec:org0b4dd70}
+\label{sec:org81ed48f}
 Ein einfaches, aber vielseitig einsetzbares
 Nachrichtenübermittlungsmuster ist die Idee eines \texttt{Publish/Subscribe
 Systems}. Ein solches System lässt sich mit nur zwei Aktionen
@@ -437,7 +437,7 @@ oder Emailsystem, ein komplexer Datenverarbeitungsmechanisums oder ein
 Datennetzwerk, alle lassen sich relativ einfach mit diesen beiden
 Funktionen modellieren. 
 \subsubsection{Dezentraler PubSub}
-\label{sec:orgbd99447}
+\label{sec:orgcd783c3}
 Offensichtlich kann selbst die beste, fehlerfrei optimierte
 Implementierung der oben beschriebenen Prinzipien nicht gegen die
 bereits angesprochenen, fundamentalen Probleme lokal gebundener
@@ -477,7 +477,7 @@ Kontrolle über die Auswahl der Abonnenten.
 \end{itemize}
 \end{itemize}
 \subsubsection{Probleme}
-\label{sec:orgae7d86b}
+\label{sec:org36792f5}
 Zwar gibt es viel Gutes über \texttt{PubSubs} als Systemkonzept zu sagen,
 allerdings müssen auch einige Probleme angesprochen werden:
 \begin{itemize}
@@ -517,6 +517,6 @@ Datenbank verwalten muss, übersteigt dies meist die erhoffte
 Komplexität vieler Projekte.
 \end{itemize}
 \section{Actaeon}
-\label{sec:org63d7834}
+\label{sec:orgc0a9525}
 TODO: Actaeon
 \end{document}

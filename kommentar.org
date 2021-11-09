@@ -60,11 +60,11 @@ Geschwindigkeit der Fortschritte hat noch nie gesehene Mengen an
 Wohlstand und Reichtum geschaffen. Doch im Rausch des Wandels wurden
 gewisse Entscheidungen, manche bewusst und böswillig, andere aus Not,
 getroffen, welche uns in unserer modernen, vom Internet vollständig
-abhängigen, Gesellschaft in eine prekäre Situation bringen. Die
+abhängigen Gesellschaft in eine prekäre Situation bringen. Die
 tiefsten Fundamente der Welt, wie wir sie kennen, sind dem totalen
-Zusammenbruch gefährlich nahe, und was das System am Laufen hält sind
+Zusammenbruch gefährlich nahe, und was das System am Laufen hält, sind
 oftmals monopolistische Megaunternehmen und ihre ungewählten CEO's,
-die nur von der Weltherrschaft träumen.\\
+die von der Weltherrschaft träumen.\\
 
 \noindent Es ist offensichtlich, dass eine Alternative her muss. Aber
 während verschiedenste Projekte bereits grosse Fortschritte in den
@@ -76,15 +76,15 @@ verstehen. =Project Orion= versucht genau da anzusetzen: Nebst einem
 dezentralen Kommunikationssystem sollen auch verschiedene, praktisch
 einsetzbare Anwendungen die Prinzipien dezentraler Systeme in die
 Hände der Endnutzer bringen und dort einen sichtbaren, verständlichen
-Unterschied machen. Besonders dafür wurde ein 3D multiplayer
+Unterschied machen. Besonders dafür wurde ein 3D Multiplayer
 Videospiel entwickelt, welches basierend auf einem eigenen dezentralen
-Kommunikationsprotokoll die gewohnte Erfahrung bekannter Videospiele
+Kommunikationsprotokoll, die gewohnte Erfahrung bekannter Videospiele
 liefern soll, ohne dabei in die Fänge der Megaunternehmen zu geraten.
 
-\noindent Zusätzlich werden die Entwickelten Werkzeuge mit ihren
+\noindent Zusätzlich werden die Entwickelten Werkzeuge mit ihrer
 Dokumentation und unseren Erfahrungen und Lektionen öffentlich zur
 Verfügung gestellt, sodass zukünftige Projekte davon profitieren
-können und die Einsteigshürde für das Gebiet der dezentralen
+können und die Einstiegshürde für das Gebiet der dezentralen
 Datensysteme hoffentlich gesenkt wird.
 #+END_ABSTRACT
 \newpage
@@ -93,12 +93,12 @@ Datensysteme hoffentlich gesenkt wird.
 Die schriftliche Komponente der Maturaarbeit =Project Orion= besteht aus
 drei verschiedenen Teilen. Da die behandelten Themen äusserst komplex
 und umfangreich sind, verlangen die Abschnitte der Arbeit
-verschiedenes Vorwissen und einen verschiedenen Zeitaufwand. Deswegen
-wurde die schriftliche Komponente in drei Subkomponenten aufgeteilt,
-wobei sie nach technischem Detailgrad sortiert sind. Wer nur ein
-oberflächliches Verständnis über die Arbeiten und eine Analyse des
+verschiedenes Vorwissen und einen unterschiedlichen Zeitaufwand.
+Deswegen wurde die schriftliche Komponente in drei Subkomponenten
+aufgeteilt, die sie nach technischem Detailgrad sortiert sind. Wer nur
+ein oberflächliches Verständnis über die Arbeiten und eine Analyse des
 Umfelds will, ohne dabei zu technisch zu werden, muss nicht über den
-Umfang dieses Dokuments hinaus. Aber für vollständigen Einblick in die
+Umfang dieses Dokuments hinaus. Aber wer vollständigen Einblick in die
 Errungenschaften und Konzepte erhalten will, muss gewisses Vorwissen
 und genügend Zeit mitbringen.
 - Schriftlicher Kommentar: In diesem Dokument hier findet sich eine
@@ -106,11 +106,11 @@ und genügend Zeit mitbringen.
   und der Besprechung verschiedener Projekte, bis zur Analyse des
   Produkts und einem Ausblick in die Zukunft, gibt dieses Dokument
   einen guten, eher aber oberflächlichen Einblick in das Projekt.
-  Natürlich wird besonders bei der Analyse der existierenden Projekten
+  Natürlich wird besonders bei der Analyse der existierenden Projekte
   und der Darlegung des Konzepts gewisses technisches Know-How
   benötigt, aber es wurde versucht, alle Fachbegriffe zu umschreiben
   oder zu erklären. Wer nur über die Vision und den aktuellen Stand
-  wissen will muss nicht über dieses Dokument hinaus, aber
+  wissen will, muss nicht über dieses Dokument hinaus, aber
   verschiedene Konzepte und nahezu die gesamte technische Umsetzung
   befinden sind nicht in diesem Dokument.
 - Dokumentation: In dieser alleinstehenden Dokumentation, welche im
@@ -121,24 +121,24 @@ und genügend Zeit mitbringen.
   den umgesetzten Funktionen profitieren will, sollte die
   Dokumentation durcharbeiten. Das Dokument ist eher umfangreich, es
   kann aber auch gut als eine Art Nachschlagewerk verwendet werden.
-- Code: Neben der Dokumentation des Projekts existiert eine weitere
-  Form der Dokumentation. Nahezu jede Funktion und jedes Modul über
-  die verschiedenen /Crates/ sind dokumentiert. Diese Dokumentationen
-  lassen sich nicht in einem klassisch strukturierten Dokument finden,
-  stattdessen ist die Code-Dokumentation online über automatisch
-  generierte Rust-Dokumentation zu finden. Wer den Code von Project
-  Orion verwenden will wird sich dort gut zurecht finden.
+- Code: Neben der schriftlichen Dokumentation des Projekts existiert
+  eine weitere Form der Dokumentation. Nahezu jede Funktion und jedes
+  Modul über die verschiedenen /Crates/ sind dokumentiert. Diese
+  Dokumentationen lassen sich nicht in einem klassisch strukturierten
+  Dokument finden, stattdessen ist die Code-Dokumentation online über
+  automatisch generierte Rust-Dokumentation zu finden. Wer den Code
+  von Project Orion verwenden will wird sich dort gut zurecht finden.
 \newpage
 
 * Vision
 #+BEGIN_CENTER
 29. Oktober 1964 - UCLA an Stanford: LO
 #+END_CENTER
-/1964/ rechnete niemand mit der fundamentalen Änderung unserer Existenz
-und Lebensweise, die mit dieser einfachen Nachricht in Bewegung
-gebracht wurde. Eigentlich hätte die erste Nachricht über das =ARPANET=
-im Jahre 1964 =LOGIN= heissen sollen, doch das Netzwerk stürzte nach nur
-zwei Buchstaben ab. Ob dies als schlechtes Omen für die Zukunft hätte
+/1964/ rechnete niemand mit der fundamentalen Änderung unserer
+Lebensweise, die mit dieser einfachen Nachricht in Bewegung gebracht
+wurde. Eigentlich hätte die erste Nachricht über das =ARPANET= im Jahre
+1964 =LOGIN= heissen sollen, doch das Netzwerk stürzte nach nur zwei
+Buchstaben ab. Ob dies als schlechtes Omen für die Zukunft hätte
 gewertet werden sollen, bleibt eine ungeklärte Frage. Aber das
 Internet ist hier und es ist so dominant wie noch nie zuvor. Jetzt ist
 es in der Verantwortung jeder neuen Generation auf diesem Planeten,
@@ -156,7 +156,7 @@ führten dazu, dass jede neue Innovation und jede neue Plattform noch
 schneller noch mehr User erreichte und auf immer unvorstellbarere
 Grössen anwuchs.\\
 
-\noindent Das ist ja grundsätzlich nichts Schlechtes. Das Internet hat
+\noindent Das ist grundsätzlich nichts Schlechtes. Das Internet hat
 eine unvorstellbare Menge an Vermögen, Geschwindigkeit und
 Bequemlichkeit für uns alle geschaffen und wir haben unsere
 Gesellschaftsordnung daran ausgerichtet. Aber man muss sich fragen, ob
@@ -210,7 +210,7 @@ kommunizieren will und dienen zur eindeutigen Identifizierung. Aktuell
 wird die vierte Version (=V4=) verwendet. In einer Wirtschaft, in der
 unendliches Wachstum als letzte absolute Wahrheit geblieben ist, kann
 ein solch hartes Limit verheerende Folgen haben. Besonders wenn die
-limitierte Ressource so unendlich zentral für unser aller Leben ist,
+limitierte Ressource so unendlich zentral für unser aller Leben ist
 wie nichts Anderes. Mit =IP-V6= wird zurzeit eine Alternative angeboten,
 die solche Limitierungen nicht hat. Aber der Wechsel ist eine
 freiwillige Entscheidung, für die nicht nur alle Betroffenen bereit
@@ -220,9 +220,9 @@ diese neue Technologie unterstützen muss.\\
 \noindent Für jeden Einzelnen kann dies verschiedene Konsequenzen
 haben:
 - Die Preise der Internetanbieter und Mobilfunkabonnemente werden
-  wahrscheinlich langfristig steigen, sobald die ehöhten Kosten für
-  neue Addressen bis zum Endnutzer durchsickern.
-- Ein technologischer Wandel wrrd langfristig von Nöten sein, welcher
+  wahrscheinlich langfristig steigen, sobald die erhöhten Kosten für
+  neue Adressen bis zum Endnutzer durchsickern.
+- Ein technologischer Wandel wird langfristig von Nöten sein, welcher
   jeden Einzelnen dazu zwingt, auf neue Standards umzusteigen. Eine
   solche Umstellung wird den häufigen Problemen grossflächiger
   technischer Umstellungen nicht ausweichen können.
@@ -266,19 +266,19 @@ Baum-Struktur/ vorstellen:
 sondern um Abschnitte von Adressen, auch =Address Spaces= genannt. An
 den zentralen Knotenpunkten geht es also nicht um einzelne Server oder
 Geräte, zu dem etwas gesendet werden muss, stattdessen wird eher
-entschieden, ob gewisse Daten beispielsweise von Frankfurt aus nach
-Ost- oder Westeuropa geschickt werden müssen.\\
+entschieden, ob gewisse Daten beispielsweise von Frankfurt a. M. aus
+nach Ost- oder Westeuropa geschickt werden müssen.\\
 
 \noindent Im Laufe der Jahre wurden die grossen Abschnitte von
-Adressen aber immer weiter aufgeteilt. Internet-Anbieter und grosse
-Firmen können diese Abschnitte untereinander verkaufen und aufteilen.
-Und jede Firma will natürlich ihren eigenen Abschnitt, ihren eigenen
-=Address Space=. Für die Firmen hat dies viele Vorteile beispielsweise
+Adressen immer weiter aufgeteilt. Internet-Anbieter und grosse Firmen
+können diese Abschnitte untereinander verkaufen und aufteilen. Und
+jede Firma will natürlich ihren eigenen Abschnitt, ihren eigenen
+=Address Space=. Für die Firmen hat dies viele Vorteile, beispielsweise
 müssen weniger Parteien beim Finden des korrekten Abschnitts
 involviert sein. Aber für die =Zentralrouter= bedeutet es eine immer
 grössere Datenbank an Zuweisungen. Dieses Problem geht so weit, dass
 die grossen /Routingtables/ inzwischen das physikalische Limit
-erreichen, was ein einzelner Router verarbeiten kann.\\
+erreichen, das ein einzelner Router verarbeiten kann.\\
 ** Zentralisierung
 \noindent Die Macht in den Händen einiger weniger Kapitalisten und
 internationaler Unternehmen ist unvorstellbar gross. Einige wenige
@@ -322,8 +322,8 @@ sammeln, obwohl man von den meisten dieser Firmen noch nie gehört hat.
 Die Liste der potentiellen Mithörer bei unseren digitalen
 Unterhaltungen ist nahezu unendlich: Internet-Anbieter,
 DNS-Dienstleister, CDN-Anbieter, Ad-Insertion-Systeme,
-Analytics-Tools, Knotenpunkte & Datencenter, Browser, Betriebssysteme,
-....\\
+Analytics-Tools, Knotenpunkte & Datencenter, Browser und
+Betriebssysteme.
 
 \noindent Aus dieser Tatsache heraus lassen sich zwei zentrale
 Probleme formulieren:
@@ -360,12 +360,12 @@ wirklich Schlimmes passieren?\\
 natürlich von Google abhängig ist, so versteht kaum jemand, wie viel
 unserer täglichen Aktivitäten von Diensten und Firmen abhängen, die
 selbst wieder von Google abhängig sind. Seien es die Facebook-Server,
-durch welche keine Whatsapp-Nachrichten mehr geschickt werden,
-könnten, oder die fehlerhafte Konfiguration bei Google, durch welche
-manche Kunden die Temperatur ihrer Wohnungen auf ihren Nest Geräten
-nicht mehr anpassen könnten[fn:5], das Netz aus internen Verbindungen
-zwischen Firmen ist komplex und undurchschaubar und nicht nur für die
-Entnutzer, da oftmals die Firmen selbst von kleinsten Problemen
+durch welche keine Whatsapp-Nachrichten mehr geschickt werden könnten,
+oder die fehlerhafte Konfiguration bei Google, durch welche manche
+Kunden die Temperatur ihrer Wohnungen auf ihren Nest Geräten nicht
+mehr anpassen könnten[fn:5], das Netz aus internen Verbindungen
+zwischen Firmen ist komplex und undurchschaubar. Und das nicht nur für
+die Entnutzer, da oftmals die Firmen selbst von kleinsten Problemen
 anderer Dieste überrascht werden können. Der wirtschaftliche Schaden
 solcher Ausfälle ist unvorstellbar, aber noch wichtiger muss die
 zerstörende Wirkung dieser unvorhergesehenen, scheinbar entfernten
@@ -407,11 +407,11 @@ Programmierarbeit zu hören, denn für Aussenstehende scheint sich von
 Tag zu Tag nichts zu ändern. Sinnvolles kann erst berichtet werden,
 wenn der Zeitrahmen erhöht wird, sodass grössere Entscheidungen und
 ihre Konsequenzen sichtbar gemacht werden können. Die Entwicklung und
-Produke dieser Arbeit sollen in zwei Abschnitte getrennt werden, wobei
-die meisten Produkte aus der zweiten Phase hervorgegangen sind.
+die Produkte dieser Arbeit sollen in zwei Abschnitte getrennt werden,
+wobei die meisten Produkte aus der zweiten Phase hervorgegangen sind.
 ** Modularität
-Da während dieser ersten Entwicklungsphase viele Lektionen gelernt
-wurden, ist es wichtig, die Ideen und die Umsetzung genau zu
+Da während dieser ersten Entwicklungsphase viele wichtige Erkenntnisse
+entstanden, ist es wichtig, die Ideen und die Umsetzung genau zu
 analysieren. Zwar unterscheiden sich die Ziele und Methoden der beiden
 Ansätze stark, gewisse Konzepte und einige Programme aber lassen sich
 für die aktuelle Zielsetzung vollständig übernehmen.\\
@@ -422,8 +422,8 @@ verstehen und die damit entstandenen Probleme genau festzuhalten.
 - Modularität \\
   Wie der Name bereits verrät, ging es in erster Linie um die
   Modularität. Ziel war also eine Methode zur standardisierten
-  Kommunikation, durch welche dann beliebige Komponenten an ein
-  grösseres System angeschlossen werden können. Mit einigen
+  Kommunikation zu entwickeln, durch welche dann beliebige Komponenten
+  an ein grösseres System angeschlossen werden können. Mit einigen
   vorgegebenen Komponenten, die Funktionen wie das dezentrale Routing
   und lokales Routing abdecken, können Nutzer für ihre
   Anwendungszwecke passende Programme integrieren.
@@ -433,15 +433,15 @@ verstehen und die damit entstandenen Probleme genau festzuhalten.
   Quellcode zur Verfügung stellen.
 
 \noindent Die grundlegende Idee war dieselbe: /Die Entwicklung eines
-dezentralen vielseitig einsetzbaren Kommunikationsprotokoll./ Da
+dezentralen vielseitig einsetzbaren Kommunikationsprotokolls./ Da
 allerdings keine einzelne Anwendung angestrebt wurde, ging es
 stattdessen um die Entwicklung eines vollständigen Ökosystems und
-allgemein einsetzbare Komponenten.\\
+allgemein einsetzbarer Komponenten.\\
 
 \noindent Im nächsten Abschnitt sollen einige dieser Komponenten und
 die Entscheidungen, die zu ihnen geführt haben, beschrieben werden. In
 einem weiteren Abschnitt sollen dann die Lektionen und Probleme dieser
-erster ersten Entwicklungsphase besprochen werden. 
+erster Entwicklungsphase besprochen werden.
 *** Shadow
 Zwar übernahm die erste Implementierung des verteilten
 Nachrichtensystems, Codename =Shadow=, weniger Funktionen als die
@@ -458,19 +458,18 @@ Mitglied eines Netzwerks konnte eine solche Datei generieren, mit
 welcher es beliebigen andere Instanzen beitreten konnte.\\
 
 \noindent Sobald eine Nachricht im System am Ziel angekommen war,
-wurde sie über einen =Unix-Socket= an den nächsten Komponenten im
-System, meistens also =Hunter=, weitergegeben. Dies geschah nur, wenn
-das einheitlich verwaltete Registrierungssystem für Personen und
-Dienste, eine Teilfunktion von Hunter, ein Resultat lieferte.
-Ansonsten wurde der interne Routing-Table verwendet. Dieser bestand
-aus einer Reihe von Prozessen, welche selbst auch direkt die
-TCP-Verbindungen verwalteten.
+wurde sie über einen =Unix-Socket= an den nächsten Komponenten im System
+weitergegeben. Dies geschah nur, wenn das einheitlich verwaltete
+Registrierungssystem für Personen und Dienste, eine Teilfunktion von
+Hunter, ein Resultat lieferte. Ansonsten wurde der interne
+Routing-Table verwendet. Dieser bestand aus einer Reihe von Prozessen,
+welche selbst auch direkt die TCP-Verbindungen verwalteten.
 *** Hunter
-Während Shadow die Rolle des verteilten Routers übernimmt, ist Hunter
+Während Shadow die Rolle des verteilten Routers übernimmt, ist =Hunter=
 der lokale Router. Es geht bei Hunter also nicht darum, Nachrichten an
 andere Mitglieder des Netzwerks zu senden, sondern sie an verschiedene
 Applikationen auf der gleichen Maschine zu senden. Jedes beliebige
-Programm, unabhängig von Programmiersprache & internen Strukturen,
+Programm, unabhängig von Programmiersprache und internen Strukturen,
 müsste dann also nur das verhältnismässig Protokoll implementieren und
 wäre damit in der Lage, mit allen anderen Komponenten zu interagieren.
 Anders als Shadow wurde Hunter komplett in Rust entwickelt und liess
@@ -482,7 +481,7 @@ sich in zwei zentrale Funktionen aufteilen:
   verbindet, wird dort mit seiner Adresse oder seinem Nutzernamen und
   dem Namen des Chats eingetragen. Wenn dann von einem beliebigen
   anderen Punkt im System eine Nachricht an diesen Nutzer kommt, wird
-  der passende Dienst aus der Datenbank gelesen. All dies lief durch
+  der passende Dienst aus der Datenbank gelesen. All dies läuft durch
   ein /Command Line Interface/, welches dann ins Dateisystem schreibt.
 - Das eigentliche Senden und Weiterleiten der Nachrichten war nicht
   über ein kurzlebiges Programm möglich, da dafür längere Verbindungen
@@ -492,13 +491,13 @@ sich in zwei zentrale Funktionen aufteilen:
 
 \noindent Diese klare Trennung der Aufgaben und starke Unabhängigkeit
 der einzelnen Komponenten erlaubt ein einheitliches Nachrichtenformat,
-da für die einzelnen Komponenten kein Verständnis über andere
-Komponenten oder die Verbindungen haben müssen.
+da die einzelnen Komponenten kein Verständnis andere Komponenten oder
+die Verbindungen haben müssen.
 *** NET-Script
 Eine weitere zentrale Komponente des Systems ist eine eigens dafür
 entwickelte Programmiersprache, welche mit starker Integration in das
 restliche System das Entwickeln neuer Mechanismen und Komponenten für
-das System offener machen sollte. Ein einfacher lisp-ähnlicher Syntax
+das System offener machen sollte. Eine einfache lisp-ähnliche Syntax
 sollte das Entwickeln neuer Programme einfach und vielseitig
 einsetzbar machen.
 *** Probleme
@@ -547,10 +546,10 @@ neue Probleme auf:
   führen, wodurch es für Anfänger schwer sein kann, Zugang zu finden.
 
 \noindent Diese Eigenschaften, besonders bei unseren sehr neuartigen
-Ideen und Mechanismen, machten es unglaublich schwer, Aussenstehenden
-die Funktionen und Konzepte zu erklären. Ohne Vorkenntnisse über
-Netzwerke und Kommunikationssysteme war es nahezu unmöglich, auch nur
-die einfachsten Ideen zu erklären oder den Inhalt dieser Arbeit
+Ideen und Mechanismen, machten es schwer, Aussenstehenden die
+Funktionen und Konzepte zu erklären. Ohne Vorkenntnisse über Netzwerke
+und Kommunikationssysteme war es nahezu unmöglich, auch nur die
+einfachsten Ideen zu erklären oder den Inhalt dieser Arbeit
 darzulegen. Und selbst mit grossem Vorwissen liessen sich nur die
 absoluten Grundlagen innerhalb absehbarer Zeit erklären. Das Erklären
 der theoretischen und technischen Grundlagen würde Stunden in Anspruch
@@ -560,7 +559,7 @@ nehmen.\\
 Präsentation vor einem technisch nicht versierten Publikum steht,
 mussten nach dieser ersten Entwicklungsphase gewisse Aspekte
 grundlegend überarbeitet werden, diesmal mit einem besonderen Fokus
-auf die /präsentierbarkeit/.
+auf die /Präsentierbarkeit/.
 ** Präsentation
 Auch wenn von der ersten Entwicklungsphase viele Konzepte und sogar
 einige Umsetzungen übernommen werden konnten, gab es grundlegende
@@ -578,33 +577,34 @@ unterteilen:
 - Ein möglichst vielseitig einsetzbares Nachrichtensystem basierend
   auf den bereits bekannten Prinzipien wird als Bibliothek für die
   Anwendungen öffentlich angeboten. Entwickelt in Rust wird
-  Geschwindigkeit und Sicherheit garantieren und es lassen sich
-  möglichst viele Möglichkeiten bieten, Integrationen in andere
-  Projekte und Applikationen zu finden.
+  Geschwindigkeit und Sicherheit garantiert und es lassen sich
+  möglichst viele Möglichkeiten finden, Integrationen in andere
+  Projekte und Applikationen zu ermöglichen..
 - Aufbauend auf diesem Datensystem sollen mit verschiedenen
   Anwendungen die Vorteile und vielseitige Einsatzmöglichkeiten
-  gezeigt werden. Auch wenn es damit die weltverändernde Revolution
-  noch nicht direkt gestartet wird, so wird hiermit ein Aspekt
-  angesprochen, welcher in technischen Kreisen oftmals vergessen geht,
-  nähmlich die Frage, wie man komplexe Themen und Programme einfachen
-  Nutzern näher bringt.
+  gezeigt werden. Auch wenn damit die weltverändernde Revolution noch
+  nicht direkt gestartet wird, so wird ein Aspekt angesprochen,
+  welcher in technischen Kreisen oftmals vergessen geht, nähmlich die
+  Frage, wie man komplexe Themen und Programme einfachen Nutzern näher
+  bringt.
   
 * Produkt
 Nun ist es an der Zeit, die Errungenschaften und Produkte des
 Projektes anzuschauen. Eigentlich müssten auch hier die Programme der
-ersten Entwicklungsphase besprochen werden, allerdings wurden diese
-bereits beim Arbeitsprozess etwas angeschaut. Wer noch mehr über die
-Programme erfahren will sollte sich am besten den dazugehörigen
-Bericht durchlesen [fn:6] oder direkt die dabei entstandenen
-Programme anschauen, alle lassen sich auf Github finden und sind unter
-offenen Lizensen einfach weiterzuverwenden[fn:1]. Auch muss angemerkt werden, dass viele der dabei
-entstandenen Ideen viel Potential haben und in gewissem Ausmass ihren
-Weg bereits in die Produkte der zweiten Phase gemacht haben.
+ersten Entwicklungsphase besprochen werden, dies geschah allerdings
+bereits grösstenteils während der Analyse des Arbeitsprozesses. Wer
+noch mehr über die Programme erfahren will sollte sich am besten den
+dazugehörigen Bericht durchlesen[fn:6] oder direkt die dabei
+entstandenen Programme anschauen. Alle lassen sich auf Github finden
+und sind unter offenen Lizensen einfach weiterzuverwenden[fn:1]. Auch
+muss angemerkt werden, dass viele der dabei entstandenen Ideen viel
+Potential haben und in gewissem Ausmass ihren Weg bereits in die
+Produkte der zweiten Phase gefunden haben.
 
 \noindent Dieses Kapitel ist in zwei Abschnitte geteilt:
 - =Actaeon= beschreibt das dezentrale Datensystem, die Rust Bibliothek
-  sowie einige der einfachen Anwendungen wie ein Chat-Client die ohne
-  grossen Aufwand darauf aufgebaut werden können.
+  sowie einige der einfachen Anwendungen, wie zum Beispiel ein
+  Chat-Client die ohne grossen Aufwand darauf aufgebaut werden können.
 - Da das Videospiel als Vorzeigebeispiel für das gesamte Projekt
   entwickelt wurde, erhielt es den gleichen Namen wie die gesamte
   Arbeit.
@@ -613,7 +613,7 @@ Weg bereits in die Produkte der zweiten Phase gemacht haben.
 werden. Dieses Dokument soll mit möglichst wenig Vorwissen
 verständlich sein und nur oberflächlich die technischen Feinheiten
 ansprechen. Wer genauere Informationen zur Umsetzung sucht oder
-tatsächlich mit den Bibliotheken arbeiten will sollte sich die
+tatsächlich mit den Bibliotheken arbeiten will, sollte sich die
 technische Dokumentation oder Code-Dokumentation durchlesen.
 ** Actaeon
 =Actaeon= stellt das Herzstück des gesamten Projekts dar. Als Rust
@@ -622,26 +622,49 @@ ermöglicht dezentrale Kommunikation unabhängig der Anwendung.\\
 
 \noindent Als erstes muss aber wahrscheinlich kurz der Name
 angesprochen werden, da sich auch hier einiges an Bedeutung dahinter
-versteckt. So geht es in der Deutung der klassischen griechischen
-Geschichte Aktaion (actaeon / Aktaion) des italienischen Philosophs um
-den Baum des Lebens. Diese Idee eines Baumes als zentrale Struktur
-findet sich in der Informatik des öfteren, so ebenfalls in den meisten
-Kademlia-Systemen, welche im Herzen einen Binär-Baum als Routing
-Struktur verwenden.\\
+versteckt. In der griechischen Mythologie ist Actaeon (auch Aktaion)
+ein Jäger, der mit seinen Hunden durch den Wald streift und die Göttin
+der Jagt beim Bad in einer Quelle überrascht. Die Göttin verwandelt
+Actaeon in einen Hirsch, der daraufhin von seinen eigenen Hunden in
+Stücke gerissen und gefressen wird. Der Philosoph Peter Sloterdijk,
+der sich dabei auf Giordano Bruno bezieht, deutet die Geschichte von
+Actaeon als Gleichnis für die menschliche Suche nach Wahrheit. Ein
+Blick auf die ganze, göttliche Wahrheit ist für einen Menschen nicht
+möglich. Wer das versucht, wird vom Jäger zum Gejagten, wird von der
+Vielzahl alles Seienden, den Hunden, verschlungen. Die Wahrheit ist
+nur zu finden als Teil einer Einheit, die die gesamte Natur in ihrer
+ganzen Vielfalt umfasst. So ist Actaeon als Namensgeber für ein
+Projekt der dezentralen Kommunikation bestens geeignet.[fn:2]\\
+
+\noindent Nun müssen einige Grundlagen erklärt werden, welche
+hoffentlich die folgenden Abschnitte verständlich machen:\\
+Nahezu alle Applikationen in Project Orion sind in der
+Programmiersprache Rust geschrieben. Als zentrales Verbindungstück
+zwischen allen Applikationen hängen alle Programme von Actaeon ab. Um
+die Verwaltung der internen Abhängigkeiten einfacher zu machen, wurde
+Actaeon mit dem offiziellen Rust /Package-Manager/ =crates.io=[fn:4]
+veröffentlicht. Dies erlaubt es jedem Rust Entwickler Actaeon einfach
+in eigene Programme zu integrieren, dafür ist lediglich eine Zeile
+Code nötig:
+#+begin_src toml
+actaeon = "0.2.0"
+#+end_src
+\noindent Damit wird Actaeon als Abhängigkeit definiert und der Nutzer
+hat nun vollen Zugang zu allen Funktionen, die Actaeon zu bieten hat.
 
 \noindent Da es sich hier um eine Bibliothek handelt, welche dann in
 andere Programme eingebunden werden soll, ist es nicht von Nöten, die
 interne Funktionsweise vollständig zu verstehen. In der technischen
 Dokumentation werden die Ideen und Entscheidungen, die zu Actaeon
-führten genauer angeschaut. Hier soll es allerdings hauptsächlich
-um einen groben überblick gehen, sowie die API, mit welcher mit der
+führten genauer angeschaut. Hier soll es allerdings hauptsächlich um
+einen groben Überblick gehen, sowie um die API, mit welcher mit der
 Bibliothek interagiert werden kann.\\
 
 \noindent Wahrscheinlich lohnt es sich aufzulisten, welche Funktionen
 die Bibliothek übernimmt, und welche weiterhin vom Nutzer verlangt
 werden. Actaeon übernimmt:
-- Verbindungen (Stateful & stateless): Das System entscheidet intern
-  selbständig wie Nachrichten versendet werden sollen. Entweder es
+- Verbindungen (stateful & stateless): Das System entscheidet intern
+  selbständig, wie Nachrichten versendet werden sollen. Entweder es
   werden einzelne Nachrichten an andere Mitglieder geschickt, oder es
   kann eine langlebige Verbindung aufgebaut werden, welche für mehrere
   Nachrichten verwendet werden kann.
@@ -654,19 +677,18 @@ werden. Actaeon übernimmt:
     die 32 Bytes reicht allerdings aus.
   - Routing: Mit den Adressen lässt sich ebenfalls rechnen, wobei es
     hauptsächlich um die Kademlia =XOR=-Operation geht. Damit werden
-    Distanzen bestimmt und die Wege sowie Orte für Nachrichten
-    bestimmt.
+    Distanzen und die Wege sowie Orte für Nachrichten bestimmt.
   - Verschlüsselung: Dank der Familie der
     =NaCl=-Verschlüsselungsbibliotheken ist es möglich, öffentliche und
     private Schlüssel mit einer Länge von nur 32 bytes zu haben. Damit
     lassen sich im System Nachrichten automatisch End-zu-End
     verschlüsseln, ohne einen dedizierten Mechanismus zum Austausch
     von öffentlichen Schlüsseln zu benötigen.
-- Signaling: In Netzwerken ist es immer eine grosse Frage, wie neue
+- Signaling: In Netzwerken ist es immer eine wichtige Frage, wie neue
   Nutzer beitreten können. Actaeon verlangt dabei lediglich die
-  Konaktdaten von einem bekannten Mitglied des Systems und kümmert
+  Kontaktdaten von einem bekannten Mitglied des Systems und kümmert
   sich dann um den Rest.
-- Form: Durch regelmässige Abfragen und überprüfungen können sich
+- Form: Durch regelmässige Abfragen und Überprüfungen können
   Mitglieder automatisch neue Mitglieder finden und sie in ihren
   lokalen Routing-Table einbauen.
 
@@ -675,7 +697,7 @@ Funktionen, ein genauerer Funktionsumfang findet sich in der
 technischen Dokumentation. Nun muss man sich fragen, welche Funktionen
 potentielle Nutzer überhaupt übernehmen müssen. Dafür lohnt es sich
 die einfachste Beispielanwendung anzuschauen (Dieser Code ist
-ebenfalls im Readme und der Dokumentation):
+ebenfalls im Readme und der Dokumentation zu finden):
 #+BEGIN_SRC rust :exports code
   use actaeon::{
       config::Config,
@@ -710,104 +732,110 @@ Threads gestartet und die Initialisierung des Routing-Tables
 ausser potentiell aufkommende Fehler handhaben. Das zweite wichtige
 Element ist dabei das =Topic=, denn die meisten Interaktionen des
 Nutzers finden über ein solches Thema statt. Für genauere
-Informationen empfiehlt sich die technische Dokumentation, als
+Informationen empfiehlt sich die technische Dokumentation. Als
 einfache Zusammenfassung lässt sich sagen: Unter einem Thema werden
 Nachrichten gesammelt, welche laut dem Nutzer zusammengehören. Dabei
 ist wichtig festzustellen, dass die Wahl der Themen vollkommen in der
 Hand des Nutzers liegt, die Bibliothek hat keinen Einfluss darauf.
-Sobald aber ein solchen Thema erstellt wurde, gibt es eigentlich nur
-zwei wichtige Aktionen: 
+Sobald aber ein solches Thema erstellt wurde, gibt es eigentlich nur
+zwei wichtige Aktionen:
 - Senden: Schickt eine Nachricht an alle Nutzer, welche ebenfalls ein
   Thema mit gleicher Adresse erstellt haben.
 - Empfangen: Hört auf einkommende Nachrichten von beliebigen anderen
   Mitgliedern zu diesem Thema.
 
-Mit nur diesen beiden Operationen ist die Menge an potentiellen
-Applikationen nahezu unbegrenzt, denn nahezu alle Interaktionen,
-Prorgamme und Netzwerke lassen sich irgendwie mit nur diesen beiden
-Befehlen umsetzen. Natürlich gibt es noch mehr interne Funktionen und
-auch mehr Möglichkeiten für den Nutzer, diese sind aber nicht im
-Umfang dieses Dokuments.
+\noindent Nur mit diesen beiden Operationen ist die Menge an
+potentiellen Applikationen nahezu unbegrenzt, denn nahezu alle
+Interaktionen, Programme und Netzwerke lassen sich irgendwie mit
+diesen beiden Befehlen umsetzen. Natürlich gibt es noch mehr interne
+Funktionen und auch mehr Möglichkeiten für den Nutzer, diese gehen
+aber über den Umfang dieses Dokuments hinaus.
 ** Orion
 TODO: Dominik Orion
 * Ausblick
-Zwar sind die geschaffenen Produkte und Programme ihren Zweck erfüllen
-und eine nutzbare Demo möglich machen, so gibt es noch einige Punkte,
-die noch nicht umgesetzt wurden.
+Auch wenn sind die geschaffenen Produkte und Programme ihren Zweck
+erfüllen und eine nutzbare Demo möglich machen, so gibt es einige
+Punkte, die noch nicht umgesetzt wurden.
 
 - Actaeon: \\
   Nebst den technischen Feinheiten, wie eine Möglichkeit einzelne
   Threads unabhängig voneinander neuzustarten oder eine zusätzliche
-  Ebene der Verschlüsselung gibt es einige grössere, strukturelle
+  Ebene der Verschlüsselung, gibt es einige grössere, strukturelle
   Probleme, welche noch angesprochen werden müssen. Besondes die
   mehrfach angesprochenen Probleme im Zusammenhang mit IP-Adressen
   haben mit unseren Arbeiten keine abschliessene Lösung gefunden. Die
   Errungenschaft hier ist Unabhängigkeit, denn das Netzwerk ist nicht
   an gewisse Adress-Systeme gebunden oder auf nur eines limitiert.
   Auch wenn diese gewonnene Unabhängigkeit eine Errungenschaft für
-  sich ist, so werden die aller meisten Nutzer weiterhin
-  problematische Systeme, besonders IP-V4 verwenden. Zwar ist es
-  fragwürdig, wie viel eine zeitlich stark limitierte Arbeit in einem
-  so umfangreichen Feld tatsächlich erreichen kann, es würde sich
-  allerdings lohnen, zumindest eine existierende Alternative, wie
-  beispielsweise =CJDNS= anzubieten. Auch existiert aktuell noch keine
-  Möglichkeit, schädliche Mitglieder zu blockieren oder zu erkennen.
-  Das aktuelle Netzwerk ist also anfällig gegen potientielle Angriffe
-  oder Sabotage. Trotz gewisser Mängel und Kritikpunkte ist das
-  gesamte System im aktuellen Zustand funktionsfähig und nützlich.
+  sich ist, so werden die allermeisten Nutzer weiterhin problematische
+  Systeme, besonders IP-V4, verwenden. Zwar ist es fragwürdig, wie
+  viel eine zeitlich stark limitierte Arbeit in einem so umfangreichen
+  Feld tatsächlich erreichen kann, es würde sich allerdings lohnen,
+  zumindest eine existierende Alternative, wie beispielsweise =CJDNS=
+  anzubieten. Auch existiert aktuell noch keine Möglichkeit,
+  schädliche Mitglieder zu blockieren oder zu erkennen. Das aktuelle
+  Netzwerk ist also anfällig gegen potientielle Angriffe oder
+  Sabotage. Trotz gewisser Mängel und Kritikpunkte ist das gesamte
+  System im aktuellen Zustand aber funktionsfähig und nützlich.
 - Orion: \\
   Natürlich sind bei einem Videospiel die Möglichkeiten nahezu
-  unlimitierd, allerdings existieren auch hier einige interne,
+  unlimitiert, allerdings existieren auch hier einige interne,
   technische Probleme. Nebst der offensichtlichen Frage der
   Performance gibt es auch ein grundlegenderes Problem, welches die
   aktuelle Umsetzung davon abhalten würde, verbreiteter eingesetzt zu
-  werden: Auch wenn einer /offizieller/ Client existiert, so hält einen
+  werden: Auch wenn ein /offizieller/ Client existiert, so hält einen
   Entwickler nichts davon ab, eine alternative Umsetzung zu erstellen.
   Daran ist an sich nichts falsch, allerdings kann eine solche
-  Offenheit schnell ausgenutzt werden um beispielsweise unfaire
-  Vorteile im Spiel zu erhalten. Wer also das Spiel als einfache
-  Zeitvertreibung ausprobieren will oder etwas Spass sucht wird
+  Offenheit schnell ausgenutzt werden, um beispielsweise unfaire
+  Vorteile im Spiel zu erhalten. Wer also das Spiel als einfachen
+  Zeitvertreib ausprobieren will oder etwas Spass sucht wird
   zufriedengestellt sein, als seriöses Spiel, vergleichbar mit
   kommerziellen Alternativen ist es allerdings noch nicht geeignet.
 - Weiteres: \\
   Natürlich beschränkt sich der Umfang des Projekts nicht nur auf
-  Videospiele oder Chat Programme. Eine vielzahl anderer Anwendungen
+  Videospiele oder Chat Programme. Eine Vielzahl anderer Anwendungen
   lässt sich mit der actaeon Bibliothek bauen. Dank einer offenen
-  Lizens gibt es ebenfalls die Hoffnung, dass andere Personen in der
-  Zukunft Programme für das ökosystem bauen.
+  Lizenz gibt es ebenfalls die Hoffnung, dass andere Personen in der
+  Zukunft Programme für das Ökosystem bauen.
   \newpage
 * Fazit
-Verteilte und dezentrale Datensysteme sind trotz ihrer Wichtigkeit ein
-kleines Nischengebiet in der Welt der Informatik. Und obwohl unsere
-Abhängigkeit von Netzwerken und Kommunikationsssytemen grosse Probleme
-für alltägliche Situationen und Menschen bringt, lassen sich die
-wenigsten auf ein tiefgreifendes Gespräch über die Probleme der
+Verteilte und dezentrale Datensysteme sind trotz ihrer Wichtigkeit nur
+ein kleines Nischengebiet in der Welt der Informatik. Und obwohl
+unsere Abhängigkeit von Netzwerken und Kommunikationsssytemen grosse
+Probleme für alltägliche Situationen und Menschen bringt, lassen sich
+die Wenigsten auf ein tiefgreifendes Gespräch über die Probleme der
 Zentralrouter ein. Doch wenn diese Debatte nur in den Büros der
 Megaunternehmen geführt wird, könnten sich die Fortschritte des
 Internets schnell in eine finstere Dystopie verwandeln. Nebst den
-offensichtlichen Problemen und Gefahren übermässiger zentralisierung
-und der damit kommenden Abhängigkeit darf nicht vergessen werden, dass
-kollaborative, dezentrale Systeme unmengen von Vorteilen mit sich
+offensichtlichen Problemen und Gefahren übermässiger Zentralisierung
+und der damit verbundenen Abhängigkeit darf nicht vergessen werden,
+dass kollaborative, dezentrale Systeme Unmengen von Vorteilen mit sich
 bringen. Seien es zensursichere Speicher- und Nachrichtensysteme oder
-die schiere grösse von beispielsweise Videospielen, die ohne einen
+die schiere Grösse von beispielsweise Videospielen, die ohne einen
 zentralen Knotenpunk möglich werden, existiert noch viel ungeschöpftes
 Potential.\\
 
 \noindent Project Orion hat weder alle der genannten Probleme gelöst,
 noch das volle Potiential ausgenutzt und eine umfangreiche Alternative
-entwickelt. Stattdessen kam aus diesem Projekt verschiedene /relativ/
-einfache, verständliche und nutzbare Demos herfor, welche nicht nur
+entwickelt. Stattdessen entstanden aus diesem Projekt verschiedene
+/relativ/ einfache, verständliche und nutzbare Demos, welche nicht nur
 reale Probleme lösen, sondern dazu einen Einblick in die Welt der
 dezentralen Datensysteme bieten. Mithilfe von umfangreicher
 Dokumentation und einfachen Erklärungen soll zusätzlich der Einstieg
 in die Welt der dezentralen Kommunikationssysteme einfacher gemacht
 werden. Da alle entstandenen Programme öffentlich zugänglich sind und
-unter freien Lizensen weiterverbreiten werden können, existiert
-ebenfalls die Hoffnung, dass das ökosystem in Zukunft durch weitere
-Applikationen erweitert wird.
+unter freien Lizenzen weiterverbreiten werden können, existiert
+ebenfalls die Hoffnung, dass das Ökosystem in Zukunft durch weitere
+Applikationen erweitert wird. Mit insgestamt etwa \(12000\) Zeilen
+Code über \(350\) Commits sind mit diesem Projekt verschiedene,
+umfangreiche Programme entstanden, welche realen Nutzen bieten und
+vielseiting einsetzbar sind.
 
 \includepdf[pages=-]{unterschrieben.pdf}
 * Footnotes
+[fn:4] Crates.io: https://crates.io/ 
+
+[fn:2] Sloterdijk, Peter: Den Himmel zum Sprechen bringen, 2020, S321.  
 [fn:1] Github: https://github.com/EngineOrion
 
 [fn:6] Github: Engine: Orion Bericht,

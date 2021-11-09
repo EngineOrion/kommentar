@@ -1,0 +1,24 @@
+Actaeon Dokumentation:
+Ziel: + 15 Seiten
+Zeit: 10 Tage
+
+-> ~ Zwei Seiten pro Tag!
+
+- TODO: Quelle Aktaion Buch Eintragen.
+- TODO: Orion Abschnitt Kommentar
+- TODO: Plakat
+
+* Daten
+| Project       | Commits |   LoC |
+|---------------+---------+-------|
+| actaeon       |     100 |  7000 |
+| dokumentation |     100 |     0 |
+| kommentar     |      20 |     0 |
+| orion         |      10 |  1000 |
+| arrow         |      11 |  1000 |
+| websocket     |      13 |   400 |
+| container     |      50 |  1100 |
+| shadow        |      30 |  1100 |
+| hunter        |      20 |   500 |
+|---------------+---------+-------|
+| sum           |     354 | 12100 |
