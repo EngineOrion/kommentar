@@ -17,16 +17,7 @@
 \newpage
 
 * Einführung
-Dieses Dokument soll ohne grosse Umschreibungen und ohne
-Dramatisierungen einen Einblick in die Konzepte und Entscheidungen und
-Systeme bieten, welche schlussendlich zur =actaeon= Bibliothek geführt
-haben. Es ist ebenfalls wichtig zu verstehen, dass dieses Dokument
-sich lediglich auf die, im Rahmen der Maturarbeit entstandenen
-Projekte beschränkt, es handelt sich hier nicht um eine komplette
-Einführung in dezentrale Datensysteme, allerdings existieren genügend
-Quellen für grundlegendere Informationen[fn:6]. Für das
-schlussendliche Produkt wurde die =Rust=-Programmiersprache verwendet,
-welche ebenfalls nicht hier erklärt werden soll.
+
 * Projekte
 Nachdem die zentralen Problemen definiert wurden, ist es an der Zeit,
 andere Projekte zu analysieren um herauszufinden, ob die Probleme
@@ -344,7 +335,7 @@ Algorithmen, welche mit sehr kurzen Schlüsseln Sicherheit
 gewährleisten können. Besonders geht es dabei um
 =curve25519xsalsa20poly1305=, einer Kombination aus den Algorithmen
 =Curve25519=, =Salsa20= und =Poly1305=. Während das innere Zusammenspiel
-dieser Algorithmen sehr komplex wirken mag, ist das Resultat ein
+dieser Algorithmen sehr komplex ist, ist das Resultat ein
 Algorithmus, wessen Schlüssel jeweils nur eine Länge von /32 bytes/
 haben.\\
 

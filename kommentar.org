@@ -38,7 +38,7 @@
         \vspace{1.2cm}
 
         Maturaarbeit, Kanti-Baden\\
-        Simon Hallström\\
+        Simon Hallström, Michael Schneider\\
 
         \vfill
 
@@ -647,14 +647,13 @@ veröffentlicht. Dies erlaubt es jedem Rust Entwickler Actaeon einfach
 in eigene Programme zu integrieren, dafür ist lediglich eine Zeile
 Code nötig:
 #+begin_src toml
-actaeon = "0.2.0"
+actaeon = "0.2.1"
 #+end_src
 \noindent Damit wird Actaeon als Abhängigkeit definiert und der Nutzer
 hat nun vollen Zugang zu allen Funktionen, die Actaeon zu bieten hat.
-
-\noindent Da es sich hier um eine Bibliothek handelt, welche dann in
-andere Programme eingebunden werden soll, ist es nicht von Nöten, die
-interne Funktionsweise vollständig zu verstehen. In der technischen
+Da es sich hier um eine Bibliothek handelt, welche dann in andere
+Programme eingebunden werden soll, ist es nicht von Nöten, die interne
+Funktionsweise vollständig zu verstehen. In der technischen
 Dokumentation werden die Ideen und Entscheidungen, die zu Actaeon
 führten genauer angeschaut. Hier soll es allerdings hauptsächlich um
 einen groben Überblick gehen, sowie um die API, mit welcher mit der
@@ -691,6 +690,17 @@ werden. Actaeon übernimmt:
 - Form: Durch regelmässige Abfragen und Überprüfungen können
   Mitglieder automatisch neue Mitglieder finden und sie in ihren
   lokalen Routing-Table einbauen.
+
+\noindent Der Nutzer muss sich dabei um lediglich einen zentralen
+Aspekt selber kümmern: Die Verbindungsdaten für ein beliebiges
+Mitglied eines Clusters müssen bekannt sein, sodass das System eine
+erste Verbindung aufbauen kann. Auch wenn gewisse automatisierung noch
+möglich ist, wird dieser Schritt niemals vollständig aus den Händen
+der Nutzer genommen werden können, ohne nicht dabei einen zentralen
+Registrierungspunkt einzubauen. Auch wird aktuell noch von Nutzern
+verlangt, dass sie öffentlich erreichbare Verbindungsdetails angeben.
+Das bedeutet, Nutzer müssen sich selbst um Portforwarding und ihre
+öffentlich zugängliche Addresse kümmern.\\
 
 \noindent Natürlich übernimmt die Bibliothek noch viele weitere
 Funktionen, ein genauerer Funktionsumfang findet sich in der
@@ -772,11 +782,19 @@ Punkte, die noch nicht umgesetzt wurden.
   viel eine zeitlich stark limitierte Arbeit in einem so umfangreichen
   Feld tatsächlich erreichen kann, es würde sich allerdings lohnen,
   zumindest eine existierende Alternative, wie beispielsweise =CJDNS=
-  anzubieten. Auch existiert aktuell noch keine Möglichkeit,
+  anzubieten. Obwohl das System sich dynamisch an neue Netzwerkformen
+  anpassen kann, ist es möglich, dass durch die Verschiebung der
+  Address-Bereiche ein neues Mitglied für Themen und Daten zuständig
+  ist. Aktuell werden bereits vorhandene Daten dabei noch nicht
+  verschoben. Auch existiert aktuell noch keine Möglichkeit,
   schädliche Mitglieder zu blockieren oder zu erkennen. Das aktuelle
   Netzwerk ist also anfällig gegen potientielle Angriffe oder
-  Sabotage. Trotz gewisser Mängel und Kritikpunkte ist das gesamte
-  System im aktuellen Zustand aber funktionsfähig und nützlich.
+  Sabotage. Und auch wenn Actaeon in der Lage ist, schnell Nachrichten
+  zu verarbeiten, so kommt dies mit eher hohen Leistungsansprüchen.
+  Ohne Rusts neuste async-await-Syntax beansprucht die Bibliothek
+  mehrere Threads für sich und braucht diese für die gesamte Laufzeit.
+  Trotz gewisser Mängel und Kritikpunkte ist das gesamte System im
+  aktuellen Zustand aber funktionsfähig und nützlich.
 - Orion: \\
   Natürlich sind bei einem Videospiel die Möglichkeiten nahezu
   unlimitiert, allerdings existieren auch hier einige interne,
