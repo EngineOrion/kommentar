@@ -1,4 +1,4 @@
-% Created 2021-11-09 Tue 14:50
+% Created 2021-11-10 Mi 17:55
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -45,19 +45,9 @@
 \newpage
 
 \section{Einführung}
-\label{sec:org5129707}
-Dieses Dokument soll ohne grosse Umschreibungen und ohne
-Dramatisierungen einen Einblick in die Konzepte und Entscheidungen und
-Systeme bieten, welche schlussendlich zur \texttt{actaeon} Bibliothek geführt
-haben. Es ist ebenfalls wichtig zu verstehen, dass dieses Dokument
-sich lediglich auf die, im Rahmen der Maturarbeit entstandenen
-Projekte beschränkt, es handelt sich hier nicht um eine komplette
-Einführung in dezentrale Datensysteme, allerdings existieren genügend
-Quellen für grundlegendere Informationen\footnote{Orion Wiki - Distributed Systems, Jakob Klemm. \url{https://orion.jeykey.net/distributed\_systems.pdf}}. Für das
-schlussendliche Produkt wurde die \texttt{Rust}-Programmiersprache verwendet,
-welche ebenfalls nicht hier erklärt werden soll.
+\label{sec:orgb446f1b}
 \section{Projekte}
-\label{sec:org7fc11a6}
+\label{sec:org3576ccd}
 Nachdem die zentralen Problemen definiert wurden, ist es an der Zeit,
 andere Projekte zu analysieren um herauszufinden, ob die Probleme
 bereits vollständig oder zumindest teilweise gelöst wurden.\\
@@ -89,7 +79,7 @@ angeschaut werden. Dafür wird grundlegend in zwei zentrale Komponenten
 unterschieden. Die Integration der beiden Teile soll hier nicht
 besprochen werden, da diese sich hauptsächlich in der Umsetzung zeigt.
 \subsection{Kademlia}
-\label{sec:org710a836}
+\label{sec:org6a0f1e4}
 Wie geht man also gegen die totale Abhängikeit von Internetanbietern
 und zentralen Routern vor?\\
 Man kann ja nicht einfach seine eigenen Router aufsetzen und einen
@@ -131,7 +121,7 @@ Während dies für kleinere Systeme gut funktioniert und vergleichbare
 Geschwindigkeiten liefert, skaliert es nicht so einfach für grosse
 Systeme. Genau dafür gibt es die \texttt{XOR}-Metrik.
 \subsubsection{Distanz}
-\label{sec:org78c7914}
+\label{sec:org9137918}
 Die \texttt{XOR}-Funktion, die in der Informatik an den verschiedensten
 Orten auftaucht, wird verwendet, um die Distanz zwischen zwei
 Zahlen zu berechnen. Die Zahlen repräsentieren dabei Mitglieder
@@ -191,7 +181,7 @@ man \texttt{XOR} anstatt einfach der Differenz verwendet, allerdings
 funktioniert die Funktion mit Binärzahlen in einem solchen Baum
 einiges besser.
 \subsubsection{Routing-Table}
-\label{sec:orgfb01e12}
+\label{sec:org68ff83e}
 In einem \texttt{Kademlia}-System hat jedes Mitglied eine gewisse Anzahl
 anderer Mitglieder, mit denen es sich verbunden hat. Da \texttt{Kademlia} ein
 sehr umfangreiches, kompliziertes Protokoll und System beschreibt,
@@ -259,7 +249,7 @@ benötigt, um die Zustände aller Verbindungen periodisch zu
 überprüfen.
 \end{itemize}
 \subsection{BitTorrent}
-\label{sec:org1786e21}
+\label{sec:org8bdd590}
 Dezentralisierung hat viele Vorteile und muss langfristig
 flächendeckend eingesetzt werden. Aktuell sind die meisten
 Industrien und Produkte noch nicht so weit. Trotzdem gibt es
@@ -313,7 +303,7 @@ bei \texttt{BitTorrent} eigentlich um ein grosses Dateisystem handelt,
 lassen sich direkt die \texttt{SHA1}-Hashwerte der Inhalte als
 \texttt{Kademlia}-Adressen verwenden.
 \subsection{Tox}
-\label{sec:orgbcd0e0d}
+\label{sec:orga3f753b}
 Im Sommer 2013 veröffentlichte Edward Snowden schockierende
 Geheimnisse über massive Spionage Prgogramme der NSA, mit welchen
 nahezu aller digitaler Verkehr, ohne Rücksicht auf Datenschutz oder
@@ -381,12 +371,12 @@ gefallen finden. Seit einigen Jahren gibt es aber Bedenken über die
 Sicherheit und aktuelle Richtung des Projekts, sowie Berichte von
 internen Konflikten, besonders im Zusammenhang mit Spendengeldern.
 \section{Architektur}
-\label{sec:org35a8e07}
+\label{sec:orgfcf98a5}
 In diesem Kapitel sollen einige der zentralen Konzepte und
 Entscheidungen erläutert werden, welche schlussendlich zur
 \texttt{Actaeon}-Applikation geführt haben.
 \subsection{Verschlüsselung}
-\label{sec:org3133587}
+\label{sec:org53186a3}
 Zwar ist es bei weitem nicht, dass moderne dezentrale Systeme das
 Internet oder ein ähnliches Austauschsystem als Grundlage verwenden,
 allerdings ist dies in nahezu allen Fällen, besonders bei den
@@ -403,7 +393,7 @@ Algorithmen, welche mit sehr kurzen Schlüsseln Sicherheit
 gewährleisten können. Besonders geht es dabei um
 \texttt{curve25519xsalsa20poly1305}, einer Kombination aus den Algorithmen
 \texttt{Curve25519}, \texttt{Salsa20} und \texttt{Poly1305}. Während das innere Zusammenspiel
-dieser Algorithmen sehr komplex wirken mag, ist das Resultat ein
+dieser Algorithmen sehr komplex ist, ist das Resultat ein
 Algorithmus, wessen Schlüssel jeweils nur eine Länge von \emph{32 bytes}
 haben.\\
 
@@ -418,7 +408,7 @@ lediglich dessen Adresse bekannt sein muss. Insgesamt fällt damit viel
 Komplexität weg und macht das erstellen, verifizieren und finden von
 Adressen viel einfacher.
 \subsection{PubSub}
-\label{sec:org81ed48f}
+\label{sec:orgf9c8d54}
 Ein einfaches, aber vielseitig einsetzbares
 Nachrichtenübermittlungsmuster ist die Idee eines \texttt{Publish/Subscribe
 Systems}. Ein solches System lässt sich mit nur zwei Aktionen
@@ -437,7 +427,7 @@ oder Emailsystem, ein komplexer Datenverarbeitungsmechanisums oder ein
 Datennetzwerk, alle lassen sich relativ einfach mit diesen beiden
 Funktionen modellieren. 
 \subsubsection{Dezentraler PubSub}
-\label{sec:orgcd783c3}
+\label{sec:org9c27d29}
 Offensichtlich kann selbst die beste, fehlerfrei optimierte
 Implementierung der oben beschriebenen Prinzipien nicht gegen die
 bereits angesprochenen, fundamentalen Probleme lokal gebundener
@@ -477,7 +467,7 @@ Kontrolle über die Auswahl der Abonnenten.
 \end{itemize}
 \end{itemize}
 \subsubsection{Probleme}
-\label{sec:org36792f5}
+\label{sec:orgab1df8a}
 Zwar gibt es viel Gutes über \texttt{PubSubs} als Systemkonzept zu sagen,
 allerdings müssen auch einige Probleme angesprochen werden:
 \begin{itemize}
@@ -517,6 +507,6 @@ Datenbank verwalten muss, übersteigt dies meist die erhoffte
 Komplexität vieler Projekte.
 \end{itemize}
 \section{Actaeon}
-\label{sec:orgc0a9525}
+\label{sec:org1b99ee7}
 TODO: Actaeon
 \end{document}

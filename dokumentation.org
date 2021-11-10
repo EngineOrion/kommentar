@@ -17,7 +17,6 @@
 \newpage
 
 * Einführung
-
 * Projekte
 Nachdem die zentralen Problemen definiert wurden, ist es an der Zeit,
 andere Projekte zu analysieren um herauszufinden, ob die Probleme

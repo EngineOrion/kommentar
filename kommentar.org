@@ -1,6 +1,6 @@
 #+TITLE: Project Orion - Kommentar
 #+AUTHOR: Dominik Keller, Jakob Klemm
-#+LATEX_CLASS: article
+#+LATEX_CLASS: ethz
 #+IMAGE: ksba
 #+LANGUAGE: de
 #+OPTIONS: toc:nil title:nil date:nil
@@ -16,38 +16,33 @@
 #+LATEX_HEADER: \usepackage{listings}
 #+LATEX_HEADER: \usepackage{textcomp}
 #+LATEX_HEADER: \usepackage{gensymb}
+#+LATEX_HEADER:        \usepackage[OT1]{fontenc}
+#+LATEX_HEADER:        \usepackage{amsmath,amssymb,amsfonts,mathrsfs}
+#+LATEX_HEADER:        \usepackage[amsmath,thmmarks]{ntheorem}
+#+LATEX_HEADER:        \usepackage{graphicx}
+#+LATEX_HEADER:        \usepackage{soul}
+#+LATEX_HEADER:        \input{extrapackages}
+#+LATEX_HEADER:        \input{layoutsetup}
+#+LATEX_HEADER:        \input{theoremsetup}
+#+LATEX_HEADER:        \input{macrosetup}
+#+LATEX_HEADER:        \usepackage[linkcolor=black,colorlinks=true,citecolor=black,filecolor=black]{hyperref}
+#+LATEX_HEADER:        \hypersetup{colorlinks=true,allcolors=magenta}
 
-\begin{titlepage}
-    \begin{center}
-        \begin{tikzpicture}[remember picture,overlay]
-            \node[anchor=north west,yshift=-1.5pt,xshift=1pt]%
-            at (current page.north west)
-            {\includegraphics[scale=1]{~/.tools/ksba.png}};
-        \end{tikzpicture}
+\title{Title \break \LARGE Subtitle}
+\author{Gene Ting-Chun Kao \break \break \small kao@arch.ethz.ch \break 18-902-049}
+\thesistype{PhD Research Proposal}
+\advisors{Advisors: Prof. Dr. Philippe Block \break block@arch.ethz.ch \break \break \hline Co-supervisor: Prof. Dr. Stelian Coros \break stelian.coros@inf.ethz.ch \break \break \hline Technical advisor: Dr. Tom Van Mele \break van.mele@arch.ethz.ch \break \break \hline}
+\department{Block Research Group \break Institute of Technology in Architecture \break Department of Architecture}
+\date{\small \today}
 
-        \vspace{2.2cm}
+\frontmatter
 
-        \Huge
-        \textbf{Project Orion}
-   
-        \vspace{4.2cm}
-
-        \Large
-        Dominik Keller, Jakob Klemm, G4a \\
-        
-        \vspace{1.2cm}
-
-        Maturaarbeit, Kanti-Baden\\
-        Simon Hallström, Michael Schneider\\
-
-        \vfill
-
-        \Large
-        Baden, Schweiz\\
-        \today
-    \end{center}
-\end{titlepage}
-\tableofcontents
+\begin{titlingpage}
+  \calccentering{\unitlength}
+  \begin{adjustwidth*}{\unitlength-28pt}{-\unitlength-28pt}
+    \maketitle
+  \end{adjustwidth*}
+\end{titlingpage}
 
 \newpage  
 #+BEGIN_ABSTRACT

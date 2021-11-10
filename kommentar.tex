@@ -1,21 +1,28 @@
-% Created 2021-11-10 Mi 16:00
+% Created 2021-11-10 Mi 18:11
 % Intended LaTeX compiler: pdflatex
-\documentclass[11pt]{article}
+\documentclass[a4paper,11pt,titlepage]{memoir}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
 \usepackage{graphicx}
-\usepackage{grffile}
 \usepackage{longtable}
+\usepackage{float}
 \usepackage{wrapfig}
 \usepackage{rotating}
 \usepackage[normalem]{ulem}
 \usepackage{amsmath}
 \usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
 \usepackage{amssymb}
-\usepackage{capt-of}
 \usepackage{hyperref}
-\usepackage{minted}
-\usepackage[utf8]{inputenc}
+\usepackage{mathpazo}
+\usepackage{color}
+\usepackage{enumerate}
+\definecolor{bg}{rgb}{0.95,0.95,0.95}
+\tolerance=1000
+      \usepackage{minted}
+      \usepackage[utf8]{inputenc}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{tikz}
 \usepackage{pdfpages}
@@ -27,6 +34,20 @@
 \usepackage{listings}
 \usepackage{textcomp}
 \usepackage{gensymb}
+\usepackage[OT1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,mathrsfs}
+\usepackage[amsmath,thmmarks]{ntheorem}
+\usepackage{graphicx}
+\usepackage{soul}
+\input{extrapackages}
+\input{layoutsetup}
+\input{theoremsetup}
+\input{macrosetup}
+\usepackage[linkcolor=black,colorlinks=true,citecolor=black,filecolor=black]{hyperref}
+\hypersetup{colorlinks=true,allcolors=magenta}
+
+\linespread{1.1}
+\hypersetup{pdfborder=0 0 0}
 \author{Dominik Keller, Jakob Klemm}
 \date{}
 \title{Project Orion - Kommentar}
@@ -39,37 +60,21 @@
  pdflang={Germanb}}
 \begin{document}
 
-\begin{titlepage}
-    \begin{center}
-        \begin{tikzpicture}[remember picture,overlay]
-            \node[anchor=north west,yshift=-1.5pt,xshift=1pt]%
-            at (current page.north west)
-            {\includegraphics[scale=1]{~/.tools/ksba.png}};
-        \end{tikzpicture}
+\title{Title \break \LARGE Subtitle}
+\author{Gene Ting-Chun Kao \break \break \small kao@arch.ethz.ch \break 18-902-049}
+\thesistype{PhD Research Proposal}
+\advisors{Advisors: Prof. Dr. Philippe Block \break block@arch.ethz.ch \break \break \hline Co-supervisor: Prof. Dr. Stelian Coros \break stelian.coros@inf.ethz.ch \break \break \hline Technical advisor: Dr. Tom Van Mele \break van.mele@arch.ethz.ch \break \break \hline}
+\department{Block Research Group \break Institute of Technology in Architecture \break Department of Architecture}
+\date{\small \today}
 
-        \vspace{2.2cm}
+\frontmatter
 
-        \Huge
-        \textbf{Project Orion}
-   
-        \vspace{4.2cm}
-
-        \Large
-        Dominik Keller, Jakob Klemm, G4a \\
-        
-        \vspace{1.2cm}
-
-        Maturaarbeit, Kanti-Baden\\
-        Simon Hallström, Michael Schneider\\
-
-        \vfill
-
-        \Large
-        Baden, Schweiz\\
-        \today
-    \end{center}
-\end{titlepage}
-\tableofcontents
+\begin{titlingpage}
+  \calccentering{\unitlength}
+  \begin{adjustwidth*}{\unitlength-28pt}{-\unitlength-28pt}
+    \maketitle
+  \end{adjustwidth*}
+\end{titlingpage}
 
 \newpage  
 \begin{ABSTRACT}
@@ -154,8 +159,8 @@ von Project Orion verwenden will wird sich dort gut zurecht finden.
 \end{itemize}
 \newpage
 
-\section{Vision}
-\label{sec:org2adc4d0}
+\chapter{Vision}
+\label{sec:org32d8423}
 \begin{center}
 \begin{enumerate}
 \item Oktober 1964 - UCLA an Stanford: LO
@@ -213,8 +218,8 @@ Interaktionen und Verwendungen des Internets zu bringen. In einem
 nächsten Schritt soll dann eine Lösung besprochen werden: ein System,
 mit welchem sich möglichst viele der grössten Probleme lösen lassen,
 und welches tatsächlich praktischen Nutzen bietet.\\
-\subsection{Adressen}
-\label{sec:org0ed7593}
+\section{Adressen}
+\label{sec:org863ab73}
 Das Internet erlaubt einfache, standardisierte Kommunikation zwischen
 Geräten aller Art. Egal welche Funktion oder Form sie auch haben
 mögen, es braucht nicht viel, um ein Gerät mit dem Internet zu
@@ -223,8 +228,8 @@ wird eine \texttt{IP-Addresse} als eindeutige Identifikation benötigt. Während
 vor dreissig Jahren wunderbare Systeme und Standards geschaffen wurden,
 welche seither die Welt grundlegend verändert haben, gibt es doch
 einige fundamentale Probleme und Limitierungen.
-\subsubsection{IP-V4}
-\label{sec:org55a2067}
+\subsection{IP-V4}
+\label{sec:org7b57c0e}
 \noindent In der Geschichte der Menschheit haben wir aus vielen
 verschiedenen Gründen Krieg geführt. Für Wasser, Nahrung, Öl, Frieden
 oder Freiheit in den Krieg zu ziehen, scheint zu einer fernen Welt zu
@@ -257,8 +262,8 @@ jeden Einzelnen dazu zwingt, auf neue Standards umzusteigen. Eine
 solche Umstellung wird den häufigen Problemen grossflächiger
 technischer Umstellungen nicht ausweichen können.
 \end{itemize}
-\subsubsection{Routing}
-\label{sec:orga771def}
+\subsection{Routing}
+\label{sec:org9516631}
 Freiheit und Unabhängigkeit sind menschlich. Es darf niemals bestraft
 werden, nach diesen fundamentalen Rechten zu streben. Und doch führt
 das egoistische Streben nach Freiheit zu Problemen, oftmals allerdings
@@ -313,8 +318,8 @@ involviert sein. Aber für die \texttt{Zentralrouter} bedeutet es eine immer
 grössere Datenbank an Zuweisungen. Dieses Problem geht so weit, dass
 die grossen \emph{Routingtables} inzwischen das physikalische Limit
 erreichen, das ein einzelner Router verarbeiten kann.\\
-\subsection{Zentralisierung}
-\label{sec:org7284f42}
+\section{Zentralisierung}
+\label{sec:org095f4f9}
 \noindent Die Macht in den Händen einiger weniger Kapitalisten und
 internationaler Unternehmen ist unvorstellbar gross. Einige wenige
 CEO's, welche nie gewählt, überprüft oder zur Rede gestellt wurden,
@@ -325,8 +330,8 @@ eine solche Abhängigkeit wirft gewisse Fragen und Probleme auf.\\
 \noindent Aber neben den ideologischen Fragen und Sicherheitsbedenken
 gibt es auch noch sehr praktische Probleme in der Art, wie moderne
 Internet-Dienste implementiert sind.
-\subsubsection{Datenschutz}
-\label{sec:org81ad56b}
+\subsection{Datenschutz}
+\label{sec:org4a8432c}
 \begin{center}
 \emph{Wenn man nicht für etwas zahlt, ist man das Produkt.}
 \end{center}
@@ -366,12 +371,12 @@ Probleme formulieren:
 \begin{itemize}
 \item Selbst für die einfachsten Anfragen im Internet sind wir von einer
 Vielzahl von Firmen und Systemen abhängig. Dieses Problem wird noch
-etwas genauer im Abschnitt \hyperref[sec:orgaa819d9]{Abhängigkeit} besprochen.
+etwas genauer im Abschnitt \hyperref[sec:org97283e5]{Abhängigkeit} besprochen.
 \item Wir haben weder ein Verständnis von den involvierten Parteien noch
 die Bereitschaft, Bequemlichkeit dafür aufzugeben.
 \end{itemize}
-\subsubsection{Abhängigkeit}
-\label{sec:orgaa819d9}
+\subsection{Abhängigkeit}
+\label{sec:org97283e5}
 In einem fiktionalen Szenario\footnote{Tom Scott: Single Point of Failure
 \url{https://youtu.be/y4GB\_NDU43Q}, heruntergeladen am 24.05.2020.} erklärt \emph{Tom Scott} auf seinem
 YouTube-Kanal, was passieren könnte, wenn eine einzelne
@@ -412,8 +417,8 @@ anderer Dieste überrascht werden können. Der wirtschaftliche Schaden
 solcher Ausfälle ist unvorstellbar, aber noch wichtiger muss die
 zerstörende Wirkung dieser unvorhergesehenen, scheinbar entfernten
 Problemen auf Millionen von Menschen bedacht werden.
-\subsection{Komplexität}
-\label{sec:orgb2932fe}
+\section{Komplexität}
+\label{sec:org336ec1c}
 In diesem Abschnitt soll noch kurz die unglaubliche Komplexität
 angesprochen werden, welche die heutige Web-Entwicklung mit sich
 bringt. Natürlich existieren automatisierte Dienste und Anbieter, die
@@ -434,8 +439,8 @@ wie der wilde Westen, ohne Standards, ohne Kompatiblität oder
 Regelungen. Dies führt dazu, dass es zwar für gewisse Anwendungen
 speziell entwickelte Netzwerke gibt, diese allerdings kaum allgeimen
 einsetzbar sind.
-\subsection{Präsentation}
-\label{sec:orgba5f1fd}
+\section{Präsentation}
+\label{sec:orgee15066}
 Ein weiteres Problem, das es zu berücksichtigen gibt, ist die Frage,
 wie man die hier behandelten Probleme technisch nicht versierten
 Personen erklären kann. Tatsächlich sind sowohl die besprochenen
@@ -445,8 +450,8 @@ der angesprochenen Probleme wurden bereits von anderen Applikationen
 zumindest teilweise behandelt, diese haben aber oftmals das Problem,
 dass sie viel Fachwissen und Aufwand benötigen, um sie effizient und
 sicher einzusetzen.
-\section{Prozess}
-\label{sec:orgac512d3}
+\chapter{Prozess}
+\label{sec:org86b9525}
 Oftmals ist es nicht besonders spannend, über den Prozess einer
 Programmierarbeit zu hören, denn für Aussenstehende scheint sich von
 Tag zu Tag nichts zu ändern. Sinnvolles kann erst berichtet werden,
@@ -454,8 +459,8 @@ wenn der Zeitrahmen erhöht wird, sodass grössere Entscheidungen und
 ihre Konsequenzen sichtbar gemacht werden können. Die Entwicklung und
 die Produkte dieser Arbeit sollen in zwei Abschnitte getrennt werden,
 wobei die meisten Produkte aus der zweiten Phase hervorgegangen sind.
-\subsection{Modularität}
-\label{sec:orga83d8f1}
+\section{Modularität}
+\label{sec:org6d9c8d1}
 Da während dieser ersten Entwicklungsphase viele wichtige Erkenntnisse
 entstanden, ist es wichtig, die Ideen und die Umsetzung genau zu
 analysieren. Zwar unterscheiden sich die Ziele und Methoden der beiden
@@ -490,8 +495,8 @@ allgemein einsetzbarer Komponenten.\\
 die Entscheidungen, die zu ihnen geführt haben, beschrieben werden. In
 einem weiteren Abschnitt sollen dann die Lektionen und Probleme dieser
 erster Entwicklungsphase besprochen werden.
-\subsubsection{Shadow}
-\label{sec:orgb900d4a}
+\subsection{Shadow}
+\label{sec:org0f6d8b4}
 Zwar übernahm die erste Implementierung des verteilten
 Nachrichtensystems, Codename \texttt{Shadow}, weniger Funktionen als die
 aktuelle Umsetzung, für das System als Ganzes war das Programm aber
@@ -513,8 +518,8 @@ Registrierungssystem für Personen und Dienste, eine Teilfunktion von
 Hunter, ein Resultat lieferte. Ansonsten wurde der interne
 Routing-Table verwendet. Dieser bestand aus einer Reihe von Prozessen,
 welche selbst auch direkt die TCP-Verbindungen verwalteten.
-\subsubsection{Hunter}
-\label{sec:orgbec7042}
+\subsection{Hunter}
+\label{sec:org69a3d79}
 Während Shadow die Rolle des verteilten Routers übernimmt, ist \texttt{Hunter}
 der lokale Router. Es geht bei Hunter also nicht darum, Nachrichten an
 andere Mitglieder des Netzwerks zu senden, sondern sie an verschiedene
@@ -545,16 +550,16 @@ Thread startet.
 der einzelnen Komponenten erlaubt ein einheitliches Nachrichtenformat,
 da die einzelnen Komponenten kein Verständnis andere Komponenten oder
 die Verbindungen haben müssen.
-\subsubsection{NET-Script}
-\label{sec:orge5b56b6}
+\subsection{NET-Script}
+\label{sec:org590b0ef}
 Eine weitere zentrale Komponente des Systems ist eine eigens dafür
 entwickelte Programmiersprache, welche mit starker Integration in das
 restliche System das Entwickeln neuer Mechanismen und Komponenten für
 das System offener machen sollte. Eine einfache lisp-ähnliche Syntax
 sollte das Entwickeln neuer Programme einfach und vielseitig
 einsetzbar machen.
-\subsubsection{Probleme}
-\label{sec:org76cd6e7}
+\subsection{Probleme}
+\label{sec:org6a3f951}
 Die oben beschriebene Architektur hat viele verschiedene Vorteile,
 allerdings ist sie nicht ohne Probleme. Grundsätzlich geht es bei
 jedem Programm darum, Probleme zu lösen. Eine der zentraler Ideen war
@@ -616,8 +621,8 @@ Präsentation vor einem technisch nicht versierten Publikum steht,
 mussten nach dieser ersten Entwicklungsphase gewisse Aspekte
 grundlegend überarbeitet werden, diesmal mit einem besonderen Fokus
 auf die \emph{Präsentierbarkeit}.
-\subsection{Präsentation}
-\label{sec:orgd25be54}
+\section{Präsentation}
+\label{sec:org9b19975}
 Auch wenn von der ersten Entwicklungsphase viele Konzepte und sogar
 einige Umsetzungen übernommen werden konnten, gab es grundlegende
 Probleme, welche nicht ignoriert werden konnten. Es wurde schnell
@@ -647,8 +652,8 @@ Frage, wie man komplexe Themen und Programme einfachen Nutzern näher
 bringt.
 \end{itemize}
 
-\section{Produkt}
-\label{sec:org7339602}
+\chapter{Produkt}
+\label{sec:org3dec592}
 Nun ist es an der Zeit, die Errungenschaften und Produkte des
 Projektes anzuschauen. Eigentlich müssten auch hier die Programme der
 ersten Entwicklungsphase besprochen werden, dies geschah allerdings
@@ -678,8 +683,8 @@ verständlich sein und nur oberflächlich die technischen Feinheiten
 ansprechen. Wer genauere Informationen zur Umsetzung sucht oder
 tatsächlich mit den Bibliotheken arbeiten will, sollte sich die
 technische Dokumentation oder Code-Dokumentation durchlesen.
-\subsection{Actaeon}
-\label{sec:orgc205243}
+\section{Actaeon}
+\label{sec:org3d0be0e}
 \texttt{Actaeon} stellt das Herzstück des gesamten Projekts dar. Als Rust
 Bibliothek ist es in alle anderen Anwendungen eingebunden und
 ermöglicht dezentrale Kommunikation unabhängig der Anwendung.\\
@@ -711,7 +716,7 @@ veröffentlicht. Dies erlaubt es jedem Rust Entwickler Actaeon einfach
 in eigene Programme zu integrieren, dafür ist lediglich eine Zeile
 Code nötig:
 \begin{minted}[]{toml}
-actaeon = "0.2.0"
+actaeon = "0.2.1"
 \end{minted}
 \noindent Damit wird Actaeon als Abhängigkeit definiert und der Nutzer
 hat nun vollen Zugang zu allen Funktionen, die Actaeon zu bieten hat.
@@ -830,11 +835,11 @@ Interaktionen, Programme und Netzwerke lassen sich irgendwie mit
 diesen beiden Befehlen umsetzen. Natürlich gibt es noch mehr interne
 Funktionen und auch mehr Möglichkeiten für den Nutzer, diese gehen
 aber über den Umfang dieses Dokuments hinaus.
-\subsection{Orion}
-\label{sec:org9f1754d}
+\section{Orion}
+\label{sec:org3ff7e00}
 TODO: Dominik Orion
-\section{Ausblick}
-\label{sec:org81bded5}
+\chapter{Ausblick}
+\label{sec:org6655ff6}
 Auch wenn sind die geschaffenen Produkte und Programme ihren Zweck
 erfüllen und eine nutzbare Demo möglich machen, so gibt es einige
 Punkte, die noch nicht umgesetzt wurden.
@@ -862,8 +867,12 @@ ist. Aktuell werden bereits vorhandene Daten dabei noch nicht
 verschoben. Auch existiert aktuell noch keine Möglichkeit,
 schädliche Mitglieder zu blockieren oder zu erkennen. Das aktuelle
 Netzwerk ist also anfällig gegen potientielle Angriffe oder
-Sabotage. Trotz gewisser Mängel und Kritikpunkte ist das gesamte
-System im aktuellen Zustand aber funktionsfähig und nützlich.
+Sabotage. Und auch wenn Actaeon in der Lage ist, schnell Nachrichten
+zu verarbeiten, so kommt dies mit eher hohen Leistungsansprüchen.
+Ohne Rusts neuste async-await-Syntax beansprucht die Bibliothek
+mehrere Threads für sich und braucht diese für die gesamte Laufzeit.
+Trotz gewisser Mängel und Kritikpunkte ist das gesamte System im
+aktuellen Zustand aber funktionsfähig und nützlich.
 \item Orion: \\
 Natürlich sind bei einem Videospiel die Möglichkeiten nahezu
 unlimitiert, allerdings existieren auch hier einige interne,
@@ -886,8 +895,8 @@ Lizenz gibt es ebenfalls die Hoffnung, dass andere Personen in der
 Zukunft Programme für das Ökosystem bauen.
 \newpage
 \end{itemize}
-\section{Fazit}
-\label{sec:org698bf7d}
+\chapter{Fazit}
+\label{sec:org3f3567a}
 Verteilte und dezentrale Datensysteme sind trotz ihrer Wichtigkeit nur
 ein kleines Nischengebiet in der Welt der Informatik. Und obwohl
 unsere Abhängigkeit von Netzwerken und Kommunikationsssytemen grosse
