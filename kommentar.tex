@@ -1,4 +1,4 @@
-% Created 2021-11-12 Fri 12:27
+% Created 2021-11-12 Fri 22:35
 % Intended LaTeX compiler: pdflatex
 \documentclass[a4paper,11pt,titlepage,twoside]{memoir}
 \usepackage[utf8]{inputenc}
@@ -56,6 +56,7 @@
 \newpage  
 \begin{ABSTRACT}
 \textbf{Abstract}\\
+
 \noindent Wir leben in einer bequemen Welt. Das wollen wir wenigstens
 glauben. In Wahrheit leben wir aber in einer idyllischen Illusion. Die
 unglaublichen Veränderungen unserer Gesellschaft und unseres Alltags
@@ -94,7 +95,8 @@ Datensysteme hoffentlich gesenkt wird.
 \newpage
 
 \textbf{Vorwort}\\
-Die schriftliche Komponente der Maturaarbeit \texttt{Project Orion} besteht aus
+
+Die schriftliche Komponente der Maturaarbeit Project Orion besteht aus
 drei verschiedenen Teilen. Da die behandelten Themen äusserst komplex
 und umfangreich sind, verlangen die Abschnitte der Arbeit
 verschiedenes Vorwissen und einen unterschiedlichen Zeitaufwand.
@@ -130,12 +132,16 @@ automatisch generierte Rust-Dokumentation zu finden. Wer den Code
 von Project Orion verwenden will wird sich dort gut zurecht finden.
 \end{itemize}
 
+\noindent Da besonders bei englischen Begriffen das Gendern mit einem
+Doppelpunkt, Bindestrich oder Stern den Textfluss zu stark
+beeinflussen könnte, wurde die Entscheidung getroffen, während des
+gesamten Texts lediglich die männliche Form zu verwenden, welche
+allerdings jedes mal für das generische Maskulin stehen soll.
 
-\noindent 
 \newpage
 
 \chapter{Vision}
-\label{sec:orge53a6d1}
+\label{sec:org884d212}
 \begin{center}
 \begin{enumerate}
 \item Oktober 1964 - UCLA an Stanford: LO
@@ -144,7 +150,7 @@ von Project Orion verwenden will wird sich dort gut zurecht finden.
 \emph{1964} rechnete niemand mit der fundamentalen Änderung unserer
 Lebensweise, die mit dieser einfachen Nachricht in Bewegung gebracht
 wurde. Eigentlich hätte die erste Nachricht über das \texttt{ARPANET} im Jahre
-1964 \texttt{LOGIN} heissen sollen, doch das Netzwerk stürzte nach nur zwei
+1964 \textbf{LOGIN} heissen sollen, doch das Netzwerk stürzte nach nur zwei
 Buchstaben ab. Ob dies als schlechtes Omen für die Zukunft hätte
 gewertet werden sollen, bleibt eine ungeklärte Frage. Aber das
 Internet ist hier und es ist so dominant wie noch nie zuvor. Jetzt ist
@@ -194,17 +200,17 @@ nächsten Schritt soll dann eine Lösung besprochen werden: ein System,
 mit welchem sich möglichst viele der grössten Probleme lösen lassen,
 und welches tatsächlich praktischen Nutzen bietet.\\
 \section{Adressen}
-\label{sec:orgd9419bc}
+\label{sec:orgda6abb8}
 Das Internet erlaubt einfache, standardisierte Kommunikation zwischen
 Geräten aller Art. Egal welche Funktion oder Form sie auch haben
 mögen, es braucht nicht viel, um ein Gerät mit dem Internet zu
 verbinden. Nebst den benötigten Protokollen, hauptsächlich \texttt{TCP} und \texttt{UDP}
-wird eine \texttt{IP-Addresse} als eindeutige Identifikation benötigt. Während
+wird eine \texttt{IP-Adresse} als eindeutige Identifikation benötigt. Während
 vor dreissig Jahren wunderbare Systeme und Standards geschaffen wurden,
 welche seither die Welt grundlegend verändert haben, gibt es doch
 einige fundamentale Probleme und Limitierungen.
 \subsection{IP-V4}
-\label{sec:orgef76ee6}
+\label{sec:org407f2db}
 \noindent In der Geschichte der Menschheit haben wir aus vielen
 verschiedenen Gründen Krieg geführt. Für Wasser, Nahrung, Öl, Frieden
 oder Freiheit in den Krieg zu ziehen, scheint zu einer fernen Welt zu
@@ -214,9 +220,9 @@ des 21. Jahrhunderts bezeichnet werden, gibt es noch eine andere
 Ressource, deren Vorräte wir immer schneller erschöpfen. \\
 
 \noindent \(4'294'967'296\). So viele \texttt{IP-V4}-Adressen wird es jemals
-geben. \texttt{IP-V4}-Adressen werden für jedes Gerät benötigt, das im Internet
+geben. IP-V4-Adressen werden für jedes Gerät benötigt, das im Internet
 kommunizieren will und dienen zur eindeutigen Identifizierung. Aktuell
-wird die vierte Version (\texttt{V4}) verwendet. In einer Wirtschaft, in der
+wird die vierte Version (V4) verwendet. In einer Wirtschaft, in der
 unendliches Wachstum als letzte absolute Wahrheit geblieben ist, kann
 ein solch hartes Limit verheerende Folgen haben. Besonders wenn die
 limitierte Ressource so unendlich zentral für unser aller Leben ist
@@ -238,7 +244,7 @@ solche Umstellung wird den häufigen Problemen grossflächiger
 technischer Umstellungen nicht ausweichen können.
 \end{itemize}
 \subsection{Routing}
-\label{sec:org60198f7}
+\label{sec:org24336c5}
 Freiheit und Unabhängigkeit sind menschlich. Es darf niemals bestraft
 werden, nach diesen fundamentalen Rechten zu streben. Und doch führt
 das egoistische Streben nach Freiheit zu Problemen, oftmals allerdings
@@ -257,7 +263,7 @@ Baum-Struktur} vorstellen:
 \begin{itemize}
 \item Ganz unten finden sich die Blätter, die Abschlusspunkte der
 Struktur. Sie stellen die \emph{Endnutzergeräte} dar. Jeder Server, PC und
-jedes \texttt{iPhone}. Hier ist es auch wichtig festzustellen, dass es in
+jedes iPhone. Hier ist es auch wichtig festzustellen, dass es in
 dieser Ansicht des Internets keine magische \emph{Cloud} oder ferne Server
 und Rechenzentren gibt. Aus der Sicht des Netzwerks sind alle
 Endpunkte gleich, auch wenn manche für Konsumenten als \emph{Server}
@@ -276,7 +282,7 @@ es weltweit nur eine Handvoll und sie sind der Grund für das
 Problem.
 \end{itemize}
 
-\noindent Die \texttt{Zentralrouter} kümmern sich nicht um einzelne Adressen,
+\noindent Die Zentralrouter kümmern sich nicht um einzelne Adressen,
 sondern um Abschnitte von Adressen, auch \texttt{Address Spaces} genannt. An
 den zentralen Knotenpunkten geht es also nicht um einzelne Server oder
 Geräte, zu dem etwas gesendet werden muss, stattdessen wird eher
@@ -287,14 +293,14 @@ nach Ost- oder Westeuropa geschickt werden müssen.\\
 Adressen immer weiter aufgeteilt. Internet-Anbieter und grosse Firmen
 können diese Abschnitte untereinander verkaufen und aufteilen. Und
 jede Firma will natürlich ihren eigenen Abschnitt, ihren eigenen
-\texttt{Address Space}. Für die Firmen hat dies viele Vorteile, beispielsweise
+Address Space. Für die Firmen hat dies viele Vorteile, beispielsweise
 müssen weniger Parteien beim Finden des korrekten Abschnitts
-involviert sein. Aber für die \texttt{Zentralrouter} bedeutet es eine immer
+involviert sein. Aber für die Zentralrouter bedeutet es eine immer
 grössere Datenbank an Zuweisungen. Dieses Problem geht so weit, dass
 die grossen \emph{Routingtables} inzwischen das physikalische Limit
 erreichen, das ein einzelner Router verarbeiten kann.\\
 \section{Zentralisierung}
-\label{sec:orgd35e4cc}
+\label{sec:org61915bd}
 \noindent Die Macht in den Händen einiger weniger Kapitalisten und
 internationaler Unternehmen ist unvorstellbar gross. Einige wenige
 CEO's, welche nie gewählt, überprüft oder zur Rede gestellt wurden,
@@ -306,7 +312,7 @@ eine solche Abhängigkeit wirft gewisse Fragen und Probleme auf.\\
 gibt es auch noch sehr praktische Probleme in der Art, wie moderne
 Internet-Dienste implementiert sind.
 \subsection{Datenschutz}
-\label{sec:orge033734}
+\label{sec:org630c976}
 \begin{center}
 \emph{Wenn man nicht für etwas zahlt, ist man das Produkt.}
 \end{center}
@@ -346,18 +352,18 @@ Probleme formulieren:
 \begin{itemize}
 \item Selbst für die einfachsten Anfragen im Internet sind wir von einer
 Vielzahl von Firmen und Systemen abhängig. Dieses Problem wird noch
-etwas genauer im Abschnitt \hyperref[sec:org6f26883]{Abhängigkeit} besprochen.
+etwas genauer im Abschnitt \hyperref[sec:org2c3ca8c]{Abhängigkeit} besprochen.
 \item Wir haben weder ein Verständnis von den involvierten Parteien noch
 die Bereitschaft, Bequemlichkeit dafür aufzugeben.
 \end{itemize}
 \subsection{Abhängigkeit}
-\label{sec:org6f26883}
+\label{sec:org2c3ca8c}
 In einem fiktionalen Szenario\footnote{Tom Scott: Single Point of Failure
 \url{https://youtu.be/y4GB\_NDU43Q}, heruntergeladen am 24.05.2020.} erklärt \emph{Tom Scott} auf seinem
 YouTube-Kanal, was passieren könnte, wenn eine einzelne
-Sicherheitsfunktion beim Internetgiganten \texttt{Google} fehlschlagen würde.
+Sicherheitsfunktion beim Internetgiganten Google fehlschlagen würde.
 In einem solchen Fall ist es natürlich logisch, dass es zu Problemen
-bei den verschiedensten \texttt{Google}-Diensten kommen würde. Aber schnell
+bei den verschiedensten Google-Diensten kommen würde. Aber schnell
 realisiert man, auf wie vielen Seiten Nutzer die \emph{Sign-In with Google}
 Funktion benutzen. Und dann braucht es nur eine böswillige Person um
 den Administrator-Account anderer Dienste und Seiten zu öffnen,
@@ -371,7 +377,7 @@ relevant wie noch nie.\\
 \noindent Während die enorme Abhängigkeit als solche bereits eine
 Katastrophe am Horizont erkennen lässt, gibt es noch ein konkreteres
 Problem: Den Nutzern (\emph{den Abhängigen}) ist ihre Abhängigkeit nicht
-bewusst. Wenn sie sich ihren Alltag ohne \texttt{Google} oder \texttt{Facebook}
+bewusst. Wenn sie sich ihren Alltag ohne Google oder Facebook
 vorstellen, denken sich viele nicht viel dabei. Weniger \emph{lustige
 Quizfragen} oder Bilder von Haustieren, aber was könnte den schon
 wirklich Schlimmes passieren?\\
@@ -393,7 +399,7 @@ solcher Ausfälle ist unvorstellbar, aber noch wichtiger muss die
 zerstörende Wirkung dieser unvorhergesehenen, scheinbar entfernten
 Problemen auf Millionen von Menschen bedacht werden.
 \section{Komplexität}
-\label{sec:org81735b9}
+\label{sec:org6b9e4e9}
 In diesem Abschnitt soll noch kurz die unglaubliche Komplexität
 angesprochen werden, welche die heutige Web-Entwicklung mit sich
 bringt. Natürlich existieren automatisierte Dienste und Anbieter, die
@@ -415,7 +421,7 @@ Regelungen. Dies führt dazu, dass es zwar für gewisse Anwendungen
 speziell entwickelte Netzwerke gibt, diese allerdings kaum allgeimen
 einsetzbar sind.
 \section{Präsentation}
-\label{sec:orgf205b5f}
+\label{sec:orgb3b0f71}
 Ein weiteres Problem, das es zu berücksichtigen gibt, ist die Frage,
 wie man die hier behandelten Probleme technisch nicht versierten
 Personen erklären kann. Tatsächlich sind sowohl die besprochenen
@@ -426,7 +432,7 @@ zumindest teilweise behandelt, diese haben aber oftmals das Problem,
 dass sie viel Fachwissen und Aufwand benötigen, um sie effizient und
 sicher einzusetzen.
 \chapter{Prozess}
-\label{sec:orga2a87eb}
+\label{sec:orga529415}
 Oftmals ist es nicht besonders spannend, über den Prozess einer
 Programmierarbeit zu hören, denn für Aussenstehende scheint sich von
 Tag zu Tag nichts zu ändern. Sinnvolles kann erst berichtet werden,
@@ -435,7 +441,7 @@ ihre Konsequenzen sichtbar gemacht werden können. Die Entwicklung und
 die Produkte dieser Arbeit sollen in zwei Abschnitte getrennt werden,
 wobei die meisten Produkte aus der zweiten Phase hervorgegangen sind.
 \section{Modularität}
-\label{sec:org579e038}
+\label{sec:org17ba629}
 Da während dieser ersten Entwicklungsphase viele wichtige Erkenntnisse
 entstanden, ist es wichtig, die Ideen und die Umsetzung genau zu
 analysieren. Zwar unterscheiden sich die Ziele und Methoden der beiden
@@ -471,7 +477,7 @@ die Entscheidungen, die zu ihnen geführt haben, beschrieben werden. In
 einem weiteren Abschnitt sollen dann die Lektionen und Probleme dieser
 erster Entwicklungsphase besprochen werden.
 \subsection{Shadow}
-\label{sec:orgc47246c}
+\label{sec:org7cb1af8}
 Zwar übernahm die erste Implementierung des verteilten
 Nachrichtensystems, Codename \texttt{Shadow}, weniger Funktionen als die
 aktuelle Umsetzung, für das System als Ganzes war das Programm aber
@@ -494,7 +500,7 @@ Hunter, ein Resultat lieferte. Ansonsten wurde der interne
 Routing-Table verwendet. Dieser bestand aus einer Reihe von Prozessen,
 welche selbst auch direkt die TCP-Verbindungen verwalteten.
 \subsection{Hunter}
-\label{sec:org8dfcaca}
+\label{sec:org62ed0cd}
 Während Shadow die Rolle des verteilten Routers übernimmt, ist \texttt{Hunter}
 der lokale Router. Es geht bei Hunter also nicht darum, Nachrichten an
 andere Mitglieder des Netzwerks zu senden, sondern sie an verschiedene
@@ -526,7 +532,7 @@ der einzelnen Komponenten erlaubt ein einheitliches Nachrichtenformat,
 da die einzelnen Komponenten kein Verständnis andere Komponenten oder
 die Verbindungen haben müssen.
 \subsection{NET-Script}
-\label{sec:orgad7d625}
+\label{sec:org767b333}
 Eine weitere zentrale Komponente des Systems ist eine eigens dafür
 entwickelte Programmiersprache, welche mit starker Integration in das
 restliche System das Entwickeln neuer Mechanismen und Komponenten für
@@ -534,7 +540,7 @@ das System offener machen sollte. Eine einfache lisp-ähnliche Syntax
 sollte das Entwickeln neuer Programme einfach und vielseitig
 einsetzbar machen.
 \subsection{Probleme}
-\label{sec:orgf6f9a73}
+\label{sec:orgae30b6e}
 Die oben beschriebene Architektur hat viele verschiedene Vorteile,
 allerdings ist sie nicht ohne Probleme. Grundsätzlich geht es bei
 jedem Programm darum, Probleme zu lösen. Eine der zentraler Ideen war
@@ -597,7 +603,7 @@ mussten nach dieser ersten Entwicklungsphase gewisse Aspekte
 grundlegend überarbeitet werden, diesmal mit einem besonderen Fokus
 auf die \emph{Präsentierbarkeit}.
 \section{Präsentation}
-\label{sec:org8e6bb82}
+\label{sec:org928b905}
 Auch wenn von der ersten Entwicklungsphase viele Konzepte und sogar
 einige Umsetzungen übernommen werden konnten, gab es grundlegende
 Probleme, welche nicht ignoriert werden konnten. Es wurde schnell
@@ -628,7 +634,7 @@ bringt.
 \end{itemize}
 
 \chapter{Produkt}
-\label{sec:org2c2421b}
+\label{sec:org3a54de6}
 Nun ist es an der Zeit, die Errungenschaften und Produkte des
 Projektes anzuschauen. Eigentlich müssten auch hier die Programme der
 ersten Entwicklungsphase besprochen werden, dies geschah allerdings
@@ -637,7 +643,7 @@ noch mehr über die Programme erfahren will sollte sich am besten den
 dazugehörigen Bericht durchlesen\footnote{Github: Engine: Orion Bericht,
 \url{https://github.com/EngineOrion/kommentar/blob/54489464214ed7833f182df09aab29eae4a591e4/EngineOrion.pdf}.} oder direkt die dabei
 entstandenen Programme anschauen. Alle lassen sich auf Github finden
-und sind unter offenen Lizensen einfach weiterzuverwenden\footnote{Github: \url{https://github.com/EngineOrion}\label{org1464d9b}}. Auch
+und sind unter offenen Lizensen einfach weiterzuverwenden\footnote{Github: \url{https://github.com/EngineOrion}}. Auch
 muss angemerkt werden, dass viele der dabei entstandenen Ideen viel
 Potential haben und in gewissem Ausmass ihren Weg bereits in die
 Produkte der zweiten Phase gefunden haben.
@@ -659,8 +665,8 @@ ansprechen. Wer genauere Informationen zur Umsetzung sucht oder
 tatsächlich mit den Bibliotheken arbeiten will, sollte sich die
 technische Dokumentation oder Code-Dokumentation durchlesen.
 \section{Actaeon}
-\label{sec:orgc33890b}
-\texttt{Actaeon} stellt das Herzstück des gesamten Projekts dar. Als Rust
+\label{sec:orgfde2163}
+\texttt{Actaeon} stellt das Herzstück des gesamten Projekts dar. Als \texttt{Rust}
 Bibliothek ist es in alle anderen Anwendungen eingebunden und
 ermöglicht dezentrale Kommunikation unabhängig der Anwendung.\\
 
@@ -678,7 +684,7 @@ möglich. Wer das versucht, wird vom Jäger zum Gejagten, wird von der
 Vielzahl alles Seienden, den Hunden, verschlungen. Die Wahrheit ist
 nur zu finden als Teil einer Einheit, die die gesamte Natur in ihrer
 ganzen Vielfalt umfasst. So ist Actaeon als Namensgeber für ein
-Projekt der dezentralen Kommunikation bestens geeignet.\footnote{Sloterdijk, Peter: Den Himmel zum Sprechen bringen, 2020, S321.\label{org808ec91}}\\
+Projekt der dezentralen Kommunikation bestens geeignet.\footnote{Sloterdijk, Peter: Den Himmel zum Sprechen bringen, 2020, S321.\label{orgc13932d}}\\
 
 \noindent Nun müssen einige Grundlagen erklärt werden, welche
 hoffentlich die folgenden Abschnitte verständlich machen:\\
@@ -686,7 +692,7 @@ Nahezu alle Applikationen in Project Orion sind in der
 Programmiersprache Rust geschrieben. Als zentrales Verbindungstück
 zwischen allen Applikationen hängen alle Programme von Actaeon ab. Um
 die Verwaltung der internen Abhängigkeiten einfacher zu machen, wurde
-Actaeon mit dem offiziellen Rust \emph{Package-Manager} \texttt{crates.io}\footnote{Crates.io: \url{https://crates.io/}\label{org865c7f7}}
+Actaeon mit dem offiziellen Rust \emph{Package-Manager} als \texttt{crate}
 veröffentlicht. Dies erlaubt es jedem Rust Entwickler Actaeon einfach
 in eigene Programme zu integrieren, dafür ist lediglich eine Zeile
 Code nötig:
@@ -811,16 +817,16 @@ diesen beiden Befehlen umsetzen. Natürlich gibt es noch mehr interne
 Funktionen und auch mehr Möglichkeiten für den Nutzer, diese gehen
 aber über den Umfang dieses Dokuments hinaus.
 \section{Anwendungen}
-\label{sec:org4075980}
+\label{sec:orge790eb9}
 \subsection{Chat}
-\label{sec:org276e70a}
+\label{sec:org6e60f4b}
 \subsection{Arrow}
-\label{sec:org3af36aa}
+\label{sec:org18de104}
 \section{Orion}
-\label{sec:org79d6365}
+\label{sec:org9146eed}
 TODO: Dominik Orion
 \chapter{Ausblick}
-\label{sec:org057ef0c}
+\label{sec:org896fd80}
 Auch wenn sind die geschaffenen Produkte und Programme ihren Zweck
 erfüllen und eine nutzbare Demo möglich machen, so gibt es einige
 Punkte, die noch nicht umgesetzt wurden.
@@ -877,7 +883,7 @@ Zukunft Programme für das Ökosystem bauen.
 \newpage
 \end{itemize}
 \chapter{Fazit}
-\label{sec:org61a7310}
+\label{sec:org8ed1776}
 Verteilte und dezentrale Datensysteme sind trotz ihrer Wichtigkeit nur
 ein kleines Nischengebiet in der Welt der Informatik. Und obwohl
 unsere Abhängigkeit von Netzwerken und Kommunikationsssytemen grosse
@@ -911,9 +917,9 @@ umfangreiche Programme entstanden, welche realen Nutzen bieten und
 vielseiting einsetzbar sind.
 
 \chapter{Anhang}
-\label{sec:org434a3bf}
+\label{sec:orgea5baf3}
 \section{Projekte}
-\label{sec:org1d9a1f0}
+\label{sec:orgb36b7ec}
 In diesem Abschnitt sollen einige Projekte in ähnlichen Gebieten
 genauer angeschaut werden. Dabei soll es lediglich um technisch
 ähnliche Arbeiten gehen, die Welt der Videospiele ist gross und
@@ -927,18 +933,18 @@ gibt. Daneben existieren auch grundlegendere Neuentwicklungen
 bekannter Systeme, welche einzelne Probleme lösen, meist aber andere
 Ziele haben.\\
 \subsection{Kademlia}
-\label{sec:orgd8b2ed6}
+\label{sec:org347582b}
 Wie geht man grundsätzlich gegen die totale Abhängikeit von
 Internetanbietern und zentralen Routern vor?\\
 Man kann ja nicht einfach seine eigenen Router aufsetzen und einen
 alternativen Dienst anbieten. Neben den technischen Schwierigkeiten
-würde ein solcher Schritt auch überhaupt nichts das eigentliche
-Problem bekämpfen.\\
+würde ein solcher Schritt auch überhaupt nicht das eigentliche Problem
+bekämpfen.\\
 
 \noindent Der Trick, der bei Systemen wie \texttt{Kademlia} verwendet wird, ist
 es, Router vollständig zu eliminieren. Dies ist möglich, indem jedes
 Mitglied des Netzwerks neben seinen normalen Funktionen gleichzeitig
-auch noch als Router agiert. Strenggenommen werden in \texttt{Kademlia} Router
+auch noch als Router agiert. Strenggenommen werden in Kademlia Router
 also nicht wirklich eliminiert, lediglich zentrale Router fallen
 weg.\\
 
@@ -946,8 +952,8 @@ weg.\\
 \emph{Zentralrouter} bereits angesprochen. Wenn jetzt aber jedes Mitglied in
 einem Netzwerk plötzlich als Router agiert und es keine zentrale
 Instanz gibt, träfe die Problematik der \emph{Zentralrouter} plötzlich auf
-alle Server zu. Genau da kommt \texttt{Kademlia} ins Spiel. Aber was genau ist
-\texttt{Kademlia} eigentlich?\\
+alle Server zu. Genau da kommt Kademlia ins Spiel. Aber was genau ist
+Kademlia eigentlich?\\
 
 \noindent Laut den Erfindern, \emph{Petar Maymounkov} und \emph{David Mazières},
 ist es
@@ -961,17 +967,17 @@ verteilte Datensysteme einsetzen?\\
 
 \noindent Da die einzelnen Server nicht in der Lage sind,
 Informationen über das komplette Netzwerk zu speichern oder zu
-verarbeiten, funktionieren \texttt{Kademlia}-Systeme grundlegend anders.
+verarbeiten, funktionieren Kademlia-Systeme grundlegend anders.
 Anstelle der hierarchischen Anordnung der Router ist jedes Mitglied
-eines Systems gleichgestellt. dabei kümmert sich jedes Mitglied auch
+eines Systems gleichgestellt. Dabei kümmert sich jedes Mitglied auch
 nicht um das komplette System, sondern nur um sein direktes Umfeld.
 Während dies für kleinere Systeme gut funktioniert und vergleichbare
 Geschwindigkeiten liefert, skaliert es nicht so einfach für grosse
-Systeme. Genau dafür gibt es die \texttt{XOR}-Metrik.
+Systeme. Genau dafür gibt es die XOR-Metrik.
 \begin{enumerate}
 \item Distanz
-\label{sec:org58d2077}
-Die \texttt{XOR}-Funktion, die in der Informatik an den verschiedensten
+\label{sec:orgcfb44c6}
+Die XOR-Funktion, die in der Informatik an den verschiedensten
 Orten auftaucht, wird verwendet, um die Distanz zwischen zwei
 Zahlen zu berechnen. Die Zahlen repräsentieren dabei Mitglieder
 im Netzwerk und sind je nach Variante im Bereich
@@ -980,16 +986,16 @@ so grossen Bereich lässt sich auch das Problem der limitierten
 \texttt{IP-Adressen} lösen. Auch wenn es kein tatsächlich unlimitiertes
 System ist, so gibt es doch mehr als genug Adressen.\\
 
-\noindent Wenn mit \texttt{XOR}-Funktionen einfach die Distanz zwischen
+\noindent Wenn mit XOR-Funktionen einfach die Distanz zwischen
 zwei Zahlen berechnet wird, stellt sich die Frage, wieso nicht
 einfach die Differenz verwendet wird. Um dies zu beantworten,
-muss man sich die Eigenschaften der \texttt{XOR}-Funktion etwas genauer
+muss man sich die Eigenschaften der XOR-Funktion etwas genauer
 anschauen:
 
 \begin{enumerate}
 \item \(xor(x, x) = 0\): Das Mitglied mit seiner eigenen Adresse ist
 zu sich selbst am nächsten. Mitglieder werden hier als Namen
-für Server in einem \texttt{Kademlia}-System verwendet.
+für Server in einem Kademlia-System verwendet.
 \item \(xor(x, y) > 0\) wenn \(x \neq y\): Die Funktion produziert nie
 negative Zahlen und nur mit zwei identischen Parametern kann
 man \(0\) erhalten.
@@ -1003,16 +1009,16 @@ einem weiteren Sprung im Netzwerk.
 genau ein \(y\) für das \(xor(x, y) = l\) gilt.
 \end{enumerate}
 
-\noindent Aber wieso genau funktioniert dies? Wieso kann man \texttt{XOR}, eine
+\noindent Aber wieso genau funktioniert dies? Wieso kann man XOR, eine
 Funktion zur Berechnung der Bit-Unterschiede in zwei Binärzahlen,
 verwenden, um die Distanz zwischen zwei Punkten in einem verteilten
 Datensystem zu berechnen?\\
 
 \noindent Um dies zu verstehen, hilft es, sich das System als
-umgekehrten Baum vorzustellen. Untergeordnet zum zentralen Punkt zu
-oberst stehen alle Mitglieder im System. Mit jeder weiteren Abzweigung
-zweier Teilbäume halbiert sich die Anzahl. Man wählt am einfachsten
-zwei Abzweigungen pro Knoten, da sich damit die Werte direkt als
+umgekehrten Baum vorzustellen. Untergeordnet zum zentralen Punkt
+stehen alle Mitglieder im System. Mit jeder weiteren Abzweigung zweier
+Teilbäume halbiert sich die Anzahl. Man wählt am einfachsten zwei
+Abzweigungen pro Knoten, da sich damit die Werte direkt als
 Binärzahlen darstellen lassen, wobei jeder Knotenpunkt einfach eine
 Stelle in der langen Kette aus \(0\) oder \(1\) darstellt. Der ganze
 Baum sieht dann wie folgt aus\footnote{Wikipedia: Kademlia \url{https://en.wikipedia.org/wiki/Kademlia},
@@ -1023,30 +1029,26 @@ heruntergeladen am: 30.05.2020.}:
 \captionof{figure}{Beispielhafte Darstellung eines einfachen Kademlia-Systems}
 \end{center}
 
-\noindent Mit dieser Sicht auf das System beschreibt die \texttt{XOR}-Funktion
+\noindent Mit dieser Sicht auf das System beschreibt die XOR-Funktion
 die Anzahl der unterschiedlichen Abbiegungen im Baum und somit die
 Distanz. Zwar mag es auf den ersten Blick nicht intuitiv wirken, wieso
-man \texttt{XOR} anstatt einfach der Differenz verwendet, allerdings
+man XOR anstatt einfach der Differenz verwendet, allerdings
 funktioniert die Funktion mit Binärzahlen in einem solchen Baum
-einiges besser.
+um einiges besser.
 \item Routing-Table
-\label{sec:orgd8528be}
-In einem \texttt{Kademlia}-System hat jedes Mitglied eine gewisse Anzahl
-anderer Mitglieder, mit denen es sich verbunden hat. Da \texttt{Kademlia} ein
+\label{sec:orgecd335b}
+In einem Kademlia-System hat jedes Mitglied eine gewisse Anzahl
+anderer Mitglieder, mit denen es sich verbunden hat. Da Kademlia ein
 sehr umfangreiches, kompliziertes Protokoll und System beschreibt,
 sollen hier nur einige zentrale Funktionen besprochen werden, die für
-diesen ersten Prototypen von \texttt{Engine: Orion} relevant sind. Besonders
-beim \texttt{Routing Table} lassen sich einige Abschnitte weglassen, welche
-zwar für die Optimierung und Skalierung eines Systems wichtig,
-allerdings für das Analysieren eines einfachen, kleinen Systems wie
-\texttt{Engine: Orion} irrelevant sind.\\
+diesen ersten Prototypen von Project Orion relevant sind.\\
 
 \noindent Einfach formuliert speichert der \texttt{Routing Table} die
 verbundenen Mitglieder. Eine eingehende Nachricht wird dann mithilfe
-dieser Liste, sowie der \texttt{XOR}-Metrik ans richtige Ziel geschickt. Um das
+dieser Liste, sowie der XOR-Metrik ans richtige Ziel geschickt. Um das
 System zu optimieren und die Anzahl der benötigten Sprünge klein zu
 halten, wird ein spezielles System verwendet, um zu entscheiden,
-welche Mitglieder im \texttt{Routing-Table} gespeichert werden sollen:
+welche Mitglieder im Routing-Table gespeichert werden sollen:
 
 \begin{enumerate}
 \item Sehr nahe an sich selbst (in der obigen Darstellung also:
@@ -1068,64 +1070,64 @@ getrennte Teile, was sich mit jeder weiteren Ebene wiederholt.
 zu kommen, ist über den obersten Knoten. Um also in die andere
 Hälfte zu kommen, braucht man mindestens eine Verbindungsstelle
 in der anderen Hälfte.
-\item Deshalb braucht ein \texttt{Routing-Table} nicht nur kurze
+\item Deshalb braucht ein Routing-Table nicht nur kurze
 Verbindungen zu nahen Punkten, sondern auch einige wenige
 Verbindungen zu Mitgliedern in der anderen Hälfte.
 \item Mit nur einer weit entfernten Adresse hat man eine Verbindung
-in \emph{eigene} und die \emph{andere} Hälfte. Hat man zwei solche
+in die \emph{eigene} und die \emph{andere} Hälfte. Hat man zwei solche
 Verbindungen auf die andere Seite hat man schon Verbindungen in
 jeden Viertel des Baumes.
 \item Man muss also entscheiden, wie fein man die andere Hälfte
 aufteilen will. (Eine genaue Unterteilung bedeutet wenige
-Sprünge aber grosse \texttt{Routing-Tables}, eine grobe Unterteilung
+Sprünge aber grosse Routing-Tables, eine grobe Unterteilung
 genau das Umgekehrte).
 \end{itemize}
 
-\noindent Zwar hat ein vollständiges \texttt{Kademlia}-System noch
-komplexere Elemente, wie \texttt{k-Buckets}, welche den \texttt{Routing-Table}
+\noindent Zwar hat ein vollständiges Kademlia-System noch
+komplexere Elemente, wie \texttt{k-Buckets}, welche den Routing-Table
 optimieren, allerdings sind diese für die grundlegende
 Funktionsweise des Systems irrelevant.\\
 
-\noindent Die dynamische Regulation des \texttt{Routing-Tables} muss
+\noindent Die dynamische Regulation des Routing-Tables muss
 allerdings noch erwähnt werden:
 \begin{itemize}
 \item Sobald die definierte Maximalgrösse erreicht ist, werden keine
 neuen Verbindungen akzeptiert.
 \item Zwar können existierende Einträge durch Neue ersetzt werden,
 allerdings werden dabei nicht alte, sondern inaktive Einträge
-entfernt. Für ein \texttt{Kademlia}-System werden also auch Mechanismen
+entfernt. Für ein Kademlia-System werden also auch Mechanismen
 benötigt, um die Zustände aller Verbindungen periodisch zu
 überprüfen.
 \end{itemize}
 \end{enumerate}
 \subsection{BitTorrent}
-\label{sec:org0b0bdbd}
+\label{sec:org5c7bb1a}
 Dezentralisierung hat viele Vorteile und muss langfristig
 flächendeckend eingesetzt werden. Aktuell sind die meisten
 Industrien und Produkte noch nicht so weit. Trotzdem gibt es
 einige Anwendungen und Gruppen bei denen solche Systeme bereits
 seit Jahren Verwendung finden.\\
 
-\noindent Beispielsweise im Zusammenhang mit \emph{(mehr oder weniger
-legalen)} Verbreiten von Materialien wie Filmen oder Musik wird
-eines der grössten global verteilten Systeme eingesetzt. Natürlich
-gibt es hunderte von verschiedenen Programmen, Ideen und
-Umsetzungen, wobei die meisten Nachfolger von \texttt{Napster} sind.\\
+\noindent Beispielsweise im Zusammenhang mit der \emph{(mehr oder
+weniger legalen)} Verbreiten von Materialien wie Filmen oder Musik
+wird eines der grössten global verteilten Systeme eingesetzt.
+Natürlich gibt es hunderte von verschiedenen Programmen, Ideen und
+Umsetzungen, aber die meisten sind Nachfolger von \texttt{Napster}.\\
 
 \noindent Im preisgekrönten Film \emph{The social network} erhält man
-Einblick in den Lebensstil von \texttt{Sean Parker}, einem der Gründer von
-\texttt{Napster}. Es mag überraschen, wie jemand wie Parker, der nur wenige
-Jahre zuvor mit \texttt{Napster} die komplette Musikindustrie in Unruhe
-gebracht hatte, eine so zentrale Rolle in \texttt{Facebook}, einem der
+Einblick in den Lebensstil von Sean Parker, einem der Gründer von
+Napster. Es mag überraschen, wie jemand wie Parker, der nur wenige
+Jahre zuvor mit Napster die komplette Musikindustrie in Unruhe
+gebracht hatte, eine so zentrale Rolle in Facebook, einem der
 zentralisiertesten Megaunternehmen der Welt, einnehmen konnte.\\
 
 \noindent Auch wenn es noch nicht \emph{vollständig} dezentralisiert ist,
-erlaubte es \texttt{Napster} Nutzern, Musik über ein automatisiertes System
+erlaubte es Napster Nutzern, Musik über ein automatisiertes System
 mit anderen Nutzern zu teilen und neue Titel direkt von den
 Geräten anderer Nutzer herunterzuladen. Dabei gab es allerdings
 immer noch einen zentralen Server, der die Titel sortierte und
 indizierte. \\
-\texttt{Napster} musste am Ende abgeschaltet werden, nachdem die Klagen der
+Napster musste am Ende abgeschaltet werden, nachdem die Klagen der
 Musikindustrie zu belastend wurden. Auch wenn das Produkt
 abgeschaltet wurde, liess sich nichts mehr gegen die Idee
 unternehmen.\\
@@ -1135,132 +1137,155 @@ die verteilten Systeme immer weiter verbessert, jegliche zentrale
 Server entfernt und in die Hände immer mehr Nutzer gebracht. Heute
 läuft ein Grossteil des Austauschs über \texttt{BitTorrent}.
 
-\noindent \texttt{BitTorrent} baut auf der gleichen grundlegenden Idee wie
-\texttt{Napster} auf: Nutzer stellen ihren eigenen Katalog an Medien zur
+\noindent BitTorrent baut auf der gleichen grundlegenden Idee wie
+Napster auf: Nutzer stellen ihren eigenen Katalog an Medien zur
 Verfügung und können Inhalte von allen anderen Mitgliedern im
-System herunterladen. Anders als \texttt{Napster} gibt es bei \texttt{BitTorrent}
+System herunterladen. Anders als Napster gibt es bei BitTorrent
 keine zentrale Komponente, stattdessen findet selbst das
 Indizieren und Finden von Inhalten dezentralisiert statt\footnote{BitTorrent: Mainline DHT:
 \url{https://www.cs.helsinki.fi/u/lxwang/publications/P2P2013\_13.pdf},
 heruntergeladen am: 4.06.2020.}.
-Dafür wird über das \texttt{Kademlia}-System aktiv bekannt gegeben, wer
+Dafür wird über das Kademlia-System aktiv bekannt gegeben, wer
 welche Inhalte zur Verfügung stellt, wobei einzelne Mitglieder
 speichern können, wer die gleichen Inhalte anbietet. Neben
-Dezentralisierung und Sicherheit lassen sich über \texttt{BitTorrent}
+Dezentralisierung und Sicherheit lassen sich über BitTorrent
 tatsächlich gute Geschwindigkeiten erreichen, da sich Inhalte von
 mehreren Anbietern gleichzeitig herunterladen lassen. Da es sich
-bei \texttt{BitTorrent} eigentlich um ein grosses Dateisystem handelt,
+bei BitTorrent eigentlich um ein grosses Dateisystem handelt,
 lassen sich direkt die \texttt{SHA1}-Hashwerte der Inhalte als
-\texttt{Kademlia}-Adressen verwenden.
+Kademlia-Adressen verwenden.
 \subsection{Tox}
-\label{sec:orgb4be60c}
+\label{sec:orgf96c8e6}
 Im Sommer 2013 veröffentlichte Edward Snowden schockierende
 Geheimnisse über massive Spionage Prgogramme der NSA, mit welchen
 nahezu aller digitaler Verkehr, ohne Rücksicht auf Datenschutz oder
 Privatsphären mitgelesen, ausgewertet und gespeichert wurde. Nahezu
-jede Person mit war betroffen und das genaue Ausmass ist bis heute
-noch schwer greiffbar. Vielen wurde aber klar, dass sichere,
-verschlüsselte Kommunikation nicht mehr nur etwas für Kriminelle und
-\emph{Nerds} war, sondern dass jeder Zugang zu verschlüsselter, sicherer und
-dezentraler Kommunikation haben sollte. In einem Thread auf 4chan
-kamen wurden viele dieser Bedenken gesammelt und es kam die Idee auf,
-selbst eine Alternative zu herrkömmlichen Chat Programmen wie Skype zu
-entwickeln. Aus dieser Initiative heraus entstand \texttt{Tox}, wobei die Namen
-vieler der ursprünglichen Entwickler bis heute unbekannt sind. Damals
-war das Ziel die Entwicklung einer sicheren Alternative zu Skype zu
-entwicklen, allerdings hat sich der Umfang des Projekts inzwischen
-ausgeweitet. Im Zentrum der Arbeiten steht das \texttt{Tox Protocol}, welches
-dann von verschiedenen, unabhängigen Programmen umgesetzt wird. Zwar
-ist Chat weiterhin eine zentrale Funktion, es wird aber auch Video-
-und Audiokommunikation sowie Filesharing gearbeitet.\\
+jede Person in der westlichen Welt war betroffen und das genaue
+Ausmass ist bis heute noch schwer greiffbar. Vielen wurde aber klar,
+dass sichere, verschlüsselte Kommunikation nicht mehr nur etwas für
+Kriminelle und \emph{Nerds} war, sondern dass jeder Zugang zu
+verschlüsselter, sicherer und dezentraler Kommunikation haben sollte.
+In einem Thread auf 4chan wurden viele dieser Bedenken gesammellt und
+es kam die Idee auf, selbst eine Alternative zu herkömmlichen Chat
+Programmen wie Skype zu entwickeln. Aus dieser Initiative heraus
+entstand Tox, wobei die Namen vieler der ursprünglichen Entwickler bis
+heute unbekannt sind. Damals war das Ziel die Entwicklung einer
+sicheren Alternative zu Skype, allerdings hat sich der Umfang des
+Projekts inzwischen ausgeweitet. Im Zentrum der Arbeiten steht das Tox
+Protocol, welches von verschiedenen, unabhängigen Programmen umgesetzt
+wird. Zwar ist Chat weiterhin eine zentrale Funktion, es wird aber
+auch mit Video- und Audiokommunikation sowie Filesharing gearbeitet.\\
 
-\noindent Basierend auf der bekannten \texttt{NaCl}-Bibliothek\textsuperscript{\ref{org865c7f7}} wird die
-gesamte Kommunikation über das \texttt{Tox Protocol} \textsuperscript{\ref{org808ec91}} zwingend End- zu
-Endverschlüsselt. Intern wird ein dezentrales Routing System basierend
-auf Kademila verwendet, mit welchem Kontakt zwischen Nutzern
-(Freunden) aufgebaut wird. Während im Kademila Whitepaper Addressen
-mit einer Länge von 20 Bytes definiert werden, nutzt \texttt{Tox} 32 Bytes.
-Dies vereinfacht die Verschlüsselung stark, da \texttt{NaCl} Schlüssel
-verwendet, welche ebenfalls 32 Bytes lang sind. Nebst der eingesparten
+\noindent Basierend auf der bekannten NaCl-Bibliothek\footnote{Crates.io: \url{https://crates.io/}} wird die
+gesamte Kommunikation über das Tox Protocol\textsuperscript{\ref{orgc13932d}} zwingend end- zu
+endverschlüsselt. Intern wird ein dezentrales Routing System,
+basierend auf Kademila verwendet, mit welchem Kontakt zwischen Nutzern
+(Freunden) aufgebaut wird. Während im Kademila Whitepaper Adressen mit
+einer Länge von 20 Bytes definiert werden, nutzt Tox 32 Bytes. Dies
+vereinfacht die Verschlüsselung stark, da NaCl Schlüssel verwendet,
+welche ebenfalls 32 Bytes lang sind. Nebst der eingesparten
 Verhandlung von Schlüsseln und der zusätzlichen Kommunikation bindet
-diese Idee die Verschlüsselung direkt stärker in das Routing System
-ein, denn es werden keine zusätzlichen Informationen zum Verschlüsseln
-einer Nachricht gebraucht und sie kann direkt mit der Addresse des
-Ziels verschlüsselt werden.\\
+diese Idee die Verschlüsselung stärker in das Routing System ein, denn
+es werden keine zusätzlichen Informationen zum Verschlüsseln einer
+Nachricht gebraucht, und sie kann direkt mit der Adresse des Ziels
+verschlüsselt werden.\\
 
-\noindent Es ist allerdings wichtig festzustellen, dass \texttt{Tox} Kademila
+\noindent Es ist allerdings wichtig festzustellen, dass Tox Kademila
 lediglich als Router verwendet. Kontakt zwischen zwei Nutzern wird
-komplett dezentral hergestellt, sobald diese sich allerdings gefunden
-haben wechseln zu einer direkten Kommunikation über UDP. Zwar erlaubt
-diese zweiteilung der Kommunikation schnellen Datenverkehr sobald sich
-zwei Nutzer gefunden haben (so ist beispielsweise Video- und
-Audiokommunikation möglich), es kommen aber auch einige neue Probleme
-auf:
+komplett dezentral hergestellt. Sobald diese sich allerdings gefunden
+haben, wechseln sie zu einer direkten Kommunikation über UDP. Zwar
+erlaubt diese Zweiteilung der Kommunikation schnellen Datenverkehr
+sobald sich zwei Nutzer gefunden haben (so ist beispielsweise Video-
+und Audiokommunikation möglich), es kommen aber auch einige neue
+Probleme auf:
 \begin{itemize}
-\item Anders als beispielsweise im Darknet über das Onion-Routing von
+\item Anders als beispielsweise im Darknet ist über das Onion-Routing von
 Aussen klar erkennbar, mit wem jemand kommuniziert. Natürlich ist
 der Inhalt weiterhin verschlüsselt, aber ein solches System setzt in
 erster Linie auf Sicherheit und Geschwindigkeit und nicht auf
 Anonymität.
 \item Auch muss man bedenken, dass nicht jedes Gerät im Internet in der
-Lage ist direkte Verbindungen mit jedem anderen Gerät aufzubauen.
-Besonders Firewalls können schnell zu Problemen führen. Um den
-Aufwand für die Nutzer zu minimieren wird \texttt{UDP hole punching} \textsuperscript{\ref{org1464d9b}}
-verwendet, allerdings existieren auch dafür gewisse Kriterien und
-Probeleme.
+Lage ist, direkte Verbindungen mit jedem anderen Gerät aufzubauen.
+Besonders Firewalls können schnell zu Problemen führen.
 \end{itemize}
 
-\noindent Das \texttt{Tox Protocol} bietet eine einheitliche Spezifikation mit
-der eine grosse Auswahl an Problemen gelöst werden können. Wer eine
-sichere, dezentrale Alternative zu Whatsapp sucht könnte an \texttt{Tox}
-gefallen finden. Seit einigen Jahren gibt es aber Bedenken über die
+\noindent Das Tox Protocol bietet eine einheitliche Spezifikation mit
+der eine grosse Bandbreite an Problemen gelöst werden kann. Wer eine
+sichere, dezentrale Alternative zu Whatsapp sucht, könnte an Tox
+Gefallen finden. Seit einigen Jahren gibt es aber Bedenken über die
 Sicherheit und aktuelle Richtung des Projekts, sowie Berichte von
 internen Konflikten, besonders im Zusammenhang mit Spendengeldern.
+\subsection{CJDNS}
+\label{sec:org702f530}
+Im CJDNS-Whitepaper werden viele der gleichen Probleme angesprochen,
+wie auch hier erwähnt wurden. Die grundlegenden Ideen und
+Lösungsansätze die besprochen werden ähneln in vielerlei Hinsicht den
+Ideen und Prinzipien hinter Project Orion. CJDNS, das sich selbst als
 
+\begin{center}
+an encrypted IPv6 network using public-key cryptography for address
+allocation and a distributed hash table for routing
+\end{center}
+
+\noindent beschreibt, ist ein beliebtes open-source Projekt, mit mehr
+als 180 Mitentwicklern und tausenden von Nutzern. Es basiert ebenfalls
+auf Kademlia und ähnlich wie BitTorrent wird grossen Wert auf
+Sicherheit und Verschlüsselung gelegt.\\
+
+\noindent Wer den Code von CJDNS etwas genauer anschaut realisiert
+schnell, welche grundlegenderen Ziele CJDNS verfolgt. Tatsächlich soll
+mit CJDNS langfristig ein physikalisch unabhängiges Netzwerk
+entstehen. Das Whitepaper redet von der Freiheit der Nutzer, eigene
+Kabel und eigene Infrastruktur zu verlegen.\\
+
+\noindent Es mag auf manche nach digitaler Isolation und Abschottung
+reden, aber wer tatsächlich konsequent alle Probleme von Grund auf
+angehen will muss sich auch Gedanken über die darunterliegende
+physikalische Infrastruktur machen. Dies ist allerdings ein Schritt
+der mit Project Orion (noch) gemacht werden soll.
 \section{Architektur}
-\label{sec:orgadd8c59}
+\label{sec:orgfe0a6f5}
 \subsection{Verschlüsselung}
-\label{sec:orga7803c2}
-Zwar ist es bei weitem nicht, dass moderne dezentrale Systeme das
-Internet oder ein ähnliches Austauschsystem als Grundlage verwenden,
-allerdings ist dies in nahezu allen Fällen, besonders bei den
-beliebten und weit verbreiteten Fällen. Das Internet ist für fehlende
-Sicherheit und Gefahren bekannt, daher ist es von Nöten, dass sich
-jede Applikation selbst um Verschlüsselungen und Sicherheit kümmert.
-Allerdings ist es wichtig, \emph{die passende Verschlüsselung} zu wählen.
-Hier wird nun ein Ansatz beschrieben, welcher sich besonders gut für
-gewisse \texttt{Kademlia}-inspirierte Systeme eignet. Dieser Ansatz beruht auf
-der Verschlüsselungs-Bibliothek \texttt{NaCl}, beziehungsweise deren modernen
-Abzweig \texttt{libsodium}. Während klassische Verschlüsselungsmethoden sehr
-lange Schlüssel benötigen, gibt es gewisse Kombinationen von
-Algorithmen, welche mit sehr kurzen Schlüsseln Sicherheit
-gewährleisten können. Besonders geht es dabei um
-\texttt{curve25519xsalsa20poly1305}, einer Kombination aus den Algorithmen
-\texttt{Curve25519}, \texttt{Salsa20} und \texttt{Poly1305}. Während das innere Zusammenspiel
-dieser Algorithmen sehr komplex ist, ist das Resultat ein
-Algorithmus, wessen Schlüssel jeweils nur eine Länge von \emph{32 bytes}
-haben.\\
+\label{sec:orgda9be5a}
+Zwar ist es bei weitem nicht so, dass alle moderne dezentrale Systeme
+das Internet oder ein ähnliches Austauschsystem als Grundlage
+verwenden, allerdings ist dies in nahezu allen Fällen, besonders bei
+den beliebten und weit verbreiteten Fällen. Das Internet ist für
+fehlende Sicherheit und Gefahren bekannt, daher ist es von Nöten, dass
+sich jede Applikation selbst um Verschlüsselungen und Sicherheit
+kümmert. Allerdings ist es wichtig, \emph{die passende Verschlüsselung} zu
+wählen. Hier wird nun ein Ansatz beschrieben, welcher sich besonders
+gut für gewisse Kademlia-inspirierte Systeme eignet. Dieser Ansatz
+beruht auf der Verschlüsselungs-Bibliothek NaCl, beziehungsweise deren
+modernen Abzweig \texttt{libsodium}. Während klassische
+Verschlüsselungsmethoden sehr lange Schlüssel benötigen, gibt es
+gewisse Kombinationen von Algorithmen, welche mit sehr kurzen
+Schlüsseln Sicherheit gewährleisten können. Besonders geht es dabei um
+curve25519xsalsa20poly1305, einer Kombination aus den Algorithmen
+Curve25519, Salsa20 und Poly1305. Während das innere Zusammenspiel
+dieser Algorithmen sehr komplex ist, ist das Resultat ein Algorithmus,
+wessen Schlüssel jeweils nur eine Länge von \emph{32 bytes} haben.\\
 
-\noindent Eigentlich beschreibt \texttt{Kademlia} Adressen mit einer Länge von
-\emph{160 bits} oder \emph{20 bytes}, allerdings ist es ohne grosse Probleme
-möglich, die Adressen Länge auf \emph{32 bytes} zu verlängern. Dies erlaubt
-es uns, die Verschlüsselung und das Adresssystem direkt miteinander zu
+\noindent Eigentlich beschreibt Kademlia Adressen mit einer Länge von
+\emph{160 bits} (\emph{20 bytes}), allerdings ist es ohne grosse Probleme möglich,
+die Adressen Länge auf \emph{32 bytes} zu verlängern. Dies erlaubt es uns,
+die Verschlüsselung und das Adresssystem direkt miteinander zu
 verbinden. Das mag auf den ersten Blick etwas umständlich und
-unlogisch wirken, es erlaubt allerdings, ohne weitere Operationen
+unlogisch wirken, es erlaubt allerdings, ohne weitere Operationen,
 verschlüsselte Nachrichten an einen Nutzer zu schicken, wobei
 lediglich dessen Adresse bekannt sein muss. Insgesamt fällt damit viel
-Komplexität weg und macht das erstellen, verifizieren und finden von
+Komplexität weg und macht das Erstellen, Verifizieren und Finden von
 Adressen viel einfacher.
 \subsection{PubSub}
-\label{sec:org5b99307}
+\label{sec:org1ec6c0a}
 Ein einfaches, aber vielseitig einsetzbares
-Nachrichtenübermittlungsmuster ist die Idee eines \texttt{Publish/Subscribe
-Systems}. Ein solches System lässt sich mit nur zwei Aktionen
+Nachrichtenübermittlungsmuster ist die Idee eines \texttt{Publish/Subscribe}
+Systems. Ein solches System lässt sich mit nur zwei Aktionen
 beschreiben: 
 \begin{itemize}
-\item Nutzer können ein gewisses Thema abonnieren, bedeutet sie folgen
+\item Nutzer können ein gewisses Thema abonnieren, das bedeutet, sie folgen
 einem gewissen Schlüssel und erhalten Nachrichten von diesem.
-\item Jeder Nutzer kann dann in den Themen denen er abonniert hat
+\item Jeder Nutzer kann dann in den Themen, die er abonniert hat
 Nachrichten schicken. Diese werden dann automatisch an alle
 abonnierten Nutzer verteilt.
 \end{itemize}
@@ -1272,38 +1297,38 @@ Datennetzwerk, alle lassen sich relativ einfach mit diesen beiden
 Funktionen modellieren. 
 \begin{enumerate}
 \item Dezentraler PubSub
-\label{sec:orgd6768b2}
+\label{sec:org18090d1}
 Offensichtlich kann selbst die beste, fehlerfrei optimierte
 Implementierung der oben beschriebenen Prinzipien nicht gegen die
 bereits angesprochenen, fundamentalen Probleme lokal gebundener
 Programme vorgehen. Daher ist es in einem nächsten Schritt von Nöten,
 die Ideen hinter dezentralisierten \texttt{PubSub}-Systemen anzuschauen. Das
 mag im ersten Moment komplex klingen, ist aber tatsächlich unglaublich
-einfach. Man muss sich lediglich einen \texttt{PubSub} als zwei getrennte
+einfach. Man muss sich lediglich einen PubSub als zwei getrennte
 Unterkomponenten vorstellen:
 \begin{itemize}
 \item Themen lassen sich vereinfacht als Einträge in einer Datenbank
 beschreiben. Die Identifikation der Themen ist dabei der Schlüssel,
 wobei die Abonnenten als dazugehörige Felder ausgedrückt werden
-können. Oben wurde allerdings bereits ein System beschrieben,
-welches zuverlässig dezentral Daten speichern kann. Wenn man in der
-beschriebenen \texttt{Kademlia} Implementierung die Checksumme des Inhalts
-mit der Checksumme des Themesschlüssels ersetzt, lässt sich \texttt{Kademlia}
-ohne weitere Veränderungen für einen dezentralen \texttt{PubSub} einsetzen.
+können. Oben wurde bereits ein System beschrieben, welches
+zuverlässig dezentral Daten speichern kann. Wenn man in der
+beschriebenen Kademlia Implementierung die Checksumme des Inhalts
+mit der Checksumme des Themenschlüssels ersetzt, lässt sich Kademlia
+ohne weitere Veränderungen für einen dezentralen PubSub einsetzen.
 \item Danach bleibt natürlich noch das Problem der Nachrichtenverbreitung.
-Dafür gibt es allerdings verschiedene Möglichkeiten:
+Dafür gibt es verschiedene Möglichkeiten:
 \begin{itemize}
-\item Die Nachrichten werden direkt an das Zuständige Mitglied gesendet,
+\item Die Nachrichten werden direkt an das zuständige Mitglied gesendet,
 von dort werden sie weitergeleitet. Vorteilhaft an diesem Konzept
 ist natürlich, dass die Verwender des Systems unglaublich einfach
 gehalten werden können. Sie müssen lediglich Nachrichten an eine
 Adresse schicken, das System kümmert sich dann von alleine um die
-Weiterverbreitung. Damit geben die Nutzer allerdings auch gewisse
-Kontrolle auf, denn sie können nicht direkt einsehen, an wen ihre
-Nachrichten verteilt werden. In einer solchen Situation gibt es
-zusätzlich noch gewisse technische Bedenken im Zusammenhang mit
-der Verschlüsselung.
-\item Gegen gesetzt dazu könnten auch die Aktionen des Abonnierens und
+Weiterverbreitung. Damit geben die Nutzer allerdings auch eine
+gewisse Kontrolle auf, denn sie können nicht direkt einsehen, an
+wen ihre Nachrichten verteilt werden. In einer solchen Situation
+gibt es zusätzlich noch gewisse technische Bedenken im
+Zusammenhang mit der Verschlüsselung.
+\item Andererseits dazu können auch die Aktionen des Abonnierens und
 Deabonnierens als Nachrichten im System verbreitet werden. Jeder
 abonnierte Nutzer wird somit also über neue Abonnenten informiert
 und speichert deren Details lokal. Zwar erhöht dies die
@@ -1312,8 +1337,8 @@ Kontrolle über die Auswahl der Abonnenten.
 \end{itemize}
 \end{itemize}
 \item Probleme
-\label{sec:orgd904aa1}
-Zwar gibt es viel Gutes über \texttt{PubSubs} als Systemkonzept zu sagen,
+\label{sec:orge48ea8d}
+Zwar gibt es viel Gutes über PubSubs als Systemkonzept zu sagen,
 allerdings müssen auch einige Probleme angesprochen werden:
 \begin{itemize}
 \item Wie bereits eben angesprochen kann es zu gewissen Unklarheiten und
@@ -1322,19 +1347,19 @@ dezentralen Systemen kommen. Da Nachrichten meist über das offene
 Internet übertragen werden und daher Verschlüsselung nahezu zwingend
 benötigt wird, muss man sie auch hier berücksichtigen. Wie bereits
 im Abschnitt zur Verschlüsselung angesprochen, sollen Nachrichten
-mit dem öffentlichen Schlüssel, welcher auch gleichzeitig die
-Adresse darstellt, des Empfängers verschlüsselt werden. Beim
-durchgehen der oben beschriebenen Architekturen wird ein Problem
+mit dem öffentlichen Schlüssel des Empfängers, welcher auch
+gleichzeitig die Adresse darstellt, verschlüsselt werden. Beim
+Durchgehen der oben beschriebenen Architekturen wird ein Problem
 offensichtlich: Wenn ein Thema ein normaler Empfänger im System ist,
 muss seine öffentliche Adresse verwendet werden. Allerdings wurde
-definiert, dass sich die Adresse eines Themas die Checksumme eines
+definiert, dass die Adresse eines Themas die Checksumme eines
 bekannten Schlüssels darstellt. Die Adressen in einem solchen System
 lassen sich allgemein aber durch einen gegebenen privaten Schlüssel
-ableiten. Umgekehrt ist es natürlich nicht möglich, ein geheimer
-Schlüssel lässt sich nicht aus nur dem öffentlichen errechnen. Hier
-wird also eigentlich ein System verlangt, bei welchem der private
-Schlüssel durch eine Checksumme errechnet wird, wobei der daraus
-entstehende öffentliche Schlüssel als Adresse verwendet wird.
+ableiten. Umgekehrt ist das natürlich nicht möglich. Ein geheimer
+Schlüssel lässt sich nicht aus dem öffentlichen Schlüssel errechnen.
+Hier wird also eigentlich ein System verlangt, bei welchem der
+private Schlüssel durch eine Checksumme errechnet wird, wobei der
+daraus entstehende öffentliche Schlüssel als Adresse verwendet wird.
 Gleichzeitig darf der private Schlüssel nicht bekannt sein, sonst
 wäre die gesamte Verschlüsselung sinnlos. Es wird schnell
 offensichtlich, dass solche Bedingungen nie erfüllt werden können.
@@ -1342,7 +1367,7 @@ offensichtlich, dass solche Bedingungen nie erfüllt werden können.
 während der Laufzeit gespeichert und verwaltet werden müssen, bringt
 man plötzlich eine Vielzahl neuer Probleme ins Spiel. So müssen die
 Daten repliziert und gesichert werden, da ein einzelnes Mitglied
-jeder Zeit unerreichbar sein könnte, sie müssen verifiziert werden,
+jederzeit unerreichbar sein könnte. Sie müssen verifiziert werden,
 da man kein Vertrauen in die Mitglieder des Systems haben darf und
 sie müssen trotz häufiger Änderungen konstant gehalten werden. Das
 Gebiet der dezentralen oder verteilten Datenbanken alleine ist sehr
@@ -1354,9 +1379,76 @@ Komplexität vieler Projekte.
 \end{enumerate}
 
 \section{Dokumentation}
-\label{sec:org5967deb}
+\label{sec:orgb30e0d6}
 
-\section{Bestätigung}
-\label{sec:orgac286d0}
+\section{Glossar}
+\label{sec:orgb9f9cf3}
+In diesem Abschnitt sollen alle Begriffe, welche im Text mindestens
+einmal \texttt{monospaced} geschrieben wurden, kurz erklärt werden.
+\begin{itemize}
+\item \texttt{Project Orion}: Maturaarbeit zum Thema \emph{Dezentrale Kommunikations- und
+Datensysteme} von Dominik Keller und Jakob Klemm, Kanti-Baden, 2021.
+\item \texttt{ARPANET}: Vorgängermodell des Internets, entwickelt vom
+amerikanischen Verteidigungsministerium.
+\item \texttt{FOMO}: Fear of missing out: Die Angst, Innovationen und Veränderungen
+zu verpassen.
+\item \texttt{IP-Adresse}: Eindeutige Identifizierung für Geräte im Internet.
+Werden von Internetanbietern ausgestellt und sind meistens nur
+eindeuting für einzelne Netzwerke, nicht Geräte, da diese ein
+unabhängiges IP-Adress-System verwenden.
+\item \texttt{TCP}: Transmission Control Protocol: Dominantes Protokoll um Daten im
+Internet zu versenden. Grundlage für bekanntere Protokolle wie HTTP.
+\item \texttt{UDP}: User Datagram Protocol: Simpleres und schnelleres Protokoll als
+TCP, ist allerdings meist weniger zuverlässig.
+\item \texttt{IP-V4}: Standardisierte Version der IP-Adressen mit einer Länge von
+32 bit.
+\item \texttt{IP-V6}: Neuste Version des Internet Protokolls mit einer Adresslänge
+von 128 bit, allerdings inkompatibel mit IP-V4.
+\item \texttt{POP-Switch}: Point of Presence: Von einem Internetanbieter
+kontrollierter Knotenpunkt, der ein kleineres \emph{Subnet} abgrenzt.
+\item \texttt{Zentralrouter}: Grössten und wichtigsten Knotenpunkte für den
+globalen Internetverkehr, der grösste befindet sich in Frankfurt.
+\item \texttt{Address Spaces}: Um Speicherplatz und Rechenleistung zu sparen,
+werden komplette IP-Adressen an Firmen oder Gebiete vergebet.
+\item \texttt{Shadow}: Orion Netzwerk-Router der ersten Entwicklungsphase,
+geschrieben in Elixir.
+\item \texttt{Elixir}: Programmiersprache für nebenläufige Programme, besonders
+Netzwerke, basierend auf Erlang.
+\item \texttt{Kademlia}: Peer to Peer Nachrichtensystem basierend auf der
+XOR-Metrik.
+\item \texttt{UNIX-Socket}: System zum Datenaustausch zwischen verschiedenen
+laufenden Applikationen auf der selben Maschine.
+\item \texttt{Hunter}: Lokaler Router der ersten Orion Entwicklungsphase.
+\item \texttt{JSON}: Menschenlesbares Datei- und Nachrichtenstruktur für Objekte
+und Schlüssel-Wert-Paare.
+\item \texttt{Actaeon}: Dezentrales Nachrichtensystem der zweiten Orion
+Entwicklungsphase.
+\item \texttt{Rust}: Moderne Programmiersprache von Mozilla als Alternative zu C \&
+C++.
+\item \texttt{Crate}: Rust Terminologie für, von Nutzern entwickelte, Bibliotheken.
+\item \texttt{XOR}: Logische Operation auf Binärdaten errechnet den Unterschied
+zwischen zwei Eingaben.
+\item \texttt{NaCl}: Verschlüsselungsbibliothek für Netzwerkprogramme.
+\item \texttt{Interface}: Zentrale Zugangsstelle und Interaktionspunkt für die
+Actaeon Applikation. Siehe Code Dokumentation für mehr Details.
+\item \texttt{Topic}: Actaeon Datenstruktur die ein, im Netzwerk registriertes
+Thema zu einem gewissen Schlüssel repräsentiert.
+\item \texttt{CJDNS}: Initiative für ein technisch und physikalisch unabhängiges
+Netzwerk als Alternative zum aktuellen Internet.
+\item \texttt{Routing Table}: Gespeicherte Daten über bekannte Nodes in einem
+Netzwerk zu denen Verbindungen aufgebaut werden können.
+\item \texttt{k-Bucket}: Kademlia unterteilt den gesamten Routing Table in kleinere
+Stücke, wobei alle Nodes in einem solchen Bucket in einen gewissen
+Anteil ihrer Adresse übereinstimmen.
+\item \texttt{Napster}: Eine der ersten Methoden illegal Musik direkt zwischen
+Nutzern zu teilen.
+\item \texttt{BitTorrent}: Aktuell beliebteste Methode um Medien und Daten aller
+Art ohne jegliche Zentralisierung auszutauschen.
+\item \texttt{SHA1}: Hash Algorithmus der einen Schlüssel mit einer Länge von 160
+bit Produziert. Ursprünglich von der US-Regierung entwickelt.
+\item \texttt{libsodium}: Moderne Umsetzung der NaCl Standards und Ideen.
+\item \texttt{Publish/Subscribe} \& \texttt{PubSub}: Prinzip der indirekten
+Nachrichtenübermittlung via Themen mit gemeinsamen Schlüsseln.
+\end{itemize}
 \includepdf[pages=-]{unterschrieben.pdf}
 \end{document}

@@ -82,7 +82,6 @@ Doppelpunkt, Bindestrich oder Stern den Textfluss zu stark
 beeinflussen könnte, wurde die Entscheidung getroffen, während des
 gesamten Texts lediglich die männliche Form zu verwenden, welche
 allerdings jedes mal für das generische Maskulin stehen soll.
-
 \newpage
 
 * Vision
@@ -1296,7 +1295,6 @@ einmal =monospaced= geschrieben wurden, kurz erklärt werden.
 - =libsodium=: Moderne Umsetzung der NaCl Standards und Ideen.
 - =Publish/Subscribe= & =PubSub=: Prinzip der indirekten
   Nachrichtenübermittlung via Themen mit gemeinsamen Schlüsseln. 
-** Bestätigung
 \includepdf[pages=-]{unterschrieben.pdf}
 * Footnotes
 [fn:4] Crates.io: https://crates.io/ 
