@@ -80,8 +80,8 @@ Vorwissen und genügend Zeit mitbringen.
 \noindent Da besonders bei englischen Begriffen das Gendern mit einem
 Doppelpunkt, Bindestrich oder Stern den Textfluss zu stark
 beeinflussen könnte, wurde die Entscheidung getroffen, während des
-gesamten Texts lediglich die männliche Form zu verwenden, welche
-allerdings jedes mal für das generische Maskulin stehen soll.
+gesamten Texts lediglich das generische Maskulin zu verwenden, welches
+allerdings jedes Mal die inklusiveren Formen repräsentieren soll.
 \newpage
 
 * Vision
@@ -1107,7 +1107,19 @@ reden, aber wer tatsächlich konsequent alle Probleme von Grund auf
 angehen will muss sich auch Gedanken über die darunterliegende
 physikalische Infrastruktur machen. Dies ist allerdings ein Schritt
 der mit Project Orion (noch) gemacht werden soll.
-** Architektur
+** Actaeon
+Da während dem Hauptteil des Berichts wurde, um die Komplexität und
+den Umfang der Arbeit möglichst unter Kontrolle zu behalten, nur ein
+grober Überblick über die Innereien Actaeons geliefert. In den
+folgenden Abschnitten soll nun eine Auswahl der Entscheidungen,
+Konzepte und Technologien genauer beleuchtet werden, welche
+schlussendlich zum aktuellen Actaeon führten. Weil mehr Details und
+technische Feinheiten angesprochen werden, wird auch gewisses
+Vorwissen und Know-How verlangt und es werden nicht mehr alle
+Fachbegriffe mit dem selben Detailgrad erklärt. Dazu kann es immer
+wieder zu Verweisen auf die Code Dokumentation geben, welche natürlich
+im Detailgrad noch weit über diesem Dokument steht. Sie wurde
+automatisch durch Rust generiert und ist online zu finden.
 *** Verschlüsselung
 Zwar ist es bei weitem nicht so, dass alle moderne dezentrale Systeme
 das Internet oder ein ähnliches Austauschsystem als Grundlage
@@ -1227,8 +1239,6 @@ allerdings müssen auch einige Probleme angesprochen werden:
   Datenbank verwalten muss, übersteigt dies meist die erhoffte
   Komplexität vieler Projekte.
 
-** Dokumentation
-
 ** Glossar
 In diesem Abschnitt sollen alle Begriffe, welche im Text mindestens
 einmal =monospaced= geschrieben wurden, kurz erklärt werden.
@@ -1297,6 +1307,7 @@ einmal =monospaced= geschrieben wurden, kurz erklärt werden.
   Nachrichtenübermittlung via Themen mit gemeinsamen Schlüsseln. 
 \includepdf[pages=-]{unterschrieben.pdf}
 * Footnotes
+
 [fn:4] Crates.io: https://crates.io/ 
 
 [fn:2] Sloterdijk, Peter: Den Himmel zum Sprechen bringen, 2020, S321.  
