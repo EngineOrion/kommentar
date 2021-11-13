@@ -82,7 +82,6 @@ Doppelpunkt, Bindestrich oder Stern den Textfluss zu stark
 beeinflussen könnte, wurde die Entscheidung getroffen, während des
 gesamten Texts lediglich das generische Maskulin zu verwenden, welches
 allerdings jedes Mal die inklusiveren Formen repräsentieren soll.
-\newpage
 
 * Vision
 #+BEGIN_CENTER
@@ -1119,7 +1118,7 @@ Vorwissen und Know-How verlangt und es werden nicht mehr alle
 Fachbegriffe mit dem selben Detailgrad erklärt. Dazu kann es immer
 wieder zu Verweisen auf die Code Dokumentation geben, welche natürlich
 im Detailgrad noch weit über diesem Dokument steht. Sie wurde
-automatisch durch Rust generiert und ist online zu finden.
+automatisch durch Rust generiert und ist online zu finden.[fn:7]
 *** Verschlüsselung
 Zwar ist es bei weitem nicht so, dass alle moderne dezentrale Systeme
 das Internet oder ein ähnliches Austauschsystem als Grundlage
@@ -1239,6 +1238,39 @@ allerdings müssen auch einige Probleme angesprochen werden:
   Datenbank verwalten muss, übersteigt dies meist die erhoffte
   Komplexität vieler Projekte.
 
+*** Router
+Als zentrales Herzstück des gesamten Actaeon Systems übernimmt der
+Router zwei wichtige Aufgaben gleichzeitig:
+- Das Speichern der bekannten Nodes im System.
+- Funktionen zum berechnen der nächsten Ziele für Nachrichten. 
+
+\noindent Um die Funktionen des Routers zu verstehen, lohnt es sich,
+den Abschnitt zu Kademlia, oder besser noch das tatsächliche Kademlia
+Whitepaper zu lesen, denn der Router ist der Punkt im System, der
+die meisten der kademlia-spezifischen Funktionen übernimmt. Als erstes
+ist es wahrscheinlich wichtig zu verstehen, welche Daten im Router
+überhaupt gespeichert werden. Grundsätzlich wird im Router jede Node
+gespeichert, von der Daten empfangen werden, oder die durch eine
+Anfrage gefunden wurde. Allerdings definiert Kademlia gewisse Regeln,
+nach welchen neu gefundene Nodes zum Routing Table hinzugefügt werden:
+- Grundsätzlich werden alte, bereits seit langem bekannte Nodes über
+  neuere bevorzugt, selbst wenn diese ansonsten bessere Eigenschaften
+  (kleine Distanz) hätten. Damit soll verhindert werden, dass das
+  Netzwerk durch eine Vielzahl böswillig generierter Nodes einfach
+  angegriffen werden kann.
+- Für jede Node wird ein Status gespeichert, welcher angibt, ob die
+  Node aktuell erreichbar ist. Da sich dies während der Laufzeit
+  ändern kann muss der Status regelmässig überprüft werden.
+- Die Anzahl der gespeicherten Nodes soll mit sinkender 
+
+*** Speicher 
+
+*** Threads & Async
+
+*** Signaling
+
+*** Tests
+
 ** Glossar
 In diesem Abschnitt sollen alle Begriffe, welche im Text mindestens
 einmal =monospaced= geschrieben wurden, kurz erklärt werden.
@@ -1306,7 +1338,10 @@ einmal =monospaced= geschrieben wurden, kurz erklärt werden.
 - =Publish/Subscribe= & =PubSub=: Prinzip der indirekten
   Nachrichtenübermittlung via Themen mit gemeinsamen Schlüsseln. 
 \includepdf[pages=-]{unterschrieben.pdf}
+
 * Footnotes
+
+[fn:7] Docs.rs: https://docs.rs/actaeon/0.2.1/actaeon/
 
 [fn:4] Crates.io: https://crates.io/ 
 
