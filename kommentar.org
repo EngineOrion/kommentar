@@ -1,4 +1,4 @@
-#+TITLE: Project Orion - Kommentar
+#+TITLE: Project Orion
 #+AUTHOR: Dominik Keller, Jakob Klemm
 #+SETUPFILE: ~/.dots/.latex/doc.org
 
@@ -453,6 +453,33 @@ restliche System das Entwickeln neuer Mechanismen und Komponenten für
 das System offener machen sollte. Eine einfache lisp-ähnliche Syntax
 sollte das Entwickeln neuer Programme einfach und vielseitig
 einsetzbar machen.
+*** Demo
+Da am Ende dieser ersten Entwicklungsphase eine Präsentation stand,
+musste eine Applikation entwickelt werden, welche einen möglichst
+einfachen, grafischen Einblick in die entstandenen Komponenten
+liefert. Eine Chat-Demo bietet dabei ein paar wichtige Vorteile:
+- Sie zeigt verständlich die Kommunikation zwischen zwei oder mehr
+  Personen.
+- Chat Nachrichten sind technisch für das System nicht anspruchsvoll
+  und daher gut für eine Live-Demo geeignet.
+
+Allerdings ist es hierbei wichtig zu bedenken, dass alle Komponenten
+des damaligen Systems nur auf Servern lief und das Datensystem eine
+Schnittstelle zwischen verschiedenen Servern ermöglichte. Der Chat
+müsste aber für Endnutzer zugänglich sein, weswegen eine eigene
+Komponente dafür benötigt wurde: 
+=Websocket.or=[fn:12] konnte wie andere Komponenten auch an das
+restliche System angeschlossen werden und präsentierte dann eine nach
+Aussen erreichbare Chat-Webseite. Das Design dieser Website wird wohl
+kaum viele Preise gewinnen, liefert aber trotzdem eine schlichte,
+minimalistische Chat-Umgebung für Nutzer.
+#+CAPTION: Engine: Orion Chat-Website, intern vebunden mit einem dezentralen Kommunikationssystem.  
+#+ATTR_LATEX: :float nil
+[[file:websocket.png]]
+
+\noindent Nutzer waren mit dieser Applikation in der Lage, mit
+beliebigen anderen Nutzern zu kommunizieren, solange sie die Adresse
+von einem Chat-Server kannten, der das passende Interface anbot. 
 *** Probleme
 Die oben beschriebene Architektur hat viele verschiedene Vorteile,
 allerdings ist sie nicht ohne Probleme. Grundsätzlich geht es bei
@@ -541,7 +568,7 @@ unterteilen:
   Frage, wie man komplexe Themen und Programme einfachen Nutzern näher
   bringt.
   
-* Produkt
+* Produkte
 Nun ist es an der Zeit, die Errungenschaften und Produkte des
 Projektes anzuschauen. Eigentlich müssten auch hier die Programme der
 ersten Entwicklungsphase besprochen werden, dies geschah allerdings
@@ -715,6 +742,112 @@ Funktionen und auch mehr Möglichkeiten für den Nutzer, diese gehen
 aber über den Umfang dieses Dokuments hinaus.
 ** Anwendungen
 *** Chat
+Wie bereits in der ersten Entwicklungsphase wurde auch basierend auf
+dem Actaeon-System ein Chat-Programm entwickelt. Dieses ist allerdings
+nicht die zentrale Demo für das gesamte Projekt, sondern lediglich ein
+technischer Test, mit dem die Fähigkeiten des Actaeon-Systems gezeigt
+werden sollen. Allerdings gibt es einige wichtige Unterschiede zur
+letzten Chat Demo, welche hauptsächlich durch eine andere Umsetzung
+des Datensystems entstanden:
+- Der Chat ist nicht mehr die primäre Demo, weswegen das Design und
+  die /Präsentierbarkeit/ weniger wichtig wurden. Deshalb ist der
+  aktuelle Chat nur noch als Konsolen-Applikation verfügbar und nicht
+  mehr als Webseite.
+- Das tatsächliche Datensystem, das sich um den Austausch der
+  Nachrichten mit anderen Nutzern kümmert läuft nun auf den Geräten
+  der Endnutzer, weswegen ein dedizierter Webserver und eine Webseite
+  nicht mehr nötig sind oder sogar unpraktisch wären.
+- Der aktuelle Chat ist weniger ein Produkt, als eine technische Demo,
+  mit welcher vorgezeigt werden soll, mit wie wenig Aufwand eine
+  Applikation basierend auf dem Actaeon-System gebaut werden kann.
+
+\noindent Anstelle des /Frontends/ soll hier direkt der Code angeschaut
+werden, welcher diese Demo möglich macht:
+#+begin_src rust
+  use actaeon::{
+      config::Config,
+      node::{Center, ToAddress},
+      topic::Topic,
+      Interface,
+  };
+  use sodiumoxide::crypto::box_;
+  use std::io;
+  use std::sync::mpsc;
+
+  fn main() -> io::Result<()> {
+      let config = Config::new(20, 1, 100, "example.com".to_string(), 4242);
+      let (_, secret) = box_::gen_keypair();
+      let center = Center::new(secret, String::from("127.0.0.1"), 4242);
+      let interface = Interface::new(config, center).unwrap();
+      let (s, r) = mpsc::channel();
+      std::thread::sleep(std::time::Duration::from_millis(125));
+      let mut buffer = String::new();
+      let stdin = io::stdin();
+      stdin.read_line(&mut buffer)?;
+      let topic = buffer.to_address();
+      let topic = interface.subscribe(&topic);
+      receiver(topic, r);
+
+      loop {
+          let mut buffer = String::new();
+          let stdin = io::stdin();
+          stdin.read_line(&mut buffer)?;
+          let message = buffer.as_bytes().to_vec();
+          let _ = s.send(message);
+      }
+  }
+
+  fn receiver(mut topic: Topic, recv: mpsc::Receiver<Vec<u8>>) {
+      std::thread::spawn(move || loop {
+          if let Some(msg) = topic.try_recv() {
+              let body = msg.message.body.as_bytes();
+              let message = String::from_utf8_lossy(&body);
+              let from = &msg.source().as_bytes()[0];
+              println!("{}: {}", from, message);
+          }
+          if let Ok(bytes) = recv.try_recv() {
+              let _ = topic.broadcast(bytes);
+          }
+      });
+  }
+#+end_src
+\noindent Eine kurze, oberflächliche Erklärung was mit diesem Code
+erreicht wird:
+1. Als erstes wird das Actaeon-System konfiguriert und gestartet.
+2. Das Thema (in diesem Falle der Chatraum) wird als Input vom Nutzer
+   genommen.
+3. Die daraus errechnete Adresse wird Actaeon übergeben, welches dann
+   mit anderen Mitgliedern des Systems kommuniziert und die nötigen
+   Verbindungen herstellt.
+4. Da Rust sehr strikte Regeln im Umgang mit Threads und nebenläufigen
+   Programmen hat, müssen die Funktionen auf zwei Threads aufgeteilt
+   werden:
+   - Einer kümmert sich um Eingaben vom Nutzer,
+   - der andere um Nachrichten vom System.
+   Sollte eine Applikation eine andere Methode verwenden, Eingaben vom
+   Nutzer zu erhalten, ist es natürlich nicht nötig, einen eigenen
+   Thread zu starten und Actaeon würde sich automatisch im Hintergrund
+   darum kümmern.
+5. Beide Threads laufen nebenläufig in einer unendlichen Schleife und
+   warten auf Ereignisse.
+
+\noindent Der Code, der tatsächlich für das Actaeon Datensystem
+relevant ist beschränkt sich allerdings auf die folgenden Zeilen:
+#+begin_src rust
+  {
+      let config = Config::new(20, 1, 100, "example.com".to_string(), 4242);
+      let (_, secret) = box_::gen_keypair();
+      let center = Center::new(secret, String::from("127.0.0.1"), 4242);
+      let interface = Interface::new(config, center).unwrap();
+      let topic = buffer.to_address();
+      let topic = interface.subscribe(&topic);
+      let _ = topic.broadcast(vec![]);
+  }
+#+end_src
+\noindent Man muss nicht jede Zeile dieses Beispiels exakt verstehen.
+Was hier schlussendlich wichtig ist, ist die Feststellung, dass nur
+wenige Zeilen Code nötig sind, um eine beliebige Applikation an ein
+dezentrales Datensystem anzuschliessen.
 *** Arrow
 ** Orion
 TODO: Dominik Orion
@@ -1261,16 +1394,74 @@ nach welchen neu gefundene Nodes zum Routing Table hinzugefügt werden:
 - Für jede Node wird ein Status gespeichert, welcher angibt, ob die
   Node aktuell erreichbar ist. Da sich dies während der Laufzeit
   ändern kann muss der Status regelmässig überprüft werden.
-- Die Anzahl der gespeicherten Nodes soll mit sinkender 
+- Die Anzahl der gespeicherten Nodes ist umgekehrt proportional zum
+  Abstand zwischen der Node und dem relativen Zentrum (also sich
+  selbst).
 
+\noindent Um diese Regeln möglichst einfach umzusetzen, wird der
+Router intern als binärer Baum dargestellt. Jedes Blatt stellt dabei
+ein k-Bucket dar, in welchem die tatsächlichen Nodes liegen. Sobald
+ein solcher Bucket voll ist, kann er halbiert werden und es entstehen
+zwei neue Blätter. Dies ist allerdings nur auf der, dem Zentrum (also
+der eigenen Adresse) nahen Seite möglich. Auf der /fernen/ Seite können
+Buckets nicht geteilt werden. Damit wird direkt die Regel, dass die
+Häufigkeit der Nodes mit steigendem Abstand abnimmt direkt umgesetzt.
+Sollte es nicht möglich sein, einen Bucket zu teilen, werden neue
+Nodes entweder vergessen, oder bereits vorhandene Nodes werden
+überschrieben. Auch ist es wichtig zu verstehen, dass innerhalb der
+tatsächlichen Buckets nicht nach Distanz, sondern nach Zeit sortiert
+wird. Da Nachrichten meistens an mehrere Ziele gleichzeitig geschickt
+werden, um die Auslieferung zu garantieren, wird versucht, zuerst
+möglichst viele Nodes aus dem gleichen Bucket zu verwenden. Nur wenn
+diese nicht reichen dürfen Nodes aus anderen Buckets verwendet werden.
+
+\noindent Der Router bietet alle nötigen Funktionen direkt in einer
+öffentlichen API an, in der tatsächlichen Applikation wird er
+allerdings etwas anders eingesetzt:
+- Um die Menge an internen Nachrichten und Abhängigkeiten zu
+  reduzieren, haben verschiedene Punkte im System Zugang zum gleichen
+  Router Objekt.
+- Da verschiedene Threads Zugang zu den gleichen Daten brauchen, muss
+  das eigentliche Router Objekt hinter einem Mutex liegen und darf
+  immer nur von einem Thread gleichzeitig bearbeitet werden.
 *** Speicher 
+Leider ist es meistens nicht möglich, ein so komplexes, umfangreiches
+Kommunikationssystem aufzubauen, ohne dabei nicht geteilte Zustände zu
+benötigen. Dabei geht es um Daten, die
+- nicht nur für ein Mitglied des Systems relevant sind wie
+  beispielsweise die Router Daten,
+- länger Leben müssen als ein Mitglied online sein könnte, daher eine
+  ändernde Netzwerkstruktur überstehen müssen.
 
-*** Threads & Async
+\noindent Es ist offensichtlich, dass man solche Daten um jeden Preis
+vermeiden sollte. Da es sich im Actaeon-System /nur/ um ein
+Nachrichtensystem und keine dezentrale Datenbank handelt, existieren
+tatsächlich nahezu keine geteilten Daten. Als einzige Ausnahme
+allerdings werden im System =Topic Records= verwendet, auf welche genau
+diese Problematik zutrifft.\\
 
-*** Signaling
+\noindent Wenn ein Mitglied ein Thema abonniert, muss der Kontakt mit
+allen bisherigen Abonnenten hergestellt werden. Dies könnte
+theoretisch ohne Struktur durch ein einfaches Netzwerkfluten gemacht
+werden, ein solcher Ansatz wäre aber sehr ineffizient. Actaeon, sowie
+die meisten Systeme dieser Art, verwendet einen kleinen Eintrag im
+System, der den neuen Abonnenten über existierende informiert und
+umgekehrt. Dieser Eintrag kann aber nicht einfach irgendwo liegen,
+sondern muss genau bei dem Mitglied zu finden sein, zu welchem seine
+Adresse den kleinsten Abstand hat. Dieses Mitglied muss sich dabei um
+nichts kümmern, das System verwaltet diese Einträge automatisch. Man
+muss sich nun aber um die Möglichkeit kümmern, dass das zuständige
+Mitglied nicht mehr erreichbar ist. Die einfachste Lösung dafür und
+die, welche aktuell von Actaeon verwendet wird, ist einfach mithilfe
+einer hohen Replikation dafür zu sorgen, dass hoffentlich immer
+mindestens ein Mitglied verfügbar ist.\\
 
-*** Tests
-
+\noindent Allerdings kann dies trotzdem zu Problemen führen. Besonders
+wenn sich die Netzwerkstruktur schnell stark ändert, kann es dazu
+kommen, dass gewisse Teile des Netzwerks Themen an der falschen
+Stelle suchen. Im aktuellen Actaeon-System existiert noch keine Lösung
+für dieses Problem, aber eine mögliche Lösung existiert und deren
+Umsetzung ist geplant.
 ** Glossar
 In diesem Abschnitt sollen alle Begriffe, welche im Text mindestens
 einmal =monospaced= geschrieben wurden, kurz erklärt werden.
@@ -1309,6 +1500,7 @@ einmal =monospaced= geschrieben wurden, kurz erklärt werden.
 - =Hunter=: Lokaler Router der ersten Orion Entwicklungsphase.
 - =JSON=: Menschenlesbares Datei- und Nachrichtenstruktur für Objekte
   und Schlüssel-Wert-Paare.
+- =Websocket.or=: Chat Interface für das erste Orion Datensystem.
 - =Actaeon=: Dezentrales Nachrichtensystem der zweiten Orion
   Entwicklungsphase.
 - =Rust=: Moderne Programmiersprache von Mozilla als Alternative zu C &
@@ -1336,10 +1528,15 @@ einmal =monospaced= geschrieben wurden, kurz erklärt werden.
   bit Produziert. Ursprünglich von der US-Regierung entwickelt.
 - =libsodium=: Moderne Umsetzung der NaCl Standards und Ideen.
 - =Publish/Subscribe= & =PubSub=: Prinzip der indirekten
-  Nachrichtenübermittlung via Themen mit gemeinsamen Schlüsseln. 
+  Nachrichtenübermittlung via Themen mit gemeinsamen Schlüsseln.
+- =Topic Record=: Topic Objekt an der rechnerisch korrekten Stelle in
+  einem Actaeon Cluster. Kümmert sich um das weiterverbreiten neuer
+  Abonnenten. 
 \includepdf[pages=-]{unterschrieben.pdf}
-
+\includepdf[pages=-]{Orion_Vertrag_7.pdf}
 * Footnotes
+
+[fn:12] Github: Engine: Orion, websocket.or, https://github.com/EngineOrion/websocket.or
 
 [fn:7] Docs.rs: https://docs.rs/actaeon/0.2.1/actaeon/
 
