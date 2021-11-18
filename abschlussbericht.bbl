@@ -1,0 +1,37 @@
+\begin{thebibliography}{1}
+
+\bibitem{RFC0791}
+Jon Postel.
+\newblock Internet protocol.
+\newblock STD~5, RFC Editor, September 1981.
+\newblock \url{http://www.rfc-editor.org/rfc/rfc791.txt}.
+
+\bibitem{IPAddressSpaces}
+Lawrence~E. Hughes.
+\newblock Ipv4 and ipv6 address spaces.
+\newblock \url{https://thirdinternet.com/ipv4-and-ipv6-address-spaces/}, 2019.
+
+\bibitem{GooglePrivacyPolicy}
+Google.
+\newblock Google privacy & terms.
+\newblock \url{https://policies.google.com/privacy}.
+
+\bibitem{SinglePointOfFailure}
+Tom Scott.
+\newblock Single point of failure: The (fictional) day google forgot to check
+  passwords.
+\newblock \url{https://www.youtube.com/watch?v=y4GB_NDU43Q}, 2014.
+
+\bibitem{GoogleNestOutage}
+Michael Grothaus.
+\newblock That major google outage meant some nest users couldn’t unlock
+  doors or use the ac.
+\newblock
+  \url{https://www.fastcompany.com/90358396/that-major-google-outage-meant-some-nest-users-couldnt-unlock-doors-or-use-the-ac}.
+
+\bibitem{KademliaPaper}
+Petar Maymounkov and David Mazieres.
+\newblock Kademlia: A peer-to-peer information system based on the xor metric.
+\newblock Technical report, 2002.
+
+\end{thebibliography}

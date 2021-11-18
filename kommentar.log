@@ -1,0 +1,2580 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.9.24)  15 NOV 2021 22:40
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**kommentar.tex
+(./kommentar.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18>
+(/usr/share/texmf-dist/tex/latex/memoir/memoir.cls
+Document Class: memoir 2021/03/23 v3.7o configurable book, report, article docu
+ment class
+\onelineskip=\skip47
+\lxvchars=\skip48
+\xlvchars=\skip49
+\@memcnta=\count179
+\c@@memmarkcntra=\count180
+(/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)
+\stockheight=\skip50
+\stockwidth=\skip51
+\trimtop=\skip52
+\trimedge=\skip53
+
+(/usr/share/texmf-dist/tex/latex/memoir/mem11.clo
+File: mem11.clo 2008/01/30 v0.3 memoir class 11pt size option
+)
+\binding=\skip54
+\spinemargin=\skip55
+\foremargin=\skip56
+\uppermargin=\skip57
+\lowermargin=\skip58
+\headdrop=\skip59
+\normalrulethickness=\skip60
+\mem@maxheadheight=\skip61
+\mem@maxfootheight=\skip62
+\headwidth=\skip63
+\c@storedpagenumber=\count181
+\memPD=\dimen138
+\m@mabparskip=\skip64
+\thanksmarkwidth=\skip65
+\thanksmarksep=\skip66
+\droptitle=\skip67
+\c@book=\count182
+\c@part=\count183
+\c@chapter=\count184
+\c@section=\count185
+\c@subsection=\count186
+\c@subsubsection=\count187
+\c@paragraph=\count188
+\c@subparagraph=\count189
+\beforechapskip=\skip68
+\midchapskip=\skip69
+\afterchapskip=\skip70
+\chapindent=\skip71
+\bottomsectionskip=\skip72
+\secindent=\skip73
+\beforesecskip=\skip74
+\aftersecskip=\skip75
+\subsecindent=\skip76
+\beforesubsecskip=\skip77
+\aftersubsecskip=\skip78
+\subsubsecindent=\skip79
+\beforesubsubsecskip=\skip80
+\aftersubsubsecskip=\skip81
+\paraindent=\skip82
+\beforeparaskip=\skip83
+\afterparaskip=\skip84
+\subparaindent=\skip85
+\beforesubparaskip=\skip86
+\aftersubparaskip=\skip87
+\pfbreakskip=\skip88
+\c@@ppsavesec=\count190
+\c@@ppsaveapp=\count191
+\ragrparindent=\dimen139
+\everylistparindent=\dimen140
+\parsepi=\skip89
+\topsepi=\skip90
+\itemsepi=\skip91
+\parsepii=\skip92
+\topsepii=\skip93
+\topsepiii=\skip94
+\itemsepii=\skip95
+\itemsepiii=\skip96
+\partopsepii=\skip97
+\partopsepiii=\skip98
+\m@msavetopsep=\skip99
+\m@msavepartopsep=\skip100
+\@enLab=\toks15
+\abstitleskip=\skip101
+\absleftindent=\skip102
+\abs@leftindent=\dimen141
+\absrightindent=\skip103
+\absparindent=\skip104
+\absparsep=\skip105
+\c@vslineno=\count192
+\c@poemline=\count193
+\c@modulo@vs=\count194
+\c@memfvsline=\count195
+\vleftskip=\skip106
+\vrightskip=\skip107
+\stanzaskip=\skip108
+\versewidth=\skip109
+\vgap=\skip110
+\vindent=\skip111
+\vleftmargin=\dimen142
+\c@verse=\count196
+\c@chrsinstr=\count197
+\beforepoemtitleskip=\skip112
+\afterpoemtitleskip=\skip113
+\c@poem=\count198
+\beforePoemTitleskip=\skip114
+\midPoemTitleskip=\skip115
+\afterPoemTitleskip=\skip116
+
+(/usr/share/texmf-dist/tex/latex/tools/array.sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+\col@sep=\dimen143
+\ar@mcellbox=\box47
+\extrarowheight=\dimen144
+\NC@list=\toks16
+\extratabsurround=\skip117
+\backup@length=\skip118
+\ar@cellbox=\box48
+)
+(/usr/share/texmf-dist/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/tools/delarray.sty
+Package: delarray 2014/10/28 v1.01 array delimiter package (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen145
+\TX@old@table=\dimen146
+\TX@old@col=\dimen147
+\TX@target=\dimen148
+\TX@delta=\dimen149
+\TX@cols=\count199
+\TX@ftn=\toks17
+)
+\heavyrulewidth=\dimen150
+\lightrulewidth=\dimen151
+\cmidrulewidth=\dimen152
+\belowrulesep=\dimen153
+\belowbottomsep=\dimen154
+\aboverulesep=\dimen155
+\abovetopsep=\dimen156
+\cmidrulesep=\dimen157
+\cmidrulekern=\dimen158
+\defaultaddspace=\dimen159
+\@cmidla=\count266
+\@cmidlb=\count267
+\@aboverulesep=\dimen160
+\@belowrulesep=\dimen161
+\@thisruleclass=\count268
+\@lastruleclass=\count269
+\@thisrulewidth=\dimen162
+\ctableftskip=\skip119
+\ctabrightskip=\skip120
+\abovecolumnspenalty=\count270
+\@linestogo=\count271
+\@cellstogo=\count272
+\@cellsincolumn=\count273
+\crtok=\toks18
+\@mincolumnwidth=\dimen163
+\c@newflo@tctr=\count274
+\mem@margin@floatbox=\box49
+\@contcwidth=\skip121
+\@contindw=\skip122
+\abovecaptionskip=\skip123
+\belowcaptionskip=\skip124
+\subfloattopskip=\skip125
+\subfloatcapskip=\skip126
+\subfloatcaptopadj=\skip127
+\subfloatbottomskip=\skip128
+\subfloatlabelskip=\skip129
+\subfloatcapmargin=\dimen164
+\c@@contsubnum=\count275
+\m@mscap@capbox=\box50
+\m@mscap@fbox=\box51
+\sidecapsep=\dimen165
+\sidecapwidth=\dimen166
+\m@m@tempdima=\dimen167
+\m@mscapraise=\dimen168
+\sidecapraise=\dimen169
+\m@mscapmainwidth=\dimen170
+\m@mscaplkern=\dimen171
+\beforeepigraphskip=\skip130
+\afterepigraphskip=\skip131
+\epigraphwidth=\skip132
+\epigraphrule=\skip133
+LaTeX Info: Redefining \em on input line 7650.
+LaTeX Info: Redefining \emph on input line 7658.
+\tocentryskip=\skip134
+\tocbaseline=\skip135
+\cftparskip=\skip136
+\cftbeforebookskip=\skip137
+\cftbookindent=\dimen172
+\cftbooknumwidth=\dimen173
+\cftbeforepartskip=\skip138
+\cftpartindent=\skip139
+\cftpartnumwidth=\skip140
+\cftbeforechapterskip=\skip141
+\cftchapterindent=\skip142
+\cftchapternumwidth=\skip143
+\cftbeforesectionskip=\skip144
+\cftsectionindent=\skip145
+\cftsectionnumwidth=\skip146
+\cftbeforesubsectionskip=\skip147
+\cftsubsectionindent=\skip148
+\cftsubsectionnumwidth=\skip149
+\cftbeforesubsubsectionskip=\skip150
+\cftsubsubsectionindent=\skip151
+\cftsubsubsectionnumwidth=\skip152
+\cftbeforeparagraphskip=\skip153
+\cftparagraphindent=\skip154
+\cftparagraphnumwidth=\skip155
+\cftbeforesubparagraphskip=\skip156
+\cftsubparagraphindent=\skip157
+\cftsubparagraphnumwidth=\skip158
+\prechapterprecisshift=\dimen174
+\c@maxsecnumdepth=\count276
+\bibindent=\dimen175
+\bibitemsep=\skip159
+\indexcolsep=\skip160
+\indexrule=\skip161
+\indexmarkstyle=\toks19
+\@indexbox=\insert252
+\glossarycolsep=\dimen176
+\glossaryrule=\dimen177
+\sideparvshift=\skip162
+\sideins=\insert251
+\sidebartopsep=\skip163
+\sidebarhsep=\skip164
+\sidebarvsep=\skip165
+\sidebarwidth=\skip166
+\footmarkwidth=\skip167
+\footmarksep=\skip168
+\footparindent=\skip169
+\footinsdim=\skip170
+\footinsv@r=\insert250
+\@mpfootinsv@r=\insert249
+\m@m@k=\count277
+\m@m@h=\dimen178
+\m@mipn@skip=\skip171
+\sidefootins=\insert248
+\sidefootadjust=\skip172
+\sidefootheight=\skip173
+\sidefoothsep=\skip174
+\sidefootvsep=\skip175
+\sidefootwidth=\skip176
+\m@mdownsf=\skip177
+\c@sidefootnote=\count278
+\sidefootmarkwidth=\skip178
+\sidefootmarksep=\skip179
+\sidefootparindent=\skip180
+\c@pagenote=\count279
+\c@pagenoteshadow=\count280
+\mem@pn@lastkern=\skip181
+\every@verbatim=\toks20
+\afterevery@verbatim=\toks21
+\verbatim@line=\toks22
+\tab@position=\count281
+\verbatim@in@stream=\read2
+\verbatimindent=\skip182
+\verbatim@out=\write3
+\bvboxsep=\skip183
+\c@memfbvline=\count282
+\c@bvlinectr=\count283
+\bvnumlength=\skip184
+\fb@frw=\dimen179
+\fb@frh=\dimen180
+\FrameRule=\dimen181
+\FrameSep=\dimen182
+\c@cp@cntr=\count284
+\c@ism@mctr=\count285
+\c@xsm@mctr=\count286
+\c@csm@mctr=\count287
+\c@ksm@mctr=\count288
+\c@xksm@mctr=\count289
+\c@cksm@mctr=\count290
+\c@msm@mctr=\count291
+\c@xmsm@mctr=\count292
+\c@cmsm@mctr=\count293
+\c@bsm@mctr=\count294
+\c@workm@mctr=\count295
+\c@sheetsequence=\count296
+\c@lastsheet=\count297
+\c@lastpage=\count298
+
+(/usr/share/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2019/09/14 v1.00 Text only upper/lower case changing (DPC)
+)
+\c@figure=\count299
+\c@lofdepth=\count300
+\cftbeforefigureskip=\skip185
+\cftfigureindent=\skip186
+\cftfigurenumwidth=\skip187
+\c@table=\count301
+\c@lotdepth=\count302
+\cftbeforetableskip=\skip188
+\cfttableindent=\skip189
+\cfttablenumwidth=\skip190
+Package abstract [2008/07/23] emulated by memoir.
+Package appendix [2008/07/23] emulated by memoir.
+Package booktabs [2016/05/16] emulated by memoir.
+Package ccaption [2008/07/23] emulated by memoir.
+Package changepage [2008/07/23] emulated by memoir.
+Package chngcntr [2008/07/23] emulated by memoir.
+Package chngpage [2008/07/23] emulated by memoir.
+Package crop emulated by memoir.
+Package enumerate [2008/07/23] emulated by memoir.
+Package epigraph [2008/07/23] emulated by memoir.
+Package ifmtarg [2008/07/23] emulated by memoir.
+Package index [2008/07/23] emulated by memoir.
+Package makeidx [2008/07/23] emulated by memoir.
+Package moreverb [2008/07/23] emulated by memoir.
+Package needspace [2008/07/23] emulated by memoir.
+Package newfile [2008/07/23] emulated by memoir.
+Package nextpage [2008/07/23] emulated by memoir.
+Package pagenote [2008/07/23] emulated by memoir.
+Package parskip [2008/07/23] emulated by memoir.
+Package patchcmd [2008/07/23] emulated by memoir.
+Package setspace [2008/07/23] emulated by memoir.
+Package shortvrb [2008/07/23] emulated by memoir.
+Package showidx [2008/07/23] emulated by memoir.
+Package titleref [2008/07/23] emulated by memoir.
+Package titling [2008/07/23] emulated by memoir.
+Package tocbibind [2008/07/23] emulated by memoir.
+Package tocloft [2008/07/23] emulated by memoir.
+Package tocvsec2 [2008/07/23] emulated by memoir.
+Package verbatim [2008/07/23] emulated by memoir.
+Package verse [2008/07/23] emulated by memoir.
+)
+(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks23
+\inpenc@posthook=\toks24
+)
+(/usr/share/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2021/03/24 3.56 The Babel package
+
+(/usr/share/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2021/03/24 3.56 Babel common definitions
+\babel@savecnt=\count303
+\U@D=\dimen183
+\l@babelnohyphens=\language87
+
+(/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read3
+)
+\bbl@dirlevel=\count304
+
+(/usr/share/texmf-dist/tex/generic/babel-german/germanb.ldf
+Language: germanb 2021/02/27 v2.13 German support for babel (pre-1996 orthograp
+hy)
+Package babel Info: Making " an active character on input line 139.
+))
+(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+)
+(/usr/share/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
+Applying: [2015/01/01] Old fixltx2e package on input line 46.
+
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+Already applied: [0000/00/00] Old fixltx2e package on input line 53.
+) (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks25
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen184
+\Gin@req@width=\dimen185
+)
+(/usr/share/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip191
+\LTright=\skip192
+\LTpre=\skip193
+\LTpost=\skip194
+\LTchunksize=\count305
+\LTcapwidth=\dimen186
+\LT@head=\box52
+\LT@firsthead=\box53
+\LT@foot=\box54
+\LT@lastfoot=\box55
+\LT@cols=\count306
+\LT@rows=\count307
+\c@LT@tables=\count308
+\c@LT@chunks=\count309
+\LT@p@ftn=\toks26
+)
+(/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count310
+\float@exts=\toks27
+\float@box=\box56
+\@float@everytoks=\toks28
+\@floatcapt=\box57
+)
+(/usr/share/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen187
+\WF@size=\dimen188
+\c@WF@wrappedlines=\count311
+\WF@box=\box58
+\WF@everypar=\toks29
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/share/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+
+(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count312
+\rotFPtop=\skip195
+\rotFPbot=\skip196
+\rot@float@box=\box59
+\rot@mess@toks=\toks30
+)
+(/usr/share/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box60
+\UL@hyphenbox=\box61
+\UL@skip=\skip197
+\UL@hook=\toks31
+\UL@height=\dimen189
+\UL@pe=\count313
+\UL@pixel=\dimen190
+\ULC@box=\box62
+Package: ulem 2019/11/18
+\ULdepth=\dimen191
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip198
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks32
+\ex@=\dimen192
+))
+(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen193
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count314
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count315
+\leftroot@=\count316
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count317
+\DOTSCASE@=\count318
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box63
+\strutbox@=\box64
+\big@size=\dimen194
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count319
+\c@MaxMatrixCols=\count320
+\dotsspace@=\muskip16
+\c@parentequation=\count321
+\dspbrk@lvl=\count322
+\tag@help=\toks33
+\row@=\count323
+\column@=\count324
+\maxfields@=\count325
+\andhelp@=\toks34
+\eqnshift@=\dimen195
+\alignsep@=\dimen196
+\tagshift@=\dimen197
+\tagwidth@=\dimen198
+\totwidth@=\dimen199
+\lineht@=\dimen256
+\@envbody=\toks35
+\multlinegap=\skip199
+\multlinetaggap=\skip256
+\mathdisplay@stack=\toks36
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+(/usr/share/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(/usr/share/texmf-dist/tex/latex/marvosym/marvosym.sty
+Package: marvosym 2011/07/20 v2.2 Martin Vogel's Symbols font definitions
+)
+(/usr/share/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
+\symwasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
+)
+(/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
+
+(/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen257
+\Hy@linkcounter=\count326
+\Hy@pagecounter=\count327
+
+(/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
+nguages
+)
+(/usr/share/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/usr/share/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count328
+
+(/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count329
+
+(/usr/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen258
+
+(/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count330
+\Field@Width=\dimen259
+\Fld@charsize=\dimen260
+Package hyperref Info: Hyper figures OFF on input line 6075.
+Package hyperref Info: Link nesting OFF on input line 6080.
+Package hyperref Info: Hyper index ON on input line 6083.
+Package hyperref Info: backreferencing OFF on input line 6090.
+Package hyperref Info: Link coloring OFF on input line 6095.
+Package hyperref Info: Link coloring with OCG OFF on input line 6100.
+Package hyperref Info: PDF/A mode OFF on input line 6105.
+LaTeX Info: Redefining \ref on input line 6145.
+LaTeX Info: Redefining \pageref on input line 6149.
+
+(/usr/share/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
+)
+\Hy@abspage=\count331
+\c@Item=\count332
+\c@Hfootnote=\count333
+)
+(/usr/share/texmf-dist/tex/latex/memoir/memhfixc.sty
+Package: memhfixc 2019/10/24 v1.18 nameref/hyperref package fixes for memoir cl
+ass
+\c@memhycontfloat=\count334
+\c@Hpagenote=\count335
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
+
+(/usr/share/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+)
+\Fld@listcount=\count336
+\c@bookmark@seq@number=\count337
+
+(/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip257
+)
+(/usr/share/texmf-dist/tex/latex/psnfss/mathpazo.sty
+Package: mathpazo 2020/03/25 PSNFSS-v9.3 Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup7
+)
+(/usr/share/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2020/02/24 v1.2b Standard LaTeX Color (DPC)
+
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+(/usr/share/texmf-dist/tex/latex/minted/minted.sty
+Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
+
+(/usr/share/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
+
+(/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count338
+)
+(/usr/share/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2021/01/20 v3.7 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count339
+\FV@InFile=\read4
+\FV@TabBox=\box65
+\c@FancyVerbLine=\count340
+\FV@StepNumber=\count341
+\FV@OutFile=\write4
+)
+(/usr/share/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+)
+(/usr/share/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count342
+\output=\toks37
+\linenoprevgraf=\count343
+\linenumbersep=\dimen261
+\linenumberwidth=\dimen262
+\c@linenumber=\count344
+\c@pagewiselinenumber=\count345
+\c@LN@truepage=\count346
+\c@internallinenumber=\count347
+\c@internallinenumbers=\count348
+\quotelinenumbersep=\dimen263
+\bframerule=\dimen264
+\bframesep=\dimen265
+\bframebox=\box66
+LaTeX Info: Redefining \\ on input line 3056.
+)
+\c@FV@TrueTabGroupLevel=\count349
+\c@FV@TrueTabCounter=\count350
+\FV@TabBox@Group=\box67
+\FV@TmpLength=\skip258
+\c@FV@HighlightLinesStart=\count351
+\c@FV@HighlightLinesStop=\count352
+\FV@LoopCount=\count353
+\FV@NCharsBox=\box68
+\FV@BreakIndent=\dimen266
+\FV@BreakIndentNChars=\count354
+\FV@BreakSymbolSepLeft=\dimen267
+\FV@BreakSymbolSepLeftNChars=\count355
+\FV@BreakSymbolSepRight=\dimen268
+\FV@BreakSymbolSepRightNChars=\count356
+\FV@BreakSymbolIndentLeft=\dimen269
+\FV@BreakSymbolIndentLeftNChars=\count357
+\FV@BreakSymbolIndentRight=\dimen270
+\FV@BreakSymbolIndentRightNChars=\count358
+\c@FancyVerbLineBreakLast=\count359
+\FV@LineBox=\box69
+\FV@LineIndentBox=\box70
+\FV@LineWidth=\dimen271
+)
+(/usr/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count360
+\calc@Bcount=\count361
+\calc@Adimen=\dimen272
+\calc@Bdimen=\dimen273
+\calc@Askip=\skip259
+\calc@Bskip=\skip260
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count362
+\calc@Cskip=\skip261
+)
+(/usr/share/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+)
+(/usr/share/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+
+(/usr/share/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+)
+(/usr/share/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+runsystem(uname -s > "kommentar.w18")...executed.
+
+ (./kommentar.w18)
+runsystem(rm -- "kommentar.w18")...executed.
+
+)
+(/usr/share/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count363
+\decimalpart=\count364
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+)
+(/usr/share/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip262
+\fb@frw=\dimen274
+\fb@frh=\dimen275
+)
+\minted@appexistsfile=\read5
+\minted@bgbox=\box71
+\minted@code=\write5
+\c@minted@FancyVerbLineTemp=\count365
+\c@minted@pygmentizecounter=\count366
+\@float@every@listing=\toks38
+\c@listing=\count367
+)
+runsystem(mkdir -p _minted-kommentar)...executed.
+
+
+(/home/jeykey/.dots/.latex/setup.tex
+(/usr/share/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup8
+)
+(/usr/share/texmf-dist/tex/latex/ntheorem/ntheorem.sty
+Style `ntheorem', Version 1.33 <2011/08/15>
+Package: ntheorem 2011/08/15 1.33
+\theorem@style=\toks39
+\theorem@@style=\toks40
+\theorembodyfont=\toks41
+\theoremnumbering=\toks42
+\theorempreskipamount=\skip263
+\theorempostskipamount=\skip264
+\theoremframepreskipamount=\skip265
+\theoremframepostskipamount=\skip266
+\theoreminframepreskipamount=\skip267
+\theoreminframepostskipamount=\skip268
+\theorem@preskip=\toks43
+\theorem@postskip=\toks44
+\theorem@framepreskip=\toks45
+\theorem@framepostskip=\toks46
+\theorem@inframepreskip=\toks47
+\theorem@inframepostskip=\toks48
+\theoremindent=\dimen276
+\theorem@indent=\dimen277
+\theoremrightindent=\dimen278
+\theorem@rightindent=\dimen279
+\theoremheaderfont=\toks49
+\theoremseparator=\toks50
+\theoremprework=\toks51
+\theorempostwork=\toks52
+\theoremsymbol=\toks53
+\qedsymbol=\toks54
+\theoremkeyword=\toks55
+\qedsymbol=\toks56
+\thm@topsep=\skip269
+\thm@topsepadd=\skip270
+Package ntheorem Info: Option `thmmarks' loaded on input line 1175.
+\c@endNonectr=\count368
+\c@currNonectr=\count369
+\mysavskip=\skip271
+Package ntheorem Info: option `amsmath' handling for `thmmarks' loaded on input
+ line 1175.
+\thm@amstmpdepth=\dimen280
+\tagwidth=\dimen281
+) (/usr/share/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2021/03/06 v0.5t Insert pages of external PDF documents (AM)
+
+(/usr/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen282
+\ESO@tempdimb=\dimen283
+)
+\AM@pagewidth=\dimen284
+\AM@pageheight=\dimen285
+\AM@fboxrule=\dimen286
+
+(/usr/share/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2021/03/06 v0.5t Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count370
+\AM@pagebox=\box72
+\AM@global@opts=\toks57
+\AM@pagecnt=\count371
+\AM@toc@title=\toks58
+\c@AM@survey=\count372
+\AM@templatesizebox=\box73
+)
+(/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+
+(/usr/share/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
+(/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks59
+\pgfutil@tempdima=\dimen287
+\pgfutil@tempdimb=\dimen288
+
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex))
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box74
+)
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2020/12/27 v3.1.8b (3.1.8b)
+))
+Package: pgf 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks60
+\pgfkeys@temptoks=\toks61
+
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks62
+))
+\pgf@x=\dimen289
+\pgf@y=\dimen290
+\pgf@xa=\dimen291
+\pgf@ya=\dimen292
+\pgf@xb=\dimen293
+\pgf@yb=\dimen294
+\pgf@xc=\dimen295
+\pgf@yc=\dimen296
+\pgf@xd=\dimen297
+\pgf@yd=\dimen298
+\w@pgf@writea=\write6
+\r@pgf@reada=\read6
+\c@pgf@counta=\count373
+\c@pgf@countb=\count374
+\c@pgf@countc=\count375
+\c@pgf@countd=\count376
+\t@pgf@toka=\toks63
+\t@pgf@tokb=\toks64
+\t@pgf@tokc=\toks65
+\pgf@sys@id@count=\count377
+
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
+)))
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfsyssoftpath@smallbuffer@items=\count378
+\pgfsyssoftpath@bigbuffer@items=\count379
+)
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen299
+\pgfmath@count=\count380
+\pgfmath@box=\box75
+\pgfmath@toks=\toks66
+\pgfmath@stack@operand=\toks67
+\pgfmath@stack@operation=\toks68
+)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code
+.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.te
+x) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics
+.code.tex))) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count381
+)) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@picminx=\dimen300
+\pgf@picmaxx=\dimen301
+\pgf@picminy=\dimen302
+\pgf@picmaxy=\dimen303
+\pgf@pathminx=\dimen304
+\pgf@pathmaxx=\dimen305
+\pgf@pathminy=\dimen306
+\pgf@pathmaxy=\dimen307
+\pgf@xx=\dimen308
+\pgf@xy=\dimen309
+\pgf@yx=\dimen310
+\pgf@yy=\dimen311
+\pgf@zx=\dimen312
+\pgf@zy=\dimen313
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@path@lastx=\dimen314
+\pgf@path@lasty=\dimen315
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@shorten@end@additional=\dimen316
+\pgf@shorten@start@additional=\dimen317
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfpic=\box76
+\pgf@hbox=\box77
+\pgf@layerbox@main=\box78
+\pgf@picture@serial@count=\count382
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgflinewidth=\dimen318
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.t
+ex
+File: pgfcoretransformations.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@pt@x=\dimen319
+\pgf@pt@y=\dimen320
+\pgf@pt@temp=\dimen321
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.te
+x
+File: pgfcorepathprocessing.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfarrowsep=\dimen322
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@max=\dimen323
+\pgf@sys@shading@range@num=\count383
+\pgf@shadingcount=\count384
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfexternal@startupbox=\box79
+))
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)))
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfnodeparttextbox=\box80
+)
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@nodesepstart=\dimen324
+\pgf@nodesepend=\dimen325
+)
+(/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2020/12/27 v3.1.8b (3.1.8b)
+))
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen326
+\pgffor@skip=\dimen327
+\pgffor@stack=\toks69
+\pgffor@toks=\toks70
+))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.te
+x
+File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@plot@mark@count=\count385
+\pgfplotmarksize=\dimen328
+)
+\tikz@lastx=\dimen329
+\tikz@lasty=\dimen330
+\tikz@lastxsaved=\dimen331
+\tikz@lastysaved=\dimen332
+\tikz@lastmovetox=\dimen333
+\tikz@lastmovetoy=\dimen334
+\tikzleveldistance=\dimen335
+\tikzsiblingdistance=\dimen336
+\tikz@figbox=\box81
+\tikz@figbox@bg=\box82
+\tikz@tempbox=\box83
+\tikz@tempbox@bg=\box84
+\tikztreelevel=\count386
+\tikznumberofchildren=\count387
+\tikznumberofcurrentchild=\count388
+\tikz@fig@count=\count389
+ (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfmatrixcurrentrow=\count390
+\pgfmatrixcurrentcolumn=\count391
+\pgf@matrix@numberofcolumns=\count392
+)
+\tikz@expandcount=\count393
+
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+topaths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))) (/usr/share/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count394
+\lst@gtempboxa=\box85
+\lst@token=\toks71
+\lst@length=\count395
+\lst@currlwidth=\dimen337
+\lst@column=\count396
+\lst@pos=\count397
+\lst@lostspace=\dimen338
+\lst@width=\dimen339
+\lst@newlines=\count398
+\lst@lineno=\count399
+\lst@maxwidth=\dimen340
+
+(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count400
+\lst@skipnumbers=\count401
+\lst@framebox=\box86
+)
+(/usr/share/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(/usr/share/texmf-dist/tex/latex/psnfss/courier.sty
+Package: courier 2020/03/25 PSNFSS-v9.3 (WaS) 
+)
+(/usr/share/texmf-dist/tex/latex/was/gensymb.sty
+Package: gensymb 2003/07/02 v1.0 (WaS)
+)
+(/usr/share/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(/usr/share/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen341
+\captionmargin@=\dimen342
+\captionwidth=\dimen343
+\caption@tempdima=\dimen344
+\caption@indent=\dimen345
+\caption@parindent=\dimen346
+\caption@hangindent=\dimen347
+Package caption Info: memoir document class detected.
+
+(/usr/share/texmf-dist/tex/latex/caption/caption-memoir.sto
+File: caption-memoir.sto 2020/10/10 v2.1 Adaption of the caption package to the
+ memoir document class (AR)
+))
+\c@caption@flags=\count402
+\c@continuedfloat=\count403
+Package caption Info: changepage package is loaded.
+\caption@adjustwidth@hsize=\dimen348
+\caption@adjustwidth@linewidth=\dimen349
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
+)
+Package caption Info: rotating package is loaded.
+Package caption Info: wrapfig package is loaded.
+)
+(/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip272
+\f@nch@O@elh=\skip273
+\f@nch@O@erh=\skip274
+\f@nch@O@olh=\skip275
+\f@nch@O@orh=\skip276
+\f@nch@O@elf=\skip277
+\f@nch@O@erf=\skip278
+\f@nch@O@olf=\skip279
+\f@nch@O@orf=\skip280
+)
+(/usr/share/texmf-dist/tex/latex/tools/varioref.sty
+Package: varioref 2020/08/11 v1.6e package for extended references (FMi)
+\c@vrcnt=\count404
+)
+(/usr/share/texmf-dist/tex/latex/datetime/datetime.sty
+Package: datetime 2015/03/20 v2.60 Date Time Package
+
+(/usr/share/texmf-dist/tex/latex/fmtcount/fmtcount.sty
+Package: fmtcount 2020/01/30 v3.07
+
+(/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks72
+\XKV@tempa@toks=\toks73
+)
+\XKV@depth=\count405
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texmf-dist/tex/latex/fmtcount/fcprefix.sty
+Package: fcprefix 2012/09/28
+
+(/usr/share/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
+Package: fcnumparser 2017/06/15
+\fc@digit@counter=\count406
+))
+\c@padzeroesN=\count407
+\fc@tmpcatcode=\count408
+
+(/usr/share/texmf-dist/tex/latex/fmtcount/fc-germanb.def
+File: fc-germanb.def 2013/08/17
+
+(/usr/share/texmf-dist/tex/latex/fmtcount/fc-german.def
+File: fc-german.def 2018/06/17
+))
+\@DT@modctr=\count409
+\@ordinalctr=\count410
+\@orgargctr=\count411
+\@strctr=\count412
+\@tmpstrctr=\count413
+\@DT@loopN=\count414
+\@DT@X=\count415
+
+
+Package fmtcount Warning: \ordinal already defined use \FCordinal instead. on i
+nput line 466.
+
+) (/usr/share/texmf-dist/tex/latex/datetime/datetime-defaults.sty
+Package: datetime-defaults 2013/09/10
+)
+\@day=\count416
+\@month=\count417
+\@year=\count418
+\c@HOUR=\count419
+\c@HOURXII=\count420
+\c@MINUTE=\count421
+\c@TOHOUR=\count422
+\c@TOMINUTE=\count423
+\c@SECOND=\count424
+\currenthour=\count425
+\currentminute=\count426
+\currentsecond=\count427
+Package datetime Info: No datetime.cfg file found, using default settings on in
+put line 308.
+\@dtctr=\count428
+\dayofyear=\count429
+\dayofweek=\count430
+LaTeX Info: Redefining \today on input line 736.
+
+(/usr/share/texmf-dist/tex/latex/datetime/dt-german.def
+File: dt-german.def 2010/09/10
+LaTeX Info: Redefining \dategerman on input line 86.
+)
+\dt@a=\toks74
+\dt@b=\toks75
+)
+(/usr/share/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2021/03/18 v1.25 mathematical typesetting tools
+
+(/usr/share/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
+\g_MT_multlinerow_int=\count431
+\l_MT_multwidth_dim=\dimen350
+\origjot=\skip281
+\l_MT_shortvdotswithinadjustabove_dim=\dimen351
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen352
+\l_MT_above_intertext_sep=\dimen353
+\l_MT_below_intertext_sep=\dimen354
+\l_MT_above_shortintertext_sep=\dimen355
+\l_MT_below_shortintertext_sep=\dimen356
+\xmathstrut@box=\box87
+\xmathstrut@dim=\dimen357
+)
+(/usr/share/texmf-dist/tex/latex/esvect/esvect.sty
+Package: esvect 
+\symesvector=\mathgroup9
+LaTeX Font Info:    Redeclaring math symbol \fldr on input line 38.
+)
+(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(/usr/share/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2020/03/24 1.8d listings language file
+)
+(/usr/share/texmf-dist/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2020/03/24 1.8d listings language file
+)
+(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(/usr/share/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2020/03/24 1.8d listings language file
+)
+(/usr/share/texmf-dist/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2020/03/24 1.8d listings language file
+)
+(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(/usr/share/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2020/03/24 1.8d listings language file
+)
+(/usr/share/texmf-dist/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2020/03/24 1.8d listings language file
+)
+(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+)
+(/usr/share/texmf-dist/tex/latex/pdfcprot/pdfcprot.sty
+Package: pdfcprot 2002/02/27 v1.5 character protruding using pdflatex (cs)
+\c@CPROT@family=\count432
+\c@CPROT@family@temp=\count433
+\c@CPROT@series=\count434
+\c@CPROT@series@temp=\count435
+\c@CPROT@shape=\count436
+\c@CPROT@shape@temp=\count437
+\c@CPROT@size=\count438
+\c@CPROT@size@temp=\count439
+\c@CPROT@temp@chars=\count440
+
+
+! LaTeX Error: Command \ifpdftex already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.703 }
+       
+? q
+OK, entering \batchmode...
+Package pdfcprot Info: You want to setup char protruding, but it does
+(pdfcprot)             look as if you're NOT using pdftex. So I can't
+(pdfcprot)             setup it, as ``pdfcprot.sty'' only supports
+(pdfcprot)             pdftex. on input line 805.
+Package pdfcprot Info: You want to setup char protruding, but it does
+(pdfcprot)             look as if you're NOT using pdftex. So I can't
+(pdfcprot)             setup it, as ``pdfcprot.sty'' only supports
+(pdfcprot)             pdftex. on input line 805.
+Package pdfcprot Info: You want to setup char protruding, but it does
+(pdfcprot)             look as if you're NOT using pdftex. So I can't
+(pdfcprot)             setup it, as ``pdfcprot.sty'' only supports
+(pdfcprot)             pdftex. on input line 805.
+) (/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count441
+\Gm@cntv=\count442
+\c@Gm@tempcnt=\count443
+\Gm@bindingoffset=\dimen358
+\Gm@wd@mp=\dimen359
+\Gm@odd@mp=\dimen360
+\Gm@even@mp=\dimen361
+\Gm@layoutwidth=\dimen362
+\Gm@layoutheight=\dimen363
+\Gm@layouthoffset=\dimen364
+\Gm@layoutvoffset=\dimen365
+\Gm@dimlist=\toks76
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 106.
+
+! LaTeX Error: Option clash for package tocloft.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.108 \renewcommand
+                   {\cftdot}{}
+The package tocloft has already been loaded with options:
+  []
+There has now been an attempt to load it with options
+  [titles]
+Adding the global options:
+  ,titles
+to your \documentclass declaration may fix this.
+Try typing  <return>  to proceed.
+
+ (/usr/share/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+))
+runsystem(which pygmentize && touch kommentar.aex)...executed.
+
+runsystem(rm kommentar.aex)...executed.
+
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 40
+.
+ (/usr/share/texmf-dist/tex/latex/psnfss/t1ppl.fd
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
+)
+(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count444
+\l__pdf_internal_box=\box88
+)
+
+LaTeX Warning: Unused global option(s):
+    [titlepage].
+
+ (./kommentar.aux)
+\openout1 = `kommentar.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count445
+\scratchdimen=\dimen366
+\scratchbox=\box89
+\nofMPsegments=\count446
+\nofMParguments=\count447
+\everyMPshowfont=\toks77
+\MPscratchCnt=\count448
+\MPscratchDim=\dimen367
+\MPnumerator=\count449
+\makeMPintoPDFobject=\count450
+\everyMPtoPDFconversion=\toks78
+)
+(/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package hyperref Info: Link coloring ON on input line 40.
+ (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+ (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count451
+LaTeX Info: Redefining \Ref on input line 520.
+)
+Redoing nameref's sectioning
+Redoing nameref's label
+LaTeX Info: Redefining \nameref on input line 40.
+LaTeX Info: Redefining \ref on input line 40.
+LaTeX Info: Redefining \pageref on input line 40.
+LaTeX Info: Redefining \nameref on input line 40.
+ (./kommentar.out) (./kommentar.out)
+\@outlinefile=\write7
+\openout7 = `kommentar.out'.
+
+LaTeX Info: Redefining \Ref on input line 40.
+
+(/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+ (/usr/share/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+\c@lstlisting=\count452
+\symgns@font=\mathgroup10
+LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
+(Font)                  TS1/ppl/m/n --> TS1/ppl/b/n on input line 40.
+Package gensymb Info: Math companion symbols declared on input line 40.
+LaTeX Info: Redefining \degree on input line 40.
+LaTeX Info: Redefining \celsius on input line 40.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
+erthousand on input line 40.
+LaTeX Info: Redefining \ohm on input line 40.
+Package gensymb Info: Using \textohm for \ohm on input line 40.
+Package gensymb Info: Using \textmu for \micro on input line 40.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+Package pdfcprot Info: I didn't find pplbnT1.cpa.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 40.
+
+ (/usr/share/texmf-dist/tex/latex/pdfcprot/pplmnT1.cpa)
+Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 4
+0.
+ (/usr/share/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+)
+Package pdfcprot Info: I didn't find pplbnTS1.cpa.
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 40
+.
+ (/usr/share/texmf-dist/tex/latex/pdfcprot/pplmnTS1.cpa)
+Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find pplbnT1.cpa.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 40.
+
+Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find pplbnTS1.cpa.
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 40
+.
+Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find pplbnT1.cpa.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 40.
+
+Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find pplbnTS1.cpa.
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 40
+.
+Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find pplbnT1.cpa.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 40.
+
+Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find pplbnTS1.cpa.
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 40
+.
+Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 4
+0.
+ (/usr/share/texmf-dist/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Package pdfcprot Info: I didn't find cmssbxnT1.cpa.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 40.
+
+Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
+40.
+ (/usr/share/texmf-dist/tex/latex/base/ts1cmss.fd
+File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Package pdfcprot Info: I didn't find cmssbxnTS1.cpa.
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 40
+.
+Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssbxnT1.cpa.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 40.
+
+Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssbxnTS1.cpa.
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 40
+.
+Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssbxnT1.cpa.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 40.
+
+Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssbxnTS1.cpa.
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 40
+.
+Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssbxnT1.cpa.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 40.
+
+Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssbxnTS1.cpa.
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 40
+.
+Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: File pplmnT1.cpa{} for the adjustment of
+(pdfcprot)             the char protruding used. It seems to be _fit_
+(pdfcprot)             to the font you requested. on input line 40.
+Package pdfcprot Info: File pplmnTS1.cpa{} for the adjustment of
+(pdfcprot)             the char protruding used. It seems to be _fit_
+(pdfcprot)             to the font you requested. on input line 40.
+Package pdfcprot Info: File pplmnT1.cpa{} for the adjustment of
+(pdfcprot)             the char protruding used. It seems to be _fit_
+(pdfcprot)             to the font you requested. on input line 40.
+Package pdfcprot Info: File pplmnTS1.cpa{} for the adjustment of
+(pdfcprot)             the char protruding used. It seems to be _fit_
+(pdfcprot)             to the font you requested. on input line 40.
+Package pdfcprot Info: File pplmnT1.cpa{} for the adjustment of
+(pdfcprot)             the char protruding used. It seems to be _fit_
+(pdfcprot)             to the font you requested. on input line 40.
+Package pdfcprot Info: File pplmnTS1.cpa{} for the adjustment of
+(pdfcprot)             the char protruding used. It seems to be _fit_
+(pdfcprot)             to the font you requested. on input line 40.
+Package pdfcprot Info: File pplmnT1.cpa{} for the adjustment of
+(pdfcprot)             the char protruding used. It seems to be _fit_
+(pdfcprot)             to the font you requested. on input line 40.
+Package pdfcprot Info: File pplmnTS1.cpa{} for the adjustment of
+(pdfcprot)             the char protruding used. It seems to be _fit_
+(pdfcprot)             to the font you requested. on input line 40.
+Package pdfcprot Info: I didn't find pplmitT1.cpa.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 40.
+
+Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find pplmitTS1.cpa.
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 40
+.
+Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find pplmitT1.cpa.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 40.
+
+Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find pplmitTS1.cpa.
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 40
+.
+Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find pplmitT1.cpa.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 40.
+
+Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find pplmitTS1.cpa.
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 40
+.
+Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find pplmitT1.cpa.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 40.
+
+Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find pplmitTS1.cpa.
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 40
+.
+Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssmnT1.cpa.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 40.
+
+Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssmnTS1.cpa.
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 40
+.
+Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssmnT1.cpa.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 40.
+
+Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssmnTS1.cpa.
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 40
+.
+Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssmnT1.cpa.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 40.
+
+Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssmnTS1.cpa.
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 40
+.
+Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssmnT1.cpa.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 40.
+
+Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssmnTS1.cpa.
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 40
+.
+Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssmitT1.cpa.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 40.
+
+Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssmitTS1.cpa.
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 40
+.
+Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssmitT1.cpa.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 40.
+
+Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssmitTS1.cpa.
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 40
+.
+Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssmitT1.cpa.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 40.
+
+Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssmitTS1.cpa.
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 40
+.
+Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssmitT1.cpa.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 40.
+
+Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssmitTS1.cpa.
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 40
+.
+Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssmslT1.cpa.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 40.
+
+Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssmslTS1.cpa.
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 40
+.
+Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssmslT1.cpa.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 40.
+
+Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssmslTS1.cpa.
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 40
+.
+Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssmslT1.cpa.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 40.
+
+Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssmslTS1.cpa.
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 40
+.
+Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssmslT1.cpa.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 40.
+
+Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+Package pdfcprot Info: I didn't find cmssmslTS1.cpa.
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 40
+.
+Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
+(pdfcprot)             of the char protruding. It seems that it isn't the one
+(pdfcprot)             you intended to use. on input line 40.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=674.33032pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-20.38553pt
+* \headheight=13.6pt
+* \headsep=19.8738pt
+* \topskip=11.0pt
+* \footskip=27.46295pt
+* \marginparwidth=101.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=12.0pt plus 4.0pt minus 4.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+! LaTeX Error: Environment titlepage undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43 \begin{titlepage}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: \begin{document} ended by \end{titlepage}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{titlepage}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./kommentar.toc
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 5
+.
+ (/usr/share/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
+5.
+ (/usr/share/texmf-dist/tex/latex/psnfss/omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
+5.
+ (/usr/share/texmf-dist/tex/latex/psnfss/omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
+5.
+ (/usr/share/texmf-dist/tex/latex/psnfss/omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 5.
+
+ (/usr/share/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 11.40997pt on input line 5.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 5.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 5.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 11.40997pt on input line 5.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 5.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 5.
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
+5.
+ (/usr/share/texmf-dist/tex/latex/psnfss/ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 5.
+
+ (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Trying to load font information for U+esvect on input line 
+5.
+ (/usr/share/texmf-dist/tex/latex/esvect/uesvect.fd
+File: uesvect.fd 
+)) [2]
+
+! LaTeX Error: Environment ABSTRACT undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 \begin{ABSTRACT}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--72
+
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 79
+.
+ (/usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+
+! LaTeX Error: \begin{document} ended by \end{ABSTRACT}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.93 \end{ABSTRACT}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+ [3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 146--156
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--167
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--181
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--189
+
+ []
+
+ [5
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 190--198
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--230
+
+ []
+
+ [6]
+Underfull \hbox (badness 10000) in paragraph at lines 244--248
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--287
+
+ []
+
+ [7]
+Underfull \hbox (badness 10000) in paragraph at lines 288--298
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 300--306
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 315--320
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--325
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 326--335
+
+ []
+
+ [8]
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 358.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 358.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 358.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 358.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 358.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 358.
+
+Underfull \hbox (badness 3884) in paragraph at lines 358--358
+[][] [][][]\T1/ppl/m/n/9 Tom Scott: Sin-gle Point of Fai-lu-re [][]$\T1/pcr/m/n
+/9 https : / / youtu . be / y4GB _ NDU43Q$[][]\T1/ppl/m/n/9 , her-un-ter-ge-la-
+den am
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--367
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 368--372
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--380
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 390--390
+[][] [][][]\T1/ppl/m/n/9 Fastcompany: Goo-gle ou-ta-ge [][]$\T1/pcr/m/n/9 https
+ : / / www . fastcompany . com / 90358396 /
+ []
+
+
+Overfull \hbox (18.40016pt too wide) in paragraph at lines 390--390
+\T1/pcr/m/n/9 that-[]major-[]google-[]outage-[]meant-[]some-[]nest-[]users-[]co
+uldnt-[]unlock-[]doors-[]or-[]use-[]the-[]ac$[][]\T1/ppl/m/n/9 ,
+ []
+
+ [9]
+Underfull \hbox (badness 10000) in paragraph at lines 399--412
+
+ []
+
+ [10]
+Underfull \hbox (badness 10000) in paragraph at lines 441--446
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--470
+
+ []
+
+ [11
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 477--490
+
+ []
+
+ [12]
+<websocket.png, id=179, 1489.565pt x 877.3713pt>
+File: websocket.png Graphic file (type png)
+<use websocket.png>
+Package pdftex.def Info: websocket.png  used on input line 562.
+(pdftex.def)             Requested size: 384.1096pt x 226.2369pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 563.
+See the caption package documentation for explanation.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13]
+Underfull \hbox (badness 10000) in paragraph at lines 571--585
+
+ []
+
+ [14 <./websocket.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 617--626
+
+ []
+
+ [15] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 671--671
+[][] [][][]\T1/ppl/m/n/9 Github: En-gi-ne: Ori-on Be-richt, [][]$\T1/pcr/m/n/9 
+https : / / github . com / EngineOrion / kommentar / blob /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 696--699
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 700--715
+
+ []
+
+ [17
+
+]
+\openout4 = `kommentar.pyg'.
+
+ (./_minted-kommentar/default-pyg-prefix.pygstyle) (./_minted-kommentar/default
+.pygstyle)
+(./_minted-kommentar/EFDF3D940619BD3EDD33F6BE38A00473A127FC44A6C53107EF74BCF8F8
+F4C943.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 729--738
+
+ []
+
+ [18]
+Underfull \hbox (badness 10000) in paragraph at lines 775--785
+
+ []
+
+\openout4 = `kommentar.pyg'.
+
+
+(./_minted-kommentar/98F27D23475FFFA880500DB9FF6595BEED0F09EF568C3EF2AD05837A25
+936D01.pygtex [19]) [20]
+\openout4 = `kommentar.pyg'.
+
+
+(./_minted-kommentar/61E4BC45E2446CDE45FC4AE4CFE4CDA5ED0F09EF568C3EF2AD05837A25
+936D01.pygtex [21])
+\openout4 = `kommentar.pyg'.
+
+
+(./_minted-kommentar/677A3EEDE9FFA6D22C45BF76F20F677AED0F09EF568C3EF2AD05837A25
+936D01.pygtex) [22] [23] [24
+
+] [25] [26]
+Underfull \hbox (badness 10000) in paragraph at lines 1026--1041
+
+ []
+
+ [27
+
+] [28
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1062--1074
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1076--1082
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1083--1089
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1090--1096
+
+ []
+
+ [29]
+Underfull \hbox (badness 10000) in paragraph at lines 1102--1102
+[][] [][][]\T1/ppl/m/n/9 Kademlia: Whi-te-pa-per: [][]$\T1/pcr/m/n/9 https : / 
+/ pdos . csail . mit . edu / ~petar / papers /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1104--1106
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1117--1127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1151--1155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1164--1164
+[][] [][][]\T1/ppl/m/n/9 Wikipedia: Ka-dem-lia [][]$\T1/pcr/m/n/9 https : / / e
+n . wikipedia . org / wiki / Kademlia$[][]\T1/ppl/m/n/9 , her-un-ter-ge-la-den 
+am:
+ []
+
+ [30]
+<tree.png, id=294, 421.575pt x 224.84pt>
+File: tree.png Graphic file (type png)
+<use tree.png>
+Package pdftex.def Info: tree.png  used on input line 1167.
+(pdftex.def)             Requested size: 359.47221pt x 191.72214pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1168.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1177--1184
+
+ []
+
+ [31 <./tree.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1225--1229
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1244--1249
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1250--1255
+
+ []
+
+ [32]
+Underfull \hbox (badness 10000) in paragraph at lines 1256--1262
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1263--1273
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1286--1286
+[][] [][][]\T1/ppl/m/n/9 BitTorrent: Main-li-ne DHT: [][]$\T1/pcr/m/n/9 https :
+ / / www . cs . helsinki . fi / u / lxwang / publications /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1298--1317
+
+ []
+
+ [33]
+Underfull \hbox (badness 10000) in paragraph at lines 1318--1331
+
+ []
+
+
+Underfull \vbox (badness 1354) has occurred while \output is active []
+
+ [34]
+Underfull \hbox (badness 10000) in paragraph at lines 1369--1373
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1374--1379
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1401--1419
+
+ []
+
+ [35] [36] [37] [38]
+Underfull \hbox (badness 10000) in paragraph at lines 1604--1610
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1611--1626
+
+ []
+
+ [39]
+Overfull \hbox (0.36342pt too wide) in paragraph at lines 1671--1673
+[]\T1/pcr/m/n/10.95 JSON\T1/ppl/m/n/10.95 : Men-schen-les-ba-res Datei- und Nac
+h-rich-ten-struk-tur für Ob-jek-te und Schlüssel-
+ []
+
+ [40]
+
+pdfTeX warning: pdflatex (file ./unterschrieben.pdf): PDF inclusion: found PDF 
+version <1.7>, but at most version <1.5> allowed
+<unterschrieben.pdf, id=364, 597.23125pt x 845.1575pt>
+File: unterschrieben.pdf Graphic file (type pdf)
+<use unterschrieben.pdf>
+Package pdftex.def Info: unterschrieben.pdf  used on input line 1706.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+
+
+pdfTeX warning: pdflatex (file ./unterschrieben.pdf): PDF inclusion: found PDF 
+version <1.7>, but at most version <1.5> allowed
+File: unterschrieben.pdf Graphic file (type pdf)
+<use unterschrieben.pdf>
+Package pdftex.def Info: unterschrieben.pdf  used on input line 1706.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+
+
+pdfTeX warning: pdflatex (file ./unterschrieben.pdf): PDF inclusion: found PDF 
+version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex (file ./unterschrieben.pdf): PDF inclusion: found PDF 
+version <1.7>, but at most version <1.5> allowed
+<unterschrieben.pdf, id=367, page=1, 597.23125pt x 845.1575pt>
+File: unterschrieben.pdf Graphic file (type pdf)
+<use unterschrieben.pdf, page 1>
+Package pdftex.def Info: unterschrieben.pdf , page1 used on input line 1706.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: unterschrieben.pdf Graphic file (type pdf)
+<use unterschrieben.pdf, page 1>
+Package pdftex.def Info: unterschrieben.pdf , page1 used on input line 1706.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [41]
+File: unterschrieben.pdf Graphic file (type pdf)
+<use unterschrieben.pdf, page 1>
+Package pdftex.def Info: unterschrieben.pdf , page1 used on input line 1706.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: unterschrieben.pdf Graphic file (type pdf)
+<use unterschrieben.pdf, page 1>
+Package pdftex.def Info: unterschrieben.pdf , page1 used on input line 1706.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: unterschrieben.pdf Graphic file (type pdf)
+<use unterschrieben.pdf, page 1>
+Package pdftex.def Info: unterschrieben.pdf , page1 used on input line 1706.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [42 <./unterschrieben.pdf>]
+<Orion_Vertrag_7.pdf, id=384, 597.23125pt x 845.1575pt>
+File: Orion_Vertrag_7.pdf Graphic file (type pdf)
+<use Orion_Vertrag_7.pdf>
+Package pdftex.def Info: Orion_Vertrag_7.pdf  used on input line 1707.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: Orion_Vertrag_7.pdf Graphic file (type pdf)
+<use Orion_Vertrag_7.pdf>
+Package pdftex.def Info: Orion_Vertrag_7.pdf  used on input line 1707.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+<Orion_Vertrag_7.pdf, id=387, page=1, 597.23125pt x 845.1575pt>
+File: Orion_Vertrag_7.pdf Graphic file (type pdf)
+<use Orion_Vertrag_7.pdf, page 1>
+Package pdftex.def Info: Orion_Vertrag_7.pdf , page1 used on input line 1707.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: Orion_Vertrag_7.pdf Graphic file (type pdf)
+<use Orion_Vertrag_7.pdf, page 1>
+Package pdftex.def Info: Orion_Vertrag_7.pdf , page1 used on input line 1707.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: Orion_Vertrag_7.pdf Graphic file (type pdf)
+<use Orion_Vertrag_7.pdf, page 1>
+Package pdftex.def Info: Orion_Vertrag_7.pdf , page1 used on input line 1707.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: Orion_Vertrag_7.pdf Graphic file (type pdf)
+<use Orion_Vertrag_7.pdf, page 1>
+Package pdftex.def Info: Orion_Vertrag_7.pdf , page1 used on input line 1707.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: Orion_Vertrag_7.pdf Graphic file (type pdf)
+<use Orion_Vertrag_7.pdf, page 1>
+Package pdftex.def Info: Orion_Vertrag_7.pdf , page1 used on input line 1707.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [43 <./Orion_Vertrag_7.pdf>]
+<Orion_Vertrag_7.pdf, id=424, page=2, 597.23125pt x 845.1575pt>
+File: Orion_Vertrag_7.pdf Graphic file (type pdf)
+<use Orion_Vertrag_7.pdf, page 2>
+Package pdftex.def Info: Orion_Vertrag_7.pdf , page2 used on input line 1707.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: Orion_Vertrag_7.pdf Graphic file (type pdf)
+<use Orion_Vertrag_7.pdf, page 2>
+Package pdftex.def Info: Orion_Vertrag_7.pdf , page2 used on input line 1707.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: Orion_Vertrag_7.pdf Graphic file (type pdf)
+<use Orion_Vertrag_7.pdf, page 2>
+Package pdftex.def Info: Orion_Vertrag_7.pdf , page2 used on input line 1707.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [44 <./Orion_Vertrag_7.pdf>]
+<Orion_Vertrag_7.pdf, id=430, page=3, 597.23125pt x 845.1575pt>
+File: Orion_Vertrag_7.pdf Graphic file (type pdf)
+<use Orion_Vertrag_7.pdf, page 3>
+Package pdftex.def Info: Orion_Vertrag_7.pdf , page3 used on input line 1707.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: Orion_Vertrag_7.pdf Graphic file (type pdf)
+<use Orion_Vertrag_7.pdf, page 3>
+Package pdftex.def Info: Orion_Vertrag_7.pdf , page3 used on input line 1707.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: Orion_Vertrag_7.pdf Graphic file (type pdf)
+<use Orion_Vertrag_7.pdf, page 3>
+Package pdftex.def Info: Orion_Vertrag_7.pdf , page3 used on input line 1707.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [45 <./Orion_Vertrag_7.pdf>]
+<Orion_Vertrag_7.pdf, id=436, page=4, 597.23125pt x 845.1575pt>
+File: Orion_Vertrag_7.pdf Graphic file (type pdf)
+<use Orion_Vertrag_7.pdf, page 4>
+Package pdftex.def Info: Orion_Vertrag_7.pdf , page4 used on input line 1707.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: Orion_Vertrag_7.pdf Graphic file (type pdf)
+<use Orion_Vertrag_7.pdf, page 4>
+Package pdftex.def Info: Orion_Vertrag_7.pdf , page4 used on input line 1707.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: Orion_Vertrag_7.pdf Graphic file (type pdf)
+<use Orion_Vertrag_7.pdf, page 4>
+Package pdftex.def Info: Orion_Vertrag_7.pdf , page4 used on input line 1707.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [46 <./Orion_Vertrag_7.pdf>]
+<Orion_Vertrag_7.pdf, id=442, page=5, 597.23125pt x 845.1575pt>
+File: Orion_Vertrag_7.pdf Graphic file (type pdf)
+<use Orion_Vertrag_7.pdf, page 5>
+Package pdftex.def Info: Orion_Vertrag_7.pdf , page5 used on input line 1707.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: Orion_Vertrag_7.pdf Graphic file (type pdf)
+<use Orion_Vertrag_7.pdf, page 5>
+Package pdftex.def Info: Orion_Vertrag_7.pdf , page5 used on input line 1707.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: Orion_Vertrag_7.pdf Graphic file (type pdf)
+<use Orion_Vertrag_7.pdf, page 5>
+Package pdftex.def Info: Orion_Vertrag_7.pdf , page5 used on input line 1707.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [47 <./Orion_Vertrag_7.pdf>]
+<Orion_Vertrag_7.pdf, id=448, page=6, 597.23125pt x 845.1575pt>
+File: Orion_Vertrag_7.pdf Graphic file (type pdf)
+<use Orion_Vertrag_7.pdf, page 6>
+Package pdftex.def Info: Orion_Vertrag_7.pdf , page6 used on input line 1707.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: Orion_Vertrag_7.pdf Graphic file (type pdf)
+<use Orion_Vertrag_7.pdf, page 6>
+Package pdftex.def Info: Orion_Vertrag_7.pdf , page6 used on input line 1707.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: Orion_Vertrag_7.pdf Graphic file (type pdf)
+<use Orion_Vertrag_7.pdf, page 6>
+Package pdftex.def Info: Orion_Vertrag_7.pdf , page6 used on input line 1707.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [48 <./Orion_Vertrag_7.pdf>]
+\tf@thm=\write8
+\openout8 = `kommentar.thm'.
+
+\tf@toc=\write9
+\openout9 = `kommentar.toc'.
+
+ (./kommentar.aux)
+Package rerunfilecheck Info: File `kommentar.out' has not changed.
+(rerunfilecheck)             Checksum: F53D241D13592E06C2ED3DDE24E7C3FC;1832.
+runsystem(rm kommentar.pyg)...executed.
+
+ )
+(\end occurred when \iftrue on line 40 was incomplete)
+(\end occurred when \ifx on line 805 was incomplete)
+(\end occurred when \iftrue on line 805 was incomplete)
+(\end occurred when \ifx on line 805 was incomplete)
+(\end occurred when \ifx on line 805 was incomplete)
+(\end occurred when \ifx on line 43 was incomplete) 
+Here is how much of TeX's memory you used:
+ 34229 strings out of 478994
+ 587107 string characters out of 5864751
+ 1165660 words of memory out of 5000000
+ 50829 multiletter control sequences out of 15000+600000
+ 471630 words of font info for 177 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 92i,17n,125p,1058b,654s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts
+/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super
+-t1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/
+public/cm-super/sfss0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super
+/sfss1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb><
+/usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texm
+f-dist/fonts/type1/public/cm-super/sfsx2074.pfb></usr/share/texmf-dist/fonts/ty
+pe1/urw/courier/ucrb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8
+a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/te
+xmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-dist/fonts/type1
+/urw/palatino/uplri8a.pfb>
+Output written on kommentar.pdf (48 pages, 533231 bytes).
+PDF statistics:
+ 528 PDF objects out of 1000 (max. 8388607)
+ 431 compressed objects within 5 object streams
+ 117 named destinations out of 1000 (max. 500000)
+ 18672 words of extra memory for PDF output out of 20736 (max. 10000000)
+

@@ -1,6 +1,7 @@
 #+TITLE: Abstract
 #+OPTIONS: toc:nil title:nil date:nil
 
+*Abstract*\\
 \noindent Wir leben in einer bequemen Welt. Das wollen wir wenigstens
 glauben. In Wahrheit leben wir aber in einer idyllischen Illusion. Die
 unglaublichen Veränderungen unserer Gesellschaft und unseres Alltags
@@ -9,11 +10,11 @@ Geschwindigkeit der Fortschritte hat noch nie gesehene Mengen an
 Wohlstand und Reichtum geschaffen. Doch im Rausch des Wandels wurden
 gewisse Entscheidungen, manche bewusst und böswillig, andere aus Not,
 getroffen, welche uns in unserer modernen, vom Internet vollständig
-abhängigen, Gesellschaft in eine prekäre Situation bringen. Die
+abhängigen Gesellschaft in eine prekäre Situation bringen. Die
 tiefsten Fundamente der Welt, wie wir sie kennen, sind dem totalen
-Zusammenbruch gefährlich nahe, und was das System am Laufen hält sind
+Zusammenbruch gefährlich nahe, und was das System am Laufen hält, sind
 oftmals monopolistische Megaunternehmen und ihre ungewählten CEO's,
-die nur von der Weltherrschaft träumen.\\
+die nur von immer mehr Macht, mehr Einfluss und mehr Nutzern träumen.\\
 
 \noindent Es ist offensichtlich, dass eine Alternative her muss. Aber
 während verschiedenste Projekte bereits grosse Fortschritte in den
@@ -21,18 +22,17 @@ Bereichen der dezentralen Kommunikation und Datenspeicherung machen,
 bleiben oftmals die Nutzer aus. Denn trotz aller Innovation und aller
 Vorteile geht es hier um äusserst abstrakte, komplexe Themen, welche
 Unmengen an Vorwissen und Interesse benötigen, um sie genügend zu
-verstehen. =Project Orion= versucht genau da anzusetzen: Nebst einem
-dezentralen Kommunikationssystem sollen auch verschiedene, praktisch
-einsetzbare Anwendungen die Prinzipien dezentraler Systeme in die
-Hände der Endnutzer bringen und dort einen sichtbaren, verständlichen
-Unterschied machen. Besonders dafür wurde ein 3D multiplayer
-Videospiel entwickelt, welches basierend auf einem eigenen dezentralen
-Kommunikationsprotokoll die gewohnte Erfahrung bekannter Videospiele
-liefern soll, ohne dabei in die Fänge der Megaunternehmen zu geraten.
+verstehen. =Project Orion= versucht genau da anzusetzen: Ein dezentrales
+Kommunikationssystem soll verschiedene, praktisch einsetzbare
+Anwendungen dezentraler Systeme in die Hände der Endnutzer bringen und
+dort einen sichtbaren, verständlichen Unterschied machen. Besonders
+dafür wurde ein 3D Multiplayer Videospiel entwickelt, welches
+basierend auf einem eigenen dezentralen Kommunikationsprotokoll, die
+gewohnte Erfahrung bekannter Videospiele liefern soll, ohne dabei in
+die Fänge der Megaunternehmen zu geraten.
 
-\noindent Zusätzlich werden die Entwickelten Werkzeuge mit ihren
+\noindent Zusätzlich werden die entwickelten Werkzeuge mit ihrer
 Dokumentation und unseren Erfahrungen und Lektionen öffentlich zur
 Verfügung gestellt, sodass zukünftige Projekte davon profitieren
-können und die Einsteigshürde für das Gebiet der dezentralen
+können und die Einstiegshürde für das Gebiet der dezentralen
 Datensysteme hoffentlich gesenkt wird.
-

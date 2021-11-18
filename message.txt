@@ -1,0 +1,228 @@
+*** Arrow
+Arrow ist eine weitere Demo, die aus der Anfangszeit des Projektes
+stammt. Arrow ist eine Lisp ähnliche Sprache, welche es erlaubt mit
+einfachen intepretierten Befehlen das Actaeon Framework zu nutzen. Wie
+auch die anderen Projekte ist Arrow auch komplett in Rust geschrieben
+und hat mit der Zeit einige Veränderungen durchgemacht.\\
+
+\noindent Arrow kann über eine interaktive Shell direkt genutzt werden,
+oder durch das angeben einer Datei auch Programme ausführen.\\
+
+\noindent Wie alle anderen Teile von Project Orion kann man Arrow über
+Github beziehen. Um Arrow zu nutzen braucht man =Rustup= und =Git=. Danach
+findet alles im Terminal statt:
+
+#+begin_src sh
+$ git clone https://github.com/EngineOrion/arrow
+$ cd arrow
+$ cargo run --release
+#+end_src
+
+**** Implementierung
+Arrow ist wie alle anderen Teile der Arbeit in Rust implementiert.
+Arrow ist eine Lisp ähnliche Sprache, welche direkten Zugriff auf die
+Actaeon Bibliothek hat.\\
+
+\noindent Arrow nimmt einen String entgegen und baut daraus einen AST
+(Abstract Syntax Tree). Anschliessend wird aus jedem einzelnen Knoten
+des AST ein =LispObject= generiert. Diese Lispobjekte werden
+anschliessend im in der gleichen Struktur untereindander verbunden.
+Somit wird aus vielen komplexen ein Objekt, über welches das Programm
+ausgeführt werden kann.\\
+
+\noindent Wenn das Programm ausgeführt wird, wird der erste Knoten
+aufgerufen. Wenn dieser abhängig ist von Daten, die dieser nicht lokal
+hat, ruft er seine Kinder auf und bekommt Daten von diesen. Wenn ein
+Knoten alle Daten hat gibt er Daten zurück, was sich anschliessend den
+Baum wieder nach oben arbeitet. Schlussendlich hat auch der letzte
+Knoten alle Daten und es wird ein Rückgabewert an den Aufrufer
+zurückgegeben.\\
+
+**** Beispiel
+Das folgende ist ein Beispiel für ein Arrow Programm:
+
+#+begin_src lisp
+(defun greet ()
+    (message "Hello World"))
+
+(greet)
+#+end_src
+
+\noindent Hier produziert Arrow drei Objekte. Das erste ist ein
+=message= Objekt und ist ein Kind von dem =defun= Objekt. Das letzte ruft
+das =defun= Objekt auf. Das =defun= Objekt ist ruft seine Kinder auf, was
+in diesem Fall das =message= Objekt ist. Das =message= Objekt hat keine
+Kinder, weshalb es seine Funktion ausfüht. Das heisst, dass den ersten
+Parameter ="Hello World"= in der Konsole ausgibt. Da =message= nichts
+zurückzugeben hat, aber verpflichtet ist etwas zurückzugeben, gibt es
+=nil= zurück. Wenn man es mit anderen Programmiersprachen vergleichen
+will ist =nil= eine Kombination aus =null= und =false=.
+
+** Orion
+Orion ist die zentrale Anwendung, welche die Möglichkeiten von Actaeon
+aufzeigen soll. Orion ist ein 3D Spiel, in welchem man ein Flugzeug
+fliegt und versucht mehr Punkt zu machen als der Gegner. Punkte werden
+vergeben, wenn das Flugzeug durch Ringe gesteuert wird. Diese Demo
+trägt denselben Namen wie das Projekt, da es die zentrale Demo ist. \\
+
+\noindent Orion ist komplett in der Rust Programmiersprache
+geschrieben und baut auf dem Bevy Framework auf. Bevy ist ein sehr
+neues Framework, welches die 3D programmierung vereinfacht, da es
+grundlegende Komponente wie Oberflächen und Formen zur verfügung
+stellt.
+
+*** Integration von Actaeon
+\noindent Die Integration von Actaeon in Orion stellte sich als ein
+kleines Problem heraus, da die Daten von Bevy verwaltet werden. Dies
+ist vonnöten, da die Funktionen, welche das Game defininieren von =Bevy=
+aufgerufen werden. Damit dies aber mit den Daten von Actaeon
+funktioniert, muss Actaeonn Eigenschaften besitzen, welche das Crate
+nicht hat.
+
+#+begin_src rust
+#[derive(Component)]
+pub struct Network {
+    center: Center,
+    interface: Mutex<Interface>,
+    topic: Option<Mutex<Topic>>,
+}
+#+end_src
+
+\noindent Die Lösung für dieses Problem ist ein Wrapper um Actaeon,
+welcher die Daten isoliert. Dieser Wrapper kann nun auch die
+Eigenschaften haben, um sie von =Bevy= verwalten zu lassen.\\
+
+*** Bevy
+Bevy ist eine neue und intuitive Bibliothek, die besonders
+für die Programmierung von Games ausgelegt ist. =Bevy= nimmt einen
+anderen Ansatz als andere Bibliotheken, denn normalerweise ist der
+Entwickler dafür zuständig, dass die Daten richtig verwaltet und die
+Funktionen richtig aufgerufen werden. Diese Last nimmt =Bevy= dem
+Programmierer ab und erleichtert es neue Funktionen hinzuzufügen.\\
+
+\noindent Dieser neue Ansatz nennt Bevy =ECS=, was kurz für Entity
+Component System steht. Die Daten sind die Komponenten und die
+Funktionen sind die Systeme. Sie beide werden von =Bevy= verwaltet und
+aufgerufen. Dieser Ansatz hat mehrere Vorteile.
+
+1. Die Daten sind global verfügbar. Jede Funktion, welche von =Bevy=
+   aufgerifen wird, hat theoretisch die Möglichkeit auf die Daten
+   zuzugreiffen.
+2. Es ist einfacher den Code lesbar und erweiterbar zu halten, da bei
+   gebrauch einfach eine neue Funktion an =Bevy= übergeben werden kann.
+3. Durch die Trennung der einzelnen Funktionen und Daten kann =Bevy=
+   viele Funktionen gleichzeitig ausführen und somit effizienter die
+   Ressourcen der Hardware ausnutzen.
+
+\noindent =Bevy= stellt nur wenig zur verfügung, aber durch ein einfaches
+Plugin System können Bibliotheken von anderen einfach in andere
+Projekte integriert werden.\\
+
+\noindent Um ECS ein bisschen besser zu beleuchten, zeigt das folgende
+Beispiel, wie einfach die Daten- und Funktionsverwaltung in =Bevy= ist.
+
+#+begin_src rust
+#[derive(Component)]
+struct Person {
+    name: String,
+}
+#+end_src
+
+\noindent Dieses Datenstruktur ist wie man an der ersten Codezeile
+erkennen kann eine Komponente. Mit dem =derive(Componet)= wird =Bevy=
+mitgeteilt, dass die folgende Datenstruktur an einem gewissen Punkt
+von =Bevy= verwaltet wird. Die Daten können über die =Commands= an =Bevy=
+übergeben werden.
+
+#+begin_src rust
+fn setup(mut commands: Commands) {
+    commands.spawn_bundle(()).insert(Person { name: "Linus" });
+}
+#+end_src
+
+\noindent In dieser Funktion/System macht =Bevy= platz um eine Instanz des
+Personenstructs zu speichern. Das bedeutet allerdings, das der
+Programmierer nicht weiss, wo sich diese Daten befinen. Die Daten
+werden komplett von =Bevy= verwaltet. Die Daten können allerdings wieder
+angefordert werden.
+
+#+begin_src rust
+fn get_persons(person_query: Query<&Person>) {
+    for person in person_query.iter() {
+	println!("{}", person.name);
+    }
+}
+#+end_src
+
+\noindent Diese Funktion/System nimmt ein =Query= struct als Parameter,
+welches =Bevy= signalisiert, dass alle Personen, die =Bevy= registriert
+hat von dieser Funktion gebraucht werden. Es ist allerdings nicht
+klar, wieviele Personen registriert sind, weshalb das =Query= struct in
+einen Iterator verwandelt werden kann. Das heisst, dass man durch alle
+Einträge geht und diese einzeln verarbeitet.\\
+
+\noindent Bisher wurden ausschliesslich Funktionen und Daten
+definiert, aber noch keine Hauptfunktion, welche die Daten und
+Funktionen auch braucht. Hierbei unterscheidet sich Bevy von anderen
+Frameworks, denn die Funktionen werden nicht vom Programmierer
+aufgerufen, sondern der Entwickler übergibt die Funktionen an =Bevy= und
+dieses ruft die Funktionen auf.
+
+#+begin_src rust
+use bevy::prelude::*;
+
+fn main() {
+    App::new()
+	.add_startup_system(setup)
+	.add_system(get_person)
+	.run()
+}
+#+end_src
+
+*** Performance
+Orion ist ein Prototyp. Die Performance lässt zum aktuellen Zeitpunkt
+zu wünschen übrig. Eine angenehme Sichtweite ist nur mit starker
+Hardware zu erreichen.\\
+
+\noindent Performanceprobleme lassen sich auf ein zentrales Problem
+reduzieren. Das Chunksystem. Die Welt ist in verschiedene Teile
+unterteilt, welche nach und nach geladen werden. Welche Chunks geladen
+sind hängt von der Spielerposition ab. Wenn sich der Spieler allerdings
+bewegt, heisst das, dass andere Teile der Welt geladen werden müssen.\\
+
+\noindent In einer perfekt optimierten Version wäre jeder Chunk ein
+Mesh. Das heisst, das der Chunk für die Hardware ein Teil ist und auch
+als solches behandelt werden kann. Die Hardware kann allerdings nur
+mit Dreiecken umgehen, weshalb der quadratische Chunk mit seinen
+Unebenheiten aus hunderten bis tausenden Dreiecken bestehen muss.
+Nebst dem Mesh braucht der Chunk ausserdem noch eine Oberfläche. Die
+Oberfläche besteht aus verschiedenen Farben, weshalb die Textur
+erstellt werden muss und anschliessend auf das Mesh gezogen werden
+muss. Wenn die Welt vorgefertigt wäre und nich prozedural generiert,
+könnte man die Texturen generieren und anschliessend, wenn es
+gebraucht wird, von einer Datei geladen werden.\\
+
+\noindent Die aktuelle Implementierung nutzt fast dieses Technik, mit dem
+Unterschied, dass zwei Dreiecke zu einem Quadrat zusammengesetzt
+werden. Diese Dreiecke können nun im Raum platziert werden und mit
+einer einzigen Farbe ausgefüllt werden.\\
+
+\noindent Die Performanceprobleme treten allerdings erst auf, wenn ein
+Chunk entladen und ein anderer geladen werden muss. Da ein Chunk aus
+mehrern hunderten bis tausenden Teilen besteht, muss jedes einzelne
+Objekt separat entladen werden. Der neue Chunk verschlechtert die
+Performance zusätzlich, da dieser aufgebaut werden muss und hunderte
+neue Objekte im Raum platzieren.\\
+
+*** Zeitmanagement
+Ursprünglich war definiert, dass das 3D Game ohne Game Engine
+entstehen soll. Es stellte sich allerdings schnell heraus, dass das in
+dieser Zeit nich möglich war.\\
+
+\noindent Die heutigen 3D Pipelines sind sehr komplex, was zur Folge
+hat, dass man ein breites Wissen und viel Erfahrung haben muss um ein
+solches Vorhaben umzusetzen.\\
+
+\noindent Das finale Resultat nutzt eine 3D Engine, allerdings
+versucht es diese so wenig wie möglich zu nutzen und die wichtigsten
+Funktionen ohne diese zu implementieren.
