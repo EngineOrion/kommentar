@@ -66,7 +66,7 @@ es in der Verantwortung jeder neuen Generation auf diesem Planeten,
 mit den unglaublichen Möglichkeiten richtig umzugehen und die Vielzahl
 an bevorstehenden Katastrophen und Gefahren zu navigieren.
 
-\noindent Ohne das Internet wäre die Welt wie wir sie kennen, nicht
+\noindent Ohne das Internet wäre die Welt, wie wir sie kennen, nicht
 möglich. Unsere Arbeit, Kommunikation und unser Entertainment sind
 nicht einfach nur abhängig von der enormen Interkonnektivität des
 Internets, ohne sie würden ganze Industrien und Bereiche unser
@@ -197,11 +197,11 @@ sind.
 Das Internet erlaubt einfache, standardisierte Kommunikation zwischen
 Geräten aller Art. Egal welche Funktion oder Form sie auch haben
 mögen, es braucht nicht viel, um ein Gerät mit dem Internet zu
-verbinden. Nebst den benötigten Protokollen, hauptsächlich =TCP= und =UDP=
-wird eine =IP-Adresse= als eindeutige Identifikation benötigt. Während
-vor dreissig Jahren wunderbare Systeme und Standards geschaffen wurden,
-welche seither die Welt grundlegend verändert haben, gibt es doch
-einige fundamentale Probleme und Limitierungen.
+verbinden. Nebst den benötigten Protokollen, hauptsächlich =TCP= und
+=UDP=, wird eine =IP-Adresse= als eindeutige Identifikation benötigt.
+Während vor dreissig Jahren wunderbare Systeme und Standards
+geschaffen wurden, welche seither die Welt grundlegend verändert
+haben, gibt es doch einige fundamentale Probleme und Limitierungen.
 *** IP-V4
 \noindent \(4'294'967'296\). So viele =IP-V4=-Adressen wird es jemals
 geben. [[cite:&RFC0791]] IP-V4-Adressen werden für jedes Gerät benötigt,
@@ -210,11 +210,11 @@ Identifizierung. Aktuell wird die vierte Version (V4) verwendet. In
 einer Wirtschaft, in der unendliches Wachstum als letzte absolute
 Wahrheit geblieben ist, kann ein solch hartes Limit verheerende Folgen
 haben. Besonders wenn die limitierte Ressource so unendlich zentral
-für unser aller Leben ist wie nichts Anderes. Mit =IP-V6= wird zurzeit
+für unser aller Leben ist, wie nichts Anderes. Mit =IP-V6= wird zurzeit
 eine Alternative angeboten, die solche Limitierungen nicht hat. Aber
 der Wechsel ist eine freiwillige Entscheidung, für die nicht nur alle
 Betroffenen bereit sein müssen, sondern für die auch jede einzelne
-involvierte Komponente diese neue Technologie unterstützen muss.
+involvierte Komponente dies neue Technologie unterstützen muss.
 
 \noindent Für jeden Einzelnen kann dies verschiedene Konsequenzen
 haben:
@@ -239,12 +239,11 @@ Baum-Struktur/ vorstellen:
   Endpunkte gleich, auch wenn manche für Konsumenten als /Server/
   gelten.
 - Die Verzweigungen und Knotenpunkte über den Blättern, dort wo sich
-  Äste aufteilen, stellen /Router/ und Switches dar. Hier geht es
-  allerdings nicht um Geräte, die sich in einem persönlichen Setup
-  oder einem normalen Haushalt finden. Mit Switches sind die
-  Knotenpunkte (=POP-Switches=) der Internet-Anbieter gemeint. Diese
-  teilen eingehende Datenströme auf und leiten die richtigen Daten
-  über die richtigen Leitungen.
+  Äste aufteilen, stellen /Router/ und Switches dar. Hier geht es nicht
+  um Geräte, die sich in einem persönlichen Setup oder einem normalen
+  Haushalt finden. Mit Switches sind die Knotenpunkte (=POP-Switches=)
+  der Internet-Anbieter gemeint. Diese teilen eingehende Datenströme
+  auf und leiten die richtigen Daten über die richtigen Leitungen.
 - Ganz oben findet sich der Stamm. Während ein normaler Baum natürlich
   nur einen Stamm hat, finden sich in der Infrastruktur des Internets
   aus Zuverlässigkeitsgründen mehrere. Von diesen =Zentralroutern= gibt
@@ -252,12 +251,11 @@ Baum-Struktur/ vorstellen:
   Problem.
 
 \noindent Die Zentralrouter kümmern sich nicht um einzelne Adressen,
-sondern u Abschnitte von Adressen, auch =Address Spaces= genannt.
-[[cite:&IPAddressSpaces]] An den zentralen Knotenpunkten geht es also
-nicht um einzelne Server oder Geräte, zu dem etwas gesendet werden
-muss, stattdessen wird eher entschieden, ob gewisse Daten
-beispielsweise von Frankfurt a. M. aus nach Ost- oder Westeuropa
-geschickt werden müssen.
+sondern um Abschnitte von Adressen, auch =Address Spaces= genannt.
+[[cite:&IPAddressSpaces]] An den zentralen Knotenpunkten geht es nicht um
+einzelne Server oder Geräte, zu denen etwas gesendet werden muss,
+stattdessen wird eher entschieden, ob gewisse Daten beispielsweise von
+Frankfurt a. M. aus nach Ost- oder Westeuropa geschickt werden müssen.
 
 \noindent Im Laufe der Jahre wurden die grossen Abschnitte von
 Adressen immer weiter aufgeteilt. Internet-Anbieter und grosse Firmen
@@ -291,11 +289,11 @@ Umsatz, sowohl für Firmen als auch für Anbieter, optimieren.
 Markt. Aber damit lassen sich lediglich Konsumenten zu Käufen
 überzeugen oder davon abbringen. Wenn man dies mit dem tatsächlichen
 Potential in diesen Daten vergleicht, merkt man schnell, wie viel noch
-möglich ist. Denn die Daten die sich täglich über uns im Internet
+möglich ist. Denn die Daten, die sich täglich über Nutzer im Internet
 anhäufen, zeigen mehr als unser Kaufverhalten. Von
-Echtzeit-Positionsupdates, Anrufen und Suchanfragen bis hin zu privaten
-Chats und unseren tiefsten Geheimnissen, sind wir meist überraschend
-unvorsichtig im Umgang mit digitalen Werkzeugen.
+Echtzeit-Positionsupdates, Anrufen und Suchanfragen bis hin zu
+privaten Chats und unseren tiefsten Geheimnissen, sind Nutzer meist
+überraschend unvorsichtig im Umgang mit digitalen Werkzeugen.
 
 \noindent Während man davon ausgehen muss, dass Firmen, deren
 Haupteinnahmequelle Werbungen ist, unsere Daten sammeln und verkaufen,
@@ -350,9 +348,9 @@ mehr anpassen könnten [[cite:&GoogleNestOutage]], das Netz aus internen
 Verbindungen zwischen Firmen ist komplex und undurchschaubar. Und das
 nicht nur für die Entnutzer, da oftmals die Firmen selbst von
 kleinsten Problemen anderer Dieste überrascht werden können. Der
-wirtschaftliche Schaden solcher Ausfälle ist unvorstellbar, aber noch
-wichtiger muss die zerstörende Wirkung dieser unvorhergesehenen,
-scheinbar entfernten Problemen auf Millionen von Menschen bedacht
+wirtschaftliche Schaden solcher Ausfälle ist unvorstellbar, aber als
+noch wichtiger muss die zerstörende Wirkung dieser unvorhergesehenen,
+scheinbar entfernten Problemen auf Millionen von Menschen angesehen
 werden.
 ** Kademlia
 Tatsächlich existieren bereits Ansätze, um gegen die angesprochen
@@ -391,40 +389,39 @@ Während dies für kleinere Systeme gut funktioniert und vergleichbare
 Geschwindigkeiten liefert, skaliert es nicht so einfach für grosse
 Systeme. Genau dafür gibt es die XOR-Metrik.
 *** Distanz
-     Die XOR-Funktion, die in der Informatik an den verschiedensten
-     Orten auftaucht, wird verwendet, um die Distanz zwischen zwei
-     Zahlen zu berechnen. Die Zahlen repräsentieren dabei Mitglieder
-     im Netzwerk und sind je nach Variante im Bereich
-     \(0..2^{160}\)(/20 Bytes/) oder \(0..2^{256}\)(/32 Bytes/). Mit einem
-     so grossen Bereich lässt sich auch das Problem der limitierten
-     =IP-Adressen= lösen. Auch wenn es kein tatsächlich unlimitiertes
-     System ist, so gibt es doch mehr als genug Adressen.\\
+Die XOR-Funktion, die in der Informatik an den verschiedensten
+Orten auftaucht, wird verwendet, um die Distanz zwischen zwei
+Zahlen zu berechnen. Die Zahlen repräsentieren dabei Mitglieder
+im Netzwerk und sind je nach Variante im Bereich
+\(0..2^{160}\)(/20 Bytes/) oder \(0..2^{256}\)(/32 Bytes/). Mit einem
+so grossen Bereich lässt sich auch das Problem der limitierten
+=IP-Adressen= lösen. Auch wenn es kein tatsächlich unlimitiertes
+System ist, so gibt es doch mehr als genug Adressen.
 
-     \noindent Wenn mit XOR-Funktionen einfach die Distanz zwischen
-     zwei Zahlen berechnet wird, stellt sich die Frage, wieso nicht
-     einfach die Differenz verwendet wird. Um dies zu beantworten,
-     muss man sich die Eigenschaften der XOR-Funktion etwas genauer
-     anschauen:
-
-     1. \(xor(x, x) = 0\): Das Mitglied mit seiner eigenen Adresse ist
-        zu sich selbst am nächsten. Mitglieder werden hier als Namen
-        für Server in einem Kademlia-System verwendet.
-     2. \(xor(x, y) > 0\) wenn \(x \neq y\): Die Funktion produziert nie
-        negative Zahlen und nur mit zwei identischen Parametern kann
-        man \(0\) erhalten.
-     3. \(xor(x, y) = xor(y, x)\): Die Reihenfolge der Parameter spielt
-        keine Rolle.
-     4. \(xor(x, z) \leq xor(x, y) + xor(y, z)\): Die direkte Distanz
-        zwischen zwei Punkten ist am kürzesten oder gleich kurz wie
-        die Distanz mit einem zusätzlichen Schritt dazwischen, also
-        einem weiteren Sprung im Netzwerk.
-     5. Für ein gegebenes \(x\) und eine Distanz \(l\) gibt es nur
-        genau ein \(y\) für das \(xor(x, y) = l\) gilt.
+\noindent Wenn mit XOR-Funktionen einfach die Distanz zwischen
+zwei Zahlen berechnet wird, stellt sich die Frage, wieso nicht
+einfach die Differenz verwendet wird. Um dies zu beantworten,
+muss man sich die Eigenschaften der XOR-Funktion etwas genauer
+anschauen:
+1. \(xor(x, x) = 0\): Das Mitglied mit seiner eigenen Adresse ist zu
+   sich selbst am nächsten. Mitglieder werden hier als Namen für
+   Server in einem Kademlia-System verwendet.
+2. \(xor(x, y) > 0\) wenn \(x \neq y\): Die Funktion produziert nie
+   negative Zahlen und nur mit zwei identischen Parametern kann man
+   \(0\) erhalten.
+3. \(xor(x, y) = xor(y, x)\): Die Reihenfolge der Parameter spielt
+   keine Rolle.
+4. \(xor(x, z) \leq xor(x, y) + xor(y, z)\): Die direkte Distanz
+   zwischen zwei Punkten ist am kürzesten oder gleich kurz wie die
+   Distanz mit einem zusätzlichen Schritt dazwischen, also einem
+   weiteren Sprung im Netzwerk.
+5. Für ein gegebenes \(x\) und eine Distanz \(l\) gibt es nur genau
+   ein \(y\) für das \(xor(x, y) = l\) gilt.
 
 \noindent Aber wieso genau funktioniert dies? Wieso kann man XOR, eine
 Funktion zur Berechnung der Bit-Unterschiede in zwei Binärzahlen,
 verwenden, um die Distanz zwischen zwei Punkten in einem verteilten
-Datensystem zu berechnen?\\
+Datensystem zu berechnen?
 
 \noindent Um dies zu verstehen, hilft es, sich das System als
 umgekehrten Baum vorzustellen. Untergeordnet zum zentralen Punkt
@@ -433,9 +430,9 @@ Teilbäume halbiert sich die Anzahl. Man wählt am einfachsten zwei
 Abzweigungen pro Knoten, da sich damit die Werte direkt als
 Binärzahlen darstellen lassen, wobei jeder Knotenpunkt einfach eine
 Stelle in der langen Kette aus \(0\) oder \(1\) darstellt. Der ganze
-Baum sieht dann wie folgt aus[fn:3]:
+Baum sieht dann wie folgt aus:
 
-#+CAPTION: Beispielhafte Darstellung eines einfachen Kademlia-Systems
+#+CAPTION: Beispielhafte Darstellung eines einfachen Kademlia-Systems, Wikipedia: https://en.wikipedia.org/wiki/Kademlia,
 #+ATTR_LATEX: :float nil
      [[file:tree.png]]
 
@@ -458,11 +455,10 @@ dieser Liste, sowie der XOR-Metrik ans richtige Ziel geschickt. Um das
 System zu optimieren und die Anzahl der benötigten Sprünge klein zu
 halten, wird ein spezielles System verwendet, um zu entscheiden,
 welche Mitglieder im Routing-Table gespeichert werden sollen:
-
-     1. Sehr nahe an sich selbst (in der obigen Darstellung also:
-        wenige Sprünge im Baum) werden alle Mitglieder gespeichert.
-     2. Je weiter weg sich die Mitglieder befinden, desto weniger
-        werden gespeichert.
+1. Sehr nahe an sich selbst (in der obigen Darstellung also: wenige
+   Sprünge im Baum) werden alle Mitglieder gespeichert.
+2. Je weiter weg sich die Mitglieder befinden, desto weniger werden
+   gespeichert.
 
 \noindent Die optimale Anzahl der gespeicherten Mitglieder hängt von
 den Zielen und Ansprüchen an das System ab. Grundlegend muss man die
@@ -470,52 +466,47 @@ Frage beantworten, mit wie vielen Unterbäumen Verbindungen gehalten
 werden sollen. Zwar mag dies etwas abstrakt wirken, es lässt sich aber
 mit dem eben eingeführten Modell eines umgekehrten Baumes gut
 erklären:
-     - In der obersten Ebene trennt sich der Baum in zwei vollständig
-       getrennte Teile, was sich mit jeder weiteren Ebene wiederholt.
-     - Die einzige Möglichkeit vom einen /Ende/ des Baums zum anderen
-       zu kommen, ist über den obersten Knoten. Um also in die andere
-       Hälfte zu kommen, braucht man mindestens eine Verbindungsstelle
-       in der anderen Hälfte.
-     - Deshalb braucht ein Routing-Table nicht nur kurze
-       Verbindungen zu nahen Punkten, sondern auch einige wenige
-       Verbindungen zu Mitgliedern in der anderen Hälfte.
-     - Mit nur einer weit entfernten Adresse hat man eine Verbindung
-       in die /eigene/ und die /andere/ Hälfte. Hat man zwei solche
-       Verbindungen auf die andere Seite hat man schon Verbindungen in
-       jeden Viertel des Baumes.
-     - Man muss also entscheiden, wie fein man die andere Hälfte
-       aufteilen will. (Eine genaue Unterteilung bedeutet wenige
-       Sprünge aber grosse Routing-Tables, eine grobe Unterteilung
-       genau das Umgekehrte).
+- In der obersten Ebene trennt sich der Baum in zwei vollständig
+  getrennte Teile, was sich mit jeder weiteren Ebene wiederholt.
+- Die einzige Möglichkeit vom einen /Ende/ des Baums zum anderen zu
+  kommen, ist über den obersten Knoten. Um also in die andere Hälfte
+  zu kommen, braucht man mindestens eine Verbindungsstelle in der
+  anderen Hälfte.
+- Deshalb braucht ein Routing-Table nicht nur kurze
+  Verbindungen zu nahen Punkten, sondern auch einige wenige
+  Verbindungen zu Mitgliedern in der anderen Hälfte.
+- Mit nur einer weit entfernten Adresse hat man eine Verbindung
+  in die /eigene/ und die /andere/ Hälfte. Hat man zwei solche
+  Verbindungen auf die andere Seite hat man schon Verbindungen in
+  jeden Viertel des Baumes.
+- Man muss also entscheiden, wie fein man die andere Hälfte aufteilen
+  will. (Eine genaue Unterteilung bedeutet wenige Sprünge aber grosse
+  Routing-Tables, eine grobe Unterteilung genau das Umgekehrte).
 
-     \noindent Zwar hat ein vollständiges Kademlia-System noch
-     komplexere Elemente, wie =k-Buckets=, welche den Routing-Table
-     optimieren, allerdings sind diese für die grundlegende
-     Funktionsweise des Systems irrelevant.\\
+\noindent Zwar hat ein vollständiges Kademlia-System noch komplexere
+Elemente, wie =k-Buckets=, welche den Routing-Table optimieren,
+allerdings sind diese für die grundlegende Funktionsweise des Systems
+irrelevant.
 
-     \noindent Die dynamische Regulation des Routing-Tables muss
-     allerdings noch erwähnt werden:
-     - Sobald die definierte Maximalgrösse erreicht ist, werden keine
-       neuen Verbindungen akzeptiert.
-     - Zwar können existierende Einträge durch Neue ersetzt werden,
-       allerdings werden dabei nicht alte, sondern inaktive Einträge
-       entfernt. Für ein Kademlia-System werden also auch Mechanismen
-       benötigt, um die Zustände aller Verbindungen periodisch zu
-       überprüfen.
+\noindent Die dynamische Regulation des Routing-Tables muss allerdings
+noch erwähnt werden:
+- Sobald die definierte Maximalgrösse erreicht ist, werden keine
+  neuen Verbindungen akzeptiert.
+- Zwar können existierende Einträge durch Neue ersetzt werden,
+  allerdings werden dabei nicht alte, sondern inaktive Einträge
+  entfernt. Für ein Kademlia-System werden also auch Mechanismen
+  benötigt, um die Zustände aller Verbindungen periodisch zu
+  überprüfen.
 * Prozess
-Oftmals ist es nicht besonders spannend, über den Prozess einer
-Programmierarbeit zu hören, denn für Aussenstehende scheint sich von
-Tag zu Tag nichts zu ändern. Sinnvolles kann erst berichtet werden,
-wenn der Zeitrahmen erhöht wird, sodass grössere Entscheidungen und
-ihre Konsequenzen sichtbar gemacht werden können. Die Entwicklung und
-die Produkte dieser Arbeit sollen in zwei Abschnitte getrennt werden,
-wobei die meisten Produkte aus der zweiten Phase hervorgegangen sind.
+Tatsächlich erstreckt sich dieses Projekt über zwei
+Entwicklungsphasen, wobei sich die Methoden und Ziele von der ersten
+zur zweiten Phase teilweise verändertet haben.
 ** Modularität
 Da während dieser ersten Entwicklungsphase viele wichtige Erkenntnisse
 entstanden, ist es wichtig, die Ideen und die Umsetzung genau zu
 analysieren. Zwar unterscheiden sich die Ziele und Methoden der beiden
 Ansätze stark, gewisse Konzepte und einige Programme aber lassen sich
-für die aktuelle Zielsetzung vollständig übernehmen.\\
+für die aktuelle Zielsetzung vollständig übernehmen.
 
 \noindent Als Erstes ist es wichtig, die Zielsetzung des Systems,
 welches hier einfach als “Modularer Ansatz” bezeichnet wird, zu
@@ -537,7 +528,7 @@ verstehen und die damit entstandenen Probleme genau festzuhalten.
 dezentralen vielseitig einsetzbaren Kommunikationsprotokolls./ Da
 allerdings keine einzelne Anwendung angestrebt wurde, ging es
 stattdessen um die Entwicklung eines vollständigen Ökosystems und
-allgemein einsetzbarer Komponenten.\\
+allgemein einsetzbarer Komponenten.
 
 \noindent Im nächsten Abschnitt sollen einige dieser Komponenten und
 die Entscheidungen, die zu ihnen geführt haben, beschrieben werden. In
@@ -1033,7 +1024,7 @@ umfangreiche Programme entstanden, welche realen Nutzen bieten und
 vielseiting einsetzbar sind.
 
 * Anhang
-** Projekte
+** Recherche
 In diesem Abschnitt sollen einige Projekte in ähnlichen Gebieten
 genauer angeschaut werden. Dabei soll es lediglich um technisch
 ähnliche Arbeiten gehen, die Welt der Videospiele ist gross und
