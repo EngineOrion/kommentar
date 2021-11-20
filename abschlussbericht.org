@@ -16,34 +16,33 @@ drei verschiedenen Teilen. Da die behandelten Themen äusserst komplex
 und umfangreich sind, verlangen die Abschnitte der Arbeit
 verschiedenes Vorwissen und einen unterschiedlichen Zeitaufwand.
 Deswegen wurde die schriftliche Komponente in drei Subkomponenten
-aufgeteilt, die sie nach technischem Detailgrad sortiert sind. Wer nur
-ein oberflächliches Verständnis über die Arbeiten und eine Analyse des
+aufgeteilt, die nach technischem Detailgrad sortiert sind. Wer nur ein
+oberflächliches Verständnis über die Arbeiten und eine Analyse des
 Umfelds will, ohne dabei zu technisch zu werden, muss nicht über den
-Hauptteil dieses Dokuments hinaus. Aber wer vollständigen Einblick in
-die Errungenschaften und Konzepte erhalten will, muss gewisses
-Vorwissen und genügend Zeit mitbringen.
+Hauptteil dieses Dokuments hinaus lesen. Aber wer vollständigen
+Einblick in die Errungenschaften und Konzepte erhalten will, muss
+gewisses Vorwissen und genügend Zeit mitbringen. Die drei folgenden
+Komponenten sind:
 - Schriftlicher Kommentar: Im Hauptteil dieses Dokuments findet sich
-  eine klassische Besprechung der Arbeit. Begonnen mit einer
-  Zielsetzung und der Vision, bis zur Analyse des Produkts und einem
-  Ausblick in die Zukunft, bekommt man schnell einen guten, aber eher
+  eine klassische Besprechung der Arbeit. Begonnen mit der Zielsetzung
+  und der Vision, bis zur Analyse des Produkts und einem Ausblick in
+  die Zukunft, bekommt man schnell einen guten, aber eher
   oberflächlichen Einblick in das Projekt. Wer nur über die Vision und
   den aktuellen Stand wissen will, muss nicht darüber hinaus, aber
-  verschiedene Konzepte und nahezu die gesamte technische Umsetzung
-  sind damit noch nicht abgedeckt.
-- Dokumentation: Im Anhang dieser Arbeit befinden sich zusätzliche
-  Kapitel, welche nicht unbedingt für einen allgemeinen Überblick über
-  die Arbeit nötig sind, aber tieferen Einblick in die Gedanken und
-  die schlussendliche Umsetzung der vorgestellten Produkte gibt. Für
+  verschiedene Konzepte sind damit noch nicht abgedeckt.
+- Dokumentation: Im Anhang und im Kapitel /Theorie/ befinden sich
+  zusätzliche Kapitel, welche einen tieferen Einblick in die Gedanken und
+  die schlussendliche Umsetzung der vorgestellten Produkte geben. Für
   diese Abschnitte wird allerdings gewisses technisches Know-How
-  verlangt. Die Abschnitte sind eher umfangreich, können aber auch gut
-  als eine Art Nachschlagewerk verwendet werden.
+  verlangt.
 - Code: Neben der schriftlichen Dokumentation des Projekts existiert
   eine weitere Form der Dokumentation. Nahezu jede Funktion und jedes
-  Modul über die verschiedenen /Crates/ sind dokumentiert. Diese
-  Dokumentationen lassen sich nicht in einem klassisch strukturierten
-  Dokument finden, stattdessen ist die Code-Dokumentation online über
-  automatisch generierte Rust-Dokumentation zu finden. Wer den Code
-  von Project Orion verwenden will wird sich dort gut zurecht finden.
+  Modul über die verschiedenen Programme und Bibliotheken sind
+  dokumentiert. Diese Dokumentationen befinden sich nicht in einem
+  klassisch strukturierten Dokument, stattdessen ist die
+  Code-Dokumentation online über automatisch generierte
+  Rust-Dokumentation zugänglich. Wer den Code von Project Orion
+  verwenden will, wird sich dort gut zurecht finden.
 
 \noindent Da besonders bei englischen Begriffen das Gendern mit einem
 Doppelpunkt, Bindestrich oder Stern den Textfluss zu stark
@@ -53,8 +52,9 @@ allerdings jedes Mal die inklusiveren Formen repräsentieren soll.
 \newpage
 #+LATEX: \pagestyle{fancy}
 * Einleitung 
-Am 29. Oktober 1964 wurde von der Universität Kaliforniens folgende
-Nachricht an das 500 Kilometer entfernte Stanford geschickt: =LO=.\\
+Am 29. Oktober 1964 wurde von der Universität Kaliforniens aus
+folgende Nachricht an das 500 Kilometer entfernte Stanford geschickt:
+=LO=.\\
 /1964/ rechnete niemand mit der fundamentalen Änderung unserer
 Lebensweise, die mit dieser einfachen Nachricht in Bewegung gebracht
 wurde. Eigentlich hätte die erste Nachricht über das =ARPANET= im Jahre
@@ -69,7 +69,7 @@ an bevorstehenden Katastrophen und Gefahren zu navigieren.
 \noindent Ohne das Internet wäre die Welt, wie wir sie kennen, nicht
 möglich. Unsere Arbeit, Kommunikation und unser Entertainment sind
 nicht einfach nur abhängig von der enormen Interkonnektivität des
-Internets, ohne sie würden ganze Industrien und Bereiche unser
+Internets, ohne sie würden ganze Industrien und Bereiche unserer
 Gesellschaft gar nicht erst existieren. Das Internet hatte einen
 selbstverstärkenden Effekt auf sein eigenes Wachstum. Der um ein
 Vielfaches schnellere Datenaustausch und die enorme Interkonnektivität
@@ -97,9 +97,9 @@ System erkennen. Oftmals handelt es sich dabei nicht um einfache
 /Kleinigkeiten/, /Meinungsverschiedenheiten/ oder /Kontroversen/, sondern um
 grundlegende Designfehler oder fundamentale Limitierungen. Besonders
 das Adress-System des Internets ist seinen Grenzen nahe, und die
-einfachste Lösung scheint jedes mal immer stärkere Zentralisierung.
-Doch damit kommen nebst den ideologischen Bedenken auch technische
-Probleme, für welche wiederum neue Lösungen gefunden werden müssen.
+einfachste Lösung scheint immer stärkere Zentralisierung. Doch damit
+entstehen nebst den ideologischen Bedenken auch technische Probleme,
+für welche wiederum neue Lösungen gefunden werden müssen.
 Schlussendlich führt dies zu einer konstant steigenden Komplexität und
 zu einem System, welches selbst mit dem nötigen Know-How kaum noch
 durchschaubar ist. Dadurch ist es nicht nur immer schwerer, neue
@@ -113,22 +113,22 @@ angeboten und leiden unter den bereits erwähnten Problemen der
 Zentralisierung.
 
 \noindent Die Situation scheint also ziemlich hoffnungslos. Was lässt
-sich tatsächlich noch unternehmen, ohne dabei an massive Unternehmen,
-veraltete Standards oder unnötigen Aufwand gebunden zu sein?\\
+sich tatsächlich noch unternehmen, ohne dabei an gigantische
+Unternehmen, veraltete Standards oder unnötigen Aufwand gebunden zu
+sein?\\
 Es existieren bereits verschiedene Projekte, die Fortschritte im
 Zusammenhang mit /dezentralen Datensystemen/ machen. Die grundlegende
-Idee ist dabei immer die selbe:\\
+Idee ist dabei immer dieselbe:\\
 Anstelle einer zentralen Instanz übernimmt jedes Mitglied des
-Netzwerks einen Teil der ganzen Arbeit die Mitglieder kommunizieren
+Netzwerks einen Teil der ganzen Arbeit, die Mitglieder kommunizieren
 direkt miteinander.\\
 Allerdings werden viele dieser dezentralen Technologien für illegale
 Zwecke wie Film-Piraterie eingesetzt, weswegen Unternehmungen in
 diesen Gebieten oftmals einen schlechten Ruf bei uninformierten
-Personen geniessen. Allerdings gehen die Einsatzmöglichkeiten für
-dezentrale Datensysteme weit über =file sharing= hinaus. Wer aber von
-den fortgeschritteneren Funktionen dezentraler Systeme profitieren
-will, muss meistens mit mehr Aufwand rechnen und viel Know-How
-mitbringen. 
+Personen geniessen. Aber die Einsatzmöglichkeiten für dezentrale
+Datensysteme gehen weit über =file sharing= hinaus. Wer aber von den
+fortgeschritteneren Funktionen dezentraler Systeme profitieren will,
+muss meistens mit mehr Aufwand rechnen und viel Know-How mitbringen.
 * Zielsetzung
 Die Vorteile dezentraler Systeme sind vielseitig, allerdings hat das
 Gebiet, aus offensichtlichen Gründen, wenig Interesse von grossen
