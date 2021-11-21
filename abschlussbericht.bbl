@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{RFC0791}
 Jon Postel.
@@ -40,5 +40,20 @@ Dominik Keller and Jakob Klemm.
 \newblock
   \url{https://github.com/EngineOrion/kommentar/blob/54489464214ed7833f182df09aab29eae4a591e4/EngineOrion.pdf},
   2021.
+
+\bibitem{HimmelZumSprechenBringen}
+Peter Sloterdijk.
+\newblock {\em Den Himmel zum Sprechen bringen}.
+\newblock 2020.
+
+\bibitem{BitTorrentMainline}
+Liang Wang and Jussi Kangasharju.
+\newblock Measuring large-scale distributed systems: Case of bittorrent
+  mainline dht.
+\newblock Technical report, 2013.
+
+\bibitem{ToxSpecs}
+Tox specs.
+\newblock \url{https://toktok.ltd/spec.html}.
 
 \end{thebibliography}
