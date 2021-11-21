@@ -34,4 +34,11 @@ Petar Maymounkov and David Mazieres.
 \newblock Kademlia: A peer-to-peer information system based on the xor metric.
 \newblock Technical report, 2002.
 
+\bibitem{EngineOrionKommentar}
+Dominik Keller and Jakob Klemm.
+\newblock Engine: Orion.
+\newblock
+  \url{https://github.com/EngineOrion/kommentar/blob/54489464214ed7833f182df09aab29eae4a591e4/EngineOrion.pdf},
+  2021.
+
 \end{thebibliography}

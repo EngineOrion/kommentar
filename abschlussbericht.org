@@ -130,26 +130,25 @@ Datensysteme gehen weit über =file sharing= hinaus. Wer aber von den
 fortgeschritteneren Funktionen dezentraler Systeme profitieren will,
 muss meistens mit mehr Aufwand rechnen und viel Know-How mitbringen.
 * Zielsetzung
-Die Vorteile dezentraler Systeme sind vielseitig, allerdings hat das
-Gebiet, aus offensichtlichen Gründen, wenig Interesse von grossen
-Firmen oder Initiativen erhalten. Nebst der offensichtlichen
-Fehlertoleranz, welche die Dezentralisierung mit sich bringt,
-öffnen dezentrale Systeme eine neue Welt der Möglichkeiten:
+Die Vorteile dezentraler Systeme sind vielseitig, allerdings gibt es,
+aus offensichtlichen Gründen, wenig Interesse von grossen Firmen oder
+Initiativen in diesem Gebiet zu arbeiten. Tatsächlich öffnen
+dezentrale Systeme viele neue Möglichkeiten:
 - Moderne Videospiele haben meist starke Limitierungen, wenn es um die
-  Anzahl Spieler auf einmal geht. Diese existieren allerdings
-  hauptsächlich nur, weil die zentralen Server, welche die
-  Verbindungen zwischen den Spielern möglich machen, nicht mehr
-  Nutzer verarbeiten können. Dezentrale Systeme könnten diese Limits
-  nahezu komplett aufheben.
-- Bei den meisten sozialen Interaktionen zwischen Personen über digitale
-  Plattformen geht es eigentlich um den Kontakt. Die Plattform agiert
-  dabei nur als Vermittler und ist nicht zwingend für die Aktivität.
-  Damit wären auch beispielsweise soziale Netzwerke oder Chat-Dienste
-  offen für dezentrale Alternativen offen.
+  Anzahl gleichzeitig aktiver Spieler geht. Diese existieren
+  allerdings hauptsächlich, weil die zentralen Server, welche die
+  Verbindungen zwischen den Spielern möglich machen, nicht mehr Nutzer
+  verarbeiten können. Dezentrale Systeme könnten diese Limits nahezu
+  komplett aufheben.
+- Bei den meisten sozialen Interaktionen zwischen Personen über
+  digitale Plattformen geht es eigentlich um den Kontakt. Die
+  Plattform agiert dabei nur als Vermittler und ist nicht zwingend für
+  die Aktivität. Damit wären auch soziale Netzwerke oder Chat-Dienste
+  für dezentrale Alternativen offen.
 - =Content Addressing= erlaubt schnellere, effizientere Möglichkeiten
   zum Teilen von Dateien, wobei sich die Prinzipien für viel mehr als
   nur gestohlene Filme einsetzen lassen.
-- Auch wenn oftmals digitale Dienste als Methode zum Datenaustausch
+- Auch wenn digitale Dienste oftmals als Methode zum Datenaustausch
   zwischen Menschen gesehen werden, so kommunizieren schlussendlich
   nur Maschinen miteinander. Seine es Datenbanken,
   Austauschplattformen oder eine Vielzahl anderer Möglichkeiten, die
@@ -159,40 +158,41 @@ Fehlertoleranz, welche die Dezentralisierung mit sich bringt,
 \noindent An Möglichkeiten fehlt es also in diesem Gebiet nicht. Auch
 existieren bereits wichtige Unternehmungen, welche grosse Fortschritte
 in verschiedene Richtungen machen. Einige dieser Projekte wurden im
-Anhang genauer angeschaut. Welche Lücke kann Project Orion füllen?
+Anhang genauer angeschaut. Welche Rolle kann Project Orion übernehmen?
 - Da das Entwickeln einer vollständigen, getesteten und integrierten
-  Applikation im gegebenen Zeitrahmen nicht möglich ist, sollen
+  Applikation im gegebenen Zeitrahmen nicht möglich war, sollen
   stattdessen verschiedene, beispielhafte Anwendungen entwickelt
   werden. Diese sollen die technischen Vorteile dezentraler Systeme
   sichtbar machen und dabei einen sinnvollen Nutzen haben. Ziel ist
   dabei nicht eine fertige Alternative zu Google, Facebook oder
-  ähnliche, sondern um Prototypen, die die technischen Möglichkeiten
-  aufzeigen sollen.
+  ähnlichen, sondern um die Entwicklung von Prototypen, die die
+  technischen Möglichkeiten aufzeigen sollen.
 - Um die Entwicklung verschiedener Applikationen möglichst einfach zu
   machen, soll ein dezentrales Datensystem als einheitliche Komponente
   entwickelt und veröffentlicht werden.
 - Als Anwendungen sollen die folgenden drei Systeme ein möglichst
-  grosse Auswahl der möglichen Applikationen ab:
+  grosse Auswahl der möglichen Applikationen zeigen:
   - Ein einfacher Chat soll direkte, manuelle Kommunikation zwischen
     Nutzern erlauben.
   - Mit einer eigenen, spezialisierten Programmiersprache sollen die
     Möglichkeiten von Maschine-Maschine Interaktionen und allgemeiner
-    Automatisierung gezeigt werden. Dazu soll die Sprache allgemein in
-    das dezentrale Netzwerke eingebunden werden und soll somit auch
-    direkt mit Nutzern kommunizieren können.
-  - Als zentrale Demo soll mit einem Videospiel gezeigt werden, mit
+    Automatisierung gezeigt werden. Dazu soll die Programmiersprache
+    allgemein in das dezentrale Netzwerke eingebunden werden und damit
+    geschriebene Applikationen sollen somit auch direkt mit Nutzern
+    kommunizieren können.
+  - Mit einem Videospiel als zentrale Demo soll gezeigt werden, mit
     wie wenig Aufwand dezentrale Technologien sichtbare Vorteile in
-    Videospielen und anderen Echtzeit-Applikationen machen können.
+    Videospielen und anderen Echtzeit-Applikationen bringen können.
 * Theorie
 Da es sich bei dezentralen Datensystemen um ein sehr spezifisches,
 komplexes Thema handelt, sollen als erstes einige der theoretischen
-Grundlagen erklärt werden. Dabei geht es nicht nur um dezentrale
-Systeme gehen, sondern es sollen auch detaillierter einige der bereits
-erwähnten Probleme angesprochen werden. Dafür müssen einige der
+Grundlagen erklärt werden. Dabei soll es nicht nur um dezentrale
+Systeme an sich gehen, es sollen auch einige der bereits erwähnten
+Probleme detaillierter angesprochen werden. Dafür müssen einige der
 technischen Details des aktuellen Internets angesprochen werden. Dabei
-liegt ein Schwerpunkt auf dem Adress- und Routing-System, welche nicht
-nur viele Probleme aufweisen, sondern auch gute Alternativen möglich
-sind.
+liegt ein Schwerpunkt auf dem Adress- und Routing-System, welches
+nicht nur viele Probleme aufweist, sondern zu dem auch verschiedene
+gute Alternativen zur Auswahl stehen.
 ** Adressen
 Das Internet erlaubt einfache, standardisierte Kommunikation zwischen
 Geräten aller Art. Egal welche Funktion oder Form sie auch haben
@@ -204,17 +204,18 @@ geschaffen wurden, welche seither die Welt grundlegend verändert
 haben, gibt es doch einige fundamentale Probleme und Limitierungen.
 *** IP-V4
 \noindent \(4'294'967'296\). So viele =IP-V4=-Adressen wird es jemals
-geben. [[cite:&RFC0791]] IP-V4-Adressen werden für jedes Gerät benötigt,
+geben.[[cite:&RFC0791]] IP-V4-Adressen werden für jedes Gerät benötigt,
 das im Internet kommunizieren will und dienen zur eindeutigen
 Identifizierung. Aktuell wird die vierte Version (V4) verwendet. In
 einer Wirtschaft, in der unendliches Wachstum als letzte absolute
 Wahrheit geblieben ist, kann ein solch hartes Limit verheerende Folgen
 haben. Besonders wenn die limitierte Ressource so unendlich zentral
-für unser aller Leben ist, wie nichts Anderes. Mit =IP-V6= wird zurzeit
-eine Alternative angeboten, die solche Limitierungen nicht hat. Aber
-der Wechsel ist eine freiwillige Entscheidung, für die nicht nur alle
-Betroffenen bereit sein müssen, sondern für die auch jede einzelne
-involvierte Komponente dies neue Technologie unterstützen muss.
+für unser aller Leben ist, wie kaum etwas Anderes. Mit =IP-V6= wird
+zurzeit eine Alternative angeboten, die solche Limitierungen nicht
+hat. Aber der Wechsel ist eine freiwillige Entscheidung, zu der nicht
+nur alle Betroffenen bereit sein müssen, sondern für die auch jede
+einzelne involvierte Komponente die neue Technologie unterstützen
+muss.
 
 \noindent Für jeden Einzelnen kann dies verschiedene Konsequenzen
 haben:
@@ -222,15 +223,15 @@ haben:
   wahrscheinlich langfristig steigen, sobald die erhöhten Kosten für
   neue Adressen bis zum Endnutzer durchsickern.
 - Ein technologischer Wandel wird langfristig von Nöten sein, welcher
-  jeden Einzelnen dazu zwingt, auf neue Standards umzusteigen. Eine
-  solche Umstellung wird den häufigen Problemen grossflächiger
-  technischer Umstellungen nicht ausweichen können.
+  Jeden dazu zwingt, auf neue Standards umzusteigen. Eine solche
+  Umstellung wird den häufigen Problemen grossflächiger technischer
+  Umstellungen nicht ausweichen können.
 *** Routing
 \noindent Jedes Gerät im Internet ist über Kabel oder Funk mit jedem
 anderen Gerät verbunden. Da das Internet aus einer Vielzahl von
 Geräten besteht, wäre es unmöglich, diese direkt miteinander zu
 verbinden. Daher lässt sich das Internet besser als /umgekehrte
-Baum-Struktur/ vorstellen:
+Baum-Struktur/ darstellen:
 - Ganz unten finden sich die Blätter, die Abschlusspunkte der
   Struktur. Sie stellen die /Endnutzergeräte/ dar. Jeder Server, PC und
   jedes iPhone. Hier ist es auch wichtig festzustellen, dass es in
@@ -255,7 +256,7 @@ sondern um Abschnitte von Adressen, auch =Address Spaces= genannt.
 [[cite:&IPAddressSpaces]] An den zentralen Knotenpunkten geht es nicht um
 einzelne Server oder Geräte, zu denen etwas gesendet werden muss,
 stattdessen wird eher entschieden, ob gewisse Daten beispielsweise von
-Frankfurt a. M. aus nach Ost- oder Westeuropa geschickt werden müssen.
+Frankfurt a. M. aus nach Ost- oder Westeuropa geschickt werden.
 
 \noindent Im Laufe der Jahre wurden die grossen Abschnitte von
 Adressen immer weiter aufgeteilt. Internet-Anbieter und grosse Firmen
@@ -271,8 +272,8 @@ erreichen, das ein einzelner Router verarbeiten kann.\\
 Neben den ideologischen Fragen und Sicherheitsbedenken gibt es
 praktische Probleme in der Art, wie moderne Internet-Dienste
 implementiert sind. Abhängig von politischen Einstellungen könnte
-dieser Abschnitt unendlich in die Länge gezogen werden, allerdings
-soll der Schwerpunkt hier nur auf zwei Aspekten liegen, nämlich dem
+dieser Abschnitt stark in die Länge gezogen werden, allerdings soll
+der Schwerpunkt hier nur auf zwei Aspekten liegen, nämlich dem
 Datenschutz und der Abhängigkeit.
 *** Datenschutz
 /Wenn man nicht für etwas zahlt, ist man das Produkt./ Nach dieser Idee
@@ -286,11 +287,11 @@ lassen sich Werbungen zielgerichtet an Konsumenten schicken und der
 Umsatz, sowohl für Firmen als auch für Anbieter, optimieren.
 
 \noindent Werbung ist mächtig und hat einen grossen Einfluss auf den
-Markt. Aber damit lassen sich lediglich Konsumenten zu Käufen
-überzeugen oder davon abbringen. Wenn man dies mit dem tatsächlichen
-Potential in diesen Daten vergleicht, merkt man schnell, wie viel noch
-möglich ist. Denn die Daten, die sich täglich über Nutzer im Internet
-anhäufen, zeigen mehr als unser Kaufverhalten. Von
+Markt. Aber letztendlich lassen sich damit lediglich Konsumenten zu
+Käufen überzeugen oder davon abbringen. Wenn man dies mit dem
+tatsächlichen Potential in diesen Daten vergleicht, merkt man schnell,
+wie viel noch möglich ist. Denn die Daten, die sich täglich über
+Nutzer im Internet anhäufen, zeigen mehr als unser Kaufverhalten. Von
 Echtzeit-Positionsupdates, Anrufen und Suchanfragen bis hin zu
 privaten Chats und unseren tiefsten Geheimnissen, sind Nutzer meist
 überraschend unvorsichtig im Umgang mit digitalen Werkzeugen.
@@ -324,8 +325,8 @@ nur eine böswillige Person um den Administrator-Account anderer
 Dienste und Seiten zu öffnen, wodurch die Menge an
 Sicherheitsproblemen exponentiell steigt.
 
-\noindent Aber es muss nicht immer etwas schief gehen, um die Probleme
-zu erkennen. Sei es politische Zensur, /Right to Repair/ oder /Net
+\noindent Aber es muss nicht immer etwas schief gehen, damit die
+Probleme entstehen. Sei es politische Zensur, /Right to Repair/ oder /Net
 Neutralität/, die grossen Fragen unserer digitalen Zeit sind so
 relevant wie noch nie.
 
@@ -338,13 +339,13 @@ Quizfragen/ oder Bilder von Haustieren, aber was könnte den schon
 wirklich Schlimmes passieren?
 
 \noindent Während es verständlich ist, dass das Benutzen von Google
-natürlich von Google abhängig ist, so versteht kaum jemand, wie viel
-unserer täglichen Aktivitäten von Diensten und Firmen abhängen, die
-selbst wieder von Google abhängig sind. Seien es die Facebook-Server,
-durch welche keine Whatsapp-Nachrichten mehr geschickt werden könnten,
-oder die fehlerhafte Konfiguration bei Google, durch welche manche
-Kunden die Temperatur ihrer Wohnungen auf ihren Nest Geräten nicht
-mehr anpassen könnten [[cite:&GoogleNestOutage]], das Netz aus internen
+von Google abhängig ist, so versteht kaum jemand, wie viel unserer
+täglichen Aktivitäten von Diensten und Firmen abhängen, die selbst
+wieder von Google abhängig sind. Seien es die Facebook-Server, durch
+welche keine Whatsapp-Nachrichten mehr geschickt werden könnten, oder
+die fehlerhafte Konfiguration bei Google, durch welche manche Kunden
+die Temperatur ihrer Wohnungen auf ihren Nest Geräten nicht mehr
+anpassen könnten [[cite:&GoogleNestOutage]], das Netz aus internen
 Verbindungen zwischen Firmen ist komplex und undurchschaubar. Und das
 nicht nur für die Entnutzer, da oftmals die Firmen selbst von
 kleinsten Problemen anderer Dieste überrascht werden können. Der
@@ -357,8 +358,8 @@ Tatsächlich existieren bereits Ansätze, um gegen die angesprochen
 Probleme vorzugehen. Eines dieser Projekte wurde im Laufe der Zeit als
 vielversprechende Option bekannt. Unter dem Namen =Kademlia= wurde
 bereits 2002 in einem Whitepaper ein vielseitig einsetzbares System
-beschrieben, welches seither in verschiedensten Gebieten Nutzen
-gefunden hat. [[cite:&KademliaPaper]]
+beschrieben, welches seither in verschiedensten Gebieten Verwendung
+gefunden hat.[[cite:&KademliaPaper]]
 
 \noindent Der Trick, der bei Systemen wie Kademlia verwendet wird, ist
 es, Router vollständig zu eliminieren. Dies ist möglich, indem jedes
@@ -369,7 +370,7 @@ weg.
 
 \noindent In einem früheren Abschnitt wurden die Probleme der
 /Zentralrouter/ bereits angesprochen. Wenn jetzt aber jedes Mitglied in
-einem Netzwerk plötzlich als Router agiert und es keine zentrale
+einem Netzwerk plötzlich als Router agiert, und es keine zentrale
 Instanz gibt, träfe die Problematik der /Zentralrouter/ plötzlich auf
 alle Server zu. Genau da kommt Kademlia ins Spiel. Laut den Erfindern,
 /Petar Maymounkov/ und /David Mazières/, ist Kademlia
@@ -383,11 +384,12 @@ verteilte Datensysteme einsetzen?
 Informationen über das komplette Netzwerk zu speichern oder zu
 verarbeiten, funktionieren Kademlia-Systeme grundlegend anders.
 Anstelle der hierarchischen Anordnung der Router ist jedes Mitglied
-eines Systems gleichgestellt. Dabei kümmert sich jedes Mitglied auch
+eines Systems gleichgestellt. Dabei kümmert sich jedes Mitglied aber
 nicht um das komplette System, sondern nur um sein direktes Umfeld.
-Während dies für kleinere Systeme gut funktioniert und vergleichbare
-Geschwindigkeiten liefert, skaliert es nicht so einfach für grosse
-Systeme. Genau dafür gibt es die XOR-Metrik.
+Während dies für kleinere Systeme gut funktioniert und
+Geschwindigkeiten liefert, die mit zentralisierten Systemen
+vergleichbar sind, skaliert es nicht so einfach für grosse Systeme.
+Genau dafür gibt es die XOR-Metrik.
 *** Distanz
 Die XOR-Funktion, die in der Informatik an den verschiedensten
 Orten auftaucht, wird verwendet, um die Distanz zwischen zwei
@@ -412,13 +414,13 @@ anschauen:
 3. \(xor(x, y) = xor(y, x)\): Die Reihenfolge der Parameter spielt
    keine Rolle.
 4. \(xor(x, z) \leq xor(x, y) + xor(y, z)\): Die direkte Distanz
-   zwischen zwei Punkten ist am kürzesten oder gleich kurz wie die
-   Distanz mit einem zusätzlichen Schritt dazwischen, also einem
-   weiteren Sprung im Netzwerk.
+   zwischen zwei Punkten ist kürzer oder gleich kurz wie die Distanz
+   mit einem zusätzlichen Schritt dazwischen, also einem weiteren
+   Sprung im Netzwerk.
 5. Für ein gegebenes \(x\) und eine Distanz \(l\) gibt es nur genau
    ein \(y\) für das \(xor(x, y) = l\) gilt.
 
-\noindent Aber wieso genau funktioniert dies? Wieso kann man XOR, eine
+\noindent Aber wieso genau funktioniert das? Wieso kann man XOR, eine
 Funktion zur Berechnung der Bit-Unterschiede in zwei Binärzahlen,
 verwenden, um die Distanz zwischen zwei Punkten in einem verteilten
 Datensystem zu berechnen?
@@ -437,11 +439,10 @@ Baum sieht dann wie folgt aus:
      [[file:tree.png]]
 
 \noindent Mit dieser Sicht auf das System beschreibt die XOR-Funktion
-die Anzahl der unterschiedlichen Abbiegungen im Baum und somit die
+die Anzahl der unterschiedlichen Abzweigungen im Baum und somit die
 Distanz. Zwar mag es auf den ersten Blick nicht intuitiv wirken, wieso
-man XOR anstatt einfach der Differenz verwendet, allerdings
-funktioniert die Funktion mit Binärzahlen in einem solchen Baum
-um einiges besser.
+man XOR anstatt der Differenz verwendet, allerdings funktioniert die
+Funktion mit Binärzahlen in einem solchen Baum um einiges besser.
 *** Routing-Table
 In einem Kademlia-System hat jedes Mitglied eine gewisse Anzahl
 anderer Mitglieder, mit denen es sich verbunden hat. Da Kademlia ein
@@ -480,8 +481,8 @@ erklären:
   Verbindungen auf die andere Seite hat man schon Verbindungen in
   jeden Viertel des Baumes.
 - Man muss also entscheiden, wie fein man die andere Hälfte aufteilen
-  will. (Eine genaue Unterteilung bedeutet wenige Sprünge aber grosse
-  Routing-Tables, eine grobe Unterteilung genau das Umgekehrte).
+  will. Eine genaue Unterteilung bedeutet wenige Sprünge aber grosse
+  Routing-Tables, eine grobe Unterteilung genau das Umgekehrte.
 
 \noindent Zwar hat ein vollständiges Kademlia-System noch komplexere
 Elemente, wie =k-Buckets=, welche den Routing-Table optimieren,
@@ -500,40 +501,49 @@ noch erwähnt werden:
 * Prozess
 Tatsächlich erstreckt sich dieses Projekt über zwei
 Entwicklungsphasen, wobei sich die Methoden und Ziele von der ersten
-zur zweiten Phase teilweise verändertet haben.
+zur zweiten Phase teilweise verändertet haben. Besonders die erste
+Entwicklungsphase soll hier genau beschrieben werden, für die zweite
+Phase sollen lediglich die Unterschiede angesprochen werden, die
+tatsächlichen Applikationen werden dann im Kapitel /Produkte/ genauer
+erklärt. Da während der ersten Entwicklungsphase viele wichtige
+Erkenntnisse entstanden, ist es wichtig, die Ideen und die Umsetzung
+genau zu analysieren. Zwar unterscheiden sich die Ziele und Methoden
+der beiden Ansätze stark, gewisse Konzepte und einige Programme aber
+lassen sich für die aktuelle Zielsetzung vollständig übernehmen. Die
+beiden Phasen werden ab hier einfach /Modularität/ und /Präsentation/
+genannt, da dies die zwei zentralen Eigenschaften der beiden Phasen
+sind. 
 ** Modularität
-Da während dieser ersten Entwicklungsphase viele wichtige Erkenntnisse
-entstanden, ist es wichtig, die Ideen und die Umsetzung genau zu
-analysieren. Zwar unterscheiden sich die Ziele und Methoden der beiden
-Ansätze stark, gewisse Konzepte und einige Programme aber lassen sich
-für die aktuelle Zielsetzung vollständig übernehmen.
-
 \noindent Als Erstes ist es wichtig, die Zielsetzung des Systems,
 welches hier einfach als “Modularer Ansatz” bezeichnet wird, zu
 verstehen und die damit entstandenen Probleme genau festzuhalten.
 - Modularität \\
   Wie der Name bereits verrät, ging es in erster Linie um die
-  Modularität. Ziel war also eine Methode zur standardisierten
+  Modularität. Ziel war also, eine Methode zur standardisierten
   Kommunikation zu entwickeln, durch welche dann beliebige Komponenten
   an ein grösseres System angeschlossen werden können. Mit einigen
   vorgegebenen Komponenten, die Funktionen wie das dezentrale Routing
   und lokales Routing abdecken, können Nutzer für ihre
-  Anwendungszwecke passende Programme integrieren.
+  Anwendungszwecke passende Programme integrieren. Als zentrale
+  Komponente dieses Systems gibt es ebenfalls ein dezentrales
+  Datensystem, welches die Kommunikation zwischen verschiedenen
+  Geräten übernimmt.
 - Offenheit \\
   Sobald man den Nutzern die Möglichkeit geben will, das System selbst
   zu erweitern und zu bearbeiten, muss man quasi zwingend open-source
   Quellcode zur Verfügung stellen.
 
 \noindent Die grundlegende Idee war dieselbe: /Die Entwicklung eines
-dezentralen vielseitig einsetzbaren Kommunikationsprotokolls./ Da
+dezentralen, vielseitig einsetzbaren Kommunikationsprotokolls./ Da
 allerdings keine einzelne Anwendung angestrebt wurde, ging es
 stattdessen um die Entwicklung eines vollständigen Ökosystems und
 allgemein einsetzbarer Komponenten.
 
-\noindent Im nächsten Abschnitt sollen einige dieser Komponenten und
-die Entscheidungen, die zu ihnen geführt haben, beschrieben werden. In
-einem weiteren Abschnitt sollen dann die Lektionen und Probleme dieser
-erster Entwicklungsphase besprochen werden.
+\noindent In den folgenden Abschnitten sollen einige dieser
+Komponenten und die Entscheidungen, die zu ihnen geführt haben,
+beschrieben werden. In einem weiteren Abschnitt sollen dann die
+Lektionen und Probleme dieser erster Entwicklungsphase besprochen
+werden.
 *** Shadow
 Zwar übernahm die erste Implementierung des verteilten
 Nachrichtensystems, Codename =Shadow=, weniger Funktionen als die
@@ -709,39 +719,28 @@ unterteilen:
   
 * Produkte
 Nun ist es an der Zeit, die Errungenschaften und Produkte des
-Projektes anzuschauen. Eigentlich müssten auch hier die Programme der
-ersten Entwicklungsphase besprochen werden, dies geschah allerdings
-bereits grösstenteils während der Analyse des Arbeitsprozesses. Wer
-noch mehr über die Programme erfahren will sollte sich am besten den
-dazugehörigen Bericht durchlesen[fn:6] oder direkt die dabei
-entstandenen Programme anschauen. Alle lassen sich auf Github finden
-und sind unter offenen Lizensen einfach weiterzuverwenden[fn:1]. Auch
-muss angemerkt werden, dass viele der dabei entstandenen Ideen viel
-Potential haben und in gewissem Ausmass ihren Weg bereits in die
-Produkte der zweiten Phase gefunden haben.
+Projektes anzuschauen. Eigentlich müssten auch hier die
+Errungenschaften der ersten Entwicklungsphase besprochen werden, dies
+geschah allerdings bereits grösstenteils während der Analyse des
+Arbeitsprozesses. Wer trotzdem noch genaueres über die erste
+Entwicklungsphase erfahren will, liesst sich am besten den
+dazugehörigen Bericht durch, oder schaut sich direkt die dabei
+entstandenen Programme an.[[cite:&EngineOrionKommentar]]
 
-\noindent Dieses Kapitel ist in zwei Abschnitte geteilt:
-- =Actaeon= beschreibt das dezentrale Datensystem, die Rust Bibliothek
-  sowie einige der einfachen Anwendungen, wie zum Beispiel ein
-  Chat-Client die ohne grossen Aufwand darauf aufgebaut werden können.
-- Da das Videospiel als Vorzeigebeispiel für das gesamte Projekt
-  entwickelt wurde, erhielt es den gleichen Namen wie die gesamte
-  Arbeit.
-
-\noindent Hier muss nochmals der Umfang dieser Arbeit angesprochen
-werden. Dieses Dokument soll mit möglichst wenig Vorwissen
-verständlich sein und nur oberflächlich die technischen Feinheiten
-ansprechen. Wer genauere Informationen zur Umsetzung sucht oder
-tatsächlich mit den Bibliotheken arbeiten will, sollte sich die
-technische Dokumentation oder Code-Dokumentation durchlesen.
+\noindent Dieses Kapitel ist in drei Abschnitte geteilt:
+- =Actaeon= beschreibt das dezentrale Datensystem und die
+  Rust-Bibliothek mit der es sich verwenden lässt. Dazu werden einige
+  der technischen Details angesprochen.
+- Anwendungen beschreibt die Integration mit der eigenen
+  Programmiersprache sowie die Chat-Anwendung.
+- Orion beschreibt das Videospiel, welches als zentrale Demo den Titel
+  des gesamten Projekts und einen eigenen Abschnitt erhalten hat.
 ** Actaeon
 =Actaeon= stellt das Herzstück des gesamten Projekts dar. Als =Rust=
 Bibliothek ist es in alle anderen Anwendungen eingebunden und
-ermöglicht dezentrale Kommunikation unabhängig der Anwendung.\\
+ermöglicht dezentrale Kommunikation unabhängig von der Anwendung.\\
 
-\noindent Als erstes muss aber wahrscheinlich kurz der Name
-angesprochen werden, da sich auch hier einiges an Bedeutung dahinter
-versteckt. In der griechischen Mythologie ist Actaeon (auch Aktaion)
+\noindent In der griechischen Mythologie ist Actaeon (auch Aktaion)
 ein Jäger, der mit seinen Hunden durch den Wald streift und die Göttin
 der Jagt beim Bad in einer Quelle überrascht. Die Göttin verwandelt
 Actaeon in einen Hirsch, der daraufhin von seinen eigenen Hunden in
@@ -755,14 +754,12 @@ nur zu finden als Teil einer Einheit, die die gesamte Natur in ihrer
 ganzen Vielfalt umfasst. So ist Actaeon als Namensgeber für ein
 Projekt der dezentralen Kommunikation bestens geeignet.[fn:2]\\
 
-\noindent Nun müssen einige Grundlagen erklärt werden, welche
-hoffentlich die folgenden Abschnitte verständlich machen:\\
-Nahezu alle Applikationen in Project Orion sind in der
-Programmiersprache Rust geschrieben. Als zentrales Verbindungstück
+\noindent Nahezu alle Applikationen in Project Orion sind in der
+Programmiersprache Rust geschrieben. Als zentrales Verbindungsstück
 zwischen allen Applikationen hängen alle Programme von Actaeon ab. Um
 die Verwaltung der internen Abhängigkeiten einfacher zu machen, wurde
 Actaeon mit dem offiziellen Rust /Package-Manager/ als =crate=
-veröffentlicht. Dies erlaubt es jedem Rust Entwickler Actaeon einfach
+veröffentlicht. Dies erlaubt es jedem Rust Entwickler, Actaeon einfach
 in eigene Programme zu integrieren, dafür ist lediglich eine Zeile
 Code nötig:
 #+begin_src toml
@@ -772,25 +769,25 @@ actaeon = "0.2.1"
 hat nun vollen Zugang zu allen Funktionen, die Actaeon zu bieten hat.
 Da es sich hier um eine Bibliothek handelt, welche dann in andere
 Programme eingebunden werden soll, ist es nicht von Nöten, die interne
-Funktionsweise vollständig zu verstehen. In der technischen
-Dokumentation werden die Ideen und Entscheidungen, die zu Actaeon
-führten genauer angeschaut. Hier soll es allerdings hauptsächlich um
-einen groben Überblick gehen, sowie um die API, mit welcher mit der
-Bibliothek interagiert werden kann.\\
+Funktionsweise vollständig zu verstehen. Hier soll ein Überblick über
+die Verwendung und die Funktionen gegeben werden. In den folgenden
+Abschnitten werden dann zusätzlich noch technische Details zur
+Bibliothek angesprochen, diese sind aber nicht notwendig, um die
+Bibliothek zu verwenden.
 
-\noindent Wahrscheinlich lohnt es sich aufzulisten, welche Funktionen
-die Bibliothek übernimmt, und welche weiterhin vom Nutzer verlangt
-werden. Actaeon übernimmt:
+\noindent Es lohnt sich aufzulisten, welche Funktionen die Bibliothek
+übernimmt, und welche weiterhin vom Nutzer verlangt werden. Actaeon
+übernimmt das folgende:
 - Verbindungen (stateful & stateless): Das System entscheidet intern
-  selbständig, wie Nachrichten versendet werden sollen. Entweder es
+  selbständig, wie Nachrichten versendet werden sollen. Entweder
   werden einzelne Nachrichten an andere Mitglieder geschickt, oder es
-  kann eine langlebige Verbindung aufgebaut werden, welche für mehrere
+  wird eine langlebige Verbindung aufgebaut, welche für mehrere
   Nachrichten verwendet werden kann.
 - Adressen: Anstelle von IP-Adressen oder UUIDs verwendet das System
   ein eigenes, vielseitiges Adresssytem. Dieses wird auf verschiedene
   Arten eingesetzt:
   - Identifikation: Jede Adresse identifiziert ein Objekt (Nutzer oder
-    Thema) eindeutig. Dabei gibt es zwar keinen Mechanismus um dies zu
+    Thema) eindeutig. Dabei gibt es zwar keinen Mechanismus, um dies zu
     garantieren, die kleine Wahrscheinlichkeit einer Kollision über
     die 32 Bytes reicht allerdings aus.
   - Routing: Mit den Adressen lässt sich ebenfalls rechnen, wobei es
@@ -810,23 +807,21 @@ werden. Actaeon übernimmt:
   Mitglieder automatisch neue Mitglieder finden und sie in ihren
   lokalen Routing-Table einbauen.
 
-\noindent Der Nutzer muss sich dabei um lediglich einen zentralen
-Aspekt selber kümmern: Die Verbindungsdaten für ein beliebiges
-Mitglied eines Clusters müssen bekannt sein, sodass das System eine
-erste Verbindung aufbauen kann. Auch wenn gewisse automatisierung noch
-möglich ist, wird dieser Schritt niemals vollständig aus den Händen
-der Nutzer genommen werden können, ohne nicht dabei einen zentralen
-Registrierungspunkt einzubauen. Auch wird aktuell noch von Nutzern
-verlangt, dass sie öffentlich erreichbare Verbindungsdetails angeben.
-Das bedeutet, Nutzer müssen sich selbst um Portforwarding und ihre
-öffentlich zugängliche Addresse kümmern.\\
+\noindent Der Nutzer muss sich um einige Aspekte selber kümmern:
+- Die Verbindungsdaten für ein beliebiges Mitglied eines Clusters
+  müssen bekannt sein, sodass das System eine erste Verbindung
+  aufbauen kann. Auch wenn gewisse automatisierung noch möglich ist,
+  wird dieser Schritt niemals vollständig aus den Händen der Nutzer
+  genommen werden können, ohne nicht dabei einen zentralen
+  Registrierungspunkt einzubauen.
+- Auch wird aktuell noch von Nutzern verlangt, dass sie öffentlich
+  erreichbare Verbindungsdetails angeben. Das bedeutet, Nutzer müssen
+  sich selbst um Portforwarding und ihre öffentlich zugängliche
+  Addresse kümmern.
 
-\noindent Natürlich übernimmt die Bibliothek noch viele weitere
-Funktionen, ein genauerer Funktionsumfang findet sich in der
-technischen Dokumentation. Nun muss man sich fragen, welche Funktionen
-potentielle Nutzer überhaupt übernehmen müssen. Dafür lohnt es sich
-die einfachste Beispielanwendung anzuschauen (Dieser Code ist
-ebenfalls im Readme und der Dokumentation zu finden):
+\noindent In Code ausgedrückt sieht das dann wie folgt aus: (Ein
+minimales Beispiel für eine Applikation, die Actaeon verwendet.)\\
+
 #+BEGIN_SRC rust :exports code
   use actaeon::{
       config::Config,
@@ -855,19 +850,18 @@ ebenfalls im Readme und der Dokumentation zu finden):
 
 \noindent Nebst der Konfiguration, welche sowohl direkt erstellt, als
 auch von einer Datei geladen werden kann, muss nur ein =Interface=
-erstellt werden. Bei diesem Schritt werden dann intern verschiedene
-Threads gestartet und die Initialisierung des Routing-Tables
-(Bootstrapping) beginnt. Der Nutzer muss sich dabei um nichts kümmern,
-ausser potentiell aufkommende Fehler handhaben. Das zweite wichtige
-Element ist dabei das =Topic=, denn die meisten Interaktionen des
-Nutzers finden über ein solches Thema statt. Für genauere
-Informationen empfiehlt sich die technische Dokumentation. Als
-einfache Zusammenfassung lässt sich sagen: Unter einem Thema werden
-Nachrichten gesammelt, welche laut dem Nutzer zusammengehören. Dabei
-ist wichtig festzustellen, dass die Wahl der Themen vollkommen in der
-Hand des Nutzers liegt, die Bibliothek hat keinen Einfluss darauf.
-Sobald aber ein solches Thema erstellt wurde, gibt es eigentlich nur
-zwei wichtige Aktionen:
+erstellt werden. Bei diesem Schritt werden intern verschiedene Threads
+gestartet und die Initialisierung des Routing-Tables (Bootstrapping)
+beginnt. Der Nutzer muss sich dabei um nichts kümmern, ausser
+potentiell aufkommende Fehler handhaben. Das zweite wichtige Element
+ist dabei das =Topic=, denn die meisten Interaktionen des Nutzers finden
+über ein solches Thema statt. Für genauere Informationen empfiehlt
+sich die technische Dokumentation. Als einfache Zusammenfassung lässt
+sich sagen: Unter einem Thema werden Nachrichten gesammelt, welche
+laut dem Nutzer zusammengehören. Dabei ist wichtig festzustellen, dass
+die Wahl der Themen vollkommen in der Hand des Nutzers liegt, die
+Bibliothek hat keinen Einfluss darauf. Sobald aber ein solches Thema
+erstellt wurde, gibt es eigentlich nur zwei wichtige Aktionen:
 - Senden: Schickt eine Nachricht an alle Nutzer, welche ebenfalls ein
   Thema mit gleicher Adresse erstellt haben.
 - Empfangen: Hört auf einkommende Nachrichten von beliebigen anderen
@@ -875,11 +869,390 @@ zwei wichtige Aktionen:
 
 \noindent Nur mit diesen beiden Operationen ist die Menge an
 potentiellen Applikationen nahezu unbegrenzt, denn nahezu alle
-Interaktionen, Programme und Netzwerke lassen sich irgendwie mit
-diesen beiden Befehlen umsetzen. Natürlich gibt es noch mehr interne
-Funktionen und auch mehr Möglichkeiten für den Nutzer, diese gehen
-aber über den Umfang dieses Dokuments hinaus.
+Interaktionen, Programme und Netzwerke lassen sich mit diesen beiden
+Befehlen umsetzen. In den nächsten Abschnitten sollen nun einige der
+technischen Konzepte angesprochen werden. Dabei geht es allgemein um
+die Funktionen eines Pub/Subs, möglichen Verschlüsselungsmethoden
+sowie um einige der Besonderheiten der technischen Umsetzung für die
+Actaeon-Bibliothek. 
+*** Verschlüsselung
+Zwar ist es bei weitem nicht so, dass alle moderne dezentrale Systeme
+das Internet oder ein ähnliches Austauschsystem als Grundlage
+verwenden, allerdings ist dies in nahezu allen Fällen, besonders bei
+den beliebten und weit verbreiteten Fällen. Das Internet ist für
+fehlende Sicherheit und Gefahren bekannt, daher ist es von Nöten, dass
+sich jede Applikation selbst um Verschlüsselungen und Sicherheit
+kümmert. Allerdings ist es wichtig, /die passende Verschlüsselung/ zu
+wählen. Hier wird nun ein Ansatz beschrieben, welcher sich besonders
+gut für gewisse Kademlia-inspirierte Systeme eignet. Dieser Ansatz
+beruht auf der Verschlüsselungs-Bibliothek NaCl, beziehungsweise deren
+modernen Abzweig =libsodium=. Während klassische
+Verschlüsselungsmethoden sehr lange Schlüssel benötigen, gibt es
+gewisse Kombinationen von Algorithmen, welche mit sehr kurzen
+Schlüsseln Sicherheit gewährleisten können. Besonders geht es dabei um
+curve25519xsalsa20poly1305, einer Kombination aus den Algorithmen
+Curve25519, Salsa20 und Poly1305. Während das innere Zusammenspiel
+dieser Algorithmen sehr komplex ist, ist das Resultat ein Algorithmus,
+wessen Schlüssel jeweils nur eine Länge von /32 bytes/ haben.\\
+
+\noindent Eigentlich beschreibt Kademlia Adressen mit einer Länge von
+/160 bits/ (/20 bytes/), allerdings ist es ohne grosse Probleme möglich,
+die Adressen Länge auf /32 bytes/ zu verlängern. Dies erlaubt es uns,
+die Verschlüsselung und das Adresssystem direkt miteinander zu
+verbinden. Das mag auf den ersten Blick etwas umständlich und
+unlogisch wirken, es erlaubt allerdings, ohne weitere Operationen,
+verschlüsselte Nachrichten an einen Nutzer zu schicken, wobei
+lediglich dessen Adresse bekannt sein muss. Insgesamt fällt damit viel
+Komplexität weg und macht das Erstellen, Verifizieren und Finden von
+Adressen viel einfacher.
+*** PubSub
+Ein einfaches, aber vielseitig einsetzbares
+Nachrichtenübermittlungsmuster ist die Idee eines =Publish/Subscribe=
+Systems. Ein solches System lässt sich mit nur zwei Aktionen
+beschreiben: 
+- Nutzer können ein gewisses Thema abonnieren, das bedeutet, sie folgen
+  einem gewissen Schlüssel und erhalten Nachrichten von diesem.
+- Jeder Nutzer kann dann in den Themen, die er abonniert hat
+  Nachrichten schicken. Diese werden dann automatisch an alle
+  abonnierten Nutzer verteilt.
+
+\noindent Mit diesen beiden Mechaniken lassen sich die meisten
+Funktionen in modernen Applikationen beschreiben. Sei es ein Chat-
+oder Emailsystem, ein komplexer Datenverarbeitungsmechanisums oder ein
+Datennetzwerk, alle lassen sich relativ einfach mit diesen beiden
+Funktionen modellieren. 
+**** Dezentraler PubSub
+Offensichtlich kann selbst die beste, fehlerfrei optimierte
+Implementierung der oben beschriebenen Prinzipien nicht gegen die
+bereits angesprochenen, fundamentalen Probleme lokal gebundener
+Programme vorgehen. Daher ist es in einem nächsten Schritt von Nöten,
+die Ideen hinter dezentralisierten =PubSub=-Systemen anzuschauen. Das
+mag im ersten Moment komplex klingen, ist aber tatsächlich unglaublich
+einfach. Man muss sich lediglich einen PubSub als zwei getrennte
+Unterkomponenten vorstellen:
+- Themen lassen sich vereinfacht als Einträge in einer Datenbank
+  beschreiben. Die Identifikation der Themen ist dabei der Schlüssel,
+  wobei die Abonnenten als dazugehörige Felder ausgedrückt werden
+  können. Oben wurde bereits ein System beschrieben, welches
+  zuverlässig dezentral Daten speichern kann. Wenn man in der
+  beschriebenen Kademlia Implementierung die Checksumme des Inhalts
+  mit der Checksumme des Themenschlüssels ersetzt, lässt sich Kademlia
+  ohne weitere Veränderungen für einen dezentralen PubSub einsetzen.
+- Danach bleibt natürlich noch das Problem der Nachrichtenverbreitung.
+  Dafür gibt es verschiedene Möglichkeiten:
+  - Die Nachrichten werden direkt an das zuständige Mitglied gesendet,
+    von dort werden sie weitergeleitet. Vorteilhaft an diesem Konzept
+    ist natürlich, dass die Verwender des Systems unglaublich einfach
+    gehalten werden können. Sie müssen lediglich Nachrichten an eine
+    Adresse schicken, das System kümmert sich dann von alleine um die
+    Weiterverbreitung. Damit geben die Nutzer allerdings auch eine
+    gewisse Kontrolle auf, denn sie können nicht direkt einsehen, an
+    wen ihre Nachrichten verteilt werden. In einer solchen Situation
+    gibt es zusätzlich noch gewisse technische Bedenken im
+    Zusammenhang mit der Verschlüsselung.
+  - Andererseits dazu können auch die Aktionen des Abonnierens und
+    Deabonnierens als Nachrichten im System verbreitet werden. Jeder
+    abonnierte Nutzer wird somit also über neue Abonnenten informiert
+    und speichert deren Details lokal. Zwar erhöht dies die
+    Komplexität enorm, erlaubt aber schnellere Übertragung und genauer
+    Kontrolle über die Auswahl der Abonnenten.
+**** Probleme
+Zwar gibt es viel Gutes über PubSubs als Systemkonzept zu sagen,
+allerdings müssen auch einige Probleme angesprochen werden:
+- Wie bereits eben angesprochen kann es zu gewissen Unklarheiten und
+  Problemen im Zusammenhang mit der Verschlüsselung der Nachrichten in
+  dezentralen Systemen kommen. Da Nachrichten meist über das offene
+  Internet übertragen werden und daher Verschlüsselung nahezu zwingend
+  benötigt wird, muss man sie auch hier berücksichtigen. Wie bereits
+  im Abschnitt zur Verschlüsselung angesprochen, sollen Nachrichten
+  mit dem öffentlichen Schlüssel des Empfängers, welcher auch
+  gleichzeitig die Adresse darstellt, verschlüsselt werden. Beim
+  Durchgehen der oben beschriebenen Architekturen wird ein Problem
+  offensichtlich: Wenn ein Thema ein normaler Empfänger im System ist,
+  muss seine öffentliche Adresse verwendet werden. Allerdings wurde
+  definiert, dass die Adresse eines Themas die Checksumme eines
+  bekannten Schlüssels darstellt. Die Adressen in einem solchen System
+  lassen sich allgemein aber durch einen gegebenen privaten Schlüssel
+  ableiten. Umgekehrt ist das natürlich nicht möglich. Ein geheimer
+  Schlüssel lässt sich nicht aus dem öffentlichen Schlüssel errechnen.
+  Hier wird also eigentlich ein System verlangt, bei welchem der
+  private Schlüssel durch eine Checksumme errechnet wird, wobei der
+  daraus entstehende öffentliche Schlüssel als Adresse verwendet wird.
+  Gleichzeitig darf der private Schlüssel nicht bekannt sein, sonst
+  wäre die gesamte Verschlüsselung sinnlos. Es wird schnell
+  offensichtlich, dass solche Bedingungen nie erfüllt werden können.
+- Da es sich bei der Liste der Abonnenten um Daten handelt, welche
+  während der Laufzeit gespeichert und verwaltet werden müssen, bringt
+  man plötzlich eine Vielzahl neuer Probleme ins Spiel. So müssen die
+  Daten repliziert und gesichert werden, da ein einzelnes Mitglied
+  jederzeit unerreichbar sein könnte. Sie müssen verifiziert werden,
+  da man kein Vertrauen in die Mitglieder des Systems haben darf und
+  sie müssen trotz häufiger Änderungen konstant gehalten werden. Das
+  Gebiet der dezentralen oder verteilten Datenbanken alleine ist sehr
+  gross und komplex, wenn man also plötzlich nebst einem
+  Nachrichtensystem ohne verteilte Zustände auch noch eine verteilte
+  Datenbank verwalten muss, übersteigt dies meist die erhoffte
+  Komplexität vieler Projekte.
+
+*** Router
+Als zentrales Herzstück des gesamten Actaeon Systems übernimmt der
+Router zwei wichtige Aufgaben gleichzeitig:
+- Das Speichern der bekannten Nodes im System.
+- Funktionen zum berechnen der nächsten Ziele für Nachrichten. 
+
+\noindent Um die Funktionen des Routers zu verstehen, lohnt es sich,
+den Abschnitt zu Kademlia, oder besser noch das tatsächliche Kademlia
+Whitepaper zu lesen, denn der Router ist der Punkt im System, der
+die meisten der kademlia-spezifischen Funktionen übernimmt. Als erstes
+ist es wahrscheinlich wichtig zu verstehen, welche Daten im Router
+überhaupt gespeichert werden. Grundsätzlich wird im Router jede Node
+gespeichert, von der Daten empfangen werden, oder die durch eine
+Anfrage gefunden wurde. Allerdings definiert Kademlia gewisse Regeln,
+nach welchen neu gefundene Nodes zum Routing Table hinzugefügt werden:
+- Grundsätzlich werden alte, bereits seit langem bekannte Nodes über
+  neuere bevorzugt, selbst wenn diese ansonsten bessere Eigenschaften
+  (kleine Distanz) hätten. Damit soll verhindert werden, dass das
+  Netzwerk durch eine Vielzahl böswillig generierter Nodes einfach
+  angegriffen werden kann.
+- Für jede Node wird ein Status gespeichert, welcher angibt, ob die
+  Node aktuell erreichbar ist. Da sich dies während der Laufzeit
+  ändern kann muss der Status regelmässig überprüft werden.
+- Die Anzahl der gespeicherten Nodes ist umgekehrt proportional zum
+  Abstand zwischen der Node und dem relativen Zentrum (also sich
+  selbst).
+
+\noindent Um diese Regeln möglichst einfach umzusetzen, wird der
+Router intern als binärer Baum dargestellt. Jedes Blatt stellt dabei
+ein k-Bucket dar, in welchem die tatsächlichen Nodes liegen. Sobald
+ein solcher Bucket voll ist, kann er halbiert werden und es entstehen
+zwei neue Blätter. Dies ist allerdings nur auf der, dem Zentrum (also
+der eigenen Adresse) nahen Seite möglich. Auf der /fernen/ Seite können
+Buckets nicht geteilt werden. Damit wird direkt die Regel, dass die
+Häufigkeit der Nodes mit steigendem Abstand abnimmt direkt umgesetzt.
+Sollte es nicht möglich sein, einen Bucket zu teilen, werden neue
+Nodes entweder vergessen, oder bereits vorhandene Nodes werden
+überschrieben. Auch ist es wichtig zu verstehen, dass innerhalb der
+tatsächlichen Buckets nicht nach Distanz, sondern nach Zeit sortiert
+wird. Da Nachrichten meistens an mehrere Ziele gleichzeitig geschickt
+werden, um die Auslieferung zu garantieren, wird versucht, zuerst
+möglichst viele Nodes aus dem gleichen Bucket zu verwenden. Nur wenn
+diese nicht reichen dürfen Nodes aus anderen Buckets verwendet werden.
+
+\noindent Der Router bietet alle nötigen Funktionen direkt in einer
+öffentlichen API an, in der tatsächlichen Applikation wird er
+allerdings etwas anders eingesetzt:
+- Um die Menge an internen Nachrichten und Abhängigkeiten zu
+  reduzieren, haben verschiedene Punkte im System Zugang zum gleichen
+  Router Objekt.
+- Da verschiedene Threads Zugang zu den gleichen Daten brauchen, muss
+  das eigentliche Router Objekt hinter einem Mutex liegen und darf
+  immer nur von einem Thread gleichzeitig bearbeitet werden.
+*** Speicher 
+Leider ist es meistens nicht möglich, ein so komplexes, umfangreiches
+Kommunikationssystem aufzubauen, ohne dabei nicht geteilte Zustände zu
+benötigen. Dabei geht es um Daten, die
+- nicht nur für ein Mitglied des Systems relevant sind wie
+  beispielsweise die Router Daten,
+- länger Leben müssen als ein Mitglied online sein könnte, daher eine
+  ändernde Netzwerkstruktur überstehen müssen.
+
+\noindent Es ist offensichtlich, dass man solche Daten um jeden Preis
+vermeiden sollte. Da es sich im Actaeon-System /nur/ um ein
+Nachrichtensystem und keine dezentrale Datenbank handelt, existieren
+tatsächlich nahezu keine geteilten Daten. Als einzige Ausnahme
+allerdings werden im System =Topic Records= verwendet, auf welche genau
+diese Problematik zutrifft.\\
+
+\noindent Wenn ein Mitglied ein Thema abonniert, muss der Kontakt mit
+allen bisherigen Abonnenten hergestellt werden. Dies könnte
+theoretisch ohne Struktur durch ein einfaches Netzwerkfluten gemacht
+werden, ein solcher Ansatz wäre aber sehr ineffizient. Actaeon, sowie
+die meisten Systeme dieser Art, verwendet einen kleinen Eintrag im
+System, der den neuen Abonnenten über existierende informiert und
+umgekehrt. Dieser Eintrag kann aber nicht einfach irgendwo liegen,
+sondern muss genau bei dem Mitglied zu finden sein, zu welchem seine
+Adresse den kleinsten Abstand hat. Dieses Mitglied muss sich dabei um
+nichts kümmern, das System verwaltet diese Einträge automatisch. Man
+muss sich nun aber um die Möglichkeit kümmern, dass das zuständige
+Mitglied nicht mehr erreichbar ist. Die einfachste Lösung dafür und
+die, welche aktuell von Actaeon verwendet wird, ist einfach mithilfe
+einer hohen Replikation dafür zu sorgen, dass hoffentlich immer
+mindestens ein Mitglied verfügbar ist.\\
+
+\noindent Allerdings kann dies trotzdem zu Problemen führen. Besonders
+wenn sich die Netzwerkstruktur schnell stark ändert, kann es dazu
+kommen, dass gewisse Teile des Netzwerks Themen an der falschen
+Stelle suchen. Im aktuellen Actaeon-System existiert noch keine Lösung
+für dieses Problem, aber eine mögliche Lösung existiert und deren
+Umsetzung ist geplant.
+
+** Orion
+Orion ist die zentrale Anwendung, welche die Möglichkeiten von Actaeon
+aufzeigen soll. Orion ist ein 3D Spiel, in welchem man ein Flugzeug
+fliegt und versucht mehr Punkt zu machen als der Gegner. Punkte werden
+vergeben, wenn das Flugzeug durch Ringe gesteuert wird. Diese Demo
+trägt denselben Namen wie das Projekt, da es die zentrale Demo ist.
+
+\noindent Orion ist komplett in der Rust Programmiersprache
+geschrieben und baut auf dem Bevy Framework auf. Bevy ist ein sehr
+neues Framework, welches die 3D programmierung vereinfacht, da es
+grundlegende Komponente wie Oberflächen und Formen zur verfügung
+stellt.
+*** Integration von Actaeon
+\noindent Die Integration von Actaeon in Orion stellte sich als ein
+kleines Problem heraus, da die Daten von Bevy verwaltet werden. Dies
+ist vonnöten, da die Funktionen, welche das Game defininieren von Bevy
+aufgerufen werden. Damit dies aber mit den Daten von Actaeon
+funktioniert, muss Actaeonn Eigenschaften besitzen, welche das Crate
+nicht hat.
+#+begin_src rust
+#[derive(Component)]
+pub struct Network {
+    center: Center,
+    interface: Mutex<Interface>,
+    topic: Option<Mutex<Topic>>,
+}
+#+end_src
+\noindent Die Lösung für dieses Problem ist ein Wrapper um Actaeon,
+welcher die Daten isoliert. Dieser Wrapper kann nun auch die
+Eigenschaften haben, um sie von =Bevy= verwalten zu lassen.\\
+
+*** Bevy
+Bevy ist eine neue und intuitive Bibliothek, die besonders
+für die Programmierung von Games ausgelegt ist. Bevy nimmt einen
+anderen Ansatz als andere Bibliotheken, denn normalerweise ist der
+Entwickler dafür zuständig, dass die Daten richtig verwaltet und die
+Funktionen richtig aufgerufen werden. Diese Last nimmt Bevy dem
+Programmierer ab und erleichtert es neue Funktionen hinzuzufügen.
+
+\noindent Dieser neue Ansatz nennt Bevy ECS, was kurz für Entity
+Component System steht. Die Daten sind die Komponenten und die
+Funktionen sind die Systeme. Sie beide werden von Bevy verwaltet und
+aufgerufen. Dieser Ansatz hat mehrere Vorteile.
+
+1. Die Daten sind global verfügbar. Jede Funktion, welche von Bevy
+   aufgerifen wird, hat theoretisch die Möglichkeit auf die Daten
+   zuzugreiffen.
+2. Es ist einfacher den Code lesbar und erweiterbar zu halten, da bei
+   gebrauch einfach eine neue Funktion an Bevy übergeben werden kann.
+3. Durch die Trennung der einzelnen Funktionen und Daten kann Bevy
+   viele Funktionen gleichzeitig ausführen und somit effizienter die
+   Ressourcen der Hardware ausnutzen.
+
+\noindent Bevy stellt nur wenig zur verfügung, aber durch ein einfaches
+Plugin System können Bibliotheken von anderen einfach in andere
+Projekte integriert werden.\\
+
+\noindent Um ECS ein bisschen besser zu beleuchten, zeigt das folgende
+Beispiel, wie einfach die Daten- und Funktionsverwaltung in Bevy ist.
+
+#+begin_src rust
+#[derive(Component)]
+struct Person {
+    name: String,
+}
+#+end_src
+
+\noindent Dieses Datenstruktur ist wie man an der ersten Codezeile
+erkennen kann eine Komponente. Mit dem derive(Componet) wird Bevy
+mitgeteilt, dass die folgende Datenstruktur an einem gewissen Punkt
+von Bevy verwaltet wird. Die Daten können über die Commands an Bevy
+übergeben werden.
+#+begin_src rust
+fn setup(mut commands: Commands) {
+    commands.spawn_bundle(()).insert(Person { name: "Linus" });
+}
+#+end_src
+\noindent In dieser Funktion/System macht Bevy platz um eine Instanz des
+Personenstructs zu speichern. Das bedeutet allerdings, das der
+Programmierer nicht weiss, wo sich diese Daten befinen. Die Daten
+werden komplett von Bevy verwaltet. Die Daten können allerdings wieder
+angefordert werden.
+#+begin_src rust
+fn get_persons(person_query: Query<&Person>) {
+    for person in person_query.iter() {
+	println!("{}", person.name);
+    }
+}
+#+end_src
+
+\noindent Diese Funktion/System nimmt ein Query struct als Parameter,
+welches Bevy signalisiert, dass alle Personen, die Bevy registriert
+hat von dieser Funktion gebraucht werden. Es ist allerdings nicht
+klar, wieviele Personen registriert sind, weshalb das Query struct in
+einen Iterator verwandelt werden kann. Das heisst, dass man durch alle
+Einträge geht und diese einzeln verarbeitet.\\
+
+\noindent Bisher wurden ausschliesslich Funktionen und Daten
+definiert, aber noch keine Hauptfunktion, welche die Daten und
+Funktionen auch braucht. Hierbei unterscheidet sich Bevy von anderen
+Frameworks, denn die Funktionen werden nicht vom Programmierer
+aufgerufen, sondern der Entwickler übergibt die Funktionen an Bevy und
+dieses ruft die Funktionen auf.
+#+begin_src rust
+use bevy::prelude::*;
+
+fn main() {
+    App::new()
+	.add_startup_system(setup)
+	.add_system(get_person)
+	.run()
+}
+#+end_src
+
+*** Performance
+Orion ist ein Prototyp. Die Performance lässt zum aktuellen Zeitpunkt
+zu wünschen übrig. Eine angenehme Sichtweite ist nur mit starker
+Hardware zu erreichen.\\
+
+\noindent Performanceprobleme lassen sich auf ein zentrales Problem
+reduzieren. Das Chunksystem. Die Welt ist in verschiedene Teile
+unterteilt, welche nach und nach geladen werden. Welche Chunks geladen
+sind hängt von der Spielerposition ab. Wenn sich der Spieler allerdings
+bewegt, heisst das, dass andere Teile der Welt geladen werden müssen.\\
+
+\noindent In einer perfekt optimierten Version wäre jeder Chunk ein
+Mesh. Das heisst, das der Chunk für die Hardware ein Teil ist und auch
+als solches behandelt werden kann. Die Hardware kann allerdings nur
+mit Dreiecken umgehen, weshalb der quadratische Chunk mit seinen
+Unebenheiten aus hunderten bis tausenden Dreiecken bestehen muss.
+Nebst dem Mesh braucht der Chunk ausserdem noch eine Oberfläche. Die
+Oberfläche besteht aus verschiedenen Farben, weshalb die Textur
+erstellt werden muss und anschliessend auf das Mesh gezogen werden
+muss. Wenn die Welt vorgefertigt wäre und nich prozedural generiert,
+könnte man die Texturen generieren und anschliessend, wenn es
+gebraucht wird, von einer Datei geladen werden.\\
+
+\noindent Die aktuelle Implementierung nutzt fast dieses Technik, mit dem
+Unterschied, dass zwei Dreiecke zu einem Quadrat zusammengesetzt
+werden. Diese Dreiecke können nun im Raum platziert werden und mit
+einer einzigen Farbe ausgefüllt werden.\\
+
+\noindent Die Performanceprobleme treten allerdings erst auf, wenn ein
+Chunk entladen und ein anderer geladen werden muss. Da ein Chunk aus
+mehrern hunderten bis tausenden Teilen besteht, muss jedes einzelne
+Objekt separat entladen werden. Der neue Chunk verschlechtert die
+Performance zusätzlich, da dieser aufgebaut werden muss und hunderte
+neue Objekte im Raum platzieren.\\
+
+*** Zeitmanagement
+Ursprünglich war definiert, dass das 3D Game ohne Game Engine
+entstehen soll. Es stellte sich allerdings schnell heraus, dass das in
+dieser Zeit nich möglich war.\\
+
+\noindent Die heutigen 3D Pipelines sind sehr komplex, was zur Folge
+hat, dass man ein breites Wissen und viel Erfahrung haben muss um ein
+solches Vorhaben umzusetzen.\\
+
+\noindent Das finale Resultat nutzt eine 3D Engine, allerdings
+versucht es diese so wenig wie möglich zu nutzen und die wichtigsten
+Funktionen ohne diese zu implementieren.
 ** Anwendungen
+In den folgenden Abschnitten sollen die beiden restlichen Demos
+angesprochen werden. Während Actaeon als zentrales Produkt und Orion
+als zentrale Demo für dieses Produkt den Hauptteil dieser Arbeit
+ausmachen, so war es trotzdem eine Priorität, andere
+Einsatzmöglichkeiten beispielhaft zu zeigen.
 *** Chat
 Wie bereits in der ersten Entwicklungsphase wurde auch basierend auf
 dem Actaeon-System ein Chat-Programm entwickelt. Dieses ist allerdings
@@ -900,96 +1273,63 @@ des Datensystems entstanden:
   mit welcher vorgezeigt werden soll, mit wie wenig Aufwand eine
   Applikation basierend auf dem Actaeon-System gebaut werden kann.
 
-\noindent Anstelle des /Frontends/ soll hier direkt der Code angeschaut
-werden, welcher diese Demo möglich macht:
-#+begin_src rust
-  use actaeon::{
-      config::Config,
-      node::{Center, ToAddress},
-      topic::Topic,
-      Interface,
-  };
-  use sodiumoxide::crypto::box_;
-  use std::io;
-  use std::sync::mpsc;
-
-  fn main() -> io::Result<()> {
-      let config = Config::new(20, 1, 100, "example.com".to_string(), 4242);
-      let (_, secret) = box_::gen_keypair();
-      let center = Center::new(secret, String::from("127.0.0.1"), 4242);
-      let interface = Interface::new(config, center).unwrap();
-      let (s, r) = mpsc::channel();
-      std::thread::sleep(std::time::Duration::from_millis(125));
-      let mut buffer = String::new();
-      let stdin = io::stdin();
-      stdin.read_line(&mut buffer)?;
-      let topic = buffer.to_address();
-      let topic = interface.subscribe(&topic);
-      receiver(topic, r);
-
-      loop {
-          let mut buffer = String::new();
-          let stdin = io::stdin();
-          stdin.read_line(&mut buffer)?;
-          let message = buffer.as_bytes().to_vec();
-          let _ = s.send(message);
-      }
-  }
-
-  fn receiver(mut topic: Topic, recv: mpsc::Receiver<Vec<u8>>) {
-      std::thread::spawn(move || loop {
-          if let Some(msg) = topic.try_recv() {
-              let body = msg.message.body.as_bytes();
-              let message = String::from_utf8_lossy(&body);
-              let from = &msg.source().as_bytes()[0];
-              println!("{}: {}", from, message);
-          }
-          if let Ok(bytes) = recv.try_recv() {
-              let _ = topic.broadcast(bytes);
-          }
-      });
-  }
-#+end_src
-\noindent Eine kurze, oberflächliche Erklärung was mit diesem Code
-erreicht wird:
-1. Als erstes wird das Actaeon-System konfiguriert und gestartet.
-2. Das Thema (in diesem Falle der Chatraum) wird als Input vom Nutzer
-   genommen.
-3. Die daraus errechnete Adresse wird Actaeon übergeben, welches dann
-   mit anderen Mitgliedern des Systems kommuniziert und die nötigen
-   Verbindungen herstellt.
-4. Da Rust sehr strikte Regeln im Umgang mit Threads und nebenläufigen
-   Programmen hat, müssen die Funktionen auf zwei Threads aufgeteilt
-   werden:
-   - Einer kümmert sich um Eingaben vom Nutzer,
-   - der andere um Nachrichten vom System.
-   Sollte eine Applikation eine andere Methode verwenden, Eingaben vom
-   Nutzer zu erhalten, ist es natürlich nicht nötig, einen eigenen
-   Thread zu starten und Actaeon würde sich automatisch im Hintergrund
-   darum kümmern.
-5. Beide Threads laufen nebenläufig in einer unendlichen Schleife und
-   warten auf Ereignisse.
-
-\noindent Der Code, der tatsächlich für das Actaeon Datensystem
-relevant ist beschränkt sich allerdings auf die folgenden Zeilen:
-#+begin_src rust
-  {
-      let config = Config::new(20, 1, 100, "example.com".to_string(), 4242);
-      let (_, secret) = box_::gen_keypair();
-      let center = Center::new(secret, String::from("127.0.0.1"), 4242);
-      let interface = Interface::new(config, center).unwrap();
-      let topic = buffer.to_address();
-      let topic = interface.subscribe(&topic);
-      let _ = topic.broadcast(vec![]);
-  }
-#+end_src
-\noindent Man muss nicht jede Zeile dieses Beispiels exakt verstehen.
-Was hier schlussendlich wichtig ist, ist die Feststellung, dass nur
-wenige Zeilen Code nötig sind, um eine beliebige Applikation an ein
-dezentrales Datensystem anzuschliessen.
+\noindent Die Chat Demo ist auf Github als Beispiel für die Actaeon
+Bibliothek verfügbar. Im Anhang dieses Dokuments ist der gesamte Code
+der Demo ebenfalls abgedruckt und wird dort auch kurz erklärt.
 *** Arrow
-** Orion
-TODO: Dominik Orion
+Arrow ist eine weitere Demo, die aus der Anfangszeit des Projektes
+stammt. Arrow ist eine Lisp ähnliche Sprache, welche es erlaubt mit
+einfachen intepretierten Befehlen das Actaeon Framework zu nutzen. Wie
+auch die anderen Projekte ist Arrow auch komplett in Rust geschrieben
+und hat mit der Zeit einige Veränderungen durchgemacht.
+
+\noindent Arrow kann über eine interaktive Shell direkt genutzt werden,
+oder durch das angeben einer Datei auch Programme ausführen.
+
+\noindent Wie alle anderen Teile von Project Orion kann man Arrow über
+Github beziehen. Um Arrow zu nutzen braucht man Rustup und Git. Danach
+findet alles im Terminal statt:
+#+begin_src sh
+$ git clone https://github.com/EngineOrion/arrow
+$ cd arrow
+$ cargo run --release
+#+end_src
+**** Implementierung
+Arrow ist wie alle anderen Teile der Arbeit in Rust implementiert.
+Arrow ist eine Lisp ähnliche Sprache, welche direkten Zugriff auf die
+Actaeon Bibliothek hat.
+
+\noindent Arrow nimmt einen String entgegen und baut daraus einen AST
+(Abstract Syntax Tree). Anschliessend wird aus jedem einzelnen Knoten
+des AST ein LispObject generiert. Diese Lispobjekte werden
+anschliessend im in der gleichen Struktur untereindander verbunden.
+Somit wird aus vielen komplexen ein Objekt, über welches das Programm
+ausgeführt werden kann.
+
+\noindent Wenn das Programm ausgeführt wird, wird der erste Knoten
+aufgerufen. Wenn dieser abhängig ist von Daten, die dieser nicht lokal
+hat, ruft er seine Kinder auf und bekommt Daten von diesen. Wenn ein
+Knoten alle Daten hat gibt er Daten zurück, was sich anschliessend den
+Baum wieder nach oben arbeitet. Schlussendlich hat auch der letzte
+Knoten alle Daten und es wird ein Rückgabewert an den Aufrufer
+zurückgegeben.
+**** Beispiel
+Das folgende ist ein Beispiel für ein Arrow Programm:
+#+begin_src lisp
+(defun greet ()
+    (message "Hello World"))
+
+(greet)
+#+end_src
+\noindent Hier produziert Arrow drei Objekte. Das erste ist ein
+message Objekt und ist ein Kind von dem defun Objekt. Das letzte ruft
+das defun Objekt auf. Das defun Objekt ist ruft seine Kinder auf, was
+in diesem Fall das message Objekt ist. Das message Objekt hat keine
+Kinder, weshalb es seine Funktion ausfüht. Das heisst, dass den ersten
+Parameter "Hello World" in der Konsole ausgibt. Da message nichts
+zurückzugeben hat, aber verpflichtet ist etwas zurückzugeben, gibt es
+nil zurück. Wenn man es mit anderen Programmiersprachen vergleichen
+will ist nil eine Kombination aus null und false.
 * Fazit
 Verteilte und dezentrale Datensysteme sind trotz ihrer Wichtigkeit nur
 ein kleines Nischengebiet in der Welt der Informatik. Und obwohl
@@ -1324,262 +1664,25 @@ reden, aber wer tatsächlich konsequent alle Probleme von Grund auf
 angehen will muss sich auch Gedanken über die darunterliegende
 physikalische Infrastruktur machen. Dies ist allerdings ein Schritt
 der mit Project Orion (noch) gemacht werden soll.
-** Actaeon
-Da während dem Hauptteil des Berichts wurde, um die Komplexität und
-den Umfang der Arbeit möglichst unter Kontrolle zu behalten, nur ein
-grober Überblick über die Innereien Actaeons geliefert. In den
-folgenden Abschnitten soll nun eine Auswahl der Entscheidungen,
-Konzepte und Technologien genauer beleuchtet werden, welche
-schlussendlich zum aktuellen Actaeon führten. Weil mehr Details und
-technische Feinheiten angesprochen werden, wird auch gewisses
-Vorwissen und Know-How verlangt und es werden nicht mehr alle
-Fachbegriffe mit dem selben Detailgrad erklärt. Dazu kann es immer
-wieder zu Verweisen auf die Code Dokumentation geben, welche natürlich
-im Detailgrad noch weit über diesem Dokument steht. Sie wurde
-automatisch durch Rust generiert und ist online zu finden.[fn:7]
-*** Verschlüsselung
-Zwar ist es bei weitem nicht so, dass alle moderne dezentrale Systeme
-das Internet oder ein ähnliches Austauschsystem als Grundlage
-verwenden, allerdings ist dies in nahezu allen Fällen, besonders bei
-den beliebten und weit verbreiteten Fällen. Das Internet ist für
-fehlende Sicherheit und Gefahren bekannt, daher ist es von Nöten, dass
-sich jede Applikation selbst um Verschlüsselungen und Sicherheit
-kümmert. Allerdings ist es wichtig, /die passende Verschlüsselung/ zu
-wählen. Hier wird nun ein Ansatz beschrieben, welcher sich besonders
-gut für gewisse Kademlia-inspirierte Systeme eignet. Dieser Ansatz
-beruht auf der Verschlüsselungs-Bibliothek NaCl, beziehungsweise deren
-modernen Abzweig =libsodium=. Während klassische
-Verschlüsselungsmethoden sehr lange Schlüssel benötigen, gibt es
-gewisse Kombinationen von Algorithmen, welche mit sehr kurzen
-Schlüsseln Sicherheit gewährleisten können. Besonders geht es dabei um
-curve25519xsalsa20poly1305, einer Kombination aus den Algorithmen
-Curve25519, Salsa20 und Poly1305. Während das innere Zusammenspiel
-dieser Algorithmen sehr komplex ist, ist das Resultat ein Algorithmus,
-wessen Schlüssel jeweils nur eine Länge von /32 bytes/ haben.\\
-
-\noindent Eigentlich beschreibt Kademlia Adressen mit einer Länge von
-/160 bits/ (/20 bytes/), allerdings ist es ohne grosse Probleme möglich,
-die Adressen Länge auf /32 bytes/ zu verlängern. Dies erlaubt es uns,
-die Verschlüsselung und das Adresssystem direkt miteinander zu
-verbinden. Das mag auf den ersten Blick etwas umständlich und
-unlogisch wirken, es erlaubt allerdings, ohne weitere Operationen,
-verschlüsselte Nachrichten an einen Nutzer zu schicken, wobei
-lediglich dessen Adresse bekannt sein muss. Insgesamt fällt damit viel
-Komplexität weg und macht das Erstellen, Verifizieren und Finden von
-Adressen viel einfacher.
-*** PubSub
-Ein einfaches, aber vielseitig einsetzbares
-Nachrichtenübermittlungsmuster ist die Idee eines =Publish/Subscribe=
-Systems. Ein solches System lässt sich mit nur zwei Aktionen
-beschreiben: 
-- Nutzer können ein gewisses Thema abonnieren, das bedeutet, sie folgen
-  einem gewissen Schlüssel und erhalten Nachrichten von diesem.
-- Jeder Nutzer kann dann in den Themen, die er abonniert hat
-  Nachrichten schicken. Diese werden dann automatisch an alle
-  abonnierten Nutzer verteilt.
-
-\noindent Mit diesen beiden Mechaniken lassen sich die meisten
-Funktionen in modernen Applikationen beschreiben. Sei es ein Chat-
-oder Emailsystem, ein komplexer Datenverarbeitungsmechanisums oder ein
-Datennetzwerk, alle lassen sich relativ einfach mit diesen beiden
-Funktionen modellieren. 
-**** Dezentraler PubSub
-Offensichtlich kann selbst die beste, fehlerfrei optimierte
-Implementierung der oben beschriebenen Prinzipien nicht gegen die
-bereits angesprochenen, fundamentalen Probleme lokal gebundener
-Programme vorgehen. Daher ist es in einem nächsten Schritt von Nöten,
-die Ideen hinter dezentralisierten =PubSub=-Systemen anzuschauen. Das
-mag im ersten Moment komplex klingen, ist aber tatsächlich unglaublich
-einfach. Man muss sich lediglich einen PubSub als zwei getrennte
-Unterkomponenten vorstellen:
-- Themen lassen sich vereinfacht als Einträge in einer Datenbank
-  beschreiben. Die Identifikation der Themen ist dabei der Schlüssel,
-  wobei die Abonnenten als dazugehörige Felder ausgedrückt werden
-  können. Oben wurde bereits ein System beschrieben, welches
-  zuverlässig dezentral Daten speichern kann. Wenn man in der
-  beschriebenen Kademlia Implementierung die Checksumme des Inhalts
-  mit der Checksumme des Themenschlüssels ersetzt, lässt sich Kademlia
-  ohne weitere Veränderungen für einen dezentralen PubSub einsetzen.
-- Danach bleibt natürlich noch das Problem der Nachrichtenverbreitung.
-  Dafür gibt es verschiedene Möglichkeiten:
-  - Die Nachrichten werden direkt an das zuständige Mitglied gesendet,
-    von dort werden sie weitergeleitet. Vorteilhaft an diesem Konzept
-    ist natürlich, dass die Verwender des Systems unglaublich einfach
-    gehalten werden können. Sie müssen lediglich Nachrichten an eine
-    Adresse schicken, das System kümmert sich dann von alleine um die
-    Weiterverbreitung. Damit geben die Nutzer allerdings auch eine
-    gewisse Kontrolle auf, denn sie können nicht direkt einsehen, an
-    wen ihre Nachrichten verteilt werden. In einer solchen Situation
-    gibt es zusätzlich noch gewisse technische Bedenken im
-    Zusammenhang mit der Verschlüsselung.
-  - Andererseits dazu können auch die Aktionen des Abonnierens und
-    Deabonnierens als Nachrichten im System verbreitet werden. Jeder
-    abonnierte Nutzer wird somit also über neue Abonnenten informiert
-    und speichert deren Details lokal. Zwar erhöht dies die
-    Komplexität enorm, erlaubt aber schnellere Übertragung und genauer
-    Kontrolle über die Auswahl der Abonnenten.
-**** Probleme
-Zwar gibt es viel Gutes über PubSubs als Systemkonzept zu sagen,
-allerdings müssen auch einige Probleme angesprochen werden:
-- Wie bereits eben angesprochen kann es zu gewissen Unklarheiten und
-  Problemen im Zusammenhang mit der Verschlüsselung der Nachrichten in
-  dezentralen Systemen kommen. Da Nachrichten meist über das offene
-  Internet übertragen werden und daher Verschlüsselung nahezu zwingend
-  benötigt wird, muss man sie auch hier berücksichtigen. Wie bereits
-  im Abschnitt zur Verschlüsselung angesprochen, sollen Nachrichten
-  mit dem öffentlichen Schlüssel des Empfängers, welcher auch
-  gleichzeitig die Adresse darstellt, verschlüsselt werden. Beim
-  Durchgehen der oben beschriebenen Architekturen wird ein Problem
-  offensichtlich: Wenn ein Thema ein normaler Empfänger im System ist,
-  muss seine öffentliche Adresse verwendet werden. Allerdings wurde
-  definiert, dass die Adresse eines Themas die Checksumme eines
-  bekannten Schlüssels darstellt. Die Adressen in einem solchen System
-  lassen sich allgemein aber durch einen gegebenen privaten Schlüssel
-  ableiten. Umgekehrt ist das natürlich nicht möglich. Ein geheimer
-  Schlüssel lässt sich nicht aus dem öffentlichen Schlüssel errechnen.
-  Hier wird also eigentlich ein System verlangt, bei welchem der
-  private Schlüssel durch eine Checksumme errechnet wird, wobei der
-  daraus entstehende öffentliche Schlüssel als Adresse verwendet wird.
-  Gleichzeitig darf der private Schlüssel nicht bekannt sein, sonst
-  wäre die gesamte Verschlüsselung sinnlos. Es wird schnell
-  offensichtlich, dass solche Bedingungen nie erfüllt werden können.
-- Da es sich bei der Liste der Abonnenten um Daten handelt, welche
-  während der Laufzeit gespeichert und verwaltet werden müssen, bringt
-  man plötzlich eine Vielzahl neuer Probleme ins Spiel. So müssen die
-  Daten repliziert und gesichert werden, da ein einzelnes Mitglied
-  jederzeit unerreichbar sein könnte. Sie müssen verifiziert werden,
-  da man kein Vertrauen in die Mitglieder des Systems haben darf und
-  sie müssen trotz häufiger Änderungen konstant gehalten werden. Das
-  Gebiet der dezentralen oder verteilten Datenbanken alleine ist sehr
-  gross und komplex, wenn man also plötzlich nebst einem
-  Nachrichtensystem ohne verteilte Zustände auch noch eine verteilte
-  Datenbank verwalten muss, übersteigt dies meist die erhoffte
-  Komplexität vieler Projekte.
-
-*** Router
-Als zentrales Herzstück des gesamten Actaeon Systems übernimmt der
-Router zwei wichtige Aufgaben gleichzeitig:
-- Das Speichern der bekannten Nodes im System.
-- Funktionen zum berechnen der nächsten Ziele für Nachrichten. 
-
-\noindent Um die Funktionen des Routers zu verstehen, lohnt es sich,
-den Abschnitt zu Kademlia, oder besser noch das tatsächliche Kademlia
-Whitepaper zu lesen, denn der Router ist der Punkt im System, der
-die meisten der kademlia-spezifischen Funktionen übernimmt. Als erstes
-ist es wahrscheinlich wichtig zu verstehen, welche Daten im Router
-überhaupt gespeichert werden. Grundsätzlich wird im Router jede Node
-gespeichert, von der Daten empfangen werden, oder die durch eine
-Anfrage gefunden wurde. Allerdings definiert Kademlia gewisse Regeln,
-nach welchen neu gefundene Nodes zum Routing Table hinzugefügt werden:
-- Grundsätzlich werden alte, bereits seit langem bekannte Nodes über
-  neuere bevorzugt, selbst wenn diese ansonsten bessere Eigenschaften
-  (kleine Distanz) hätten. Damit soll verhindert werden, dass das
-  Netzwerk durch eine Vielzahl böswillig generierter Nodes einfach
-  angegriffen werden kann.
-- Für jede Node wird ein Status gespeichert, welcher angibt, ob die
-  Node aktuell erreichbar ist. Da sich dies während der Laufzeit
-  ändern kann muss der Status regelmässig überprüft werden.
-- Die Anzahl der gespeicherten Nodes ist umgekehrt proportional zum
-  Abstand zwischen der Node und dem relativen Zentrum (also sich
-  selbst).
-
-\noindent Um diese Regeln möglichst einfach umzusetzen, wird der
-Router intern als binärer Baum dargestellt. Jedes Blatt stellt dabei
-ein k-Bucket dar, in welchem die tatsächlichen Nodes liegen. Sobald
-ein solcher Bucket voll ist, kann er halbiert werden und es entstehen
-zwei neue Blätter. Dies ist allerdings nur auf der, dem Zentrum (also
-der eigenen Adresse) nahen Seite möglich. Auf der /fernen/ Seite können
-Buckets nicht geteilt werden. Damit wird direkt die Regel, dass die
-Häufigkeit der Nodes mit steigendem Abstand abnimmt direkt umgesetzt.
-Sollte es nicht möglich sein, einen Bucket zu teilen, werden neue
-Nodes entweder vergessen, oder bereits vorhandene Nodes werden
-überschrieben. Auch ist es wichtig zu verstehen, dass innerhalb der
-tatsächlichen Buckets nicht nach Distanz, sondern nach Zeit sortiert
-wird. Da Nachrichten meistens an mehrere Ziele gleichzeitig geschickt
-werden, um die Auslieferung zu garantieren, wird versucht, zuerst
-möglichst viele Nodes aus dem gleichen Bucket zu verwenden. Nur wenn
-diese nicht reichen dürfen Nodes aus anderen Buckets verwendet werden.
-
-\noindent Der Router bietet alle nötigen Funktionen direkt in einer
-öffentlichen API an, in der tatsächlichen Applikation wird er
-allerdings etwas anders eingesetzt:
-- Um die Menge an internen Nachrichten und Abhängigkeiten zu
-  reduzieren, haben verschiedene Punkte im System Zugang zum gleichen
-  Router Objekt.
-- Da verschiedene Threads Zugang zu den gleichen Daten brauchen, muss
-  das eigentliche Router Objekt hinter einem Mutex liegen und darf
-  immer nur von einem Thread gleichzeitig bearbeitet werden.
-*** Speicher 
-Leider ist es meistens nicht möglich, ein so komplexes, umfangreiches
-Kommunikationssystem aufzubauen, ohne dabei nicht geteilte Zustände zu
-benötigen. Dabei geht es um Daten, die
-- nicht nur für ein Mitglied des Systems relevant sind wie
-  beispielsweise die Router Daten,
-- länger Leben müssen als ein Mitglied online sein könnte, daher eine
-  ändernde Netzwerkstruktur überstehen müssen.
-
-\noindent Es ist offensichtlich, dass man solche Daten um jeden Preis
-vermeiden sollte. Da es sich im Actaeon-System /nur/ um ein
-Nachrichtensystem und keine dezentrale Datenbank handelt, existieren
-tatsächlich nahezu keine geteilten Daten. Als einzige Ausnahme
-allerdings werden im System =Topic Records= verwendet, auf welche genau
-diese Problematik zutrifft.\\
-
-\noindent Wenn ein Mitglied ein Thema abonniert, muss der Kontakt mit
-allen bisherigen Abonnenten hergestellt werden. Dies könnte
-theoretisch ohne Struktur durch ein einfaches Netzwerkfluten gemacht
-werden, ein solcher Ansatz wäre aber sehr ineffizient. Actaeon, sowie
-die meisten Systeme dieser Art, verwendet einen kleinen Eintrag im
-System, der den neuen Abonnenten über existierende informiert und
-umgekehrt. Dieser Eintrag kann aber nicht einfach irgendwo liegen,
-sondern muss genau bei dem Mitglied zu finden sein, zu welchem seine
-Adresse den kleinsten Abstand hat. Dieses Mitglied muss sich dabei um
-nichts kümmern, das System verwaltet diese Einträge automatisch. Man
-muss sich nun aber um die Möglichkeit kümmern, dass das zuständige
-Mitglied nicht mehr erreichbar ist. Die einfachste Lösung dafür und
-die, welche aktuell von Actaeon verwendet wird, ist einfach mithilfe
-einer hohen Replikation dafür zu sorgen, dass hoffentlich immer
-mindestens ein Mitglied verfügbar ist.\\
-
-\noindent Allerdings kann dies trotzdem zu Problemen führen. Besonders
-wenn sich die Netzwerkstruktur schnell stark ändert, kann es dazu
-kommen, dass gewisse Teile des Netzwerks Themen an der falschen
-Stelle suchen. Im aktuellen Actaeon-System existiert noch keine Lösung
-für dieses Problem, aber eine mögliche Lösung existiert und deren
-Umsetzung ist geplant.
 ** Ausblick
 Auch wenn sind die geschaffenen Produkte und Programme ihren Zweck
 erfüllen und eine nutzbare Demo möglich machen, so gibt es einige
 Punkte, die noch nicht umgesetzt wurden.
 
 - Actaeon: \\
-  Nebst den technischen Feinheiten, wie eine Möglichkeit einzelne
-  Threads unabhängig voneinander neuzustarten oder eine zusätzliche
-  Ebene der Verschlüsselung, gibt es einige grössere, strukturelle
-  Probleme, welche noch angesprochen werden müssen. Besondes die
-  mehrfach angesprochenen Probleme im Zusammenhang mit IP-Adressen
-  haben mit unseren Arbeiten keine abschliessene Lösung gefunden. Die
-  Errungenschaft hier ist Unabhängigkeit, denn das Netzwerk ist nicht
-  an gewisse Adress-Systeme gebunden oder auf nur eines limitiert.
-  Auch wenn diese gewonnene Unabhängigkeit eine Errungenschaft für
-  sich ist, so werden die allermeisten Nutzer weiterhin problematische
-  Systeme, besonders IP-V4, verwenden. Zwar ist es fragwürdig, wie
-  viel eine zeitlich stark limitierte Arbeit in einem so umfangreichen
-  Feld tatsächlich erreichen kann, es würde sich allerdings lohnen,
-  zumindest eine existierende Alternative, wie beispielsweise =CJDNS=
-  anzubieten. Obwohl das System sich dynamisch an neue Netzwerkformen
-  anpassen kann, ist es möglich, dass durch die Verschiebung der
-  Address-Bereiche ein neues Mitglied für Themen und Daten zuständig
-  ist. Aktuell werden bereits vorhandene Daten dabei noch nicht
-  verschoben. Auch existiert aktuell noch keine Möglichkeit,
-  schädliche Mitglieder zu blockieren oder zu erkennen. Das aktuelle
-  Netzwerk ist also anfällig gegen potientielle Angriffe oder
-  Sabotage. Und auch wenn Actaeon in der Lage ist, schnell Nachrichten
-  zu verarbeiten, so kommt dies mit eher hohen Leistungsansprüchen.
-  Ohne Rusts neuste async-await-Syntax beansprucht die Bibliothek
-  mehrere Threads für sich und braucht diese für die gesamte Laufzeit.
-  Trotz gewisser Mängel und Kritikpunkte ist das gesamte System im
-  aktuellen Zustand aber funktionsfähig und nützlich.
+  Wie in nahezu jedem Software Projekt ist auch Actaeon nicht ohne
+  Bugs oder Probleme. Nebst diesen stehen allerdings auch noch einige
+  andere Schritte an, welche die Nutzung von Actaeon verbessern
+  könnten:
+  - Anstelle des aktuellen Threadding-Models muss der Wechsel auf die
+    neuen Rust async-await Funktionen gemacht werden. Zwar kommen
+    damit mehr Abhängigkeiten und mehr Komplexität, allerdings sollte
+    sich dieser Schritt lohnen, da eine solche Umsetzung signifikant
+    besser laufen sollte.
+  - Als weiteres grosses Feature soll /Record-Republishing/ eingebaut
+    werden. Damit sollte das Netzwerk auch bei abrupten,
+    grossflächigen Änderungen der Netzwerkstruktur funktionieren, was
+    aktuell noch zu Problemen führen kann.
 - Orion: \\
   Natürlich sind bei einem Videospiel die Möglichkeiten nahezu
   unlimitiert, allerdings existieren auch hier einige interne,
@@ -1595,12 +1698,98 @@ Punkte, die noch nicht umgesetzt wurden.
   zufriedengestellt sein, als seriöses Spiel, vergleichbar mit
   kommerziellen Alternativen ist es allerdings noch nicht geeignet.
 - Weiteres: \\
-  Natürlich beschränkt sich der Umfang des Projekts nicht nur auf
+  Der Umfang des Möglichkeiten beschränkt sich nicht nur auf
   Videospiele oder Chat Programme. Eine Vielzahl anderer Anwendungen
   lässt sich mit der actaeon Bibliothek bauen. Dank einer offenen
   Lizenz gibt es ebenfalls die Hoffnung, dass andere Personen in der
-  Zukunft Programme für das Ökosystem bauen.
-  \newpage
+  Zukunft Programme für das Ökosystem bauen. \newpage
+** Code
+*** Chat Demo
+Der gesamte Code der Chat Demo sowie eine kurze Erklärung:
+#+begin_src rust
+  use actaeon::{
+      config::Config,
+      node::{Center, ToAddress},
+      topic::Topic,
+      Interface,
+  };
+  use sodiumoxide::crypto::box_;
+  use std::io;
+  use std::sync::mpsc;
+
+  fn main() -> io::Result<()> {
+      let config = Config::new(20, 1, 100, "example.com".to_string(), 4242);
+      let (_, secret) = box_::gen_keypair();
+      let center = Center::new(secret, String::from("127.0.0.1"), 4242);
+      let interface = Interface::new(config, center).unwrap();
+      let (s, r) = mpsc::channel();
+      std::thread::sleep(std::time::Duration::from_millis(125));
+      let mut buffer = String::new();
+      let stdin = io::stdin();
+      stdin.read_line(&mut buffer)?;
+      let topic = buffer.to_address();
+      let topic = interface.subscribe(&topic);
+      receiver(topic, r);
+
+      loop {
+          let mut buffer = String::new();
+          let stdin = io::stdin();
+          stdin.read_line(&mut buffer)?;
+          let message = buffer.as_bytes().to_vec();
+          let _ = s.send(message);
+      }
+  }
+
+  fn receiver(mut topic: Topic, recv: mpsc::Receiver<Vec<u8>>) {
+      std::thread::spawn(move || loop {
+          if let Some(msg) = topic.try_recv() {
+              let body = msg.message.body.as_bytes();
+              let message = String::from_utf8_lossy(&body);
+              let from = &msg.source().as_bytes()[0];
+              println!("{}: {}", from, message);
+          }
+          if let Ok(bytes) = recv.try_recv() {
+              let _ = topic.broadcast(bytes);
+          }
+      });
+  }
+#+end_src
+\noindent Eine kurze Erklärung was mit diesem Code erreicht wird:
+1. Als erstes wird das Actaeon-System konfiguriert und gestartet.
+2. Das Thema (in diesem Falle der Chatraum) wird als Input vom Nutzer
+   genommen.
+3. Die daraus errechnete Adresse wird Actaeon übergeben, welches dann
+   mit anderen Mitgliedern des Systems kommuniziert und die nötigen
+   Verbindungen herstellt.
+4. Da Rust sehr strikte Regeln im Umgang mit Threads und nebenläufigen
+   Programmen hat, müssen die Funktionen auf zwei Threads aufgeteilt
+   werden:
+   - Einer kümmert sich um Eingaben vom Nutzer,
+   - der andere um Nachrichten vom System.
+   Sollte eine Applikation eine andere Methode verwenden, Eingaben vom
+   Nutzer zu erhalten, ist es natürlich nicht nötig, einen eigenen
+   Thread zu starten und Actaeon würde sich automatisch im Hintergrund
+   darum kümmern.
+5. Beide Threads laufen nebenläufig in einer unendlichen Schleife und
+   warten auf Ereignisse.
+
+\noindent Der Code, der tatsächlich für das Actaeon Datensystem
+relevant ist beschränkt sich allerdings auf die folgenden Zeilen:
+#+begin_src rust
+  {
+      let config = Config::new(20, 1, 100, "example.com".to_string(), 4242);
+      let (_, secret) = box_::gen_keypair();
+      let center = Center::new(secret, String::from("127.0.0.1"), 4242);
+      let interface = Interface::new(config, center).unwrap();
+      let topic = buffer.to_address();
+      let topic = interface.subscribe(&topic);
+      let _ = topic.broadcast(vec![]);
+  }
+#+end_src
+\noindent Man muss nicht jede Zeile dieses Beispiels exakt verstehen.
+Was hier schlussendlich wichtig ist, ist die Feststellung, dass nur
+wenige Zeilen Code nötig sind, um eine beliebige Applikation an ein
+dezentrales Datensystem anzuschliessen.
 ** Glossar
 In diesem Abschnitt sollen alle Begriffe, welche im Text mindestens
 einmal =monospaced= geschrieben wurden, kurz erklärt werden.
