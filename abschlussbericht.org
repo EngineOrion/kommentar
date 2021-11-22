@@ -6,7 +6,40 @@
 \newpage  
 #+BEGIN_ABSTRACT
 *Abstract*\\
-Zielsetzung, Schlüsselwörter, Absteigende Komplexität.
+\noindent Wir leben in einer bequemen Welt. Das wollen wir wenigstens
+glauben. In Wahrheit leben wir aber in einer idyllischen Illusion. Die
+unglaublichen Veränderungen unserer Gesellschaft und unseres Alltags
+hätte sich vor 30 Jahren niemand vorstellen können. Die
+Geschwindigkeit der Fortschritte hat noch nie gesehene Mengen an
+Wohlstand und Reichtum geschaffen. Doch im Rausch des Wandels wurden
+gewisse Entscheidungen, manche bewusst und böswillig, andere aus Not,
+getroffen, welche uns in unserer modernen, vom Internet vollständig
+abhängigen Gesellschaft in eine prekäre Situation bringen. Die
+tiefsten Fundamente der Welt, wie wir sie kennen, sind dem totalen
+Zusammenbruch gefährlich nahe, und was das System am Laufen hält, sind
+oftmals monopolistische Megaunternehmen und ihre ungewählten CEO's,
+die nur von immer mehr Macht, mehr Einfluss und mehr Nutzern träumen.\\
+
+\noindent Es ist offensichtlich, dass eine Alternative her muss. Aber
+während verschiedenste Projekte bereits grosse Fortschritte in den
+Bereichen der dezentralen Kommunikation und Datenspeicherung machen,
+bleiben oftmals die Nutzer aus. Denn trotz aller Innovation und aller
+Vorteile geht es hier um äusserst abstrakte, komplexe Themen, welche
+Unmengen an Vorwissen und Interesse benötigen, um sie genügend zu
+verstehen. =Project Orion= versucht genau da anzusetzen: Ein dezentrales
+Kommunikationssystem soll verschiedene, praktisch einsetzbare
+Anwendungen dezentraler Systeme in die Hände der Endnutzer bringen und
+dort einen sichtbaren, verständlichen Unterschied machen. Besonders
+dafür wurde ein 3D Multiplayer Videospiel entwickelt, welches
+basierend auf einem eigenen dezentralen Kommunikationsprotokoll, die
+gewohnte Erfahrung bekannter Videospiele liefern soll, ohne dabei in
+die Fänge der Megaunternehmen zu geraten.
+
+\noindent Zusätzlich werden die entwickelten Werkzeuge mit ihrer
+Dokumentation und unseren Erfahrungen und Lektionen öffentlich zur
+Verfügung gestellt, sodass zukünftige Projekte davon profitieren
+können und die Einstiegshürde für das Gebiet der dezentralen
+Datensysteme hoffentlich gesenkt wird.
 #+END_ABSTRACT
 \newpage
 
@@ -112,10 +145,9 @@ arbeiten lässt, allerdings werden diese meist von grossen Unternehmen
 angeboten und leiden unter den bereits erwähnten Problemen der
 Zentralisierung.
 
-\noindent Die Situation scheint also ziemlich hoffnungslos. Was lässt
-sich tatsächlich noch unternehmen, ohne dabei an gigantische
-Unternehmen, veraltete Standards oder unnötigen Aufwand gebunden zu
-sein?\\
+\noindent Die Situation scheint also eher hoffnungslos. Was lässt sich
+tatsächlich noch unternehmen, ohne dabei an gigantische Unternehmen,
+veraltete Standards oder unnötigen Aufwand gebunden zu sein?\\
 Es existieren bereits verschiedene Projekte, die Fortschritte im
 Zusammenhang mit /dezentralen Datensystemen/ machen. Die grundlegende
 Idee ist dabei immer dieselbe:\\
@@ -143,7 +175,7 @@ dezentrale Systeme viele neue Möglichkeiten:
 - Bei den meisten sozialen Interaktionen zwischen Personen über
   digitale Plattformen geht es eigentlich um den Kontakt. Die
   Plattform agiert dabei nur als Vermittler und ist nicht zwingend für
-  die Aktivität. Damit wären auch soziale Netzwerke oder Chat-Dienste
+  die Aktivität. Damit wären auch soziale Netzwerke oder Chat Dienste
   für dezentrale Alternativen offen.
 - =Content Addressing= erlaubt schnellere, effizientere Möglichkeiten
   zum Teilen von Dateien, wobei sich die Prinzipien für viel mehr als
@@ -160,39 +192,39 @@ existieren bereits wichtige Unternehmungen, welche grosse Fortschritte
 in verschiedene Richtungen machen. Einige dieser Projekte wurden im
 Anhang genauer angeschaut. Welche Rolle kann Project Orion übernehmen?
 - Da das Entwickeln einer vollständigen, getesteten und integrierten
-  Applikation im gegebenen Zeitrahmen nicht möglich war, sollen
-  stattdessen verschiedene, beispielhafte Anwendungen entwickelt
-  werden. Diese sollen die technischen Vorteile dezentraler Systeme
-  sichtbar machen und dabei einen sinnvollen Nutzen haben. Ziel ist
-  dabei nicht eine fertige Alternative zu Google, Facebook oder
-  ähnlichen, sondern um die Entwicklung von Prototypen, die die
-  technischen Möglichkeiten aufzeigen sollen.
+  Applikation im gegebenen Zeitrahmen nicht möglich war, werden
+  stattdessen verschiedene, beispielhafte Anwendungen entwickelt.
+  Diese werden die technischen Vorteile dezentraler Systeme sichtbar
+  machen und dabei einen sinnvollen Nutzen haben. Ziel ist dabei nicht
+  eine fertige Alternative zu Google, Facebook oder ähnlichen, sondern
+  die Entwicklung von Prototypen, die die technischen Möglichkeiten
+  aufzeigen.
 - Um die Entwicklung verschiedener Applikationen möglichst einfach zu
-  machen, soll ein dezentrales Datensystem als einheitliche Komponente
-  entwickelt und veröffentlicht werden.
-- Als Anwendungen sollen die folgenden drei Systeme ein möglichst
+  machen, wird ein dezentrales Datensystem als einheitliche Komponente
+  entwickelt und veröffentlicht.
+- Als Anwendungen werden die folgenden drei Systeme eine möglichst
   grosse Auswahl der möglichen Applikationen zeigen:
-  - Ein einfacher Chat soll direkte, manuelle Kommunikation zwischen
-    Nutzern erlauben.
-  - Mit einer eigenen, spezialisierten Programmiersprache sollen die
-    Möglichkeiten von Maschine-Maschine Interaktionen und allgemeiner
-    Automatisierung gezeigt werden. Dazu soll die Programmiersprache
-    allgemein in das dezentrale Netzwerke eingebunden werden und damit
-    geschriebene Applikationen sollen somit auch direkt mit Nutzern
-    kommunizieren können.
-  - Mit einem Videospiel als zentrale Demo soll gezeigt werden, mit
-    wie wenig Aufwand dezentrale Technologien sichtbare Vorteile in
-    Videospielen und anderen Echtzeit-Applikationen bringen können.
+  - Ein einfacher Chat erlaubt manuelle Kommunikation zwischen
+    Nutzern, sowohl zwischen Personen, als auch in Gruppen.
+  - Mit einer eigenen, spezialisierten Programmiersprache werden die
+    Möglichkeiten von Maschine zu Maschine Interaktionen und
+    allgemeiner Automatisierung gezeigt. Dazu wird die
+    Programmiersprache allgemein in das dezentrale Netzwerke
+    eingebunden und damit entwickelte Applikationen werden somit auch
+    direkt mit Nutzern kommunizieren können.
+  - Mit einem Videospiel als zentrale Demo wird gezeigt, mit wie wenig
+    Aufwand dezentrale Technologien sichtbare Vorteile in Videospielen
+    und anderen Echtzeitapplikationen bringen können.
 * Theorie
 Da es sich bei dezentralen Datensystemen um ein sehr spezifisches,
-komplexes Thema handelt, sollen als erstes einige der theoretischen
-Grundlagen erklärt werden. Dabei soll es nicht nur um dezentrale
-Systeme an sich gehen, es sollen auch einige der bereits erwähnten
-Probleme detaillierter angesprochen werden. Dafür müssen einige der
-technischen Details des aktuellen Internets angesprochen werden. Dabei
-liegt ein Schwerpunkt auf dem Adress- und Routing-System, welches
-nicht nur viele Probleme aufweist, sondern zu dem auch verschiedene
-gute Alternativen zur Auswahl stehen.
+komplexes Thema handelt, werden als erstes einige der theoretischen
+Grundlagen erklärt. Dabei geht es nicht nur um dezentrale Systeme an
+sich, es sollen auch einige der bereits erwähnten Probleme
+detaillierter angesprochen werden. Dafür müssen einige der technischen
+Details des aktuellen Internets angesprochen werden. Dabei liegt ein
+Schwerpunkt auf dem Adress- und Routing-System, welches nicht nur
+viele Probleme aufweist, sondern zu dem auch verschiedene gute
+Alternativen zur Auswahl stehen.
 ** Adressen
 Das Internet erlaubt einfache, standardisierte Kommunikation zwischen
 Geräten aller Art. Egal welche Funktion oder Form sie auch haben
@@ -220,8 +252,8 @@ muss.
 \noindent Für jeden Einzelnen kann dies verschiedene Konsequenzen
 haben:
 - Die Preise der Internetanbieter und Mobilfunkabonnemente werden
-  wahrscheinlich langfristig steigen, sobald die erhöhten Kosten für
-  neue Adressen bis zum Endnutzer durchsickern.
+  langfristig steigen, sobald die erhöhten Kosten für neue Adressen
+  bis zum Endnutzer durchsickern.
 - Ein technologischer Wandel wird langfristig von Nöten sein, welcher
   Jeden dazu zwingt, auf neue Standards umzusteigen. Eine solche
   Umstellung wird den häufigen Problemen grossflächiger technischer
@@ -231,7 +263,7 @@ haben:
 anderen Gerät verbunden. Da das Internet aus einer Vielzahl von
 Geräten besteht, wäre es unmöglich, diese direkt miteinander zu
 verbinden. Daher lässt sich das Internet besser als /umgekehrte
-Baum-Struktur/ darstellen:
+Baumstruktur/ darstellen:
 - Ganz unten finden sich die Blätter, die Abschlusspunkte der
   Struktur. Sie stellen die /Endnutzergeräte/ dar. Jeder Server, PC und
   jedes iPhone. Hier ist es auch wichtig festzustellen, dass es in
@@ -243,13 +275,12 @@ Baum-Struktur/ darstellen:
   Äste aufteilen, stellen /Router/ und Switches dar. Hier geht es nicht
   um Geräte, die sich in einem persönlichen Setup oder einem normalen
   Haushalt finden. Mit Switches sind die Knotenpunkte (=POP-Switches=)
-  der Internet-Anbieter gemeint. Diese teilen eingehende Datenströme
+  der Internetanbieter gemeint. Diese teilen eingehende Datenströme
   auf und leiten die richtigen Daten über die richtigen Leitungen.
-- Ganz oben findet sich der Stamm. Während ein normaler Baum natürlich
-  nur einen Stamm hat, finden sich in der Infrastruktur des Internets
-  aus Zuverlässigkeitsgründen mehrere. Von diesen =Zentralroutern= gibt
-  es weltweit nur eine Handvoll und sie sind der Grund für das
-  Problem.
+- Ganz oben findet sich der Stamm. Während ein normaler Baum nur einen
+  Stamm hat, finden sich in der Infrastruktur des Internets aus
+  Zuverlässigkeitsgründen mehrere. Von diesen =Zentralroutern= gibt es
+  weltweit nur eine Handvoll und sie sind der Grund für das Problem.
 
 \noindent Die Zentralrouter kümmern sich nicht um einzelne Adressen,
 sondern um Abschnitte von Adressen, auch =Address Spaces= genannt.
@@ -259,15 +290,15 @@ stattdessen wird eher entschieden, ob gewisse Daten beispielsweise von
 Frankfurt a. M. aus nach Ost- oder Westeuropa geschickt werden.
 
 \noindent Im Laufe der Jahre wurden die grossen Abschnitte von
-Adressen immer weiter aufgeteilt. Internet-Anbieter und grosse Firmen
+Adressen immer weiter aufgeteilt. Internetanbieter und grosse Firmen
 können diese Abschnitte untereinander verkaufen und aufteilen. Und
-jede Firma will natürlich ihren eigenen Abschnitt, ihren eigenen
-Address Space. Für die Firmen hat dies viele Vorteile, beispielsweise
-müssen weniger Parteien beim Finden des korrekten Abschnitts
-involviert sein. Aber für die Zentralrouter bedeutet es eine immer
-grössere Datenbank an Zuweisungen. Dieses Problem geht so weit, dass
-die grossen /Routingtables/ inzwischen das physikalische Limit
-erreichen, das ein einzelner Router verarbeiten kann.\\
+jede Firma will ihren eigenen Abschnitt, ihren eigenen Address Space.
+Für die Firmen hat dies viele Vorteile, beispielsweise müssen weniger
+Parteien beim Finden des korrekten Abschnitts involviert sein. Aber
+für die Zentralrouter bedeutet es eine immer grössere Datenbank an
+Zuweisungen. Dieses Problem geht so weit, dass die grossen
+/Routingtables/ inzwischen das physikalische Limit erreichen, das ein
+einzelner Router verarbeiten kann.\\
 ** Zentralisierung
 Neben den ideologischen Fragen und Sicherheitsbedenken gibt es
 praktische Probleme in der Art, wie moderne Internet-Dienste
@@ -277,7 +308,7 @@ der Schwerpunkt hier nur auf zwei Aspekten liegen, nämlich dem
 Datenschutz und der Abhängigkeit.
 *** Datenschutz
 /Wenn man nicht für etwas zahlt, ist man das Produkt./ Nach dieser Idee
-ist man für ziemlich viele Firmen ein Produkt. Doch leider muss man
+ist man für viele Firmen ein Produkt. Doch leider muss man
 realisieren, dass man selbst bei kostenpflichtigen Diensten als
 Produkt gesehen wird. Denn das Internet hat einen neuen Rohstoff zur
 Welt gebracht. Wer viele Daten über Menschen besitzt, bekommt binnen
@@ -292,7 +323,7 @@ Käufen überzeugen oder davon abbringen. Wenn man dies mit dem
 tatsächlichen Potential in diesen Daten vergleicht, merkt man schnell,
 wie viel noch möglich ist. Denn die Daten, die sich täglich über
 Nutzer im Internet anhäufen, zeigen mehr als unser Kaufverhalten. Von
-Echtzeit-Positionsupdates, Anrufen und Suchanfragen bis hin zu
+Echtzeitpositionsupdates, Anrufen und Suchanfragen bis hin zu
 privaten Chats und unseren tiefsten Geheimnissen, sind Nutzer meist
 überraschend unvorsichtig im Umgang mit digitalen Werkzeugen.
 
@@ -301,7 +332,7 @@ Haupteinnahmequelle Werbungen ist, unsere Daten sammeln und verkaufen,
 gibt es eine Vielzahl an anderen Firmen, die ebenfalls unsere Daten
 sammeln, obwohl man von den meisten dieser Firmen noch nie gehört hat.
 Die Liste der potentiellen Mithörer bei unseren digitalen
-Unterhaltungen ist nahezu unendlich: Internet-Anbieter,
+Unterhaltungen ist nahezu unendlich: Internetanbieter,
 DNS-Dienstleister, CDN-Anbieter, Ad-Insertion-Systeme,
 Analytics-Tools, Knotenpunkte & Datencenter, Browser und
 Betriebssysteme.
@@ -314,16 +345,15 @@ Probleme formulieren:
 - Wir haben weder ein Verständnis von den involvierten Parteien noch
   die Bereitschaft, Bequemlichkeit dafür aufzugeben.
 *** Abhängigkeit
-In einem fiktionalen Szenario erklärt /Tom Scott/ auf seinem
-YouTube-Kanal, was passieren könnte, wenn eine einzelne
-Sicherheitsfunktion beim Internetgiganten Google fehlschlagen würde.
-[[cite:&SinglePointOfFailure]] In einem solchen Fall ist es natürlich
-logisch, dass es zu Problemen bei den verschiedensten Google-Diensten
-kommen würde. Aber schnell realisiert man, auf wie vielen Seiten
-Nutzer die /Sign-In with Google/ Funktion benutzen. Und dann braucht es
-nur eine böswillige Person um den Administrator-Account anderer
-Dienste und Seiten zu öffnen, wodurch die Menge an
-Sicherheitsproblemen exponentiell steigt.
+In einem fiktionalen Szenario erklärt /Tom Scott/ auf seinem YouTube
+Kanal, was passieren könnte, wenn eine einzelne Sicherheitsfunktion
+beim Internetgiganten Google fehlschlagen würde.
+[[cite:&SinglePointOfFailure]] In einem solchen Fall ist es logisch, dass
+es zu Problemen bei den verschiedensten Google Diensten kommen würde.
+Aber schnell realisiert man, auf wie vielen Seiten Nutzer die /Sign-In
+with Google/ Funktion benutzen. Und dann braucht es nur eine böswillige
+Person um den Administrator Account anderer Dienste und Seiten zu
+öffnen, wodurch die Menge an Sicherheitsproblemen exponentiell steigt.
 
 \noindent Aber es muss nicht immer etwas schief gehen, damit die
 Probleme entstehen. Sei es politische Zensur, /Right to Repair/ oder /Net
@@ -342,7 +372,7 @@ wirklich Schlimmes passieren?
 von Google abhängig ist, so versteht kaum jemand, wie viel unserer
 täglichen Aktivitäten von Diensten und Firmen abhängen, die selbst
 wieder von Google abhängig sind. Seien es die Facebook-Server, durch
-welche keine Whatsapp-Nachrichten mehr geschickt werden könnten, oder
+welche keine Whatsapp Nachrichten mehr geschickt werden könnten, oder
 die fehlerhafte Konfiguration bei Google, durch welche manche Kunden
 die Temperatur ihrer Wohnungen auf ihren Nest Geräten nicht mehr
 anpassen könnten [[cite:&GoogleNestOutage]], das Netz aus internen
@@ -382,7 +412,7 @@ verteilte Datensysteme einsetzen?
 
 \noindent Da die einzelnen Server nicht in der Lage sind,
 Informationen über das komplette Netzwerk zu speichern oder zu
-verarbeiten, funktionieren Kademlia-Systeme grundlegend anders.
+verarbeiten, funktionieren Kademliasysteme grundlegend anders.
 Anstelle der hierarchischen Anordnung der Router ist jedes Mitglied
 eines Systems gleichgestellt. Dabei kümmert sich jedes Mitglied aber
 nicht um das komplette System, sondern nur um sein direktes Umfeld.
@@ -407,7 +437,7 @@ muss man sich die Eigenschaften der XOR-Funktion etwas genauer
 anschauen:
 1. \(xor(x, x) = 0\): Das Mitglied mit seiner eigenen Adresse ist zu
    sich selbst am nächsten. Mitglieder werden hier als Namen für
-   Server in einem Kademlia-System verwendet.
+   Server in einem Kademliasystem verwendet.
 2. \(xor(x, y) > 0\) wenn \(x \neq y\): Die Funktion produziert nie
    negative Zahlen und nur mit zwei identischen Parametern kann man
    \(0\) erhalten.
@@ -421,7 +451,7 @@ anschauen:
    ein \(y\) für das \(xor(x, y) = l\) gilt.
 
 \noindent Aber wieso genau funktioniert das? Wieso kann man XOR, eine
-Funktion zur Berechnung der Bit-Unterschiede in zwei Binärzahlen,
+Funktion zur Berechnung der Bit Unterschiede in zwei Binärzahlen,
 verwenden, um die Distanz zwischen zwei Punkten in einem verteilten
 Datensystem zu berechnen?
 
@@ -434,7 +464,7 @@ Binärzahlen darstellen lassen, wobei jeder Knotenpunkt einfach eine
 Stelle in der langen Kette aus \(0\) oder \(1\) darstellt. Der ganze
 Baum sieht dann wie folgt aus:
 
-#+CAPTION: Beispielhafte Darstellung eines einfachen Kademlia-Systems, Wikipedia: https://en.wikipedia.org/wiki/Kademlia,
+#+CAPTION: Beispielhafte Darstellung eines einfachen Kademliasystems, Wikipedia: https://en.wikipedia.org/wiki/Kademlia,
 #+ATTR_LATEX: :float nil
      [[file:tree.png]]
 
@@ -444,7 +474,7 @@ Distanz. Zwar mag es auf den ersten Blick nicht intuitiv wirken, wieso
 man XOR anstatt der Differenz verwendet, allerdings funktioniert die
 Funktion mit Binärzahlen in einem solchen Baum um einiges besser.
 *** Routing-Table
-In einem Kademlia-System hat jedes Mitglied eine gewisse Anzahl
+In einem Kademliasystem hat jedes Mitglied eine gewisse Anzahl
 anderer Mitglieder, mit denen es sich verbunden hat. Da Kademlia ein
 sehr umfangreiches, kompliziertes Protokoll und System beschreibt,
 sollen hier nur einige zentrale Funktionen besprochen werden, die für
@@ -484,7 +514,7 @@ erklären:
   will. Eine genaue Unterteilung bedeutet wenige Sprünge aber grosse
   Routing-Tables, eine grobe Unterteilung genau das Umgekehrte.
 
-\noindent Zwar hat ein vollständiges Kademlia-System noch komplexere
+\noindent Zwar hat ein vollständiges Kademliasystem noch komplexere
 Elemente, wie =k-Buckets=, welche den Routing-Table optimieren,
 allerdings sind diese für die grundlegende Funktionsweise des Systems
 irrelevant.
@@ -495,7 +525,7 @@ noch erwähnt werden:
   neuen Verbindungen akzeptiert.
 - Zwar können existierende Einträge durch Neue ersetzt werden,
   allerdings werden dabei nicht alte, sondern inaktive Einträge
-  entfernt. Für ein Kademlia-System werden also auch Mechanismen
+  entfernt. Für ein Kademliasystem werden also auch Mechanismen
   benötigt, um die Zustände aller Verbindungen periodisch zu
   überprüfen.
 * Prozess
@@ -530,7 +560,7 @@ verstehen und die damit entstandenen Probleme genau festzuhalten.
   Geräten übernimmt.
 - Offenheit \\
   Sobald man den Nutzern die Möglichkeit geben will, das System selbst
-  zu erweitern und zu bearbeiten, muss man quasi zwingend open-source
+  zu erweitern und zu bearbeiten, muss man quasi zwingend open source
   Quellcode zur Verfügung stellen.
 
 \noindent Die grundlegende Idee war dieselbe: /Die Entwicklung eines
@@ -553,9 +583,9 @@ normale Nutzer sollte das interne Netzwerk niemals sichtbar sein und
 sie sollten nie direkt mit ihm interagieren müssen, es war also quasi
 /im Schatten/. Geschrieben in =Elixir= und mit einem TCP-Interface, konnte
 Shadow sich mit anderen Instanzen verbinden und über eine rudimentäre
-Implementierung des =Kademlia=-Systems Nachrichten senden und
+Implementierung des Kademliasystems Nachrichten senden und
 weiterleiten. Um neue Verbindungen herzustellen, wurde ein speziell
-entwickeltes System mit so genannten /Member-Files/ verwendet. Jedes
+entwickeltes System mit so genannten /Member Files/ verwendet. Jedes
 Mitglied eines Netzwerks konnte eine solche Datei generieren, mit
 welcher es beliebigen andere Instanzen beitreten konnte.\\
 
@@ -572,12 +602,12 @@ der lokale Router. Es geht bei Hunter also nicht darum, Nachrichten an
 andere Mitglieder des Netzwerks zu senden, sondern sie an verschiedene
 Applikationen auf der gleichen Maschine zu senden. Jedes beliebige
 Programm, unabhängig von Programmiersprache und internen Strukturen,
-müsste dann also nur das verhältnismässig Protokoll implementieren und
-wäre damit in der Lage, mit allen anderen Komponenten zu interagieren.
+muss dann also nur das verhältnismässig Protokoll implementieren und
+ist damit in der Lage, mit allen anderen Komponenten zu interagieren.
 Anders als Shadow wurde Hunter komplett in Rust entwickelt und liess
 sich in zwei zentrale Funktionen aufteilen:
 - Zum einen diente das Programm als Schnittstelle zu einer einfachen
-  /Datenbank/, in diesem Fall eine =JSON-Datei=. Dort wurden alle lokal
+  /Datenbank/, in diesem Fall eine =JSON Datei=. Dort wurden alle lokal
   aktiven Adressen und die dazugehörigen Applikationen gespeichert.
   Ein Nutzer, der sich beispielsweise über einen Chat mit dem System
   verbindet, wird dort mit seiner Adresse oder seinem Nutzernamen und
@@ -599,36 +629,38 @@ die Verbindungen haben müssen.
 Eine weitere zentrale Komponente des Systems ist eine eigens dafür
 entwickelte Programmiersprache, welche mit starker Integration in das
 restliche System das Entwickeln neuer Mechanismen und Komponenten für
-das System offener machen sollte. Eine einfache lisp-ähnliche Syntax
+das System offener machen sollte. Eine einfache lisp ähnliche Syntax
 sollte das Entwickeln neuer Programme einfach und vielseitig
-einsetzbar machen.
+einsetzbar machen. Dieses Produkt wurde bereits während der ersten
+Entwicklungsphase nahezu fertig gestellt und konnte komplett für die
+zweite Phase übernommen werden.
 *** Demo
 Da am Ende dieser ersten Entwicklungsphase eine Präsentation stand,
 musste eine Applikation entwickelt werden, welche einen möglichst
 einfachen, grafischen Einblick in die entstandenen Komponenten
-liefert. Eine Chat-Demo bietet dabei ein paar wichtige Vorteile:
+liefert. Eine Chat Demo bietet dabei ein paar wichtige Vorteile:
 - Sie zeigt verständlich die Kommunikation zwischen zwei oder mehr
   Personen.
 - Chat Nachrichten sind technisch für das System nicht anspruchsvoll
-  und daher gut für eine Live-Demo geeignet.
+  und daher gut für eine Live Demo geeignet.
 
 Allerdings ist es hierbei wichtig zu bedenken, dass alle Komponenten
 des damaligen Systems nur auf Servern lief und das Datensystem eine
 Schnittstelle zwischen verschiedenen Servern ermöglichte. Der Chat
-müsste aber für Endnutzer zugänglich sein, weswegen eine eigene
+musste aber für Endnutzer zugänglich sein, weswegen eine eigene
 Komponente dafür benötigt wurde: [[https:github.com/EngineOrion/websocket-or][Websocket.or]] konnte wie andere
 Komponenten auch an das restliche System angeschlossen werden und
-präsentierte dann eine nach Aussen erreichbare Chat-Webseite. Das
+präsentierte dann eine nach Aussen erreichbare Chat Webseite. Das
 Design dieser Website wird wohl kaum viele Preise gewinnen, liefert
-aber trotzdem eine schlichte, minimalistische Chat-Umgebung für
+aber trotzdem eine schlichte, minimalistische Chat Umgebung für
 Nutzer.
-#+CAPTION: Engine: Orion Chat-Website, intern vebunden mit einem dezentralen Kommunikationssystem.  
+#+CAPTION: Engine: Orion Chat Website, intern vebunden mit einem dezentralen Kommunikationssystem.  
 #+ATTR_LATEX: :float nil
 [[file:websocket.png]]
 
 \noindent Nutzer waren mit dieser Applikation in der Lage, mit
 beliebigen anderen Nutzern zu kommunizieren, solange sie die Adresse
-von einem Chat-Server kannten, der das passende Interface anbot. 
+von einem Chat Server kannten, der das passende Interface anbot. 
 *** Probleme
 Die oben beschriebene Architektur hat viele verschiedene Vorteile,
 allerdings ist sie nicht ohne Probleme. Grundsätzlich geht es bei
@@ -664,7 +696,7 @@ neue Probleme auf:
   entwickelt und verbreitet. Wer also nicht mit den neusten Trends
   mithält, kann schnell abgehängt werden. Dies macht auch das
   Unterrichten besonders schwer.
-- Natürlich werden die Werkzeuge meistens immer besser und schneller,
+- Zwar werden die Werkzeuge meistens immer besser und schneller,
   allerdings kommt es oftmals auch zu einer Spezialisierung. Dies
   führt schnell zu immer spezifischeren, exotischeren Lösungen und
   unzähligen Unterbereichen und immer kleineren Gebieten. So ist
@@ -729,10 +761,10 @@ entstandenen Programme an.[[cite:&EngineOrionKommentar]]
 
 \noindent Dieses Kapitel ist in drei Abschnitte geteilt:
 - =Actaeon= beschreibt das dezentrale Datensystem und die
-  Rust-Bibliothek mit der es sich verwenden lässt. Dazu werden einige
+  Rust Bibliothek mit der es sich verwenden lässt. Dazu werden einige
   der technischen Details angesprochen.
 - Anwendungen beschreibt die Integration mit der eigenen
-  Programmiersprache sowie die Chat-Anwendung.
+  Programmiersprache sowie die Chat Anwendung.
 - Orion beschreibt das Videospiel, welches als zentrale Demo den Titel
   des gesamten Projekts und einen eigenen Abschnitt erhalten hat.
 ** Actaeon
@@ -756,12 +788,12 @@ Projekt der dezentralen Kommunikation bestens geeignet.[[cite:&HimmelZumSprechen
 
 \noindent Nahezu alle Applikationen in Project Orion sind in der
 Programmiersprache Rust geschrieben. Als zentrales Verbindungsstück
-zwischen allen Applikationen hängen alle Programme von Actaeon ab. Um
-die Verwaltung der internen Abhängigkeiten einfacher zu machen, wurde
-Actaeon mit dem offiziellen Rust /Package-Manager/ als =crate=
-veröffentlicht. Dies erlaubt es jedem Rust Entwickler, Actaeon einfach
-in eigene Programme zu integrieren, dafür ist lediglich eine Zeile
-Code nötig:
+zwischen allen Applikationen hängen alle Programme von Actaeon ab. Der
+Code ist online auf [[https:github.com/EngineOrion/actaeon][Github]] verfügbar. Um die Verwaltung der internen
+Abhängigkeiten einfacher zu machen, wurde Actaeon mit dem offiziellen
+Rust /Package Manager/ als [[https:crates.io/crates/actaeon][crate]] veröffentlicht. Dies erlaubt es jedem
+Rust Entwickler, Actaeon einfach in eigene Programme zu integrieren,
+dafür ist lediglich eine Zeile Code nötig:
 #+begin_src toml
 actaeon = "0.2.1"
 #+end_src
@@ -794,9 +826,9 @@ Bibliothek zu verwenden.
     hauptsächlich um die Kademlia =XOR=-Operation geht. Damit werden
     Distanzen und die Wege sowie Orte für Nachrichten bestimmt.
   - Verschlüsselung: Dank der Familie der
-    =NaCl=-Verschlüsselungsbibliotheken ist es möglich, öffentliche und
+    =NaCl= Verschlüsselungsbibliotheken ist es möglich, öffentliche und
     private Schlüssel mit einer Länge von nur 32 bytes zu haben. Damit
-    lassen sich im System Nachrichten automatisch End-zu-End
+    lassen sich im System Nachrichten automatisch End zu End
     verschlüsseln, ohne einen dedizierten Mechanismus zum Austausch
     von öffentlichen Schlüsseln zu benötigen.
 - Signaling: In Netzwerken ist es immer eine wichtige Frage, wie neue
@@ -874,7 +906,7 @@ Befehlen umsetzen. In den nächsten Abschnitten sollen nun einige der
 technischen Konzepte angesprochen werden. Dabei geht es allgemein um
 die Funktionen eines Pub/Subs, möglichen Verschlüsselungsmethoden
 sowie um einige der Besonderheiten der technischen Umsetzung für die
-Actaeon-Bibliothek. 
+Actaeon Bibliothek. 
 *** Verschlüsselung
 Zwar ist es bei weitem nicht so, dass alle moderne dezentrale Systeme
 das Internet oder ein ähnliches Austauschsystem als Grundlage
@@ -884,8 +916,8 @@ fehlende Sicherheit und Gefahren bekannt, daher ist es von Nöten, dass
 sich jede Applikation selbst um Verschlüsselungen und Sicherheit
 kümmert. Allerdings ist es wichtig, /die passende Verschlüsselung/ zu
 wählen. Hier wird nun ein Ansatz beschrieben, welcher sich besonders
-gut für gewisse Kademlia-inspirierte Systeme eignet. Dieser Ansatz
-beruht auf der Verschlüsselungs-Bibliothek NaCl, beziehungsweise deren
+gut für gewisse Kademlia inspirierte Systeme eignet. Dieser Ansatz
+beruht auf der Verschlüsselungsbibliothek NaCl, beziehungsweise deren
 modernen Abzweig =libsodium=. Während klassische
 Verschlüsselungsmethoden sehr lange Schlüssel benötigen, gibt es
 gewisse Kombinationen von Algorithmen, welche mit sehr kurzen
@@ -926,7 +958,7 @@ Offensichtlich kann selbst die beste, fehlerfrei optimierte
 Implementierung der oben beschriebenen Prinzipien nicht gegen die
 bereits angesprochenen, fundamentalen Probleme lokal gebundener
 Programme vorgehen. Daher ist es in einem nächsten Schritt von Nöten,
-die Ideen hinter dezentralisierten =PubSub=-Systemen anzuschauen. Das
+die Ideen hinter dezentralisierten =PubSub= Systemen anzuschauen. Das
 mag im ersten Moment komplex klingen, ist aber tatsächlich unglaublich
 einfach. Man muss sich lediglich einen PubSub als zwei getrennte
 Unterkomponenten vorstellen:
@@ -938,13 +970,13 @@ Unterkomponenten vorstellen:
   beschriebenen Kademlia Implementierung die Checksumme des Inhalts
   mit der Checksumme des Themenschlüssels ersetzt, lässt sich Kademlia
   ohne weitere Veränderungen für einen dezentralen PubSub einsetzen.
-- Danach bleibt natürlich noch das Problem der Nachrichtenverbreitung.
-  Dafür gibt es verschiedene Möglichkeiten:
+- Danach bleibt noch das Problem der Nachrichtenverbreitung. Dafür
+  gibt es verschiedene Möglichkeiten:
   - Die Nachrichten werden direkt an das zuständige Mitglied gesendet,
     von dort werden sie weitergeleitet. Vorteilhaft an diesem Konzept
-    ist natürlich, dass die Verwender des Systems unglaublich einfach
-    gehalten werden können. Sie müssen lediglich Nachrichten an eine
-    Adresse schicken, das System kümmert sich dann von alleine um die
+    ist, dass die Verwender des Systems unglaublich einfach gehalten
+    werden können. Sie müssen lediglich Nachrichten an eine Adresse
+    schicken, das System kümmert sich dann von alleine um die
     Weiterverbreitung. Damit geben die Nutzer allerdings auch eine
     gewisse Kontrolle auf, denn sie können nicht direkt einsehen, an
     wen ihre Nachrichten verteilt werden. In einer solchen Situation
@@ -973,11 +1005,11 @@ allerdings müssen auch einige Probleme angesprochen werden:
   definiert, dass die Adresse eines Themas die Checksumme eines
   bekannten Schlüssels darstellt. Die Adressen in einem solchen System
   lassen sich allgemein aber durch einen gegebenen privaten Schlüssel
-  ableiten. Umgekehrt ist das natürlich nicht möglich. Ein geheimer
-  Schlüssel lässt sich nicht aus dem öffentlichen Schlüssel errechnen.
-  Hier wird also eigentlich ein System verlangt, bei welchem der
-  private Schlüssel durch eine Checksumme errechnet wird, wobei der
-  daraus entstehende öffentliche Schlüssel als Adresse verwendet wird.
+  ableiten. Umgekehrt ist das nicht möglich. Ein geheimer Schlüssel
+  lässt sich nicht aus dem öffentlichen Schlüssel errechnen. Hier wird
+  also eigentlich ein System verlangt, bei welchem der private
+  Schlüssel durch eine Checksumme errechnet wird, wobei der daraus
+  entstehende öffentliche Schlüssel als Adresse verwendet wird.
   Gleichzeitig darf der private Schlüssel nicht bekannt sein, sonst
   wäre die gesamte Verschlüsselung sinnlos. Es wird schnell
   offensichtlich, dass solche Bedingungen nie erfüllt werden können.
@@ -1002,13 +1034,13 @@ Router zwei wichtige Aufgaben gleichzeitig:
 
 \noindent Um die Funktionen des Routers zu verstehen, lohnt es sich,
 den Abschnitt zu Kademlia, oder besser noch das tatsächliche Kademlia
-Whitepaper zu lesen, denn der Router ist der Punkt im System, der
-die meisten der kademlia-spezifischen Funktionen übernimmt. Als erstes
-ist es wahrscheinlich wichtig zu verstehen, welche Daten im Router
-überhaupt gespeichert werden. Grundsätzlich wird im Router jede Node
-gespeichert, von der Daten empfangen werden, oder die durch eine
-Anfrage gefunden wurde. Allerdings definiert Kademlia gewisse Regeln,
-nach welchen neu gefundene Nodes zum Routing Table hinzugefügt werden:
+Whitepaper zu lesen, denn der Router ist der Punkt im System, der die
+meisten der kademliaspezifischen Funktionen übernimmt. Als erstes ist
+es wichtig zu verstehen, welche Daten im Router überhaupt gespeichert
+werden. Grundsätzlich wird im Router jede Node gespeichert, von der
+Daten empfangen werden, oder die durch eine Anfrage gefunden wurde.
+Allerdings definiert Kademlia gewisse Regeln, nach welchen neu
+gefundene Nodes zum Routing Table hinzugefügt werden:
 - Grundsätzlich werden alte, bereits seit langem bekannte Nodes über
   neuere bevorzugt, selbst wenn diese ansonsten bessere Eigenschaften
   (kleine Distanz) hätten. Damit soll verhindert werden, dass das
@@ -1057,7 +1089,7 @@ benötigen. Dabei geht es um Daten, die
   ändernde Netzwerkstruktur überstehen müssen.
 
 \noindent Es ist offensichtlich, dass man solche Daten um jeden Preis
-vermeiden sollte. Da es sich im Actaeon-System /nur/ um ein
+vermeiden sollte. Da es sich im Actaeon System /nur/ um ein
 Nachrichtensystem und keine dezentrale Datenbank handelt, existieren
 tatsächlich nahezu keine geteilten Daten. Als einzige Ausnahme
 allerdings werden im System =Topic Records= verwendet, auf welche genau
@@ -1082,7 +1114,7 @@ mindestens ein Mitglied verfügbar ist.\\
 \noindent Allerdings kann dies trotzdem zu Problemen führen. Besonders
 wenn sich die Netzwerkstruktur schnell stark ändert, kann es dazu
 kommen, dass gewisse Teile des Netzwerks Themen an der falschen
-Stelle suchen. Im aktuellen Actaeon-System existiert noch keine Lösung
+Stelle suchen. Im aktuellen Actaeon System existiert noch keine Lösung
 für dieses Problem, aber eine mögliche Lösung existiert und deren
 Umsetzung ist geplant.
 
@@ -1255,16 +1287,16 @@ ausmachen, so war es trotzdem eine Priorität, andere
 Einsatzmöglichkeiten beispielhaft zu zeigen.
 *** Chat
 Wie bereits in der ersten Entwicklungsphase wurde während der zweiten
-Entwicklungsphase basierend auf dem Actaeon-System ein Chat-Programm
+Entwicklungsphase basierend auf dem Actaeon System ein Chat Programm
 entwickelt. Dieses ist allerdings nicht die zentrale Demo für das
 gesamte Projekt, sondern lediglich ein technischer Test, mit dem die
-Fähigkeiten des Actaeon-Systems gezeigt werden sollen. Allerdings gibt
+Fähigkeiten des Actaeon Systems gezeigt werden sollen. Allerdings gibt
 es einige wichtige Unterschiede zur Chat Demo der ersten
 Entwicklungsphase, welche hauptsächlich durch eine andere Umsetzung
 des Datensystems entstanden:
 - Der Chat ist nicht mehr die primäre Demo, weswegen das Design und
   die /Präsentierbarkeit/ weniger wichtig wurden. Deshalb ist der
-  aktuelle Chat nur noch als Konsolen-Applikation verfügbar und nicht
+  aktuelle Chat nur noch als Konsolenapplikation verfügbar und nicht
   mehr als Webseite.
 - Das tatsächliche Datensystem, das sich um den Austausch der
   Nachrichten mit anderen Nutzern kümmert, läuft nun auf den Geräten
@@ -1272,7 +1304,7 @@ des Datensystems entstanden:
   nicht mehr nötig sind oder sogar unpraktisch wären.
 - Der aktuelle Chat ist weniger ein Produkt, als eine technische Demo,
   mit welcher gezeigt werden soll, mit wie wenig Aufwand eine
-  Applikation basierend auf dem Actaeon-System gebaut werden kann.
+  Applikation basierend auf dem Actaeon System gebaut werden kann.
 
 \noindent Die Chat Demo ist auf Github als Beispiel für die Actaeon
 Bibliothek verfügbar. Im Anhang dieses Dokuments ist der gesamte Code
@@ -1302,64 +1334,20 @@ einer Namensänderung symbolisiert. Unter dem neuen Namen Arrow lässt
 sich die Programmiersprache jetzt als alleinstehende Applikation für
 das Verarbeiten von Nachrichten in beliebigen Actaeon Systemen
 einsetzen. Der gesamte Code ist wie alle anderen Produkte auch online
-auf Github und unter einer freien Lizenz verfügbar.
+auf [[https:github.com/EngineOrion/arrow][Github]] und unter einer freien Lizenz verfügbar.
 
+\noindent An der technischen Umsetzung hat sich von der ersten
+Entwicklungsphase tatsächlich nicht viel verändert. Eine genaue
+Besprechung der Umsetzung oder des Codes würde den Umfang dieser
+Arbeit übersteigen und wäre auch nicht nötig, um die Applikation zu
+verwenden. Um die Programmiersprache zu verwenden, werden lediglich
+die folgenden Befehle benötigt:
 
-
-
-Arrow ist eine weitere Demo, die aus der Anfangszeit des Projektes
-stammt. Arrow ist eine Lisp ähnliche Sprache, welche es erlaubt mit
-einfachen intepretierten Befehlen das Actaeon Framework zu nutzen. Wie
-auch die anderen Projekte ist Arrow auch komplett in Rust geschrieben
-und hat mit der Zeit einige Veränderungen durchgemacht.
-
-\noindent Arrow kann über eine interaktive Shell direkt genutzt werden,
-oder durch das angeben einer Datei auch Programme ausführen.
-
-\noindent Wie alle anderen Teile von Project Orion kann man Arrow über
-Github beziehen. Um Arrow zu nutzen braucht man Rustup und Git. Danach
-findet alles im Terminal statt:
 #+begin_src sh
 $ git clone https://github.com/EngineOrion/arrow
 $ cd arrow
 $ cargo run --release
 #+end_src
-**** Implementierung
-Arrow ist wie alle anderen Teile der Arbeit in Rust implementiert.
-Arrow ist eine Lisp ähnliche Sprache, welche direkten Zugriff auf die
-Actaeon Bibliothek hat.
-
-\noindent Arrow nimmt einen String entgegen und baut daraus einen AST
-(Abstract Syntax Tree). Anschliessend wird aus jedem einzelnen Knoten
-des AST ein LispObject generiert. Diese Lispobjekte werden
-anschliessend im in der gleichen Struktur untereindander verbunden.
-Somit wird aus vielen komplexen ein Objekt, über welches das Programm
-ausgeführt werden kann.
-
-\noindent Wenn das Programm ausgeführt wird, wird der erste Knoten
-aufgerufen. Wenn dieser abhängig ist von Daten, die dieser nicht lokal
-hat, ruft er seine Kinder auf und bekommt Daten von diesen. Wenn ein
-Knoten alle Daten hat gibt er Daten zurück, was sich anschliessend den
-Baum wieder nach oben arbeitet. Schlussendlich hat auch der letzte
-Knoten alle Daten und es wird ein Rückgabewert an den Aufrufer
-zurückgegeben.
-**** Beispiel
-Das folgende ist ein Beispiel für ein Arrow Programm:
-#+begin_src lisp
-(defun greet ()
-    (message "Hello World"))
-
-(greet)
-#+end_src
-\noindent Hier produziert Arrow drei Objekte. Das erste ist ein
-message Objekt und ist ein Kind von dem defun Objekt. Das letzte ruft
-das defun Objekt auf. Das defun Objekt ist ruft seine Kinder auf, was
-in diesem Fall das message Objekt ist. Das message Objekt hat keine
-Kinder, weshalb es seine Funktion ausfüht. Das heisst, dass den ersten
-Parameter "Hello World" in der Konsole ausgibt. Da message nichts
-zurückzugeben hat, aber verpflichtet ist etwas zurückzugeben, gibt es
-nil zurück. Wenn man es mit anderen Programmiersprachen vergleichen
-will ist nil eine Kombination aus null und false.
 * Fazit
 Verteilte und dezentrale Datensysteme sind trotz ihrer Wichtigkeit nur
 ein kleines Nischengebiet in der Welt der Informatik. Und obwohl
@@ -1411,24 +1399,23 @@ Punkte, die noch nicht umgesetzt wurden.
     grossflächigen Änderungen der Netzwerkstruktur funktionieren, was
     aktuell noch zu Problemen führen kann.
 - Orion: \\
-  Natürlich sind bei einem Videospiel die Möglichkeiten nahezu
-  unlimitiert, allerdings existieren auch hier einige interne,
-  technische Probleme. Nebst der offensichtlichen Frage der
-  Performance, gibt es auch ein grundlegenderes Problem: Auch wenn ein
-  /offizieller/ Client existiert, hält einen Entwickler nichts davon ab,
-  eine alternative Umsetzung zu erstellen. Daran ist an sich nichts
-  falsch, allerdings kann eine solche Offenheit schnell ausgenutzt
-  werden, um beispielsweise unfaire Vorteile im Spiel zu erhalten. Wer
-  also das Spiel als einfachen Zeitvertreib ausprobieren will oder
-  etwas Spass sucht, wird zufriedengestellt sein. Als seriöses Spiel,
-  vergleichbar mit kommerziellen Alternativen, ist es allerdings noch
-  nicht geeignet.
+  Bei einem Videospiel sind die Möglichkeiten nahezu unlimitiert,
+  allerdings existieren auch hier einige interne, technische Probleme.
+  Nebst der offensichtlichen Frage der Performance, gibt es auch ein
+  grundlegenderes Problem: Auch wenn ein /offizieller/ Client existiert,
+  hält einen Entwickler nichts davon ab, eine alternative Umsetzung zu
+  erstellen. Daran ist an sich nichts falsch, allerdings kann eine
+  solche Offenheit schnell ausgenutzt werden, um beispielsweise
+  unfaire Vorteile im Spiel zu erhalten. Wer also das Spiel als
+  einfachen Zeitvertreib ausprobieren will oder etwas Spass sucht,
+  wird zufriedengestellt sein. Als seriöses Spiel, vergleichbar mit
+  kommerziellen Alternativen, ist es allerdings noch nicht geeignet.
 - Weiteres: \\
   Der Umfang des Möglichkeiten beschränkt sich nicht nur auf
   Videospiele oder Chat Programme. Eine Vielzahl anderer Anwendungen
   lässt sich mit der actaeon Bibliothek bauen. Dank einer offenen
   Lizenz gibt es ebenfalls die Hoffnung, dass andere Personen in der
-  Zukunft Programme für das Ökosystem bauen. \newpage
+  Zukunft Programme für das Ökosystem bauen.
 ** Recherche
 In diesem Abschnitt sollen einige Projekte in ähnlichen Gebieten
 genauer angeschaut werden. Dabei soll es lediglich um technisch
@@ -1451,7 +1438,7 @@ finden.
 
 \noindent Beispielsweise im Zusammenhang mit der /(mehr oder weniger
 legalen)/ Verbreiten von Materialien wie Filmen oder Musik wird eines
-der grössten global verteilten Systeme eingesetzt. Natürlich gibt es
+der grössten global verteilten Systeme eingesetzt. Zwar gibt es
 hunderte von verschiedenen Programmen, Ideen und Umsetzungen, aber die
 meisten sind Nachfolger von =Napster=.
 
@@ -1482,7 +1469,7 @@ Verfügung und können Inhalte von allen anderen Mitgliedern im System
 herunterladen. Anders als Napster gibt es bei BitTorrent keine
 zentrale Komponente, stattdessen findet selbst das Indizieren und
 Finden von Inhalten dezentralisiert statt.[[cite:&BitTorrentMainline]]
-Dafür wird über das Kademlia-System aktiv bekannt gegeben, wer welche
+Dafür wird über das Kademliasystem aktiv bekannt gegeben, wer welche
 Inhalte zur Verfügung stellt, wobei einzelne Mitglieder speichern
 können, wer die gleichen Inhalte anbietet. Neben Dezentralisierung und
 Sicherheit lassen sich über BitTorrent tatsächlich gute
@@ -1534,8 +1521,8 @@ zwei Nutzer gefunden haben (so ist beispielsweise Video- und
 Audiokommunikation möglich), es kommen aber auch einige neue Probleme
 auf:
 - Anders als beispielsweise im Darknet ist über das Onion-Routing von
-  Aussen klar erkennbar, mit wem jemand kommuniziert. Natürlich ist
-  der Inhalt weiterhin verschlüsselt, aber ein solches System setzt in
+  Aussen klar erkennbar, mit wem jemand kommuniziert. Zwar ist der
+  Inhalt weiterhin verschlüsselt, aber ein solches System setzt in
   erster Linie auf Sicherheit und Geschwindigkeit und nicht auf
   Anonymität.
 - Auch muss man bedenken, dass nicht jedes Gerät im Internet in der
@@ -1557,9 +1544,9 @@ an encrypted IPv6 network using public-key cryptography for address
 allocation and a distributed hash table for routing
 #+end_center
 \noindent beschreibt, ist ein beliebtes open-source Projekt mit mehr
-als 180 Mitentwicklern und tausenden von Nutzern. Es basiert ebenfalls
-auf Kademlia und ähnlich wie bei BitTorrent wird grosser Wert auf
-Sicherheit und Verschlüsselung gelegt.
+als 180 Mitentwicklern und tausenden von Nutzern.[[cite:&CJDNSWhitepaper]]
+Es basiert ebenfalls auf Kademlia und ähnlich wie bei BitTorrent wird
+grosser Wert auf Sicherheit und Verschlüsselung gelegt.
 
 \noindent Wer den Code von CJDNS etwas genauer anschaut realisiert
 schnell, welche grundlegenderen Ziele CJDNS verfolgt. Tatsächlich soll

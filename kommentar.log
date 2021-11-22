@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.9.24)  15 NOV 2021 22:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.9.24)  22 NOV 2021 12:30
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1016,6 +1016,13 @@ File: pgfcorepathconstruct.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 File: pgfcorepathusage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@shorten@end@additional=\dimen316
 \pgf@shorten@start@additional=\dimen317
+
+! Interruption.
+l.430 
+            \ifx\pgfpointlastonpath\pgfpointthirdlastonpath% double degenerate!
+
+? q
+OK, entering \batchmode...
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
@@ -1034,7 +1041,8 @@ File: pgfcoretransformations.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@pt@x=\dimen319
 \pgf@pt@y=\dimen320
 \pgf@pt@temp=\dimen321
-) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
@@ -1043,7 +1051,8 @@ File: pgfcoreobjects.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.te
 x
 File: pgfcorepathprocessing.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgfarrowsep=\dimen322
 )
@@ -1065,7 +1074,8 @@ File: pgfcorelayers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
@@ -1088,8 +1098,8 @@ Package: pgfcomp-version-1-18 2020/12/27 v3.1.8b (3.1.8b)
 ))
 (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
 (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
-(/usr/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/share
+/texmf-dist/tex/latex/pgf/math/pgfmath.sty
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
@@ -1125,7 +1135,8 @@ File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \tikznumberofchildren=\count387
 \tikznumberofcurrentchild=\count388
 \tikz@fig@count=\count389
- (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgfmatrixcurrentrow=\count390
 \pgfmatrixcurrentcolumn=\count391
@@ -1149,28 +1160,22 @@ File: tikzlibrarytopaths.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \lst@newlines=\count398
 \lst@lineno=\count399
 \lst@maxwidth=\dimen340
-
-(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+ (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 \c@lstnumber=\count400
 \lst@skipnumbers=\count401
 \lst@framebox=\box86
-)
-(/usr/share/texmf-dist/tex/latex/listings/listings.cfg
+) (/usr/share/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
-
-(/usr/share/texmf-dist/tex/latex/psnfss/courier.sty
+ (/usr/share/texmf-dist/tex/latex/psnfss/courier.sty
 Package: courier 2020/03/25 PSNFSS-v9.3 (WaS) 
-)
-(/usr/share/texmf-dist/tex/latex/was/gensymb.sty
+) (/usr/share/texmf-dist/tex/latex/was/gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
-)
-(/usr/share/texmf-dist/tex/latex/caption/caption.sty
+) (/usr/share/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
-
-(/usr/share/texmf-dist/tex/latex/caption/caption3.sty
+ (/usr/share/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
 \captionmargin=\dimen341
 \captionmargin@=\dimen342
@@ -1194,14 +1199,12 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
-
-(/usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
+ (/usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
 Package caption Info: wrapfig package is loaded.
-)
-(/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+) (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
 rs
 \f@nch@headwidth=\skip272
@@ -1214,28 +1217,34 @@ rs
 \f@nch@O@olf=\skip279
 \f@nch@O@orf=\skip280
 )
-(/usr/share/texmf-dist/tex/latex/tools/varioref.sty
+! Undefined control sequence.
+<recently read> \doublespacing 
+                               
+l.23 \doublespacing
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+ (/usr/share/texmf-dist/tex/latex/tools/varioref.sty
 Package: varioref 2020/08/11 v1.6e package for extended references (FMi)
 \c@vrcnt=\count404
-)
-(/usr/share/texmf-dist/tex/latex/datetime/datetime.sty
+) (/usr/share/texmf-dist/tex/latex/datetime/datetime.sty
 Package: datetime 2015/03/20 v2.60 Date Time Package
-
-(/usr/share/texmf-dist/tex/latex/fmtcount/fmtcount.sty
+ (/usr/share/texmf-dist/tex/latex/fmtcount/fmtcount.sty
 Package: fmtcount 2020/01/30 v3.07
-
-(/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+ (/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
-
-(/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+ (/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texmf-dist/
+tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks72
 \XKV@tempa@toks=\toks73
 )
 \XKV@depth=\count405
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
-(/usr/share/texmf-dist/tex/latex/fmtcount/fcprefix.sty
+)) (/usr/share/texmf-dist/tex/latex/fmtcount/fcprefix.sty
 Package: fcprefix 2012/09/28
 
 (/usr/share/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
@@ -1247,8 +1256,7 @@ Package: fcnumparser 2017/06/15
 
 (/usr/share/texmf-dist/tex/latex/fmtcount/fc-germanb.def
 File: fc-germanb.def 2013/08/17
-
-(/usr/share/texmf-dist/tex/latex/fmtcount/fc-german.def
+ (/usr/share/texmf-dist/tex/latex/fmtcount/fc-german.def
 File: fc-german.def 2018/06/17
 ))
 \@DT@modctr=\count409
@@ -1259,11 +1267,11 @@ File: fc-german.def 2018/06/17
 \@DT@loopN=\count414
 \@DT@X=\count415
 
-
 Package fmtcount Warning: \ordinal already defined use \FCordinal instead. on i
 nput line 466.
 
-) (/usr/share/texmf-dist/tex/latex/datetime/datetime-defaults.sty
+)
+(/usr/share/texmf-dist/tex/latex/datetime/datetime-defaults.sty
 Package: datetime-defaults 2013/09/10
 )
 \@day=\count416
@@ -1284,8 +1292,7 @@ put line 308.
 \dayofyear=\count429
 \dayofweek=\count430
 LaTeX Info: Redefining \today on input line 736.
-
-(/usr/share/texmf-dist/tex/latex/datetime/dt-german.def
+ (/usr/share/texmf-dist/tex/latex/datetime/dt-german.def
 File: dt-german.def 2010/09/10
 LaTeX Info: Redefining \dategerman on input line 86.
 )
@@ -1294,8 +1301,7 @@ LaTeX Info: Redefining \dategerman on input line 86.
 )
 (/usr/share/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2021/03/18 v1.25 mathematical typesetting tools
-
-(/usr/share/texmf-dist/tex/latex/mathtools/mhsetup.sty
+ (/usr/share/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
 LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
@@ -1313,43 +1319,31 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
 \l_MT_below_shortintertext_sep=\dimen356
 \xmathstrut@box=\box87
 \xmathstrut@dim=\dimen357
-)
-(/usr/share/texmf-dist/tex/latex/esvect/esvect.sty
+) (/usr/share/texmf-dist/tex/latex/esvect/esvect.sty
 Package: esvect 
 \symesvector=\mathgroup9
 LaTeX Font Info:    Redeclaring math symbol \fldr on input line 38.
-)
-(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+) (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-(/usr/share/texmf-dist/tex/latex/listings/lstlang2.sty
+) (/usr/share/texmf-dist/tex/latex/listings/lstlang2.sty
 File: lstlang2.sty 2020/03/24 1.8d listings language file
-)
-(/usr/share/texmf-dist/tex/latex/listings/lstlang3.sty
+) (/usr/share/texmf-dist/tex/latex/listings/lstlang3.sty
 File: lstlang3.sty 2020/03/24 1.8d listings language file
-)
-(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+) (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-(/usr/share/texmf-dist/tex/latex/listings/lstlang2.sty
+) (/usr/share/texmf-dist/tex/latex/listings/lstlang2.sty
 File: lstlang2.sty 2020/03/24 1.8d listings language file
-)
-(/usr/share/texmf-dist/tex/latex/listings/lstlang3.sty
+) (/usr/share/texmf-dist/tex/latex/listings/lstlang3.sty
 File: lstlang3.sty 2020/03/24 1.8d listings language file
-)
-(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+) (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-(/usr/share/texmf-dist/tex/latex/listings/lstlang2.sty
+) (/usr/share/texmf-dist/tex/latex/listings/lstlang2.sty
 File: lstlang2.sty 2020/03/24 1.8d listings language file
-)
-(/usr/share/texmf-dist/tex/latex/listings/lstlang3.sty
+) (/usr/share/texmf-dist/tex/latex/listings/lstlang3.sty
 File: lstlang3.sty 2020/03/24 1.8d listings language file
-)
-(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+) (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-)
-(/usr/share/texmf-dist/tex/latex/pdfcprot/pdfcprot.sty
+) (/usr/share/texmf-dist/tex/latex/pdfcprot/pdfcprot.sty
 Package: pdfcprot 2002/02/27 v1.5 character protruding using pdflatex (cs)
 \c@CPROT@family=\count432
 \c@CPROT@family@temp=\count433
@@ -1361,7 +1355,6 @@ Package: pdfcprot 2002/02/27 v1.5 character protruding using pdflatex (cs)
 \c@CPROT@size@temp=\count439
 \c@CPROT@temp@chars=\count440
 
-
 ! LaTeX Error: Command \ifpdftex already defined.
                Or name \end... illegal, see p.192 of the manual.
 
@@ -1371,8 +1364,10 @@ Type  H <return>  for immediate help.
                                                   
 l.703 }
        
-? q
-OK, entering \batchmode...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 Package pdfcprot Info: You want to setup char protruding, but it does
 (pdfcprot)             look as if you're NOT using pdftex. So I can't
 (pdfcprot)             setup it, as ``pdfcprot.sty'' only supports
@@ -1403,7 +1398,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutvoffset=\dimen365
 \Gm@dimlist=\toks76
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 106.
+Package hyperref Info: Option `colorlinks' set `true' on input line 109.
 
 ! LaTeX Error: Option clash for package tocloft.
 
@@ -1411,7 +1406,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.108 \renewcommand
+l.111 \renewcommand
                    {\cftdot}{}
 The package tocloft has already been loaded with options:
   []
@@ -1422,11 +1417,11 @@ Adding the global options:
 to your \documentclass declaration may fix this.
 Try typing  <return>  to proceed.
 
- (/usr/share/texmf-dist/tex/latex/cite/cite.sty
+) (/usr/share/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
-))
+)
 runsystem(which pygmentize && touch kommentar.aex)...executed.
 
 runsystem(rm kommentar.aex)...executed.
@@ -2549,12 +2544,12 @@ runsystem(rm kommentar.pyg)...executed.
 (\end occurred when \iftrue on line 805 was incomplete)
 (\end occurred when \ifx on line 805 was incomplete)
 (\end occurred when \ifx on line 805 was incomplete)
-(\end occurred when \ifx on line 43 was incomplete) 
+(\end occurred when \ifx on line 46 was incomplete) 
 Here is how much of TeX's memory you used:
- 34229 strings out of 478994
- 587107 string characters out of 5864751
+ 34230 strings out of 478994
+ 587122 string characters out of 5864751
  1165660 words of memory out of 5000000
- 50829 multiletter control sequences out of 15000+600000
+ 50830 multiletter control sequences out of 15000+600000
  471630 words of font info for 177 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  92i,17n,125p,1058b,654s stack positions out of 5000i,500n,10000p,200000b,80000s
