@@ -22,3 +22,12 @@ Zeit: 10 Tage
 | hunter        |      20 |   500 |
 |---------------+---------+-------|
 | sum           |     354 | 12100 |
+
+* Dominik
+- Orion Funktionen kommentieren
+- Orion Screenshots einfügen.
+- Orion Screenschots für Bericht machen.
+- Arrow README
+- Arrow Function Dokumentation
+- Wiki Eintrag
+

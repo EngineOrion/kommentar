@@ -1278,6 +1278,35 @@ des Datensystems entstanden:
 Bibliothek verfügbar. Im Anhang dieses Dokuments ist der gesamte Code
 der Demo ebenfalls abgedruckt und wird dort auch kurz erklärt.
 *** Arrow
+Schon in der ersten Entwicklungsphase entstand eine, speziell auf das
+verarbeiten von Nachrichten ausgelegte, Programmiersprache, damals
+unter dem Namen NET-Script. Ziel dieser Sprache war es nie, eine
+fertige Alternative zu bekannten Sprachen wie Python oder Rust zu
+bieten. Stattdessen ging es eher um die einfache Integration zwischen
+von Nutzern entwickelten Programme und dem dezentralen Datensystem.
+Besonders dafür gab es in der Programmiersprache verschiedene
+Funktionen besonders für das Verarbeiten, Manipulieren und Senden von
+Nachrichten über das dezentrale Datensystem.
+
+\noindent Die ursprüngliche Umsetzung der Programmiersprache war noch
+auf die ursprünglichen Prinzipien der Modularität ausgelegt. Daher
+kommunizierte die Sprache selbstständig mit den anderen Komponenten.
+Mit der Umsetzung bereits eine nahezu vollständige Demo fertig war.
+Auch wenn sich die Prinzipien und Ziele für die zweite
+Entwicklungsphase änderten, liess sich die existierende
+Implementierung von NET-Script ohne grossen Aufwand auf die neuen
+Bedingungen anpassen. Anstelle einer unabhängigen Kommunikation mit
+den restlichen Komponenten integriert die neue Applikation Actaeon
+direkt als Rust Abhängigkeit. Dieser Wechsel wurde zusätzlich mit
+einer Namensänderung symbolisiert. Unter dem neuen Namen Arrow lässt
+sich die Programmiersprache jetzt als alleinstehende Applikation für
+das Verarbeiten von Nachrichten in beliebigen Actaeon Systemen
+einsetzen. Der gesamte Code ist wie alle anderen Produkte auch online
+auf Github und unter einer freien Lizenz verfügbar.
+
+
+
+
 Arrow ist eine weitere Demo, die aus der Anfangszeit des Projektes
 stammt. Arrow ist eine Lisp ähnliche Sprache, welche es erlaubt mit
 einfachen intepretierten Befehlen das Actaeon Framework zu nutzen. Wie
