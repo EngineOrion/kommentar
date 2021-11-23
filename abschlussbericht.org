@@ -18,7 +18,7 @@ abhängigen Gesellschaft in eine prekäre Situation bringen. Die
 tiefsten Fundamente der Welt, wie wir sie kennen, sind dem totalen
 Zusammenbruch gefährlich nahe, und was das System am Laufen hält, sind
 oftmals monopolistische Megaunternehmen und ihre ungewählten CEO's,
-die nur von immer mehr Macht, mehr Einfluss und mehr Nutzern träumen.\\
+die nur von immer mehr Macht, mehr Einfluss und mehr Nutzern träumen.
 
 \noindent Es ist offensichtlich, dass eine Alternative her muss. Aber
 während verschiedenste Projekte bereits grosse Fortschritte in den
@@ -1154,8 +1154,33 @@ integrieren, ist auch dieses in Rust geschrieben. Intern wird [[https:wgpu.rs/][
 Grafik API und [[https:bevyengine.org/][Bevy]] als Framework verwendet, welches sich um die
 Verwaltung aller relevanter Daten kümmert.
 
-\noindent TODO: Screenshots & Bilder + Kurze Erklärung. (Spieler,
-Welt, UI)
+\noindent Zwar kann die Grafik dieses Spiels kaum mit den modernsten
+Titeln mithalten, trotzdem bietet es einen gut ersichtlichen, schönen
+Stil, der mit Einstellungen den Möglichkeiten des jeweiligen Systems
+angepasst werden kann.
+
+#+CAPTION: Screenshot der Landschaft im Orion Videospiel.
+#+ATTR_LATEX: :float nil
+[[file:orion1.png]]
+
+\noindent Der Screenshot zeigt das Terrain, welches vollständig
+zufällig generiert wird. Damit wird eine abwechslungsreiche Umgebung
+garantiert. Dazu ist auf dem Bild ebenfalls ein roter Ring zu sehen.
+Dieser stellt das aktuelle Spielziel dar. Spieler müssen durch
+zufällig generierte Ringe fliegen, wodurch sie Punkte erhalten. Dabei
+sieht die Perspektive des Nutzers allerdings etwas anders aus. Um den
+Effekt eines Flugsimulators deutlicher zu machen, wird zusätzlich das
+Innere eines Cockpits angezeigt. Aktuell ist dieses noch ein einfaches
+Bild, in Zukunft sollen sich die Werte und Anzeigen aber dem
+tatsächlichen Spiel anpassen.
+
+#+CAPTION: Screenshot der Cockpit Ansicht im Orion Videospiel.
+#+ATTR_LATEX: :float nil
+[[file:orion2.png]]
+
+\noindent Gleichzeitig ist auf diesem Bild das rudimentäre UI zu
+erkennen, mit welchem Spieler über ihren aktuellen Punktestand
+informiert werden.
 
 \noindent Wichtig für diese Arbeit ist das Modul /network.rs/. Das Modul
 kümmert sich um die Integration mit Actaeon. Insgesamt hat das Modul
@@ -1275,6 +1300,15 @@ $ git clone https://github.com/EngineOrion/arrow
 $ cd arrow
 $ cargo run --release
 #+end_src
+
+\noindent Von dort aus lassen sich nun beliebige Scripts schreiben,
+welche mit geringem Aufwand auf Ereignisse des Systems reagieren
+können. Die Syntax orientiert sich dabei an der bekannten
+Programmiersprache Lisp, was den Einstieg erleichtern solle. Nachdem
+das Programm gestartet wurde, lassen sich in einer interaktiven
+Umgebung Subroutinen und Variablen definieren und der Nutzer hat
+Zugang zu den bereits bekannten Funktionen des Actaeon Systems. Im
+Github Repository werden einige beispielhafte Befehle gezeigt.
 * Fazit
 Verteilte und dezentrale Datensysteme sind trotz ihrer Wichtigkeit nur
 ein kleines Nischengebiet in der Welt der Informatik. Und obwohl
