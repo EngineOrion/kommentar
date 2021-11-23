@@ -1,65 +1,53 @@
 \begin{thebibliography}{10}
 
 \bibitem{RFC0791}
-Jon Postel.
-\newblock Internet protocol.
-\newblock STD~5, RFC Editor, September 1981.
+J.~Postel, ``Internet protocol,'' STD~5, RFC Editor, September 1981.
 \newblock \url{http://www.rfc-editor.org/rfc/rfc791.txt}.
 
 \bibitem{IPAddressSpaces}
-Lawrence~E. Hughes.
-\newblock Ipv4 and ipv6 address spaces.
-\newblock \url{https://thirdinternet.com/ipv4-and-ipv6-address-spaces/}, 2019.
+L.~E. Hughes, ``Ipv4 and ipv6 address spaces.''
+  \url{https://thirdinternet.com/ipv4-and-ipv6-address-spaces/}, 2019.
+\newblock 21.11.2021.
 
 \bibitem{GooglePrivacyPolicy}
-Google.
-\newblock Google privacy & terms.
-\newblock \url{https://policies.google.com/privacy}.
+Google, ``Google privacy & terms.'' \url{https://policies.google.com/privacy}.
+\newblock 21.11.2021.
 
 \bibitem{SinglePointOfFailure}
-Tom Scott.
-\newblock Single point of failure: The (fictional) day google forgot to check
-  passwords.
-\newblock \url{https://www.youtube.com/watch?v=y4GB_NDU43Q}, 2014.
+T.~Scott, ``Single point of failure: The (fictional) day google forgot to check
+  passwords.'' \url{https://www.youtube.com/watch?v=y4GB_NDU43Q}, 2014.
+\newblock 24.05.2021.
 
 \bibitem{GoogleNestOutage}
-Michael Grothaus.
-\newblock That major google outage meant some nest users couldn’t unlock
-  doors or use the ac.
-\newblock
+M.~Grothaus, ``That major google outage meant some nest users couldn’t unlock
+  doors or use the ac.''
   \url{https://www.fastcompany.com/90358396/that-major-google-outage-meant-some-nest-users-couldnt-unlock-doors-or-use-the-ac}.
+\newblock 19.10.2021.
 
 \bibitem{KademliaPaper}
-Petar Maymounkov and David Mazieres.
-\newblock Kademlia: A peer-to-peer information system based on the xor metric.
-\newblock Technical report, 2002.
+P.~Maymounkov and D.~Mazieres, ``Kademlia: A peer-to-peer information system
+  based on the xor metric,'' tech. rep., 2002.
 
 \bibitem{EngineOrionKommentar}
-Dominik Keller and Jakob Klemm.
-\newblock Engine: Orion.
-\newblock
+D.~Keller and J.~Klemm, ``Engine: Orion.''
   \url{https://github.com/EngineOrion/kommentar/blob/54489464214ed7833f182df09aab29eae4a591e4/EngineOrion.pdf},
   2021.
 
 \bibitem{HimmelZumSprechenBringen}
-Peter Sloterdijk.
-\newblock {\em Den Himmel zum Sprechen bringen}.
+P.~Sloterdijk, {\em Den Himmel zum Sprechen bringen}.
 \newblock 2020.
 
 \bibitem{BitTorrentMainline}
-Liang Wang and Jussi Kangasharju.
-\newblock Measuring large-scale distributed systems: Case of bittorrent
-  mainline dht.
-\newblock Technical report, 2013.
+L.~Wang and J.~Kangasharju, ``Measuring large-scale distributed systems: Case
+  of bittorrent mainline dht,'' tech. rep., 2013.
 
 \bibitem{ToxSpecs}
-Tox specs.
-\newblock \url{https://toktok.ltd/spec.html}.
+``Tox specs.'' \url{https://toktok.ltd/spec.html}, 2016.
+\newblock 23.11.2021.
 
 \bibitem{CJDNSWhitepaper}
-Caleb~James DeLisle.
-\newblock Cjdns whitepaper.
-\newblock
-  \url{https://github.com/cjdelisle/cjdns/blob/master/doc/Whitepaper.md}, 2013.
+C.~J. DeLisle, ``Cjdns whitepaper.''
+  \url{https://github.com/cjdelisle/cjdns/blob/f909b960709a4e06730ddd4d221e5df38164dbb6/doc/Whitepaper.md},
+  2019.
 
 \end{thebibliography}

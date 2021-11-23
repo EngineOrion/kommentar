@@ -58,24 +58,25 @@ gewisses Vorwissen und genügend Zeit mitbringen. Die drei folgenden
 Komponenten sind:
 - Schriftlicher Kommentar: Im Hauptteil dieses Dokuments findet sich
   eine klassische Besprechung der Arbeit. Begonnen mit der Zielsetzung
-  und der Vision, bis zur Analyse des Produkts und einem Ausblick in
-  die Zukunft, bekommt man schnell einen guten, aber eher
-  oberflächlichen Einblick in das Projekt. Wer nur über die Vision und
-  den aktuellen Stand wissen will, muss nicht darüber hinaus, aber
-  verschiedene Konzepte sind damit noch nicht abgedeckt.
+  und der Vision, bis zur Analyse des Produkts bekommt man schnell
+  einen guten, aber eher oberflächlichen Einblick in das Projekt. Wer
+  nur über die Vision und den aktuellen Stand wissen will, muss nicht
+  darüber hinaus, aber verschiedene Konzepte sind damit noch nicht
+  abgedeckt.
 - Dokumentation: Im Anhang und im Kapitel /Theorie/ befinden sich
-  zusätzliche Kapitel, welche einen tieferen Einblick in die Gedanken und
-  die schlussendliche Umsetzung der vorgestellten Produkte geben. Für
-  diese Abschnitte wird allerdings gewisses technisches Know-How
-  verlangt.
+  zusätzliche Abschnitte, welche einen tieferen Einblick in die
+  Gedanken und die schlussendliche Umsetzung der vorgestellten
+  Produkte geben. Für diese Abschnitte wird allerdings gewisses
+  technisches Know-How verlangt. Im Anhang wird zusätzlich ein
+  Ausblick in die Zukunft des Projekts gegeben.
 - Code: Neben der schriftlichen Dokumentation des Projekts existiert
   eine weitere Form der Dokumentation. Nahezu jede Funktion und jedes
   Modul über die verschiedenen Programme und Bibliotheken sind
   dokumentiert. Diese Dokumentationen befinden sich nicht in einem
-  klassisch strukturierten Dokument, stattdessen ist die
-  Code-Dokumentation online über automatisch generierte
-  Rust-Dokumentation zugänglich. Wer den Code von Project Orion
-  verwenden will, wird sich dort gut zurecht finden.\\
+  klassisch strukturierten Dokument, stattdessen ist die Code
+  Dokumentation online über automatisch generierte Rust Dokumentation
+  zugänglich. Wer den Code von Project Orion verwenden will, wird sich
+  dort gut zurecht finden.\\
 
 #+LATEX: \vspace*{\fill}
 \noindent Da besonders bei englischen Begriffen das Gendern mit einem
@@ -119,7 +120,7 @@ wir manche der Schritte nicht doch überstürzt haben. Im Namen des
 Wachstums und aus =FOMO= (/Fear Of Missing Out/) wurden Technologien für
 die Massen zugänglich, die eigentlich nie für solche Grössenordnungen
 entwickelt wurden. Denn sobald die immer höheren Erwartungen an teils
-unglaublich fragile Systeme nicht mehr erfüllt werden, kommt es
+äusserst fragile Systeme nicht mehr erfüllt werden, kommt es
 schnell zur Katastrophe. Und durch unsere Abhängigkeit von diesen
 Systemen steht bei einem solchen Szenario nicht nur der Untergang
 einiger Produkte oder einzelner Firmen bevor, nein, es könnte zum
@@ -153,13 +154,13 @@ Es existieren bereits verschiedene Projekte, die Fortschritte im
 Zusammenhang mit /dezentralen Datensystemen/ machen. Die grundlegende
 Idee ist dabei immer dieselbe:\\
 Anstelle einer zentralen Instanz übernimmt jedes Mitglied des
-Netzwerks einen Teil der ganzen Arbeit, die Mitglieder kommunizieren
-direkt miteinander.\\
+Netzwerks einen Teil der ganzen Arbeit und die Mitglieder
+kommunizieren direkt miteinander.\\
 Allerdings werden viele dieser dezentralen Technologien für illegale
-Zwecke wie Film-Piraterie eingesetzt, weswegen Unternehmungen in
-diesen Gebieten oftmals einen schlechten Ruf bei uninformierten
-Personen geniessen. Aber die Einsatzmöglichkeiten für dezentrale
-Datensysteme gehen weit über =file sharing= hinaus. Wer aber von den
+Zwecke wie Piraterie eingesetzt, weswegen Unternehmungen in diesen
+Gebieten oftmals einen schlechten Ruf bei uninformierten Personen
+geniessen. Aber die Einsatzmöglichkeiten für dezentrale Datensysteme
+gehen weit über =file sharing= hinaus. Wer aber von den
 fortgeschritteneren Funktionen dezentraler Systeme profitieren will,
 muss meistens mit mehr Aufwand rechnen und viel Know-How mitbringen.
 * Zielsetzung
@@ -167,12 +168,12 @@ Die Vorteile dezentraler Systeme sind vielseitig, allerdings gibt es,
 aus offensichtlichen Gründen, wenig Interesse von grossen Firmen oder
 Initiativen in diesem Gebiet zu arbeiten. Tatsächlich öffnen
 dezentrale Systeme viele neue Möglichkeiten:
-- Moderne Videospiele haben meist starke Limitierungen, wenn es um die
-  Anzahl gleichzeitig aktiver Spieler geht. Diese existieren
-  allerdings hauptsächlich, weil die zentralen Server, welche die
-  Verbindungen zwischen den Spielern möglich machen, nicht mehr Nutzer
-  verarbeiten können. Dezentrale Systeme könnten diese Limits nahezu
-  komplett aufheben.
+- Moderne Videospiele haben meist starke Limitierungen, wenn es
+  Beispielsweise um die Anzahl gleichzeitig aktiver Spieler geht.
+  Diese existieren allerdings hauptsächlich, weil die zentralen
+  Server, welche die Verbindungen zwischen den Spielern möglich
+  machen, nicht mehr Nutzer verarbeiten können. Dezentrale Systeme
+  könnten diese Limits nahezu komplett aufheben.
 - Bei den meisten sozialen Interaktionen zwischen Personen über
   digitale Plattformen geht es eigentlich um den Kontakt. Die
   Plattform agiert dabei nur als Vermittler und ist nicht zwingend für
@@ -183,10 +184,10 @@ dezentrale Systeme viele neue Möglichkeiten:
   nur gestohlene Filme einsetzen lassen.
 - Auch wenn digitale Dienste oftmals als Methode zum Datenaustausch
   zwischen Menschen gesehen werden, so kommunizieren schlussendlich
-  nur Maschinen miteinander. Seine es Datenbanken,
-  Austauschplattformen oder eine Vielzahl anderer Möglichkeiten, die
-  Chancen für dezentrale Systeme rund um automatisierte Plattformen
-  und Systeme sind nahezu unbegrenzt.
+  Maschinen miteinander. Seine es Datenbanken, Austauschplattformen
+  oder eine Vielzahl anderer Möglichkeiten, die Chancen für dezentrale
+  Systeme rund um automatisierte Plattformen und Systeme sind nahezu
+  unbegrenzt.
 
 \noindent An Möglichkeiten fehlt es also in diesem Gebiet nicht. Auch
 existieren bereits wichtige Unternehmungen, welche grosse Fortschritte
@@ -213,9 +214,9 @@ Anhang genauer angeschaut. Welche Rolle kann Project Orion übernehmen?
     Programmiersprache allgemein in das dezentrale Netzwerke
     eingebunden und damit entwickelte Applikationen werden somit auch
     direkt mit Nutzern kommunizieren können.
-  - Mit einem Videospiel als zentrale Demo wird gezeigt, mit wie wenig
-    Aufwand dezentrale Technologien sichtbare Vorteile in Videospielen
-    und anderen Echtzeitapplikationen bringen können.
+  - Mit einem Videospiel als wichtigste Demo wird gezeigt, mit wie
+    wenig Aufwand dezentrale Technologien sichtbare Vorteile in
+    Videospielen und anderen Echtzeitapplikationen bringen.
 * Theorie
 Da es sich bei dezentralen Datensystemen um ein sehr spezifisches,
 komplexes Thema handelt, werden als erstes einige der theoretischen
@@ -305,8 +306,8 @@ Neben den ideologischen Fragen und Sicherheitsbedenken gibt es
 praktische Probleme in der Art, wie moderne Internet-Dienste
 implementiert sind. Abhängig von politischen Einstellungen könnte
 dieser Abschnitt stark in die Länge gezogen werden, allerdings liegt
-der Schwerpunkt hier nur auf zwei Aspekten, nämlich dem Datenschutz
-und der Abhängigkeit.
+der Schwerpunkt hier auf zwei Aspekten, nämlich dem Datenschutz und
+der Abhängigkeit.
 *** Datenschutz
 /Wenn man nicht für etwas zahlt, ist man das Produkt./ Nach dieser Idee
 ist man für viele Firmen ein Produkt. Doch leider muss man
@@ -344,17 +345,18 @@ Probleme formulieren:
   Vielzahl von Firmen und Systemen abhängig. Dieses Problem wird noch
   etwas genauer im Abschnitt [[Abhängigkeit][Abhängigkeit]] besprochen.
 - Wir haben weder ein Verständnis von den involvierten Parteien noch
-  die Bereitschaft, Bequemlichkeit dafür aufzugeben.
+  die Bereitschaft, die gewonnene Bequemlichkeit dafür aufzugeben.
 *** Abhängigkeit
 In einem fiktionalen Szenario erklärt /Tom Scott/ auf seinem YouTube
 Kanal, was passieren könnte, wenn eine einzelne Sicherheitsfunktion
-beim Internetgiganten Google fehlschlagen würde.
-[[cite:&SinglePointOfFailure]] In einem solchen Fall ist es logisch, dass
-es zu Problemen bei den verschiedensten Google Diensten kommen würde.
-Aber schnell realisiert man, auf wie vielen Seiten Nutzer die /Sign-In
-with Google/ Funktion benutzen. Und dann braucht es nur eine böswillige
-Person um den Administrator Account anderer Dienste und Seiten zu
-öffnen, wodurch die Menge an Sicherheitsproblemen exponentiell steigt.
+beim Internetgiganten Google fehlschlagen
+würde.[[cite:&SinglePointOfFailure]] In einem solchen Fall ist es logisch,
+dass es zu Problemen bei den verschiedensten Google Diensten kommen
+würde. Aber schnell realisiert man, auf wie vielen Seiten Nutzer die
+/Sign-In with Google/ Funktion benutzen. Und dann braucht es nur eine
+böswillige Person um den Administrator Account anderer Dienste und
+Seiten zu öffnen, wodurch die Menge an Sicherheitsproblemen
+exponentiell steigt.
 
 \noindent Aber es muss nicht immer etwas schief gehen, damit die
 Probleme entstehen. Sei es politische Zensur, /Right to Repair/ oder /Net
@@ -422,23 +424,22 @@ Geschwindigkeiten liefert, die mit zentralisierten Systemen
 vergleichbar sind, skaliert es nicht so einfach für grosse Systeme.
 Genau dafür gibt es die XOR-Metrik.
 *** Distanz
-Die XOR-Funktion, die in der Informatik an den verschiedensten
-Orten auftaucht, wird verwendet, um die Distanz zwischen zwei
-Zahlen zu berechnen. Die Zahlen repräsentieren dabei Mitglieder
-im Netzwerk und sind je nach Variante im Bereich
-\(0..2^{160}\)(/20 Bytes/) oder \(0..2^{256}\)(/32 Bytes/). Mit einem
-so grossen Bereich lässt sich auch das Problem der limitierten
-=IP-Adressen= lösen. Auch wenn es kein tatsächlich unlimitiertes
-System ist, so gibt es doch mehr als genug Adressen.
+Die XOR-Funktion, die in der Informatik an den verschiedensten Orten
+auftaucht, wird verwendet, um die Distanz zwischen zwei Zahlen zu
+berechnen. Die Zahlen repräsentieren dabei Mitglieder im Netzwerk und
+sind je nach Variante im Bereich \(0..2^{160}\)(/20 Bytes/) oder
+\(0..2^{256}\)(/32 Bytes/). Mit einem so grossen Bereich lässt sich auch
+das Problem der limitierten =IP-Adressen= lösen. Auch wenn es kein
+tatsächlich unlimitiertes System ist, so gibt es doch einiges mehr
+Adressen als beispielsweise IP-V4.
 
-\noindent Wenn mit XOR-Funktionen einfach die Distanz zwischen
-zwei Zahlen berechnet wird, stellt sich die Frage, wieso nicht
-einfach die Differenz verwendet wird. Um dies zu beantworten,
-muss man sich die Eigenschaften der XOR-Funktion etwas genauer
-anschauen:
-1. \(xor(x, x) = 0\): Das Mitglied mit seiner eigenen Adresse ist zu
-   sich selbst am nächsten. Mitglieder werden hier als Namen für
-   Server in einem Kademliasystem verwendet.
+\noindent Wenn mit XOR-Funktionen einfach die Distanz zwischen zwei
+Zahlen berechnet wird, stellt sich die Frage, wieso nicht einfach die
+Differenz verwendet wird. Um dies zu beantworten, muss man sich die
+Eigenschaften der XOR-Funktion etwas genauer anschauen:
+1. \(xor(x, x) = 0\): Die Adresse eines Mitglieds ist zu sich selbst
+   am nächsten. Mitglieder werden hier als Namen für Objekte Server in
+   einem Kademliasystem verwendet.
 2. \(xor(x, y) > 0\) wenn \(x \neq y\): Die Funktion produziert nie
    negative Zahlen und nur mit zwei identischen Parametern kann man
    \(0\) erhalten.
@@ -476,10 +477,9 @@ man XOR anstatt der Differenz verwendet, allerdings funktioniert die
 Funktion mit Binärzahlen in einem solchen Baum um einiges besser.
 *** Routing-Table
 In einem Kademliasystem hat jedes Mitglied eine gewisse Anzahl anderer
-Mitglieder, mit denen es sich verbunden hat. Da Kademlia ein sehr
+Mitglieder, mit denen verbunden ist. Da Kademlia ein sehr
 umfangreiches, kompliziertes Protokoll und System beschreibt, werden
-hier nur einige zentrale Funktionen besprochen, die für diesen ersten
-Prototypen von Project Orion relevant sind.\\
+hier nur einige zentrale Funktionen besprochen.\\
 
 \noindent Einfach formuliert speichert der =Routing Table= die
 verbundenen Mitglieder. Eine eingehende Nachricht wird dann mithilfe
@@ -494,7 +494,7 @@ welche Mitglieder im Routing-Table gespeichert werden:
 
 \noindent Die optimale Anzahl der gespeicherten Mitglieder hängt von
 den Zielen und Ansprüchen an das System ab. Grundlegend muss man die
-Frage beantworten, in wie vielen Unterbäumen Verbindungen gehalten
+Frage beantworten, in wie viele Unterbäumen Verbindungen gehalten
 werden sollen. Zwar mag dies etwas abstrakt wirken, es lässt sich aber
 mit dem eben eingeführten Modell eines umgekehrten Baumes gut
 erklären:
@@ -507,10 +507,6 @@ erklären:
 - Deshalb braucht ein Routing-Table nicht nur kurze
   Verbindungen zu nahen Punkten, sondern auch einige wenige
   Verbindungen zu Mitgliedern in der anderen Hälfte.
-- Mit nur einer weit entfernten Adresse hat man eine Verbindung
-  in die /eigene/ und die /andere/ Hälfte. Hat man zwei solche
-  Verbindungen auf die andere Seite hat man schon Verbindungen in
-  jeden Viertel des Baumes.
 - Man muss also entscheiden, wie fein man die andere Hälfte aufteilen
   will. Eine genaue Unterteilung bedeutet wenige Sprünge aber grosse
   Routing-Tables, eine grobe Unterteilung genau das Umgekehrte.
@@ -535,12 +531,12 @@ Entwicklungsphasen, wobei sich die Methoden und Ziele von der ersten
 zur zweiten Phase teilweise verändert haben. Besonders die erste
 Entwicklungsphase wird hier genau beschrieben, für die zweite Phase
 sollen lediglich die Unterschiede angesprochen werden. Die
-tatsächlichen Applikationen werden dann im Kapitel /Produkte/ genauer
-erklärt. Da während der ersten Entwicklungsphase viele wichtige
-Erkenntnisse entstanden, ist es wichtig, die Ideen und die Umsetzung
-genau zu analysieren. Zwar unterscheiden sich die Ziele und Methoden
-der beiden Ansätze stark, gewisse Konzepte und einige Programme aber
-lassen sich für die neuen Zielsetzung vollständig übernehmen. Die
+tatsächlichen Applikationen und Resultate werden dann im Kapitel
+/Produkte/ genauer erklärt. Da während der ersten Entwicklungsphase
+viele wichtige Erkenntnisse entstanden, ist es wichtig, die Ideen und
+die Umsetzung genau zu analysieren. Zwar unterscheiden sich die Ziele
+und Methoden der beiden Ansätze, gewisse Konzepte und einige Programme
+aber lassen sich für die neuen Zielsetzung vollständig übernehmen. Die
 beiden Phasen werden ab hier einfach /Modularität/ und /Präsentation/
 genannt, da dies die zwei zentralen Eigenschaften der beiden Phasen
 sind.
@@ -566,7 +562,7 @@ verstehen und die damit entstandenen Probleme genau festzuhalten.
 
 \noindent Die grundlegende Idee war die Entwicklung eines dezentralen,
 vielseitig einsetzbaren Kommunikationsprotokolls. Da allerdings keine
-einzelne Anwendung angestrebt wurde, ging es stattdessen um die
+konkrete Anwendung angestrebt wurde, ging es stattdessen um die
 Entwicklung eines vollständigen Ökosystems und allgemein einsetzbarer
 Komponenten.
 
@@ -654,12 +650,12 @@ Komponenten auch an das restliche System angeschlossen werden und
 präsentierte dann eine nach Aussen erreichbare Chat Webseite. Das
 Design dieser Website wird wohl kaum Preise gewinnen, liefert aber
 trotzdem eine schlichte, minimalistische Chat Umgebung für Nutzer.
-#+CAPTION: Engine: Orion Chat Website, intern vebunden mit einem dezentralen Kommunikationssystem.  
+#+CAPTION: Engine: Orion Chat Website, intern verbunden mit dem dezentralen Kommunikationssystem.  
 #+ATTR_LATEX: :float nil
 [[file:websocket.png]]
 \noindent Nutzer sind mit dieser Applikation in der Lage, mit
 beliebigen anderen Nutzern zu kommunizieren, solange sie die Adresse
-von einem Chat Server kannten, der das passende Interface anbot. 
+von einem Chat Server kennen, der das passende Interface anbietet. 
 *** Probleme
 Die oben beschriebene Architektur hat viele verschiedene Vorteile,
 allerdings ist sie nicht ohne Probleme. Grundsätzlich geht es bei
@@ -671,8 +667,8 @@ alles andere als /einfach/. Die Anzahl möglicher Fehlerquellen steigt
 mit jeder eingebundenen Komponente exponentiell an, und wenn selbst
 für die einfachsten Demos mindestens vier der Komponenten benötigt
 werden, kann nahezu alles schiefgehen. Dazu kommt, dass viele Fehler
-nicht richtig isoliert und verarbeitet würden, weswegen sich die
-Probleme durch das System weiter verbreiten würden. Während die
+nicht richtig isoliert und verarbeitet werden, weswegen sich die
+Probleme durch das System weiter verbreiten werden. Während die
 Umsetzung also ihre eigentlichen Ziele erfüllt hatte, war sie noch
 weit davon entfernt, für tatsächliche Nutzer einsetzbar zu sein.\\
 
@@ -757,11 +753,11 @@ Entwicklungsphase erfahren will, liest am besten den dazugehörigen
 Bericht durch, oder schaut sich direkt die dabei entstandenen
 Programme an.[[cite:&EngineOrionKommentar]]
 
-\noindent Dieses Kapitel ist in drei Abschnitte geteilt:
+\noindent Dieses Kapitel ist in drei Abschnitte unterteilt:
 - Actaeon beschreibt das dezentrale Datensystem und die Rust
   Bibliothek mit der es sich verwenden lässt. Dazu werden einige der
   technischen Details angesprochen.
-- Orion beschreibt das Videospiel, welches als zentrale Demo dem
+- Orion beschreibt das Videospiel, welches als wichtigste Demo dem
   gesamten Projekts den Namen gegeben hat.
 - Anwendungen beschreibt die Integration in die eigenen
   Programmiersprache sowie die Chat Anwendung.
@@ -785,11 +781,11 @@ ganzen Vielfalt umfasst. So ist Actaeon als Namensgeber für ein
 Projekt der dezentralen Kommunikation bestens geeignet.[[cite:&HimmelZumSprechenBringen]]
 
 \noindent Als zentrales Verbindungsstück zwischen allen Applikationen
-hängen alle Programme von Actaeon ab. Um diese Integration einfacher
-zu machen, sind nahezu alle Applikationen in Project Orion in der
+hängen alle Programme von Actaeon ab. Um diese Integration einfach zu
+machen, sind nahezu alle Applikationen in Project Orion in der
 Programmiersprache Rust geschrieben. Der Code ist online auf [[https:github.com/EngineOrion/actaeon][Github]]
 verfügbar. Um die Verwaltung der internen Abhängigkeiten einfacher zu
-machen, wurde Actaeon mit dem offiziellen Rust /Package Manager/ als
+machen, wurde Actaeon mit dem offiziellen Rust Package Manager als
 [[https:crates.io/crates/actaeon][crate]] veröffentlicht. Dies erlaubt es jedem Rust Entwickler, Actaeon
 einfach in eigene Programme zu integrieren, dafür ist lediglich eine
 Zeile Code nötig:
@@ -802,11 +798,11 @@ Da es sich hier um eine Bibliothek handelt, welche dann in andere
 Programme eingebunden werden kann, ist es nicht von Nöten, die interne
 Funktionsweise vollständig zu verstehen. An dieser Stelle soll ein
 Überblick über die Verwendung und die Funktionen gegeben werden. In
-den folgenden Abschnitten werden dann zusätzlich noch technische
-Details zur Bibliothek angesprochen, diese sind aber nicht notwendig,
-um die Bibliothek zu verwenden. Für die technischen Feinheiten lohnt
-es sich, die online Dokumentation und Package Informationen zu lesen,
-welche auf [[https:crates.io/crates/actaeon][crates.io]] verfügbar sind.
+den folgenden Abschnitten werden dann zusätzlich noch einige
+technische Details zur Bibliothek angesprochen, diese sind aber nicht
+notwendig, um die Bibliothek zu verwenden. Für die technischen
+Feinheiten lohnt es sich, die online Dokumentation und Package
+Informationen zu lesen, welche auf [[https:crates.io/crates/actaeon][crates.io]] verfügbar sind.
 
 \noindent Es lohnt sich aufzulisten, welche Funktionen die Bibliothek
 übernimmt, und welche darüber hinaus vom Nutzer verlangt werden.
@@ -836,7 +832,7 @@ Actaeon übernimmt das Folgende:
   Nutzer beitreten können. Actaeon verlangt dabei lediglich die
   Kontaktdaten von einem bekannten Mitglied des Systems und kümmert
   sich dann um den Rest.
-- Form: Durch regelmässige Abfragen und Überprüfungen können
+- Updates: Durch regelmässige Abfragen und Überprüfungen können
   Mitglieder automatisch neue Mitglieder finden und sie in ihren
   lokalen Routing-Table einbauen.
 
@@ -884,11 +880,9 @@ auch von einer Datei geladen werden kann, muss nur ein =Interface=
 erstellt werden. Bei diesem Schritt werden intern verschiedene Threads
 gestartet, und die Initialisierung des Routing-Tables (Bootstrapping)
 beginnt. Der Nutzer muss sich dabei um nichts kümmern, ausser
-potentiell aufkommende Fehler zu handhaben. Das zweite wichtige
+potentiell aufkommende Fehler zu verwalten. Das zweite wichtige
 Element ist dabei das =Topic=, denn die meisten Interaktionen des
-Nutzers finden über ein solches Thema statt. Für genauere
-Informationen empfiehlt sich die technische Dokumentation. Als
-einfache Zusammenfassung lässt sich sagen: Unter einem Thema werden
+Nutzers finden über ein solches Thema statt. Unter einem Thema werden
 Nachrichten gesammelt, welche laut dem Nutzer zusammengehören. Dabei
 ist wichtig festzustellen, dass die Wahl der Themen vollkommen in der
 Hand des Nutzers liegt, die Bibliothek hat keinen Einfluss darauf.
@@ -908,7 +902,7 @@ Funktionen eines Pub/Subs, mögliche Verschlüsselungsmethoden sowie um
 einige der Besonderheiten der technischen Umsetzung für die Actaeon
 Bibliothek.
 *** Verschlüsselung
-Das Internet ist für fehlende Sicherheit und Gefahren bekannt, daher
+Das Internet ist für fehlende Sicherheit und Gefahren bekannt. Daher
 ist es von Nöten, dass sich jede Applikation selbst um
 Verschlüsselungen und Sicherheit kümmert. Allerdings ist es wichtig,
 /die passende Verschlüsselung/ zu wählen. Hier wird nun ein Ansatz
@@ -953,12 +947,11 @@ Funktionen modellieren.
 **** Dezentraler PubSub:
 Offensichtlich kann selbst die beste, fehlerfrei optimierte
 Implementierung der oben beschriebenen Prinzipien nicht gegen die
-bereits angesprochenen, fundamentalen Probleme lokal gebundener
-Programme vorgehen. Daher ist es in einem nächsten Schritt von Nöten,
-die Ideen hinter dezentralisierten =PubSub= Systemen anzuschauen. Das
-mag im ersten Moment komplex klingen, ist aber tatsächlich unglaublich
-einfach. Man muss sich lediglich einen PubSub als zwei getrennte
-Unterkomponenten vorstellen:
+bereits angesprochenen Probleme lokal gebundener Programme vorgehen.
+Daher ist es in einem nächsten Schritt von Nöten, die Ideen hinter
+dezentralisierten =PubSub= Systemen anzuschauen. Das mag im ersten
+Moment komplex klingen, ist aber tatsächlich einfach. Man muss sich
+lediglich einen PubSub als zwei getrennte Unterkomponenten vorstellen:
 - Themen lassen sich vereinfacht als Einträge in einer Datenbank
   beschreiben. Die Identifikation der Themen ist dabei der Schlüssel,
   wobei die Abonnenten als dazugehörige Felder ausgedrückt werden
@@ -970,7 +963,7 @@ Unterkomponenten vorstellen:
   einsetzen.
 - Danach bleibt noch das Problem der Nachrichtenverbreitung. Dafür
   gibt es verschiedene Möglichkeiten:
-  - Die Nachrichten werden direkt an das zuständige Mitglied gesendet,
+  - Die Nachrichten werden direkt an ein zuständige Mitglied gesendet,
     von dort werden sie weitergeleitet. Vorteilhaft an diesem Konzept
     ist, dass die Verwender des Systems einfach gehalten werden
     können. Sie müssen lediglich Nachrichten an eine Adresse schicken.
@@ -1028,7 +1021,7 @@ auch einige Probleme angesprochen werden:
 *** Router
 Als zentrales Herzstück des gesamten Actaeon Systems übernimmt der
 Router zwei wichtige Aufgaben gleichzeitig:
-- Das Speichern der bekannten Nodes im System
+- Das Speichern der bekannten Mitglieder im System
 - Funktionen zum Berechnen der nächsten Ziele von Nachrichten
 
 \noindent Um die Funktionen des Routers zu verstehen, lohnt es sich,
@@ -1037,13 +1030,13 @@ Whitepaper, zu lesen, denn der Router ist der Punkt im System, der die
 meisten der Kademlia spezifischen Funktionen übernimmt. Als erstes ist
 es wichtig zu verstehen, welche Daten im Router überhaupt gespeichert
 werden. Grundsätzlich wird im Router jedes Mitglied gespeichert, von
-der Daten empfangen werden, oder die durch eine Anfrage gefunden
+dem Daten empfangen werden, oder das durch eine Anfrage gefunden
 wurde. Allerdings definiert Kademlia gewisse Regeln, nach welchen neu
 gefundene Mitglieder zum Routing Table hinzugefügt werden:
 - Grundsätzlich werden alte, bereits seit langem bekannte Mitglieder
-  gegenüber neuere bevorzugt, selbst wenn diese ansonsten bessere
+  gegenüber neueren bevorzugt, selbst wenn diese ansonsten bessere
   Eigenschaften (kleine Distanz) hätten. Damit wird verhindert, dass
-  das Netzwerk durch eine Vielzahl böswillig generierter Nodes
+  das Netzwerk durch eine Vielzahl böswillig generierter Mitglieder
   angegriffen werden kann.
 - Für jedes Mitglied wird ein Status gespeichert, welcher angibt, ob
   das Mitglied aktuell erreichbar ist. Da sich dies während der Laufzeit
@@ -1054,21 +1047,21 @@ gefundene Mitglieder zum Routing Table hinzugefügt werden:
 
 \noindent Um diese Regeln möglichst einfach umzusetzen, wird der
 Router intern als binärer Baum dargestellt. Jedes Blatt stellt dabei
-ein k-Bucket dar, in welchem die tatsächlichen Mitglieder liegen.
-Sobald ein solcher Bucket voll ist, kann er halbiert werden und es
-entstehen zwei neue Blätter. Dies ist allerdings nur auf der dem
-Zentrum (also der eigenen Adresse) nahen Seite möglich. Auf der /fernen/
-Seite können Buckets nicht geteilt werden. Damit wird die Regel, dass
-die Häufigkeit der Mitglieder mit steigendem Abstand abnimmt
-umgesetzt. Sollte es nicht möglich sein, einen Bucket zu teilen,
-werden neue Mitglieder entweder vergessen, oder bereits vorhandene
-Mitglieder werden überschrieben. Auch ist es wichtig zu verstehen,
-dass innerhalb der tatsächlichen Buckets nicht nach Distanz, sondern
-nach Zeit sortiert wird. Da Nachrichten meistens an mehrere Ziele
-gleichzeitig geschickt werden, um die Auslieferung zu garantieren,
-wird versucht, zuerst möglichst viele Mitglieder aus dem gleichen
-Bucket zu verwenden. Nur wenn diese nicht ausreichen werden Mitglieder
-aus anderen Buckets verwendet.
+ein Bucket dar, in welchem die tatsächlichen Mitglieder liegen. Sobald
+ein solcher Bucket voll ist, kann er halbiert werden und es entstehen
+zwei neue Blätter. Dies ist allerdings nur auf der dem Zentrum (also
+der eigenen Adresse) nahen Seite möglich. Auf der /fernen/ Seite können
+Buckets nicht geteilt werden. Damit wird die Regel, dass die
+Häufigkeit der Mitglieder mit steigendem Abstand abnimmt umgesetzt.
+Sollte es nicht möglich sein, einen Bucket zu teilen, werden neue
+Mitglieder entweder vergessen, oder bereits vorhandene Mitglieder
+werden überschrieben. Auch ist es wichtig zu verstehen, dass innerhalb
+der tatsächlichen Buckets nicht nach Distanz, sondern nach Zeit
+sortiert wird. Da Nachrichten meistens an mehrere Ziele gleichzeitig
+geschickt werden, um die Auslieferung zu garantieren, wird versucht,
+zuerst möglichst viele Mitglieder aus dem gleichen Bucket zu
+verwenden. Nur wenn diese nicht ausreichen werden Mitglieder aus
+anderen Buckets verwendet.
 
 \noindent Der Router bietet alle nötigen Funktionen direkt in einer
 öffentlichen API an, in der tatsächlichen Applikation wird er
@@ -1508,6 +1501,14 @@ angehen will, muss sich auch Gedanken über die darunterliegende
 physikalische Infrastruktur machen.
 
 ** Code
+Der Code aller Produkte beider Entwicklungsphasen ist online
+auf Github verfügbar. Die verschiedenen Repositories sind unter einer
+Organisation gruppiert: [[https:github.com/EngineOrion][github.com/EngineOrion]]. Dort sind die
+verschiedenen Applikationen, das Arbeitsjournal sowie dieser
+Abschlussbericht in je einzelnen Repositories zu finden. Dazu ist
+Actaeon für Rust Entwickler veröffentlicht. Details über die
+Einsatzmöglichkeiten und die Code Dokumentation sind auf crates.io
+verfügbar: [[https:crates.io/crates/actaeon][crates.io/crates/actaeon]]
 *** Chat Demo
 Der gesamte Code der Chat Demo sowie eine kurze Erklärung:
 #+begin_src rust
@@ -1594,6 +1595,7 @@ relevant ist, beschränkt sich auf die folgenden Zeilen:
 Was hier schlussendlich wichtig ist, ist die Feststellung, dass nur
 wenige Zeilen Code nötig sind, um eine beliebige Applikation an ein
 dezentrales Datensystem anzuschliessen.
+
 ** Glossar
 In diesem Abschnitt sollen alle Begriffe, welche im Text mindestens
 einmal =monospaced= geschrieben wurden, kurz erklärt werden.
@@ -1679,7 +1681,7 @@ einmal =monospaced= geschrieben wurden, kurz erklärt werden.
 
 \newpage
 #+LATEX: \listoffigures
-[[bibliographystyle:unsrt]]
+[[bibliographystyle:ieeetr]]
 [[bibliography:/home/jeykey/workspace/kommentar/refs.bib]]
 \includepdf[pages=-]{unterschrieben.pdf}
 \includepdf[pages=-]{Orion_Vertrag_7.pdf}
