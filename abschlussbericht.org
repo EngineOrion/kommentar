@@ -250,6 +250,7 @@ hat. Aber der Wechsel ist eine freiwillige Entscheidung, zu der nicht
 nur alle Betroffenen bereit sein müssen, sondern für die auch jede
 einzelne involvierte Komponente die neue Technologie unterstützen
 muss.
+\newpage
 
 \noindent Für jeden Einzelnen kann dies verschiedene Konsequenzen
 haben:
@@ -408,7 +409,7 @@ Instanz gibt, träfe die Problematik der /Zentralrouter/ plötzlich auf
 alle Server zu. Genau da kommt Kademlia ins Spiel. Laut den Erfindern,
 /Petar Maymounkov/ und /David Mazières/, ist Kademlia
 #+begin_center
-ein Peer-to-peer Nachrichten System basierend auf XOR-Metrik.
+ein Peer-to-peer Nachrichten System basierend auf der XOR-Metrik.
 #+end_center
 Was genau bedeutet das und wie lässt sich eine =XOR=-Metrik für
 verteilte Datensysteme einsetzen?
@@ -1472,7 +1473,7 @@ Projekts inzwischen ausgeweitet. Im Zentrum der Arbeiten steht das Tox
 Protocol, welches von verschiedenen, unabhängigen Programmen umgesetzt
 wird. Zwar ist Chat weiterhin eine zentrale Funktion, es wird aber
 auch mit Video- und Audiokommunikation, sowie Filesharing
-gearbeitet.\\
+gearbeitet.
 
 \noindent Basierend auf der bekannten NaCl-Bibliothek wird die gesamte
 Kommunikation über das Tox Protocol[[cite:&ToxSpecs]] zwingend End- zu End
@@ -1486,7 +1487,7 @@ Verhandlung von Schlüsseln und der zusätzlichen Kommunikation, bindet
 diese Idee die Verschlüsselung stärker in das Routing System ein, denn
 es werden keine zusätzlichen Informationen zum Verschlüsseln einer
 Nachricht gebraucht, und sie kann direkt mit der Adresse des Ziels
-verschlüsselt werden.\\
+verschlüsselt werden.
 
 \noindent Es ist allerdings wichtig festzustellen, dass Tox Kademila
 lediglich als Router verwendet. Kontakt zwischen zwei Nutzern wird
